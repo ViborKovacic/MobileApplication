@@ -1,0 +1,137 @@
+c:\users\insite\documents\visual studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\Etl_Analytics_Mobile_Version_01.dll
+c:\users\insite\documents\visual studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\Etl_Analytics_Mobile_Version_01.pdb
+c:\users\insite\documents\visual studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.apk
+c:\users\insite\documents\visual studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01-Signed.apk
+c:\users\insite\documents\visual studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\Etl_Analytics_Mobile_Version_01.dll
+c:\users\insite\documents\visual studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\Etl_Analytics_Mobile_Version_01.pdb
+c:\users\insite\documents\visual studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\android\bin\Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.apk
+c:\users\insite\documents\visual studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\layout\signindialog.xml
+c:\users\insite\documents\visual studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\values\styles.xml
+c:\users\insite\documents\visual studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\layout\login.xml
+c:\users\insite\documents\visual studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\values\strings.xml
+c:\users\insite\documents\visual studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\drawable\icon.png
+c:\users\insite\documents\visual studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\drawable\buttonloginstyle.xml
+c:\users\insite\documents\visual studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\drawable\buttonsigninstyle.xml
+c:\users\insite\documents\visual studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\drawable\progressbarstyle.xml
+c:\users\insite\documents\visual studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\drawable\signindialogstyle.xml
+c:\users\insite\documents\visual studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\anim\sliderightanimation.xml
+c:\users\insite\documents\visual studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\anim\slideupanimation.xml
+c:\users\insite\documents\visual studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\R.cs.flag
+c:\users\insite\documents\visual studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\uploadflags.txt
+C:\Users\INSITE\documents\visual studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\Newtonsoft.Json.dll
+C:\Users\INSITE\documents\visual studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\Newtonsoft.Json.xml
+C:\Users\INSITE\documents\visual studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\RestSharp.dll
+C:\Users\INSITE\documents\visual studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\RestSharp.xml
+C:\Users\INSITE\documents\visual studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\Xamarin.Android.Support.Animated.Vector.Drawable.dll
+C:\Users\INSITE\documents\visual studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\Xamarin.Android.Support.v4.dll
+C:\Users\INSITE\documents\visual studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\Xamarin.Android.Support.v7.AppCompat.dll
+C:\Users\INSITE\documents\visual studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\Xamarin.Android.Support.Vector.Drawable.dll
+C:\Users\INSITE\documents\visual studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\layout\gridviewpage.xml
+C:\Users\INSITE\documents\visual studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\layout\mainpage.xml
+C:\Users\INSITE\documents\visual studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\drawable\location.png
+C:\Users\INSITE\documents\visual studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\drawable\note.png
+C:\Users\INSITE\documents\visual studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\drawable\sound.png
+C:\Users\INSITE\documents\visual studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\drawable\list.png
+C:\Users\INSITE\documents\visual studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\values-v21\style.xml
+C:\Users\INSITE\Documents\Visual Studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\layout\logtable.xml
+C:\Users\INSITE\Documents\Visual Studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\layout\configurationcolumns.xml
+C:\Users\INSITE\Documents\Visual Studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\Etl_Analytics_Mobile_Version_01.dll.mdb
+C:\Users\INSITE\Documents\Visual Studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\Java.Interop.dll.mdb
+C:\Users\INSITE\Documents\Visual Studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\Microsoft.CSharp.dll.mdb
+C:\Users\INSITE\Documents\Visual Studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\Mono.Android.dll.mdb
+C:\Users\INSITE\Documents\Visual Studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\Mono.CSharp.dll.mdb
+C:\Users\INSITE\Documents\Visual Studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\mscorlib.dll.mdb
+C:\Users\INSITE\Documents\Visual Studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\System.ComponentModel.Composition.dll.mdb
+C:\Users\INSITE\Documents\Visual Studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\System.Core.dll.mdb
+C:\Users\INSITE\Documents\Visual Studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\System.dll.mdb
+C:\Users\INSITE\Documents\Visual Studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\System.Net.Http.dll.mdb
+C:\Users\INSITE\Documents\Visual Studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\System.Runtime.Serialization.dll.mdb
+C:\Users\INSITE\Documents\Visual Studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\System.ServiceModel.Internals.dll.mdb
+C:\Users\INSITE\Documents\Visual Studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\System.Xml.dll.mdb
+C:\Users\INSITE\Documents\Visual Studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\System.Xml.Linq.dll.mdb
+C:\Users\INSITE\Documents\Visual Studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\android\assets\Etl_Analytics_Mobile_Version_01.dll.mdb
+C:\Users\INSITE\Documents\Visual Studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\android\assets\Java.Interop.dll.mdb
+C:\Users\INSITE\Documents\Visual Studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\android\assets\Microsoft.CSharp.dll.mdb
+C:\Users\INSITE\Documents\Visual Studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\android\assets\Mono.Android.dll.mdb
+C:\Users\INSITE\Documents\Visual Studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\android\assets\Mono.CSharp.dll.mdb
+C:\Users\INSITE\Documents\Visual Studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\android\assets\mscorlib.dll.mdb
+C:\Users\INSITE\Documents\Visual Studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\android\assets\System.ComponentModel.Composition.dll.mdb
+C:\Users\INSITE\Documents\Visual Studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\android\assets\System.Core.dll.mdb
+C:\Users\INSITE\Documents\Visual Studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\android\assets\System.dll.mdb
+C:\Users\INSITE\Documents\Visual Studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\android\assets\System.Net.Http.dll.mdb
+C:\Users\INSITE\Documents\Visual Studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\android\assets\System.Runtime.Serialization.dll.mdb
+C:\Users\INSITE\Documents\Visual Studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\android\assets\System.ServiceModel.Internals.dll.mdb
+C:\Users\INSITE\Documents\Visual Studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\android\assets\System.Xml.dll.mdb
+C:\Users\INSITE\Documents\Visual Studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
+C:\Users\INSITE\Documents\Visual Studio 2015\Projects\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\Etl_Analytics_Mobile_Version_01.dll.mdb
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\Etl_Analytics_Mobile_Version_01.dll
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\Etl_Analytics_Mobile_Version_01.pdb
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.apk
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01-Signed.apk
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\Newtonsoft.Json.dll
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\RestSharp.dll
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\Xamarin.Android.Support.Animated.Vector.Drawable.dll
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\Xamarin.Android.Support.v4.dll
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\Xamarin.Android.Support.v7.AppCompat.dll
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\Xamarin.Android.Support.Vector.Drawable.dll
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\Newtonsoft.Json.xml
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\RestSharp.xml
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\Etl_Analytics_Mobile_Version_01.csprojResolveAssemblyReference.cache
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\Etl_Analytics_Mobile_Version_01.dll
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\Etl_Analytics_Mobile_Version_01.pdb
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\android\bin\Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.apk
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\layout\logtable.xml
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\layout\signindialog.xml
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\values\styles.xml
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\layout\gridviewpage.xml
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\layout\mainpage.xml
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\layout\configurationcolumns.xml
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\layout\login.xml
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\values\strings.xml
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\drawable\icon.png
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\drawable\buttonloginstyle.xml
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\drawable\buttonsigninstyle.xml
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\drawable\progressbarstyle.xml
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\drawable\signindialogstyle.xml
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\anim\sliderightanimation.xml
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\anim\slideupanimation.xml
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\drawable\location.png
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\drawable\note.png
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\drawable\sound.png
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\drawable\list.png
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\values-v21\style.xml
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\R.cs.flag
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\uploadflags.txt
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\layout\logtablerow.xml
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\layout\logtabletry.xml
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\layout\logtablegroupitem.xml
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\Etl_Analytics_Mobile_Version_01.dll.mdb
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\Java.Interop.dll.mdb
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\Microsoft.CSharp.dll.mdb
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\Mono.Android.dll.mdb
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\Mono.CSharp.dll.mdb
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\mscorlib.dll.mdb
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\System.ComponentModel.Composition.dll.mdb
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\System.Core.dll.mdb
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\System.dll.mdb
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\System.Net.Http.dll.mdb
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\System.Runtime.Serialization.dll.mdb
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\System.ServiceModel.Internals.dll.mdb
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\System.Xml.dll.mdb
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\System.Xml.Linq.dll.mdb
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\android\assets\Etl_Analytics_Mobile_Version_01.dll.mdb
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\android\assets\Java.Interop.dll.mdb
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\android\assets\Microsoft.CSharp.dll.mdb
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\android\assets\Mono.Android.dll.mdb
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\android\assets\Mono.CSharp.dll.mdb
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\android\assets\mscorlib.dll.mdb
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\android\assets\System.ComponentModel.Composition.dll.mdb
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\android\assets\System.Core.dll.mdb
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\android\assets\System.dll.mdb
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\android\assets\System.Net.Http.dll.mdb
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\android\assets\System.Runtime.Serialization.dll.mdb
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\android\assets\System.ServiceModel.Internals.dll.mdb
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\android\assets\System.Xml.dll.mdb
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\Etl_Analytics_Mobile_Version_01.dll.mdb
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\Etl_Analytics_Mobile_Version_01.dll.mdb
