@@ -3,7 +3,7 @@
   <xs:import schemaLocation="schemas.android.com.apk.res.android.xsd" namespace="http://schemas.android.com/apk/res/android" />
   <xs:annotation>
     <xs:documentation>v23</xs:documentation>
-    <xs:documentation>9.12.2016. 17:41:21</xs:documentation>
+    <xs:documentation>12.12.2016. 15:15:38</xs:documentation>
   </xs:annotation>
   <xs:group name="any-view">
     <xs:choice>
@@ -112,6 +112,8 @@
       <xs:element ref="android.support.v7.widget.Toolbar" />
       <xs:element ref="android.support.v7.view.menu.ExpandedMenuView" />
       <xs:element ref="android.support.v7.view.menu.ListMenuItemView" />
+      <xs:element ref="Etl_Analytics_Mobile_Version_01.Class.SlidingTabScrollView" />
+      <xs:element ref="Etl_Analytics_Mobile_Version_01.Class.SlidingTabStrip" />
     </xs:choice>
   </xs:group>
   <xs:element name="CheckBox" type="CheckBox">
@@ -1784,6 +1786,26 @@
     </xs:annotation>
   </xs:element>
   <xs:complexType name="android.support.v7.view.menu.ListMenuItemView">
+    <xs:complexContent mixed="false">
+      <xs:extension base="LinearLayout" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Etl_Analytics_Mobile_Version_01.Class.SlidingTabScrollView" type="Etl_Analytics_Mobile_Version_01.Class.SlidingTabScrollView">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Etl_Analytics_Mobile_Version_01.Class.SlidingTabScrollView</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="Etl_Analytics_Mobile_Version_01.Class.SlidingTabScrollView">
+    <xs:complexContent mixed="false">
+      <xs:extension base="HorizontalScrollView" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Etl_Analytics_Mobile_Version_01.Class.SlidingTabStrip" type="Etl_Analytics_Mobile_Version_01.Class.SlidingTabStrip">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Etl_Analytics_Mobile_Version_01.Class.SlidingTabStrip</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="Etl_Analytics_Mobile_Version_01.Class.SlidingTabStrip">
     <xs:complexContent mixed="false">
       <xs:extension base="LinearLayout" />
     </xs:complexContent>

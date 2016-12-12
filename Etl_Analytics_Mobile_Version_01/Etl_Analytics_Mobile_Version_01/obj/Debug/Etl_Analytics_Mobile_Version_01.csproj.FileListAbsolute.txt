@@ -80,7 +80,6 @@ C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Versi
 C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\Etl_Analytics_Mobile_Version_01.dll
 C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\Etl_Analytics_Mobile_Version_01.pdb
 C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\android\bin\Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.apk
-C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\layout\logtable.xml
 C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\layout\signindialog.xml
 C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\values\styles.xml
 C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\layout\gridviewpage.xml
@@ -103,7 +102,6 @@ C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Versi
 C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\R.cs.flag
 C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\uploadflags.txt
 C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\layout\logtablerow.xml
-C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\layout\logtabletry.xml
 C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\layout\logtablegroupitem.xml
 C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\Etl_Analytics_Mobile_Version_01.dll.mdb
 C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\Java.Interop.dll.mdb
@@ -133,5 +131,13 @@ C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Versi
 C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\android\assets\System.ServiceModel.Internals.dll.mdb
 C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\android\assets\System.Xml.dll.mdb
 C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\layout\fragment_sample.xml
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\layout\pager_item.xml
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\layout\slidingbar.xml
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\menu\actionbar_main.xml
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\drawable\ic_action_overflow.png
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\drawable\xs.png
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\values\themes.xml
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\layout\logtable.xml
 C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\Etl_Analytics_Mobile_Version_01.dll.mdb
 C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\Etl_Analytics_Mobile_Version_01.dll.mdb

@@ -9,22 +9,24 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Etl_Analytics_Mobile_Version_01.Class;
 using Android.Support.V7.App;
+using Etl_Analytics_Mobile_Version_01.Class.Table_Constructor;
 using Android.Support.V4.Widget;
 using SupportToolbar = Android.Support.V7.Widget.Toolbar;
-using Etl_Analytics_Mobile_Version_01.Class;
-using Etl_Analytics_Mobile_Version_01.Class.Table_Constructor;
+
 
 namespace Etl_Analytics_Mobile_Version_01.AllActivity
 {
-    [Activity(Label = "LogTableAct", MainLauncher = true, Icon = "@drawable/icon", Theme = "@style/MyTheme2")]
+    [Activity(Label = "Log table", MainLauncher = true, Icon = "@drawable/icon", Theme = "@style/MyTheme3")]
     public class LogTableAct : ActionBarActivity
     {
-        private List<string> myList;
-        private List<LogTable> logTable;
-        private ListView myListView;
-        private WebService webService;
-        private List<ColumnName> columnNameList;
+        ExpandableListViewAdapter mAdapter;
+        ExpandableListView expandableListView;
+        List<string> group = new List<string>();
+        Dictionary<string, List<string>> dicMyMap = new Dictionary<string, List<string>>();
+        WebService webService;
+        List<LogTable> logTable;
 
         private SupportToolbar suppToolbar;
         private MyActionBarDrawerToggle drawerToogle;
@@ -32,16 +34,20 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
         private ListView viewDrawer;
         List<string> listDrawer;
         ArrayAdapter adapterDrawer;
-
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
             SetContentView(Resource.Layout.LogTable);
-
             suppToolbar = FindViewById<SupportToolbar>(Resource.Id.toolbar);
             drawerLayout = FindViewById<DrawerLayout>(Resource.Id.Drawer);
             viewDrawer = FindViewById<ListView>(Resource.Id.ListView);
+            expandableListView = FindViewById<ExpandableListView>(Resource.Id.expendableListView);
+
+            SetData(out mAdapter);
+            expandableListView.SetAdapter(mAdapter);
+
+            
 
             listDrawer = new List<string>();
             listDrawer.Add("Log table");
@@ -58,61 +64,40 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
 
             drawerToogle = new MyActionBarDrawerToggle(this /*host*/, drawerLayout, Resource.String.open_drawer, Resource.String.close_drawer);
 
-            drawerLayout.SetDrawerListener(drawerToogle);
             SupportActionBar.SetHomeButtonEnabled(true);
             SupportActionBar.SetDisplayShowTitleEnabled(true);
             drawerToogle.SyncState();
-
-            //CreateListOfData();
-
         }
 
-        public override bool OnOptionsItemSelected(IMenuItem item)
+        public override bool OnCreateOptionsMenu(IMenu menu)
         {
-            drawerToogle.OnOptionsItemSelected(item);
-            return base.OnOptionsItemSelected(item);
+            MenuInflater.Inflate(Resource.Menu.actionbar_main, menu);
+            return base.OnCreateOptionsMenu(menu);
         }
 
-        public void DoThis()
+        private void SetData(out ExpandableListViewAdapter mAdapter)
         {
             webService = new WebService();
+            logTable = new List<LogTable>();
             logTable = webService.GetAllDataLogTable();
+            int counter = 0;
 
-            columnNameList = GetColumnNames();
-
-            myListView = FindViewById<ListView>(Resource.Id.listViewTable);
-            myList = new List<string>();
-
-            //foreach (LogTable row in logTable)
-            //{
-            //    foreach (ColumnName columnName in columnNameList)
-            //    {
-            //        myList.Add(columnName.COLUMN_NAME);
-            //        myList.Add(row.);
-            //    }
-            //}
-
-
-
-            foreach (LogTable nesto in logTable)
+            foreach (LogTable row in logTable)
             {
-                myList.Add(nesto.LOG_ID.ToString());
+                List<string> groupA = new List<string>();
+                group.Add((counter + 1).ToString() + " " + row.PROCEDURE_NAME.ToString() + " " + row.DATE_TIME.ToString() + " " + row.ACTION.ToString()); ;
+                groupA.Add(" Id procedure: " + row.PROCEDURE_ID.ToString());
+                //groupA.Add(" Ime procedure: " + row.PROCEDURE_NAME.ToString());
+                if (row.ERROR_DESCRIPTION != null)
+                {
+                    groupA.Add(" Error: " + row.ERROR_DESCRIPTION);
+                }             
+
+                dicMyMap.Add(group[counter], groupA);
+                counter++;
             }
 
-            ArrayAdapter<string> arrayAdapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, myList);
-
-            myListView.Adapter = arrayAdapter;
-        }
-
-        public List<ColumnName> GetColumnNames()
-        {
-            webService = new WebService();
-            string table_name = "V_LOG_TABLE";
-
-            logTable = webService.GetAllDataLogTable();
-            columnNameList = webService.GetAllColumnNames(table_name);
-
-            return columnNameList;
+            mAdapter = new ExpandableListViewAdapter(this, group, dicMyMap);
 
         }
     }

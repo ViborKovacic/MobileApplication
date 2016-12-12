@@ -11,19 +11,19 @@
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
-    <activity android:icon="@drawable/icon" android:label="LogTableAct" android:theme="@style/MyTheme2" android:name="md5c061d5b67b2bf180a74fe23549602373.LogTableAct">
-      <intent-filter>
-        <action android:name="android.intent.action.MAIN" />
-        <category android:name="android.intent.category.LAUNCHER" />
-      </intent-filter>
-    </activity>
-    <activity android:icon="@drawable/icon" android:label="LogTableActAdapterHelp" android:theme="@style/MyTheme3" android:name="md5c061d5b67b2bf180a74fe23549602373.LogTableActAdapterHelp">
+    <activity android:icon="@drawable/icon" android:label="Log table" android:theme="@style/MyTheme3" android:name="md5c061d5b67b2bf180a74fe23549602373.LogTableAct">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
     <activity android:icon="@drawable/icon" android:label="MainPageAct" android:theme="@style/MyTheme2" android:name="md5c061d5b67b2bf180a74fe23549602373.MainPageAct">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:icon="@drawable/xs" android:label="SlidingTabAct" android:name="md5c061d5b67b2bf180a74fe23549602373.SlidingTabAct">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

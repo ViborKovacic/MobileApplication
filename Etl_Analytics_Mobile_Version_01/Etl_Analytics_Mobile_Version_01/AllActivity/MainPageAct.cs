@@ -63,18 +63,20 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
             CustomGridViewAdapter adapter = new CustomGridViewAdapter(this, gridViewString, imageId);
             gridView = FindViewById<GridView>(Resource.Id.grid_view_image_text);
             gridView.Adapter = adapter;
+
             gridView.ItemClick += (s, ed) =>
             {
                 Toast.MakeText(this, "Open: " + gridViewString[ed.Position], ToastLength.Short).Show();
                 //Opening LogTable list
                 if ("Log table" == gridViewString[ed.Position])
                 {
-                    Intent intent = new Intent(this, typeof(LogTableActAdapterHelp));
+                    Intent intent = new Intent(this, typeof(LogTableAct));
                     this.StartActivity(intent);
                 }
-                else if ("Configuration columns" == gridViewString[ed.Position])
+                else if ("Configuration table" == gridViewString[ed.Position])
                 {
-                    SetContentView(Resource.Layout.ConfigurationColumns);
+                    Intent intent = new Intent(this, typeof(SlidingTabAct));
+                    this.StartActivity(intent);
                 }
 
             };

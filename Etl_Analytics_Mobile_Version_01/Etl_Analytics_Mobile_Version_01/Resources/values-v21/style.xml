@@ -26,10 +26,13 @@
   </style>
 
   <style name="MyTheme3" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="colorPrimary">#00897B</item>
+    <item name="drawerArrowStyle">@style/MyDrawerArrowStyle</item>
     <item name="android:windowContentTransitions">true</item>
     <item name="android:windowAllowEnterTransitionOverlap">true</item>
     <item name="android:windowAllowReturnTransitionOverlap">true</item>
     <item name="android:windowSharedElementEnterTransition">@android:transition/move</item>
     <item name="android:windowSharedElementExitTransition">@android:transition/move</item>
+    <item name="drawerArrowStyle">@style/MyDrawerArrowStyle</item>
   </style>
 </resources>
