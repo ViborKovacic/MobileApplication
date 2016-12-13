@@ -89,6 +89,7 @@
     <Compile Include="Class\ExpandableListViewAdapter.cs" />
     <Compile Include="Class\MyActionBarDrawerToggle.cs" />
     <Compile Include="Class\DialogSignIn.cs" />
+    <Compile Include="Class\MyAnimation.cs" />
     <Compile Include="Class\OnSignUpEventArgs.cs" />
     <Compile Include="Class\SlidingTabScrollView.cs" />
     <Compile Include="Class\SlidingTabsFragment.cs" />
@@ -197,7 +198,9 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\menu\actionbar_main.xml" />
+    <AndroidResource Include="Resources\menu\actionbar_main.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\ic_action_overflow.png" />
@@ -207,6 +210,12 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\themes.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_action_search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\menu\actionbar.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets')" />

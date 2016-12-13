@@ -13,7 +13,7 @@ namespace Etl_Analytics_Mobile_Version_01.Class
     {
         private SlidingTabScrollView mSlidingTabScrollView;
         private ViewPager mViewPager;
-
+        
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             return inflater.Inflate(Resource.Layout.fragment_sample, container, false);
@@ -63,7 +63,8 @@ namespace Etl_Analytics_Mobile_Version_01.Class
                 {
                     ExpandableListViewAdapter mAdapter;
                     ExpandableListView expandableListView;
-                    List<string> group = new List<string>();
+
+                    List<string> headerOfList = new List<string>();
                     Dictionary<string, List<string>> dicMyMap = new Dictionary<string, List<string>>();
                     WebService webService;
                     List<LogTable> logTable;
@@ -77,21 +78,21 @@ namespace Etl_Analytics_Mobile_Version_01.Class
 
                     foreach (LogTable row in logTable)
                     {
-                        List<string> groupA = new List<string>();
-                        group.Add((counter + 1).ToString() + " " + row.PROCEDURE_NAME.ToString() + " " + row.DATE_TIME.ToString() + " " + row.ACTION.ToString()); ;
-                        groupA.Add(" Id procedure: " + row.PROCEDURE_ID.ToString());
+                        List<string> listItem = new List<string>();
+                        headerOfList.Add((counter + 1).ToString() + " " + row.PROCEDURE_NAME.ToString() + " " + row.DATE_TIME.ToString() + " " + row.ACTION.ToString()); ;
+                        listItem.Add(" Id procedure: " + row.PROCEDURE_ID.ToString());
                         //groupA.Add(" Ime procedure: " + row.PROCEDURE_NAME.ToString());
                         if (row.ERROR_DESCRIPTION != null)
                         {
-                            groupA.Add(" Error: " + row.ERROR_DESCRIPTION);
+                            listItem.Add(" Error: " + row.ERROR_DESCRIPTION);
                         }
 
-                        dicMyMap.Add(group[counter], groupA);
+                        dicMyMap.Add(headerOfList[counter], listItem);
                         counter++;
                     }
 
 
-                    mAdapter = new ExpandableListViewAdapter(container.Context, group, dicMyMap);
+                    mAdapter = new ExpandableListViewAdapter(container.Context, headerOfList, dicMyMap);
                     expandableListView.SetAdapter(mAdapter);
                 }
                 else if (position == 2)

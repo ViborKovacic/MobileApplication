@@ -1709,16 +1709,17 @@ containing a value of this type.
         public static final int buttonloginstyle=0x7f02004b;
         public static final int buttonsigninstyle=0x7f02004c;
         public static final int ic_action_overflow=0x7f02004d;
-        public static final int icon=0x7f02004e;
-        public static final int list=0x7f02004f;
-        public static final int location=0x7f020050;
-        public static final int note=0x7f020051;
-        public static final int notification_template_icon_bg=0x7f020057;
-        public static final int pagerslidingtabstrip_background_tab=0x7f020052;
-        public static final int progressbarstyle=0x7f020053;
-        public static final int signindialogstyle=0x7f020054;
-        public static final int sound=0x7f020055;
-        public static final int xs=0x7f020056;
+        public static final int ic_action_search=0x7f02004e;
+        public static final int icon=0x7f02004f;
+        public static final int list=0x7f020050;
+        public static final int location=0x7f020051;
+        public static final int note=0x7f020052;
+        public static final int notification_template_icon_bg=0x7f020058;
+        public static final int pagerslidingtabstrip_background_tab=0x7f020053;
+        public static final int progressbarstyle=0x7f020054;
+        public static final int signindialogstyle=0x7f020055;
+        public static final int sound=0x7f020056;
+        public static final int xs=0x7f020057;
     }
     public static final class id {
         public static final int Drawer=0x7f0b0063;
@@ -1762,6 +1763,7 @@ containing a value of this type.
         public static final int edit_query=0x7f0b0043;
         public static final int end=0x7f0b001a;
         public static final int end_padder=0x7f0b0076;
+        public static final int etSearch=0x7f0b007f;
         public static final int expand_activities_button=0x7f0b0025;
         public static final int expanded_menu=0x7f0b0038;
         public static final int expendableListView=0x7f0b0065;
@@ -1778,8 +1780,9 @@ containing a value of this type.
         public static final int line3=0x7f0b0073;
         public static final int listMode=0x7f0b0009;
         public static final int list_item=0x7f0b0028;
+        public static final int llContainer=0x7f0b007c;
         public static final int media_actions=0x7f0b006d;
-        public static final int menu=0x7f0b007d;
+        public static final int menu=0x7f0b0081;
         public static final int middle=0x7f0b001b;
         public static final int multiply=0x7f0b0014;
         public static final int never=0x7f0b001f;
@@ -1790,12 +1793,13 @@ containing a value of this type.
         public static final int progress_circular=0x7f0b0005;
         public static final int progress_horizontal=0x7f0b0006;
         public static final int radio=0x7f0b003b;
-        public static final int sample_content_fragment=0x7f0b007c;
+        public static final int sample_content_fragment=0x7f0b007e;
         public static final int sample_main_layout=0x7f0b007b;
         public static final int screen=0x7f0b0015;
         public static final int scrollIndicatorDown=0x7f0b0035;
         public static final int scrollIndicatorUp=0x7f0b0032;
         public static final int scrollView=0x7f0b0033;
+        public static final int search=0x7f0b0080;
         public static final int search_badge=0x7f0b0045;
         public static final int search_bar=0x7f0b0044;
         public static final int search_button=0x7f0b0046;
@@ -1844,6 +1848,7 @@ containing a value of this type.
         public static final int txtUserName=0x7f0b0059;
         public static final int up=0x7f0b0008;
         public static final int useLogo=0x7f0b0012;
+        public static final int viewId=0x7f0b007d;
         public static final int viewpager=0x7f0b0051;
         public static final int withText=0x7f0b0020;
         public static final int wrap_content=0x7f0b0013;
@@ -1907,7 +1912,8 @@ containing a value of this type.
         public static final int support_simple_spinner_dropdown_item=0x7f030030;
     }
     public static final class menu {
-        public static final int actionbar_main=0x7f0c0000;
+        public static final int actionbar=0x7f0c0000;
+        public static final int actionbar_main=0x7f0c0001;
     }
     public static final class string {
         public static final int ApplicationName=0x7f050015;
