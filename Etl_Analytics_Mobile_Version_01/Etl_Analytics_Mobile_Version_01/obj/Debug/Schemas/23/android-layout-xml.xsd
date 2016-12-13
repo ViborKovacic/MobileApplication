@@ -3,7 +3,7 @@
   <xs:import schemaLocation="schemas.android.com.apk.res.android.xsd" namespace="http://schemas.android.com/apk/res/android" />
   <xs:annotation>
     <xs:documentation>v23</xs:documentation>
-    <xs:documentation>12.12.2016. 15:15:38</xs:documentation>
+    <xs:documentation>13.12.2016. 10:26:24</xs:documentation>
   </xs:annotation>
   <xs:group name="any-view">
     <xs:choice>
@@ -80,6 +80,7 @@
       <xs:element ref="HorizontalScrollView" />
       <xs:element ref="SearchView" />
       <xs:element ref="fragment" />
+      <xs:element ref="PagerSlidingTabStrip.PagerSlidingTabStrip" />
       <xs:element ref="android.support.v4.widget.Space" />
       <xs:element ref="android.support.v4.widget.SlidingPaneLayout" />
       <xs:element ref="android.support.v4.widget.DrawerLayout" />
@@ -112,8 +113,8 @@
       <xs:element ref="android.support.v7.widget.Toolbar" />
       <xs:element ref="android.support.v7.view.menu.ExpandedMenuView" />
       <xs:element ref="android.support.v7.view.menu.ListMenuItemView" />
-      <xs:element ref="Etl_Analytics_Mobile_Version_01.Class.SlidingTabScrollView" />
       <xs:element ref="Etl_Analytics_Mobile_Version_01.Class.SlidingTabStrip" />
+      <xs:element ref="Etl_Analytics_Mobile_Version_01.Class.SlidingTabScrollView" />
     </xs:choice>
   </xs:group>
   <xs:element name="CheckBox" type="CheckBox">
@@ -1407,6 +1408,16 @@
     <xs:attribute ref="android:layout_marginEnd" />
     <xs:attribute ref="android:style" />
   </xs:complexType>
+  <xs:element name="PagerSlidingTabStrip.PagerSlidingTabStrip" type="PagerSlidingTabStrip.PagerSlidingTabStrip">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: PagerSlidingTabStrip.PagerSlidingTabStrip</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="PagerSlidingTabStrip.PagerSlidingTabStrip">
+    <xs:complexContent mixed="false">
+      <xs:extension base="HorizontalScrollView" />
+    </xs:complexContent>
+  </xs:complexType>
   <xs:element name="android.support.v4.widget.Space" type="android.support.v4.widget.Space">
     <xs:annotation>
       <xs:documentation>Runtime Type: Android.Support.V4.Widget.Space</xs:documentation>
@@ -1790,16 +1801,6 @@
       <xs:extension base="LinearLayout" />
     </xs:complexContent>
   </xs:complexType>
-  <xs:element name="Etl_Analytics_Mobile_Version_01.Class.SlidingTabScrollView" type="Etl_Analytics_Mobile_Version_01.Class.SlidingTabScrollView">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Etl_Analytics_Mobile_Version_01.Class.SlidingTabScrollView</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="Etl_Analytics_Mobile_Version_01.Class.SlidingTabScrollView">
-    <xs:complexContent mixed="false">
-      <xs:extension base="HorizontalScrollView" />
-    </xs:complexContent>
-  </xs:complexType>
   <xs:element name="Etl_Analytics_Mobile_Version_01.Class.SlidingTabStrip" type="Etl_Analytics_Mobile_Version_01.Class.SlidingTabStrip">
     <xs:annotation>
       <xs:documentation>Runtime Type: Etl_Analytics_Mobile_Version_01.Class.SlidingTabStrip</xs:documentation>
@@ -1808,6 +1809,16 @@
   <xs:complexType name="Etl_Analytics_Mobile_Version_01.Class.SlidingTabStrip">
     <xs:complexContent mixed="false">
       <xs:extension base="LinearLayout" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Etl_Analytics_Mobile_Version_01.Class.SlidingTabScrollView" type="Etl_Analytics_Mobile_Version_01.Class.SlidingTabScrollView">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Etl_Analytics_Mobile_Version_01.Class.SlidingTabScrollView</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="Etl_Analytics_Mobile_Version_01.Class.SlidingTabScrollView">
+    <xs:complexContent mixed="false">
+      <xs:extension base="HorizontalScrollView" />
     </xs:complexContent>
   </xs:complexType>
 </xs:schema>

@@ -5,6 +5,7 @@ using Android.OS;
 using Android.Views;
 using Android.Widget;
 using Android.Support.V4.View;
+using Etl_Analytics_Mobile_Version_01.Class.Table_Constructor;
 
 namespace Etl_Analytics_Mobile_Version_01.Class
 {
@@ -53,9 +54,51 @@ namespace Etl_Analytics_Mobile_Version_01.Class
                 View view = LayoutInflater.From(container.Context).Inflate(Resource.Layout.pager_item, container, false);
                 container.AddView(view);
 
-                //TextView txtTitle = view.FindViewById<TextView>(Resource.Id.item_title);
-                //int pos = position + 1;
-                //txtTitle.Text = pos.ToString();
+                if (position == 0)
+                {
+                    //First slide
+                    view = null;
+                } 
+                else if (position == 1)
+                {
+                    ExpandableListViewAdapter mAdapter;
+                    ExpandableListView expandableListView;
+                    List<string> group = new List<string>();
+                    Dictionary<string, List<string>> dicMyMap = new Dictionary<string, List<string>>();
+                    WebService webService;
+                    List<LogTable> logTable;
+
+                    expandableListView = view.FindViewById<ExpandableListView>(Resource.Id.expendableListView);
+
+                    webService = new WebService();
+                    logTable = new List<LogTable>();
+                    logTable = webService.GetAllDataLogTable();
+                    int counter = 0;
+
+                    foreach (LogTable row in logTable)
+                    {
+                        List<string> groupA = new List<string>();
+                        group.Add((counter + 1).ToString() + " " + row.PROCEDURE_NAME.ToString() + " " + row.DATE_TIME.ToString() + " " + row.ACTION.ToString()); ;
+                        groupA.Add(" Id procedure: " + row.PROCEDURE_ID.ToString());
+                        //groupA.Add(" Ime procedure: " + row.PROCEDURE_NAME.ToString());
+                        if (row.ERROR_DESCRIPTION != null)
+                        {
+                            groupA.Add(" Error: " + row.ERROR_DESCRIPTION);
+                        }
+
+                        dicMyMap.Add(group[counter], groupA);
+                        counter++;
+                    }
+
+
+                    mAdapter = new ExpandableListViewAdapter(container.Context, group, dicMyMap);
+                    expandableListView.SetAdapter(mAdapter);
+                }
+                else if (position == 2)
+                {
+                    //third slide
+                    view = null;
+                }
 
                 return view;
             }

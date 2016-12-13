@@ -13,7 +13,7 @@ using Etl_Analytics_Mobile_Version_01.Class;
 
 namespace Etl_Analytics_Mobile_Version_01.AllActivity
 {
-    [Activity(Label = "SlidingTabAct", MainLauncher = true, Icon = "@drawable/xs")]
+    [Activity(Label = "Log table", MainLauncher = true, Icon = "@drawable/xs")]
     public class SlidingTabAct : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)

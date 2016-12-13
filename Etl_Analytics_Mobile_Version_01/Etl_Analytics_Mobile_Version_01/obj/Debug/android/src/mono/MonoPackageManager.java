@@ -99,7 +99,9 @@ class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		/* We need to ensure that "Etl_Analytics_Mobile_Version_01.dll" comes first in this list. */
 		"Etl_Analytics_Mobile_Version_01.dll",
+		"Mono.Android.Export.dll",
 		"Newtonsoft.Json.dll",
+		"PagerSlidingTabStrip.dll",
 		"RestSharp.dll",
 		"Xamarin.Android.Support.Animated.Vector.Drawable.dll",
 		"Xamarin.Android.Support.v4.dll",

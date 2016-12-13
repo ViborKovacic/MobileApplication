@@ -139,5 +139,9 @@ C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Versi
 C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\drawable\xs.png
 C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\values\themes.xml
 C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\layout\logtable.xml
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\PagerSlidingTabStrip.dll
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\PagerSlidingTabStrip.xml
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\Mono.Android.Export.dll.mdb
+C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\android\assets\Mono.Android.Export.dll.mdb
 C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\Etl_Analytics_Mobile_Version_01.dll.mdb
 C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\Etl_Analytics_Mobile_Version_01.dll.mdb

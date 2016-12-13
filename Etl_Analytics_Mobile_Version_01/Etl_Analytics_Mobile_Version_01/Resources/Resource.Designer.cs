@@ -26,6 +26,34 @@ namespace Etl_Analytics_Mobile_Version_01
 		
 		public static void UpdateIdValues()
 		{
+			global::PagerSlidingTabStrip.Resource.Attribute.dividerColor = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.dividerColor;
+			global::PagerSlidingTabStrip.Resource.Attribute.indicatorColor = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.indicatorColor;
+			global::PagerSlidingTabStrip.Resource.Attribute.indicatorHeight = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.indicatorHeight;
+			global::PagerSlidingTabStrip.Resource.Attribute.scrollOffset = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.scrollOffset;
+			global::PagerSlidingTabStrip.Resource.Attribute.shouldExpand = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.shouldExpand;
+			global::PagerSlidingTabStrip.Resource.Attribute.tabBackground = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.tabBackground;
+			global::PagerSlidingTabStrip.Resource.Attribute.tabDividerPadding = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.tabDividerPadding;
+			global::PagerSlidingTabStrip.Resource.Attribute.tabPaddingLeftRight = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.tabPaddingLeftRight;
+			global::PagerSlidingTabStrip.Resource.Attribute.tabTextAllCaps = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.tabTextAllCaps;
+			global::PagerSlidingTabStrip.Resource.Attribute.underlineColor = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.underlineColor;
+			global::PagerSlidingTabStrip.Resource.Attribute.underlineHeight = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.underlineHeight;
+			global::PagerSlidingTabStrip.Resource.Color.background_tab_pressed = global::Etl_Analytics_Mobile_Version_01.Resource.Color.background_tab_pressed;
+			global::PagerSlidingTabStrip.Resource.Drawable.pagerslidingtabstrip_background_tab = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.pagerslidingtabstrip_background_tab;
+			global::PagerSlidingTabStrip.Resource.Layout.pagerslidingtabstrip_texttab = global::Etl_Analytics_Mobile_Version_01.Resource.Layout.pagerslidingtabstrip_texttab;
+			global::PagerSlidingTabStrip.Resource.String.ApplicationName = global::Etl_Analytics_Mobile_Version_01.Resource.String.ApplicationName;
+			global::PagerSlidingTabStrip.Resource.String.Hello = global::Etl_Analytics_Mobile_Version_01.Resource.String.Hello;
+			global::PagerSlidingTabStrip.Resource.Styleable.PagerSlidingTabStrip = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.PagerSlidingTabStrip;
+			global::PagerSlidingTabStrip.Resource.Styleable.PagerSlidingTabStrip_dividerColor = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.PagerSlidingTabStrip_dividerColor;
+			global::PagerSlidingTabStrip.Resource.Styleable.PagerSlidingTabStrip_indicatorColor = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.PagerSlidingTabStrip_indicatorColor;
+			global::PagerSlidingTabStrip.Resource.Styleable.PagerSlidingTabStrip_indicatorHeight = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.PagerSlidingTabStrip_indicatorHeight;
+			global::PagerSlidingTabStrip.Resource.Styleable.PagerSlidingTabStrip_scrollOffset = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.PagerSlidingTabStrip_scrollOffset;
+			global::PagerSlidingTabStrip.Resource.Styleable.PagerSlidingTabStrip_shouldExpand = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.PagerSlidingTabStrip_shouldExpand;
+			global::PagerSlidingTabStrip.Resource.Styleable.PagerSlidingTabStrip_tabBackground = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.PagerSlidingTabStrip_tabBackground;
+			global::PagerSlidingTabStrip.Resource.Styleable.PagerSlidingTabStrip_tabDividerPadding = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.PagerSlidingTabStrip_tabDividerPadding;
+			global::PagerSlidingTabStrip.Resource.Styleable.PagerSlidingTabStrip_tabPaddingLeftRight = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.PagerSlidingTabStrip_tabPaddingLeftRight;
+			global::PagerSlidingTabStrip.Resource.Styleable.PagerSlidingTabStrip_tabTextAllCaps = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.PagerSlidingTabStrip_tabTextAllCaps;
+			global::PagerSlidingTabStrip.Resource.Styleable.PagerSlidingTabStrip_underlineColor = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.PagerSlidingTabStrip_underlineColor;
+			global::PagerSlidingTabStrip.Resource.Styleable.PagerSlidingTabStrip_underlineHeight = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.PagerSlidingTabStrip_underlineHeight;
 		}
 		
 		public partial class Animation
@@ -338,6 +366,9 @@ namespace Etl_Analytics_Mobile_Version_01
 			// aapt resource value: 0x7f01000b
 			public const int divider = 2130771979;
 			
+			// aapt resource value: 0x7f0100d3
+			public const int dividerColor = 2130772179;
+			
 			// aapt resource value: 0x7f01005c
 			public const int dividerHorizontal = 2130772060;
 			
@@ -403,6 +434,12 @@ namespace Etl_Analytics_Mobile_Version_01
 			
 			// aapt resource value: 0x7f010012
 			public const int indeterminateProgressStyle = 2130771986;
+			
+			// aapt resource value: 0x7f0100d1
+			public const int indicatorColor = 2130772177;
+			
+			// aapt resource value: 0x7f0100d4
+			public const int indicatorHeight = 2130772180;
 			
 			// aapt resource value: 0x7f01001d
 			public const int initialActivityCount = 2130771997;
@@ -524,6 +561,9 @@ namespace Etl_Analytics_Mobile_Version_01
 			// aapt resource value: 0x7f010090
 			public const int ratingBarStyleSmall = 2130772112;
 			
+			// aapt resource value: 0x7f0100d8
+			public const int scrollOffset = 2130772184;
+			
 			// aapt resource value: 0x7f0100b0
 			public const int searchHintIcon = 2130772144;
 			
@@ -541,6 +581,9 @@ namespace Etl_Analytics_Mobile_Version_01
 			
 			// aapt resource value: 0x7f010059
 			public const int selectableItemBackgroundBorderless = 2130772057;
+			
+			// aapt resource value: 0x7f0100da
+			public const int shouldExpand = 2130772186;
 			
 			// aapt resource value: 0x7f0100a2
 			public const int showAsAction = 2130772130;
@@ -601,6 +644,18 @@ namespace Etl_Analytics_Mobile_Version_01
 			
 			// aapt resource value: 0x7f0100b8
 			public const int switchTextAppearance = 2130772152;
+			
+			// aapt resource value: 0x7f0100d9
+			public const int tabBackground = 2130772185;
+			
+			// aapt resource value: 0x7f0100d6
+			public const int tabDividerPadding = 2130772182;
+			
+			// aapt resource value: 0x7f0100d7
+			public const int tabPaddingLeftRight = 2130772183;
+			
+			// aapt resource value: 0x7f0100db
+			public const int tabTextAllCaps = 2130772187;
 			
 			// aapt resource value: 0x7f010025
 			public const int textAllCaps = 2130772005;
@@ -673,6 +728,12 @@ namespace Etl_Analytics_Mobile_Version_01
 			
 			// aapt resource value: 0x7f0100b6
 			public const int track = 2130772150;
+			
+			// aapt resource value: 0x7f0100d2
+			public const int underlineColor = 2130772178;
+			
+			// aapt resource value: 0x7f0100d5
+			public const int underlineHeight = 2130772181;
 			
 			// aapt resource value: 0x7f0100b1
 			public const int voiceIcon = 2130772145;
@@ -757,32 +818,32 @@ namespace Etl_Analytics_Mobile_Version_01
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f0a003a
-			public const int abc_background_cache_hint_selector_material_dark = 2131361850;
-			
 			// aapt resource value: 0x7f0a003b
-			public const int abc_background_cache_hint_selector_material_light = 2131361851;
+			public const int abc_background_cache_hint_selector_material_dark = 2131361851;
 			
 			// aapt resource value: 0x7f0a003c
-			public const int abc_color_highlight_material = 2131361852;
+			public const int abc_background_cache_hint_selector_material_light = 2131361852;
+			
+			// aapt resource value: 0x7f0a003d
+			public const int abc_color_highlight_material = 2131361853;
 			
 			// aapt resource value: 0x7f0a0000
 			public const int abc_input_method_navigation_guard = 2131361792;
 			
-			// aapt resource value: 0x7f0a003d
-			public const int abc_primary_text_disable_only_material_dark = 2131361853;
-			
 			// aapt resource value: 0x7f0a003e
-			public const int abc_primary_text_disable_only_material_light = 2131361854;
+			public const int abc_primary_text_disable_only_material_dark = 2131361854;
 			
 			// aapt resource value: 0x7f0a003f
-			public const int abc_primary_text_material_dark = 2131361855;
+			public const int abc_primary_text_disable_only_material_light = 2131361855;
 			
 			// aapt resource value: 0x7f0a0040
-			public const int abc_primary_text_material_light = 2131361856;
+			public const int abc_primary_text_material_dark = 2131361856;
 			
 			// aapt resource value: 0x7f0a0041
-			public const int abc_search_url_text = 2131361857;
+			public const int abc_primary_text_material_light = 2131361857;
+			
+			// aapt resource value: 0x7f0a0042
+			public const int abc_search_url_text = 2131361858;
 			
 			// aapt resource value: 0x7f0a0001
 			public const int abc_search_url_text_normal = 2131361793;
@@ -793,11 +854,11 @@ namespace Etl_Analytics_Mobile_Version_01
 			// aapt resource value: 0x7f0a0003
 			public const int abc_search_url_text_selected = 2131361795;
 			
-			// aapt resource value: 0x7f0a0042
-			public const int abc_secondary_text_material_dark = 2131361858;
-			
 			// aapt resource value: 0x7f0a0043
-			public const int abc_secondary_text_material_light = 2131361859;
+			public const int abc_secondary_text_material_dark = 2131361859;
+			
+			// aapt resource value: 0x7f0a0044
+			public const int abc_secondary_text_material_light = 2131361860;
 			
 			// aapt resource value: 0x7f0a0004
 			public const int accent_material_dark = 2131361796;
@@ -816,6 +877,9 @@ namespace Etl_Analytics_Mobile_Version_01
 			
 			// aapt resource value: 0x7f0a0009
 			public const int background_material_light = 2131361801;
+			
+			// aapt resource value: 0x7f0a003a
+			public const int background_tab_pressed = 2131361850;
 			
 			// aapt resource value: 0x7f0a000a
 			public const int bright_foreground_disabled_material_dark = 2131361802;
@@ -955,11 +1019,11 @@ namespace Etl_Analytics_Mobile_Version_01
 			// aapt resource value: 0x7f0a0037
 			public const int switch_thumb_disabled_material_light = 2131361847;
 			
-			// aapt resource value: 0x7f0a0044
-			public const int switch_thumb_material_dark = 2131361860;
-			
 			// aapt resource value: 0x7f0a0045
-			public const int switch_thumb_material_light = 2131361861;
+			public const int switch_thumb_material_dark = 2131361861;
+			
+			// aapt resource value: 0x7f0a0046
+			public const int switch_thumb_material_light = 2131361862;
 			
 			// aapt resource value: 0x7f0a0038
 			public const int switch_thumb_normal_material_dark = 2131361848;
@@ -1464,20 +1528,23 @@ namespace Etl_Analytics_Mobile_Version_01
 			// aapt resource value: 0x7f020051
 			public const int note = 2130837585;
 			
-			// aapt resource value: 0x7f020056
-			public const int notification_template_icon_bg = 2130837590;
+			// aapt resource value: 0x7f020057
+			public const int notification_template_icon_bg = 2130837591;
 			
 			// aapt resource value: 0x7f020052
-			public const int ProgressBarStyle = 2130837586;
+			public const int pagerslidingtabstrip_background_tab = 2130837586;
 			
 			// aapt resource value: 0x7f020053
-			public const int SignInDialogStyle = 2130837587;
+			public const int ProgressBarStyle = 2130837587;
 			
 			// aapt resource value: 0x7f020054
-			public const int sound = 2130837588;
+			public const int SignInDialogStyle = 2130837588;
 			
 			// aapt resource value: 0x7f020055
-			public const int xs = 2130837589;
+			public const int sound = 2130837589;
+			
+			// aapt resource value: 0x7f020056
+			public const int xs = 2130837590;
 			
 			static Drawable()
 			{
@@ -1558,8 +1625,8 @@ namespace Etl_Analytics_Mobile_Version_01
 			// aapt resource value: 0x7f0b0019
 			public const int beginning = 2131427353;
 			
-			// aapt resource value: 0x7f0b007c
-			public const int btnDialogSignUp = 2131427452;
+			// aapt resource value: 0x7f0b007a
+			public const int btnDialogSignUp = 2131427450;
 			
 			// aapt resource value: 0x7f0b005e
 			public const int btnLogIn = 2131427422;
@@ -1651,12 +1718,6 @@ namespace Etl_Analytics_Mobile_Version_01
 			// aapt resource value: 0x7f0b0068
 			public const int item = 2131427432;
 			
-			// aapt resource value: 0x7f0b0077
-			public const int item_subtitle = 2131427447;
-			
-			// aapt resource value: 0x7f0b0078
-			public const int item_title = 2131427448;
-			
 			// aapt resource value: 0x7f0b006f
 			public const int line1 = 2131427439;
 			
@@ -1672,8 +1733,8 @@ namespace Etl_Analytics_Mobile_Version_01
 			// aapt resource value: 0x7f0b006d
 			public const int media_actions = 2131427437;
 			
-			// aapt resource value: 0x7f0b007f
-			public const int menu = 2131427455;
+			// aapt resource value: 0x7f0b007d
+			public const int menu = 2131427453;
 			
 			// aapt resource value: 0x7f0b001b
 			public const int middle = 2131427355;
@@ -1705,11 +1766,11 @@ namespace Etl_Analytics_Mobile_Version_01
 			// aapt resource value: 0x7f0b003b
 			public const int radio = 2131427387;
 			
-			// aapt resource value: 0x7f0b007e
-			public const int sample_content_fragment = 2131427454;
+			// aapt resource value: 0x7f0b007c
+			public const int sample_content_fragment = 2131427452;
 			
-			// aapt resource value: 0x7f0b007d
-			public const int sample_main_layout = 2131427453;
+			// aapt resource value: 0x7f0b007b
+			public const int sample_main_layout = 2131427451;
 			
 			// aapt resource value: 0x7f0b0015
 			public const int screen = 2131427349;
@@ -1846,14 +1907,14 @@ namespace Etl_Analytics_Mobile_Version_01
 			// aapt resource value: 0x7f0b002e
 			public const int topPanel = 2131427374;
 			
-			// aapt resource value: 0x7f0b007b
-			public const int txtEmail = 2131427451;
-			
 			// aapt resource value: 0x7f0b0079
-			public const int txtFirstName = 2131427449;
+			public const int txtEmail = 2131427449;
 			
-			// aapt resource value: 0x7f0b007a
-			public const int txtLastName = 2131427450;
+			// aapt resource value: 0x7f0b0077
+			public const int txtFirstName = 2131427447;
+			
+			// aapt resource value: 0x7f0b0078
+			public const int txtLastName = 2131427448;
 			
 			// aapt resource value: 0x7f0b005d
 			public const int txtPassword = 2131427421;
@@ -2044,22 +2105,25 @@ namespace Etl_Analytics_Mobile_Version_01
 			public const int pager_item = 2130903081;
 			
 			// aapt resource value: 0x7f03002a
-			public const int select_dialog_item_material = 2130903082;
+			public const int pagerslidingtabstrip_texttab = 2130903082;
 			
 			// aapt resource value: 0x7f03002b
-			public const int select_dialog_multichoice_material = 2130903083;
+			public const int select_dialog_item_material = 2130903083;
 			
 			// aapt resource value: 0x7f03002c
-			public const int select_dialog_singlechoice_material = 2130903084;
+			public const int select_dialog_multichoice_material = 2130903084;
 			
 			// aapt resource value: 0x7f03002d
-			public const int SignInDialog = 2130903085;
+			public const int select_dialog_singlechoice_material = 2130903085;
 			
 			// aapt resource value: 0x7f03002e
-			public const int SlidingBar = 2130903086;
+			public const int SignInDialog = 2130903086;
 			
 			// aapt resource value: 0x7f03002f
-			public const int support_simple_spinner_dropdown_item = 2130903087;
+			public const int SlidingBar = 2130903087;
+			
+			// aapt resource value: 0x7f030030
+			public const int support_simple_spinner_dropdown_item = 2130903088;
 			
 			static Layout()
 			{
@@ -4068,6 +4132,52 @@ namespace Etl_Analytics_Mobile_Version_01
 			
 			// aapt resource value: 7
 			public const int MenuView_preserveIconSpacing = 7;
+			
+			public static int[] PagerSlidingTabStrip = new int[] {
+					2130772177,
+					2130772178,
+					2130772179,
+					2130772180,
+					2130772181,
+					2130772182,
+					2130772183,
+					2130772184,
+					2130772185,
+					2130772186,
+					2130772187};
+			
+			// aapt resource value: 2
+			public const int PagerSlidingTabStrip_dividerColor = 2;
+			
+			// aapt resource value: 0
+			public const int PagerSlidingTabStrip_indicatorColor = 0;
+			
+			// aapt resource value: 3
+			public const int PagerSlidingTabStrip_indicatorHeight = 3;
+			
+			// aapt resource value: 7
+			public const int PagerSlidingTabStrip_scrollOffset = 7;
+			
+			// aapt resource value: 9
+			public const int PagerSlidingTabStrip_shouldExpand = 9;
+			
+			// aapt resource value: 8
+			public const int PagerSlidingTabStrip_tabBackground = 8;
+			
+			// aapt resource value: 5
+			public const int PagerSlidingTabStrip_tabDividerPadding = 5;
+			
+			// aapt resource value: 6
+			public const int PagerSlidingTabStrip_tabPaddingLeftRight = 6;
+			
+			// aapt resource value: 10
+			public const int PagerSlidingTabStrip_tabTextAllCaps = 10;
+			
+			// aapt resource value: 1
+			public const int PagerSlidingTabStrip_underlineColor = 1;
+			
+			// aapt resource value: 4
+			public const int PagerSlidingTabStrip_underlineHeight = 4;
 			
 			public static int[] PopupWindow = new int[] {
 					16843126,

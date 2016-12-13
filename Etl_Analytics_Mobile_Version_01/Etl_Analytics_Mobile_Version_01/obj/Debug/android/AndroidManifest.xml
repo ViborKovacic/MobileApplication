@@ -4,6 +4,7 @@
   <uses-sdk android:minSdkVersion="15" />
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <application android:label="Etl_Analytics_Mobile_Version_01" android:name="android.app.Application" android:allowBackup="true" android:icon="@drawable/icon" android:debuggable="true">
     <activity android:icon="@drawable/icon" android:label="Etl_Analytics_Mobile_Version" android:theme="@style/MyTheme" android:name="md5661818f8c891972acc16e4acaf00595d.MainActivity">
       <intent-filter>
@@ -23,7 +24,7 @@
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
-    <activity android:icon="@drawable/xs" android:label="SlidingTabAct" android:name="md5c061d5b67b2bf180a74fe23549602373.SlidingTabAct">
+    <activity android:icon="@drawable/xs" android:label="Log table" android:name="md5c061d5b67b2bf180a74fe23549602373.SlidingTabAct">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
