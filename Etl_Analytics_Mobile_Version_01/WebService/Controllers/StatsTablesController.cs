@@ -14,7 +14,7 @@ namespace WebService.Controllers
         public object Get()
         {
             GetDataFromDatabase getData = new GetDataFromDatabase();
-            return getData.ProcedureGetDataFromStatColumns();
+            return getData.ProcedureGetDataFromStatTables();
         }
 
         // GET: api/StatsTables/5

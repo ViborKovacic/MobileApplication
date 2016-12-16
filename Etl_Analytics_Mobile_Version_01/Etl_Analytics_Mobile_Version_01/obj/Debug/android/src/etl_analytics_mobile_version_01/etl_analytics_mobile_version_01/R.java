@@ -546,15 +546,6 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int divider=0x7f01000b;
-        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
-"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int dividerColor=0x7f0100d3;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -689,25 +680,6 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int indeterminateProgressStyle=0x7f010012;
-        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
-"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int indicatorColor=0x7f0100d1;
-        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int indicatorHeight=0x7f0100d4;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -946,6 +918,162 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int progressBarStyle=0x7f010011;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int pstsDividerColor=0x7f0100d3;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int pstsDividerPadding=0x7f0100d7;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int pstsDividerWidth=0x7f0100d4;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int pstsIndicatorColor=0x7f0100d1;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int pstsIndicatorHeight=0x7f0100d5;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int pstsPaddingMiddle=0x7f0100dd;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int pstsScrollOffset=0x7f0100d9;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int pstsShouldExpand=0x7f0100db;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int pstsTabBackground=0x7f0100da;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int pstsTabPaddingLeftRight=0x7f0100d8;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int pstsTextAllCaps=0x7f0100dc;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int pstsTextAlpha=0x7f0100df;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int pstsTextColorSelected=0x7f0100de;
+        /** <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>normal</code></td><td>0x0</td><td></td></tr>
+<tr><td><code>bold</code></td><td>0x1</td><td></td></tr>
+<tr><td><code>italic</code></td><td>0x2</td><td></td></tr>
+</table>
+         */
+        public static final int pstsTextSelectedStyle=0x7f0100e1;
+        /** <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>normal</code></td><td>0x0</td><td></td></tr>
+<tr><td><code>bold</code></td><td>0x1</td><td></td></tr>
+<tr><td><code>italic</code></td><td>0x2</td><td></td></tr>
+</table>
+         */
+        public static final int pstsTextStyle=0x7f0100e0;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int pstsUnderlineColor=0x7f0100d2;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int pstsUnderlineHeight=0x7f0100d6;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -974,16 +1102,6 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int ratingBarStyleSmall=0x7f010090;
-        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int scrollOffset=0x7f0100d8;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -1008,14 +1126,6 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int selectableItemBackgroundBorderless=0x7f010059;
-        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int shouldExpand=0x7f0100da;
         /** <p>Must be one or more (separated by '|') of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -1152,38 +1262,6 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int switchTextAppearance=0x7f0100b8;
-        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         */
-        public static final int tabBackground=0x7f0100d9;
-        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int tabDividerPadding=0x7f0100d6;
-        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int tabPaddingLeftRight=0x7f0100d7;
-        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int tabTextAllCaps=0x7f0100db;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
@@ -1336,25 +1414,6 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int track=0x7f0100b6;
-        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
-"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int underlineColor=0x7f0100d2;
-        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int underlineHeight=0x7f0100d5;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -1501,7 +1560,6 @@ containing a value of this type.
         public static final int background_floating_material_light=0x7f0a0007;
         public static final int background_material_dark=0x7f0a0008;
         public static final int background_material_light=0x7f0a0009;
-        public static final int background_tab_pressed=0x7f0a003a;
         public static final int bright_foreground_disabled_material_dark=0x7f0a000a;
         public static final int bright_foreground_disabled_material_light=0x7f0a000b;
         public static final int bright_foreground_inverse_material_dark=0x7f0a000c;
@@ -1540,6 +1598,7 @@ containing a value of this type.
         public static final int primary_text_default_material_light=0x7f0a002d;
         public static final int primary_text_disabled_material_dark=0x7f0a002e;
         public static final int primary_text_disabled_material_light=0x7f0a002f;
+        public static final int psts_background_tab_pressed=0x7f0a003a;
         public static final int ripple_material_dark=0x7f0a0030;
         public static final int ripple_material_light=0x7f0a0031;
         public static final int secondary_text_default_material_dark=0x7f0a0032;
@@ -1708,148 +1767,178 @@ containing a value of this type.
         public static final int abc_textfield_search_material=0x7f02004a;
         public static final int buttonloginstyle=0x7f02004b;
         public static final int buttonsigninstyle=0x7f02004c;
-        public static final int ic_action_overflow=0x7f02004d;
-        public static final int ic_action_search=0x7f02004e;
-        public static final int icon=0x7f02004f;
-        public static final int list=0x7f020050;
-        public static final int location=0x7f020051;
-        public static final int note=0x7f020052;
-        public static final int notification_template_icon_bg=0x7f020058;
-        public static final int pagerslidingtabstrip_background_tab=0x7f020053;
-        public static final int progressbarstyle=0x7f020054;
-        public static final int signindialogstyle=0x7f020055;
-        public static final int sound=0x7f020056;
-        public static final int xs=0x7f020057;
+        public static final int edit_text_style=0x7f02004d;
+        public static final int ic_action_dial_pad=0x7f02004e;
+        public static final int ic_action_favorite=0x7f02004f;
+        public static final int ic_action_group=0x7f020050;
+        public static final int ic_action_overflow=0x7f020051;
+        public static final int ic_action_phone=0x7f020052;
+        public static final int ic_action_search=0x7f020053;
+        public static final int icon=0x7f020054;
+        public static final int list=0x7f020055;
+        public static final int location=0x7f020056;
+        public static final int note=0x7f020057;
+        public static final int notification_template_icon_bg=0x7f02005e;
+        public static final int progressbarstyle=0x7f020058;
+        public static final int psts_background_tab=0x7f020059;
+        public static final int selector=0x7f02005a;
+        public static final int signindialogstyle=0x7f02005b;
+        public static final int sound=0x7f02005c;
+        public static final int xs=0x7f02005d;
     }
     public static final class id {
-        public static final int Drawer=0x7f0b0063;
-        public static final int ListView=0x7f0b0066;
-        public static final int LogInID=0x7f0b0054;
-        public static final int action0=0x7f0b006a;
-        public static final int action_bar=0x7f0b0041;
+        public static final int Drawer=0x7f0b0071;
+        public static final int ListView=0x7f0b0074;
+        public static final int LogInID=0x7f0b0062;
+        public static final int action0=0x7f0b007a;
+        public static final int action_bar=0x7f0b0043;
         public static final int action_bar_activity_content=0x7f0b0000;
-        public static final int action_bar_container=0x7f0b0040;
-        public static final int action_bar_root=0x7f0b003c;
+        public static final int action_bar_container=0x7f0b0042;
+        public static final int action_bar_root=0x7f0b003e;
         public static final int action_bar_spinner=0x7f0b0001;
-        public static final int action_bar_subtitle=0x7f0b0022;
-        public static final int action_bar_title=0x7f0b0021;
-        public static final int action_context_bar=0x7f0b0042;
-        public static final int action_divider=0x7f0b006e;
+        public static final int action_bar_subtitle=0x7f0b0024;
+        public static final int action_bar_title=0x7f0b0023;
+        public static final int action_context_bar=0x7f0b0044;
+        public static final int action_divider=0x7f0b007e;
         public static final int action_menu_divider=0x7f0b0002;
         public static final int action_menu_presenter=0x7f0b0003;
-        public static final int action_mode_bar=0x7f0b003e;
-        public static final int action_mode_bar_stub=0x7f0b003d;
-        public static final int action_mode_close_button=0x7f0b0023;
-        public static final int activity_chooser_view_content=0x7f0b0024;
-        public static final int alertTitle=0x7f0b0030;
+        public static final int action_mode_bar=0x7f0b0040;
+        public static final int action_mode_bar_stub=0x7f0b003f;
+        public static final int action_mode_close_button=0x7f0b0025;
+        public static final int activity_chooser_view_content=0x7f0b0026;
+        public static final int alertTitle=0x7f0b0032;
         public static final int always=0x7f0b001c;
         public static final int beginning=0x7f0b0019;
-        public static final int btnDialogSignUp=0x7f0b007a;
-        public static final int btnLogIn=0x7f0b005e;
-        public static final int btnSignIn=0x7f0b0060;
-        public static final int buttonPanel=0x7f0b002b;
-        public static final int cancel_action=0x7f0b006b;
-        public static final int checkbox=0x7f0b0039;
-        public static final int chronometer=0x7f0b0071;
+        public static final int bold=0x7f0b0021;
+        public static final int btnDialogSignUp=0x7f0b008b;
+        public static final int btnLogIn=0x7f0b006c;
+        public static final int btnSignIn=0x7f0b006e;
+        public static final int buttonPanel=0x7f0b002d;
+        public static final int cancel_action=0x7f0b007b;
+        public static final int checkbox=0x7f0b003b;
+        public static final int chronometer=0x7f0b0081;
         public static final int collapseActionView=0x7f0b001d;
-        public static final int contentPanel=0x7f0b0031;
-        public static final int content_frame=0x7f0b0064;
-        public static final int custom=0x7f0b0037;
-        public static final int customPanel=0x7f0b0036;
-        public static final int dateTime=0x7f0b0067;
-        public static final int decor_content_parent=0x7f0b003f;
-        public static final int default_activity_button=0x7f0b0027;
+        public static final int contentPanel=0x7f0b0033;
+        public static final int content_frame=0x7f0b0072;
+        public static final int custom=0x7f0b0039;
+        public static final int customPanel=0x7f0b0038;
+        public static final int dateTime=0x7f0b0077;
+        public static final int decor_content_parent=0x7f0b0041;
+        public static final int default_activity_button=0x7f0b0029;
         public static final int disableHome=0x7f0b000c;
-        public static final int edit_query=0x7f0b0043;
+        public static final int edit_query=0x7f0b0045;
         public static final int end=0x7f0b001a;
-        public static final int end_padder=0x7f0b0076;
-        public static final int etSearch=0x7f0b007f;
-        public static final int expand_activities_button=0x7f0b0025;
-        public static final int expanded_menu=0x7f0b0038;
-        public static final int expendableListView=0x7f0b0065;
-        public static final int grid_view_image_text=0x7f0b0069;
+        public static final int end_padder=0x7f0b0086;
+        public static final int etSearch=0x7f0b0090;
+        public static final int expand_activities_button=0x7f0b0027;
+        public static final int expanded_menu=0x7f0b003a;
+        public static final int expendableListView=0x7f0b0073;
+        public static final int grid_view_image_text=0x7f0b0079;
         public static final int home=0x7f0b0004;
         public static final int homeAsUp=0x7f0b000d;
-        public static final int icon=0x7f0b0029;
+        public static final int icon=0x7f0b002b;
         public static final int ifRoom=0x7f0b001e;
-        public static final int image=0x7f0b0026;
-        public static final int imageView=0x7f0b0052;
-        public static final int info=0x7f0b0075;
-        public static final int item=0x7f0b0068;
-        public static final int line1=0x7f0b006f;
-        public static final int line3=0x7f0b0073;
+        public static final int image=0x7f0b0028;
+        public static final int imageView=0x7f0b0060;
+        public static final int imageView1=0x7f0b0053;
+        public static final int imageView2=0x7f0b0056;
+        public static final int imageView3=0x7f0b0059;
+        public static final int imageView4=0x7f0b005c;
+        public static final int info=0x7f0b0085;
+        public static final int italic=0x7f0b0022;
+        public static final int item=0x7f0b0078;
+        public static final int line1=0x7f0b007f;
+        public static final int line3=0x7f0b0083;
+        public static final int linearLayout1=0x7f0b0052;
+        public static final int linearLayout2=0x7f0b0055;
+        public static final int linearLayout3=0x7f0b0058;
+        public static final int linearLayout4=0x7f0b005b;
         public static final int listMode=0x7f0b0009;
-        public static final int list_item=0x7f0b0028;
-        public static final int llContainer=0x7f0b007c;
-        public static final int media_actions=0x7f0b006d;
-        public static final int menu=0x7f0b0081;
+        public static final int listViewStatsTable=0x7f0b0091;
+        public static final int list_item=0x7f0b002a;
+        public static final int llContainer=0x7f0b008d;
+        public static final int media_actions=0x7f0b007d;
+        public static final int menu=0x7f0b0099;
         public static final int middle=0x7f0b001b;
         public static final int multiply=0x7f0b0014;
         public static final int never=0x7f0b001f;
         public static final int none=0x7f0b000e;
         public static final int normal=0x7f0b000a;
-        public static final int parentPanel=0x7f0b002d;
-        public static final int progressBar1=0x7f0b0061;
+        public static final int parentPanel=0x7f0b002f;
+        public static final int progressBar1=0x7f0b006f;
         public static final int progress_circular=0x7f0b0005;
         public static final int progress_horizontal=0x7f0b0006;
-        public static final int radio=0x7f0b003b;
-        public static final int sample_content_fragment=0x7f0b007e;
-        public static final int sample_main_layout=0x7f0b007b;
+        public static final int psts_tab_title=0x7f0b0087;
+        public static final int radio=0x7f0b003d;
+        public static final int sample_content_fragment=0x7f0b008f;
+        public static final int sample_main_layout=0x7f0b008c;
         public static final int screen=0x7f0b0015;
-        public static final int scrollIndicatorDown=0x7f0b0035;
-        public static final int scrollIndicatorUp=0x7f0b0032;
-        public static final int scrollView=0x7f0b0033;
-        public static final int search=0x7f0b0080;
-        public static final int search_badge=0x7f0b0045;
-        public static final int search_bar=0x7f0b0044;
-        public static final int search_button=0x7f0b0046;
-        public static final int search_close_btn=0x7f0b004b;
-        public static final int search_edit_frame=0x7f0b0047;
-        public static final int search_go_btn=0x7f0b004d;
-        public static final int search_mag_icon=0x7f0b0048;
-        public static final int search_plate=0x7f0b0049;
-        public static final int search_src_text=0x7f0b004a;
-        public static final int search_voice_btn=0x7f0b004e;
-        public static final int select_dialog_listview=0x7f0b004f;
-        public static final int shortcut=0x7f0b003a;
+        public static final int scrollIndicatorDown=0x7f0b0037;
+        public static final int scrollIndicatorUp=0x7f0b0034;
+        public static final int scrollView=0x7f0b0035;
+        public static final int search=0x7f0b0098;
+        public static final int search_badge=0x7f0b0047;
+        public static final int search_bar=0x7f0b0046;
+        public static final int search_button=0x7f0b0048;
+        public static final int search_close_btn=0x7f0b004d;
+        public static final int search_edit_frame=0x7f0b0049;
+        public static final int search_go_btn=0x7f0b004f;
+        public static final int search_mag_icon=0x7f0b004a;
+        public static final int search_plate=0x7f0b004b;
+        public static final int search_src_text=0x7f0b004c;
+        public static final int search_voice_btn=0x7f0b0050;
+        public static final int select_dialog_listview=0x7f0b0051;
+        public static final int shortcut=0x7f0b003c;
         public static final int showCustom=0x7f0b000f;
         public static final int showHome=0x7f0b0010;
         public static final int showTitle=0x7f0b0011;
-        public static final int sliding_tabs=0x7f0b0050;
-        public static final int spacer=0x7f0b002c;
+        public static final int sliding_tabs=0x7f0b005e;
+        public static final int spacer=0x7f0b002e;
         public static final int split_action_bar=0x7f0b0007;
         public static final int src_atop=0x7f0b0016;
         public static final int src_in=0x7f0b0017;
         public static final int src_over=0x7f0b0018;
-        public static final int status_bar_latest_event_content=0x7f0b006c;
-        public static final int submit_area=0x7f0b004c;
+        public static final int status_bar_latest_event_content=0x7f0b007c;
+        public static final int submit_area=0x7f0b004e;
         public static final int tabMode=0x7f0b000b;
-        public static final int tableLayout1=0x7f0b0056;
-        public static final int tableRow1=0x7f0b0057;
-        public static final int tableRow2=0x7f0b005a;
-        public static final int tableRow3=0x7f0b005b;
-        public static final int text=0x7f0b0074;
-        public static final int text2=0x7f0b0072;
-        public static final int textLogIn=0x7f0b0055;
-        public static final int textOR=0x7f0b005f;
-        public static final int textSpacerNoButtons=0x7f0b0034;
-        public static final int textView=0x7f0b0053;
-        public static final int textView10=0x7f0b0058;
-        public static final int textView12=0x7f0b005c;
-        public static final int time=0x7f0b0070;
-        public static final int title=0x7f0b002a;
-        public static final int title_template=0x7f0b002f;
-        public static final int toolbar=0x7f0b0062;
-        public static final int topPanel=0x7f0b002e;
-        public static final int txtEmail=0x7f0b0079;
-        public static final int txtFirstName=0x7f0b0077;
-        public static final int txtLastName=0x7f0b0078;
-        public static final int txtPassword=0x7f0b005d;
-        public static final int txtUserName=0x7f0b0059;
+        public static final int tableLayout1=0x7f0b0064;
+        public static final int tableRow1=0x7f0b0065;
+        public static final int tableRow2=0x7f0b0068;
+        public static final int tableRow3=0x7f0b0069;
+        public static final int test=0x7f0b0076;
+        public static final int testView=0x7f0b008e;
+        public static final int text=0x7f0b0084;
+        public static final int text2=0x7f0b0082;
+        public static final int textLogIn=0x7f0b0063;
+        public static final int textOR=0x7f0b006d;
+        public static final int textSpacerNoButtons=0x7f0b0036;
+        public static final int textView=0x7f0b0061;
+        public static final int textView1=0x7f0b0054;
+        public static final int textView10=0x7f0b0066;
+        public static final int textView12=0x7f0b006a;
+        public static final int textView2=0x7f0b0057;
+        public static final int textView3=0x7f0b005a;
+        public static final int textView4=0x7f0b005d;
+        public static final int time=0x7f0b0080;
+        public static final int title=0x7f0b002c;
+        public static final int title_template=0x7f0b0031;
+        public static final int toolbar=0x7f0b0070;
+        public static final int topPanel=0x7f0b0030;
+        public static final int txtAmount=0x7f0b0095;
+        public static final int txtBigDeviation=0x7f0b0097;
+        public static final int txtDate=0x7f0b0093;
+        public static final int txtDifference=0x7f0b0096;
+        public static final int txtEmail=0x7f0b008a;
+        public static final int txtFirstName=0x7f0b0088;
+        public static final int txtLastName=0x7f0b0089;
+        public static final int txtNullColumns=0x7f0b0094;
+        public static final int txtPassword=0x7f0b006b;
+        public static final int txtTableName=0x7f0b0092;
+        public static final int txtUserName=0x7f0b0067;
         public static final int up=0x7f0b0008;
         public static final int useLogo=0x7f0b0012;
-        public static final int viewId=0x7f0b007d;
-        public static final int viewpager=0x7f0b0051;
+        public static final int viewChart=0x7f0b0075;
+        public static final int viewpager=0x7f0b005f;
         public static final int withText=0x7f0b0020;
         public static final int wrap_content=0x7f0b0013;
     }
@@ -1886,30 +1975,36 @@ containing a value of this type.
         public static final int abc_search_dropdown_item_icons_2line=0x7f030016;
         public static final int abc_search_view=0x7f030017;
         public static final int abc_select_dialog_material=0x7f030018;
-        public static final int configurationcolumns=0x7f030019;
-        public static final int fragment_sample=0x7f03001a;
-        public static final int gridviewpage=0x7f03001b;
-        public static final int login=0x7f03001c;
-        public static final int logtable=0x7f03001d;
-        public static final int logtablegroupitem=0x7f03001e;
-        public static final int logtablerow=0x7f03001f;
-        public static final int mainpage=0x7f030020;
-        public static final int notification_media_action=0x7f030021;
-        public static final int notification_media_cancel_action=0x7f030022;
-        public static final int notification_template_big_media=0x7f030023;
-        public static final int notification_template_big_media_narrow=0x7f030024;
-        public static final int notification_template_lines=0x7f030025;
-        public static final int notification_template_media=0x7f030026;
-        public static final int notification_template_part_chronometer=0x7f030027;
-        public static final int notification_template_part_time=0x7f030028;
-        public static final int pager_item=0x7f030029;
-        public static final int pagerslidingtabstrip_texttab=0x7f03002a;
-        public static final int select_dialog_item_material=0x7f03002b;
-        public static final int select_dialog_multichoice_material=0x7f03002c;
-        public static final int select_dialog_singlechoice_material=0x7f03002d;
-        public static final int signindialog=0x7f03002e;
-        public static final int slidingbar=0x7f03002f;
-        public static final int support_simple_spinner_dropdown_item=0x7f030030;
+        public static final int action_bar=0x7f030019;
+        public static final int configurationcolumns=0x7f03001a;
+        public static final int fragment_sample=0x7f03001b;
+        public static final int graph=0x7f03001c;
+        public static final int gridviewpage=0x7f03001d;
+        public static final int login=0x7f03001e;
+        public static final int logtable=0x7f03001f;
+        public static final int logtablechart=0x7f030020;
+        public static final int logtabledescription=0x7f030021;
+        public static final int logtablegroupitem=0x7f030022;
+        public static final int logtablerow=0x7f030023;
+        public static final int mainpage=0x7f030024;
+        public static final int notification_media_action=0x7f030025;
+        public static final int notification_media_cancel_action=0x7f030026;
+        public static final int notification_template_big_media=0x7f030027;
+        public static final int notification_template_big_media_narrow=0x7f030028;
+        public static final int notification_template_lines=0x7f030029;
+        public static final int notification_template_media=0x7f03002a;
+        public static final int notification_template_part_chronometer=0x7f03002b;
+        public static final int notification_template_part_time=0x7f03002c;
+        public static final int psts_tab=0x7f03002d;
+        public static final int select_dialog_item_material=0x7f03002e;
+        public static final int select_dialog_multichoice_material=0x7f03002f;
+        public static final int select_dialog_singlechoice_material=0x7f030030;
+        public static final int signindialog=0x7f030031;
+        public static final int slidingbar=0x7f030032;
+        public static final int statstable=0x7f030033;
+        public static final int statstablealltable=0x7f030034;
+        public static final int statstablerow=0x7f030035;
+        public static final int support_simple_spinner_dropdown_item=0x7f030036;
     }
     public static final class menu {
         public static final int actionbar=0x7f0c0000;
@@ -2091,9 +2186,11 @@ containing a value of this type.
         /**  the theme applied to the application or activity 
          */
         public static final int CustomActionBarTheme=0x7f080143;
+        public static final int CustomActionBarTheme1=0x7f080145;
         /**  ActionBar styles 
          */
         public static final int MyActionBar=0x7f080144;
+        public static final int MyActionBar1=0x7f080146;
         public static final int MyDrawerArrowStyle=0x7f080140;
         /** 
         Base application theme for API 21+. This theme replaces
@@ -5341,37 +5438,51 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #PagerSlidingTabStrip_dividerColor Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:dividerColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #PagerSlidingTabStrip_indicatorColor Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:indicatorColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #PagerSlidingTabStrip_indicatorHeight Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:indicatorHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #PagerSlidingTabStrip_scrollOffset Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:scrollOffset}</code></td><td></td></tr>
-           <tr><td><code>{@link #PagerSlidingTabStrip_shouldExpand Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:shouldExpand}</code></td><td></td></tr>
-           <tr><td><code>{@link #PagerSlidingTabStrip_tabBackground Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:tabBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #PagerSlidingTabStrip_tabDividerPadding Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:tabDividerPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #PagerSlidingTabStrip_tabPaddingLeftRight Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:tabPaddingLeftRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #PagerSlidingTabStrip_tabTextAllCaps Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:tabTextAllCaps}</code></td><td></td></tr>
-           <tr><td><code>{@link #PagerSlidingTabStrip_underlineColor Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:underlineColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #PagerSlidingTabStrip_underlineHeight Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:underlineHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsDividerColor Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:pstsDividerColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsDividerPadding Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:pstsDividerPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsDividerWidth Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:pstsDividerWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsIndicatorColor Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:pstsIndicatorColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsIndicatorHeight Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:pstsIndicatorHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsPaddingMiddle Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:pstsPaddingMiddle}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsScrollOffset Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:pstsScrollOffset}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsShouldExpand Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:pstsShouldExpand}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsTabBackground Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:pstsTabBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsTabPaddingLeftRight Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:pstsTabPaddingLeftRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsTextAllCaps Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:pstsTextAllCaps}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsTextAlpha Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:pstsTextAlpha}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsTextColorSelected Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:pstsTextColorSelected}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsTextSelectedStyle Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:pstsTextSelectedStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsTextStyle Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:pstsTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsUnderlineColor Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:pstsUnderlineColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsUnderlineHeight Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:pstsUnderlineHeight}</code></td><td></td></tr>
            </table>
-           @see #PagerSlidingTabStrip_dividerColor
-           @see #PagerSlidingTabStrip_indicatorColor
-           @see #PagerSlidingTabStrip_indicatorHeight
-           @see #PagerSlidingTabStrip_scrollOffset
-           @see #PagerSlidingTabStrip_shouldExpand
-           @see #PagerSlidingTabStrip_tabBackground
-           @see #PagerSlidingTabStrip_tabDividerPadding
-           @see #PagerSlidingTabStrip_tabPaddingLeftRight
-           @see #PagerSlidingTabStrip_tabTextAllCaps
-           @see #PagerSlidingTabStrip_underlineColor
-           @see #PagerSlidingTabStrip_underlineHeight
+           @see #PagerSlidingTabStrip_pstsDividerColor
+           @see #PagerSlidingTabStrip_pstsDividerPadding
+           @see #PagerSlidingTabStrip_pstsDividerWidth
+           @see #PagerSlidingTabStrip_pstsIndicatorColor
+           @see #PagerSlidingTabStrip_pstsIndicatorHeight
+           @see #PagerSlidingTabStrip_pstsPaddingMiddle
+           @see #PagerSlidingTabStrip_pstsScrollOffset
+           @see #PagerSlidingTabStrip_pstsShouldExpand
+           @see #PagerSlidingTabStrip_pstsTabBackground
+           @see #PagerSlidingTabStrip_pstsTabPaddingLeftRight
+           @see #PagerSlidingTabStrip_pstsTextAllCaps
+           @see #PagerSlidingTabStrip_pstsTextAlpha
+           @see #PagerSlidingTabStrip_pstsTextColorSelected
+           @see #PagerSlidingTabStrip_pstsTextSelectedStyle
+           @see #PagerSlidingTabStrip_pstsTextStyle
+           @see #PagerSlidingTabStrip_pstsUnderlineColor
+           @see #PagerSlidingTabStrip_pstsUnderlineHeight
          */
         public static final int[] PagerSlidingTabStrip = {
             0x7f0100d1, 0x7f0100d2, 0x7f0100d3, 0x7f0100d4,
             0x7f0100d5, 0x7f0100d6, 0x7f0100d7, 0x7f0100d8,
-            0x7f0100d9, 0x7f0100da, 0x7f0100db
+            0x7f0100d9, 0x7f0100da, 0x7f0100db, 0x7f0100dc,
+            0x7f0100dd, 0x7f0100de, 0x7f0100df, 0x7f0100e0,
+            0x7f0100e1
         };
         /**
-          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#dividerColor}
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#pstsDividerColor}
           attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
 
 
@@ -5382,26 +5493,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:dividerColor
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:pstsDividerColor
         */
-        public static final int PagerSlidingTabStrip_dividerColor = 2;
+        public static final int PagerSlidingTabStrip_pstsDividerColor = 2;
         /**
-          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#indicatorColor}
-          attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
-
-
-          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
-"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:indicatorColor
-        */
-        public static final int PagerSlidingTabStrip_indicatorColor = 0;
-        /**
-          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#indicatorHeight}
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#pstsDividerPadding}
           attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
 
 
@@ -5413,11 +5509,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:indicatorHeight
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:pstsDividerPadding
         */
-        public static final int PagerSlidingTabStrip_indicatorHeight = 3;
+        public static final int PagerSlidingTabStrip_pstsDividerPadding = 6;
         /**
-          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#scrollOffset}
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#pstsDividerWidth}
           attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
 
 
@@ -5429,11 +5525,42 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:scrollOffset
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:pstsDividerWidth
         */
-        public static final int PagerSlidingTabStrip_scrollOffset = 7;
+        public static final int PagerSlidingTabStrip_pstsDividerWidth = 3;
         /**
-          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#shouldExpand}
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#pstsIndicatorColor}
+          attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:pstsIndicatorColor
+        */
+        public static final int PagerSlidingTabStrip_pstsIndicatorColor = 0;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#pstsIndicatorHeight}
+          attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:pstsIndicatorHeight
+        */
+        public static final int PagerSlidingTabStrip_pstsIndicatorHeight = 4;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#pstsPaddingMiddle}
           attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
 
 
@@ -5443,21 +5570,51 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:shouldExpand
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:pstsPaddingMiddle
         */
-        public static final int PagerSlidingTabStrip_shouldExpand = 9;
+        public static final int PagerSlidingTabStrip_pstsPaddingMiddle = 12;
         /**
-          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#tabBackground}
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#pstsScrollOffset}
+          attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:pstsScrollOffset
+        */
+        public static final int PagerSlidingTabStrip_pstsScrollOffset = 8;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#pstsShouldExpand}
+          attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:pstsShouldExpand
+        */
+        public static final int PagerSlidingTabStrip_pstsShouldExpand = 10;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#pstsTabBackground}
           attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:tabBackground
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:pstsTabBackground
         */
-        public static final int PagerSlidingTabStrip_tabBackground = 8;
+        public static final int PagerSlidingTabStrip_pstsTabBackground = 9;
         /**
-          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#tabDividerPadding}
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#pstsTabPaddingLeftRight}
           attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
 
 
@@ -5469,27 +5626,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:tabDividerPadding
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:pstsTabPaddingLeftRight
         */
-        public static final int PagerSlidingTabStrip_tabDividerPadding = 5;
+        public static final int PagerSlidingTabStrip_pstsTabPaddingLeftRight = 7;
         /**
-          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#tabPaddingLeftRight}
-          attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
-
-
-          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:tabPaddingLeftRight
-        */
-        public static final int PagerSlidingTabStrip_tabPaddingLeftRight = 6;
-        /**
-          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#tabTextAllCaps}
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#pstsTextAllCaps}
           attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
 
 
@@ -5499,11 +5640,25 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:tabTextAllCaps
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:pstsTextAllCaps
         */
-        public static final int PagerSlidingTabStrip_tabTextAllCaps = 10;
+        public static final int PagerSlidingTabStrip_pstsTextAllCaps = 11;
         /**
-          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#underlineColor}
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#pstsTextAlpha}
+          attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:pstsTextAlpha
+        */
+        public static final int PagerSlidingTabStrip_pstsTextAlpha = 14;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#pstsTextColorSelected}
           attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
 
 
@@ -5514,11 +5669,62 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:underlineColor
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:pstsTextColorSelected
         */
-        public static final int PagerSlidingTabStrip_underlineColor = 1;
+        public static final int PagerSlidingTabStrip_pstsTextColorSelected = 13;
         /**
-          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#underlineHeight}
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#pstsTextSelectedStyle}
+          attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
+
+
+          <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>normal</code></td><td>0x0</td><td></td></tr>
+<tr><td><code>bold</code></td><td>0x1</td><td></td></tr>
+<tr><td><code>italic</code></td><td>0x2</td><td></td></tr>
+</table>
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:pstsTextSelectedStyle
+        */
+        public static final int PagerSlidingTabStrip_pstsTextSelectedStyle = 16;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#pstsTextStyle}
+          attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
+
+
+          <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>normal</code></td><td>0x0</td><td></td></tr>
+<tr><td><code>bold</code></td><td>0x1</td><td></td></tr>
+<tr><td><code>italic</code></td><td>0x2</td><td></td></tr>
+</table>
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:pstsTextStyle
+        */
+        public static final int PagerSlidingTabStrip_pstsTextStyle = 15;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#pstsUnderlineColor}
+          attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:pstsUnderlineColor
+        */
+        public static final int PagerSlidingTabStrip_pstsUnderlineColor = 1;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#pstsUnderlineHeight}
           attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
 
 
@@ -5530,9 +5736,9 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:underlineHeight
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:pstsUnderlineHeight
         */
-        public static final int PagerSlidingTabStrip_underlineHeight = 4;
+        public static final int PagerSlidingTabStrip_pstsUnderlineHeight = 5;
         /** Attributes that can be used with a PopupWindow.
            <p>Includes the following attributes:</p>
            <table>

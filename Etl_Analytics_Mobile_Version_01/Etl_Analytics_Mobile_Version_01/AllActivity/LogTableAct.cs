@@ -21,13 +21,19 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
     [Activity(Label = "Log table", MainLauncher = true, Icon = "@drawable/icon", Theme = "@style/MyTheme3")]
     public class LogTableAct : ActionBarActivity
     {
+        ExpandableListViewAdapter mAdapter;
+        ExpandableListView expandableListView;
+        List<string> group = new List<string>();
+        Dictionary<string, List<string>> dicMyMap = new Dictionary<string, List<string>>();
+        WebService webService;
+        List<LogTable> logTable;
+
         private SupportToolbar suppToolbar;
         private MyActionBarDrawerToggle drawerToogle;
         private DrawerLayout drawerLayout;
         private ListView viewDrawer;
         List<string> listDrawer;
         ArrayAdapter adapterDrawer;
-
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -35,7 +41,13 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
             SetContentView(Resource.Layout.LogTable);
             suppToolbar = FindViewById<SupportToolbar>(Resource.Id.toolbar);
             drawerLayout = FindViewById<DrawerLayout>(Resource.Id.Drawer);
-            viewDrawer = FindViewById<ListView>(Resource.Id.ListView);            
+            viewDrawer = FindViewById<ListView>(Resource.Id.ListView);
+            expandableListView = FindViewById<ExpandableListView>(Resource.Id.expendableListView);
+
+            SetData(out mAdapter);
+            expandableListView.SetAdapter(mAdapter);
+
+            
 
             listDrawer = new List<string>();
             listDrawer.Add("Log table");
@@ -61,6 +73,32 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
         {
             MenuInflater.Inflate(Resource.Menu.actionbar_main, menu);
             return base.OnCreateOptionsMenu(menu);
+        }
+
+        private void SetData(out ExpandableListViewAdapter mAdapter)
+        {
+            webService = new WebService();
+            logTable = new List<LogTable>();
+            logTable = webService.GetAllDataLogTable();
+            int counter = 0;
+
+            foreach (LogTable row in logTable)
+            {
+                List<string> groupA = new List<string>();
+                group.Add((counter + 1).ToString() + " " + row.PROCEDURE_NAME.ToString() + " " + row.DATE_TIME.ToString() + " " + row.ACTION.ToString()); ;
+                groupA.Add(" Id procedure: " + row.PROCEDURE_ID.ToString());
+                //groupA.Add(" Ime procedure: " + row.PROCEDURE_NAME.ToString());
+                if (row.ERROR_DESCRIPTION != null)
+                {
+                    groupA.Add(" Error: " + row.ERROR_DESCRIPTION);
+                }             
+
+                dicMyMap.Add(group[counter], groupA);
+                counter++;
+            }
+
+            mAdapter = new ExpandableListViewAdapter(this, group, dicMyMap);
+
         }
     }
 }

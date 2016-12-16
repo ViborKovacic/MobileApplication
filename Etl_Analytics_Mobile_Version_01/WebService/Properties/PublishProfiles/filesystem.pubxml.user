@@ -6,7 +6,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <_PublishTargetUrl>C:\Users\INSITE\documents\visual studio 2015\Projects\Etl_Analytics_Mobile_Version_01\WebService\Release</_PublishTargetUrl>
+    <_PublishTargetUrl>C:\Users\INSITE\Desktop\Application BackUp\08.12.2016\Etl_Analytics_Mobile_Version_01\WebService\Release</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="ApplicationInsights.config">
@@ -190,10 +190,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/10/2013 18:28:38</publishTime>
     </File>
     <File Include="bin/WebService.dll">
-      <publishTime>12/07/2016 09:59:36</publishTime>
+      <publishTime>12/15/2016 12:41:50</publishTime>
     </File>
     <File Include="bin/WebService.pdb">
-      <publishTime>12/07/2016 09:59:36</publishTime>
+      <publishTime>12/15/2016 12:41:50</publishTime>
     </File>
     <File Include="Content/bootstrap.css">
       <publishTime>12/02/2016 15:40:06</publishTime>
@@ -268,7 +268,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>12/02/2016 15:40:04</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>12/05/2016 13:42:26</publishTime>
+      <publishTime>12/15/2016 12:41:51</publishTime>
     </File>
   </ItemGroup>
 </Project>

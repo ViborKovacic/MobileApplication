@@ -65,5 +65,15 @@ namespace Etl_Analytics_Mobile_Version_01.Class
 
             return columnNamesList;
         }
+
+        public List<StatsTables> GetAllDataStatsTable()
+        {
+            List<StatsTables> statTable = new List<StatsTables>();
+            client = new RestClient("http://insite2crm6.in2.hr");
+            request = new RestRequest("etlservice/api/StatsTables", Method.GET);
+            statTable = client.Execute<List<StatsTables>>(request).Data;
+
+            return statTable;
+        }
     }
 }

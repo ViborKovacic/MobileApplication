@@ -25,10 +25,14 @@ namespace Etl_Analytics_Mobile_Version_01.Class
         private int mTabViewLayoutID;
         private int mTabViewTextViewID;
 
-        private ViewPager mViewPager;
-        private ViewPager.IOnPageChangeListener mViewPagerPageChangeListener;
+        public static ViewPager mViewPager;
+        public static ViewPager.IOnPageChangeListener mViewPagerPageChangeListener;
 
         private static SlidingTabStrip mTabStrip;
+
+        public static int pageToScrollTo;
+
+        public static int currentPostition;
 
         private int mScrollState;
 
@@ -115,6 +119,7 @@ namespace Etl_Analytics_Mobile_Version_01.Class
             if (mViewPagerPageChangeListener != null)
             {
                 mViewPagerPageChangeListener.OnPageScrolled(e.Position, e.PositionOffset, e.PositionOffsetPixels);
+                currentPostition = e.Position;
             }
 
         }
@@ -135,7 +140,6 @@ namespace Etl_Analytics_Mobile_Version_01.Class
             {
                 mTabStrip.OnViewPagerPageChanged(e.Position, 0f);
                 ScrollToTab(e.Position, 0);
-
             }
 
             if (mViewPagerPageChangeListener != null)
@@ -163,7 +167,7 @@ namespace Etl_Analytics_Mobile_Version_01.Class
         void tabView_Click(object sender, EventArgs e)
         {
             TextView clickTab = (TextView)sender;
-            int pageToScrollTo = (int)clickTab.Tag;
+            pageToScrollTo = (int)clickTab.Tag;
             mViewPager.CurrentItem = pageToScrollTo;
         }
 

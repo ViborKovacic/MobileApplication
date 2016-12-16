@@ -6,6 +6,14 @@ using Android.Views;
 using Android.Widget;
 using Android.Support.V4.View;
 using Etl_Analytics_Mobile_Version_01.Class.Table_Constructor;
+using BarChart;
+using System;
+using System.Linq;
+using Etl_Analytics_Mobile_Version_01.AllActivity;
+using Android.Views.InputMethods;
+using Java.Lang;
+using Etl_Analytics_Mobile_Version_01.Class.Fragments;
+using Android.Graphics;
 
 namespace Etl_Analytics_Mobile_Version_01.Class
 {
@@ -13,9 +21,14 @@ namespace Etl_Analytics_Mobile_Version_01.Class
     {
         private SlidingTabScrollView mSlidingTabScrollView;
         private ViewPager mViewPager;
-        
+        public static string mSearchText;
+        private static ViewGroup mviewGroup;
+        public static int test;
+
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
+            
+            mviewGroup = container;
             return inflater.Inflate(Resource.Layout.fragment_sample, container, false);
         }
 
@@ -28,8 +41,29 @@ namespace Etl_Analytics_Mobile_Version_01.Class
             mSlidingTabScrollView.ViewPager = mViewPager;
         }
 
+        //public override void OnSaveInstanceState(Bundle outState)
+        //{
+        //    base.OnSaveInstanceState(outState);
+        //    outState.PutInt("Current_position", test);
+
+        //}
+
+        //public override void OnViewStateRestored(Bundle savedInstanceState)
+        //{
+        //    base.OnViewStateRestored(savedInstanceState);
+        //    if (savedInstanceState != null)
+        //    {
+        //        SlidingTabScrollView.mViewPagerPageChangeListener.OnPageSelected(savedInstanceState.GetInt("Current_position"));
+        //    }
+        //}
+
         public class SamplePagerAdapter : PagerAdapter
         {
+            private static List<StatsTables> listStatsTable;
+            private static StatsTableAdapter listAdapter;
+            private static ListView listViewStatsTable;
+            private static WebService webService;
+            private static View view;
             List<string> items = new List<string>();
 
             public SamplePagerAdapter() : base()
@@ -37,6 +71,11 @@ namespace Etl_Analytics_Mobile_Version_01.Class
                 items.Add("Chart");
                 items.Add("Table");
                 items.Add("Description");
+            }
+
+            public override IParcelable SaveState()
+            {
+                return base.SaveState();
             }
 
             public override int Count
@@ -51,55 +90,86 @@ namespace Etl_Analytics_Mobile_Version_01.Class
 
             public override Java.Lang.Object InstantiateItem(ViewGroup container, int position)
             {
-                View view = LayoutInflater.From(container.Context).Inflate(Resource.Layout.pager_item, container, false);
-                container.AddView(view);
+                webService = new WebService();
+                listStatsTable = new List<StatsTables>();
+                listStatsTable = webService.GetAllDataStatsTable();
 
                 if (position == 0)
                 {
-                    //First slide
-                    view = null;
-                } 
-                else if (position == 1)
-                {
-                    ExpandableListViewAdapter mAdapter;
-                    ExpandableListView expandableListView;
-
-                    List<string> headerOfList = new List<string>();
-                    Dictionary<string, List<string>> dicMyMap = new Dictionary<string, List<string>>();
-                    WebService webService;
-                    List<LogTable> logTable;
-
-                    expandableListView = view.FindViewById<ExpandableListView>(Resource.Id.expendableListView);
-
-                    webService = new WebService();
-                    logTable = new List<LogTable>();
-                    logTable = webService.GetAllDataLogTable();
+                    float[] data = new float[listStatsTable.Count];
                     int counter = 0;
+                    view = LayoutInflater.From(container.Context).Inflate(Resource.Layout.LogTableChart, container, false);
+                    BarChartView viewChart = view.FindViewById<BarChartView>(Resource.Id.viewChart);
 
-                    foreach (LogTable row in logTable)
+                    foreach (StatsTables item in listStatsTable)
                     {
-                        List<string> listItem = new List<string>();
-                        headerOfList.Add((counter + 1).ToString() + " " + row.PROCEDURE_NAME.ToString() + " " + row.DATE_TIME.ToString() + " " + row.ACTION.ToString()); ;
-                        listItem.Add(" Id procedure: " + row.PROCEDURE_ID.ToString());
-                        //groupA.Add(" Ime procedure: " + row.PROCEDURE_NAME.ToString());
-                        if (row.ERROR_DESCRIPTION != null)
-                        {
-                            listItem.Add(" Error: " + row.ERROR_DESCRIPTION);
-                        }
-
-                        dicMyMap.Add(headerOfList[counter], listItem);
+                        data[counter] = item.diff_last_trans;
                         counter++;
                     }
 
+                    viewChart = new BarChartView(container.Context)
+                    {
+                        ItemsSource = Array.ConvertAll(data, v => new BarModel
+                        {
+                            Value = v,
+                            Legend = "Table name",
+                            ValueCaptionHidden = false,
+                        })
+                    };
+                    viewChart.AutoLevelsEnabled = false;
+                    for (int i = 0; i <= 100; i += 10)
+                    {
+                        viewChart.AddLevelIndicator(i);
+                    }
+                    viewChart.LegendColor = Color.Red;
+                    viewChart.SetBackgroundColor(Color.White);
+                    viewChart.LegendFontSize = 30;
+                    viewChart.BarCaptionFontSize = 20;
+                    viewChart.BarCaptionOuterColor = Color.Black;
+                    viewChart.BarCaptionInnerColor = Color.White;
+                    viewChart.BarWidth = 100;
+                    viewChart.BarOffset = 100;
+                    view = viewChart;
+                } 
 
-                    mAdapter = new ExpandableListViewAdapter(container.Context, headerOfList, dicMyMap);
-                    expandableListView.SetAdapter(mAdapter);
+                else if (position == 1)
+                {
+                    view = LayoutInflater.From(container.Context).Inflate(Resource.Layout.StatsTableAllTable, container, false);
+                    listViewStatsTable = view.FindViewById<ListView>(Resource.Id.listViewStatsTable);
+
+                    if (mSearchText == null)
+                    {
+                        listAdapter = new StatsTableAdapter(container.Context, Resource.Layout.StatsTableRow, listStatsTable);
+                    }
+
+                    else
+                    {
+                        List<StatsTables> searchedTable = (from table in listStatsTable
+                                                        where table.table_name.Contains(mSearchText, StringComparison.OrdinalIgnoreCase) 
+                                                        select table).ToList<StatsTables>();
+                        listAdapter = new StatsTableAdapter(container.Context, Resource.Layout.StatsTableRow, searchedTable);
+                    }
+                    
+                    listViewStatsTable.Adapter = listAdapter;
+                    mviewGroup = container;
+
                 }
                 else if (position == 2)
                 {
-                    //third slide
-                    view = null;
+                    view = LayoutInflater.From(container.Context).Inflate(Resource.Layout.StatsTableAllTable, container, false);
+                    listViewStatsTable = view.FindViewById<ListView>(Resource.Id.listViewStatsTable);
+
+                        List<StatsTables> searchedTable = (from table in listStatsTable
+                                                           where table.big_deviation.Contains("YES", StringComparison.OrdinalIgnoreCase)
+                                                           select table).ToList<StatsTables>();
+                        listAdapter = new StatsTableAdapter(container.Context, Resource.Layout.StatsTableRow, searchedTable);
+
+                    listViewStatsTable.Adapter = listAdapter;
+                    mviewGroup = container;
                 }
+
+                container.AddView(view);
+                test = position;
 
                 return view;
             }

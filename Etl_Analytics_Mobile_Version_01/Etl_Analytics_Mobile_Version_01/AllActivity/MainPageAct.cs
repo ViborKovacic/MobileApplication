@@ -78,6 +78,17 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
                     Intent intent = new Intent(this, typeof(SlidingTabAct));
                     this.StartActivity(intent);
                 }
+                else if ("Stats tables" == gridViewString[ed.Position])
+                {
+                    Intent intent = new Intent(this, typeof(StatsTableAct));
+                    this.StartActivity(intent);
+                }
+
+                else if ("Stats columns\n\n\n" == gridViewString[ed.Position])
+                {
+                    Intent intent = new Intent(this, typeof(TestGraphs));
+                    this.StartActivity(intent);
+                }
 
             };
         }

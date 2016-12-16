@@ -48,7 +48,6 @@ namespace Etl_Analytics_Mobile_Version_01
             txtPassword = FindViewById<EditText>(Resource.Id.txtPassword);
 
             btnSignIn = FindViewById<Button>(Resource.Id.btnSignIn);
-            //progressBar = FindViewById<ProgressBar>(Resource.Id.progressBar1);
             btnLogIn = FindViewById<Button>(Resource.Id.btnLogIn);
 
             //remove keyboar on click anywhere

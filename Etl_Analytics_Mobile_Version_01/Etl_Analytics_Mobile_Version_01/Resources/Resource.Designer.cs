@@ -26,34 +26,1294 @@ namespace Etl_Analytics_Mobile_Version_01
 		
 		public static void UpdateIdValues()
 		{
-			global::PagerSlidingTabStrip.Resource.Attribute.dividerColor = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.dividerColor;
-			global::PagerSlidingTabStrip.Resource.Attribute.indicatorColor = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.indicatorColor;
-			global::PagerSlidingTabStrip.Resource.Attribute.indicatorHeight = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.indicatorHeight;
-			global::PagerSlidingTabStrip.Resource.Attribute.scrollOffset = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.scrollOffset;
-			global::PagerSlidingTabStrip.Resource.Attribute.shouldExpand = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.shouldExpand;
-			global::PagerSlidingTabStrip.Resource.Attribute.tabBackground = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.tabBackground;
-			global::PagerSlidingTabStrip.Resource.Attribute.tabDividerPadding = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.tabDividerPadding;
-			global::PagerSlidingTabStrip.Resource.Attribute.tabPaddingLeftRight = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.tabPaddingLeftRight;
-			global::PagerSlidingTabStrip.Resource.Attribute.tabTextAllCaps = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.tabTextAllCaps;
-			global::PagerSlidingTabStrip.Resource.Attribute.underlineColor = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.underlineColor;
-			global::PagerSlidingTabStrip.Resource.Attribute.underlineHeight = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.underlineHeight;
-			global::PagerSlidingTabStrip.Resource.Color.background_tab_pressed = global::Etl_Analytics_Mobile_Version_01.Resource.Color.background_tab_pressed;
-			global::PagerSlidingTabStrip.Resource.Drawable.pagerslidingtabstrip_background_tab = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.pagerslidingtabstrip_background_tab;
-			global::PagerSlidingTabStrip.Resource.Layout.pagerslidingtabstrip_texttab = global::Etl_Analytics_Mobile_Version_01.Resource.Layout.pagerslidingtabstrip_texttab;
-			global::PagerSlidingTabStrip.Resource.String.ApplicationName = global::Etl_Analytics_Mobile_Version_01.Resource.String.ApplicationName;
-			global::PagerSlidingTabStrip.Resource.String.Hello = global::Etl_Analytics_Mobile_Version_01.Resource.String.Hello;
-			global::PagerSlidingTabStrip.Resource.Styleable.PagerSlidingTabStrip = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.PagerSlidingTabStrip;
-			global::PagerSlidingTabStrip.Resource.Styleable.PagerSlidingTabStrip_dividerColor = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.PagerSlidingTabStrip_dividerColor;
-			global::PagerSlidingTabStrip.Resource.Styleable.PagerSlidingTabStrip_indicatorColor = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.PagerSlidingTabStrip_indicatorColor;
-			global::PagerSlidingTabStrip.Resource.Styleable.PagerSlidingTabStrip_indicatorHeight = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.PagerSlidingTabStrip_indicatorHeight;
-			global::PagerSlidingTabStrip.Resource.Styleable.PagerSlidingTabStrip_scrollOffset = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.PagerSlidingTabStrip_scrollOffset;
-			global::PagerSlidingTabStrip.Resource.Styleable.PagerSlidingTabStrip_shouldExpand = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.PagerSlidingTabStrip_shouldExpand;
-			global::PagerSlidingTabStrip.Resource.Styleable.PagerSlidingTabStrip_tabBackground = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.PagerSlidingTabStrip_tabBackground;
-			global::PagerSlidingTabStrip.Resource.Styleable.PagerSlidingTabStrip_tabDividerPadding = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.PagerSlidingTabStrip_tabDividerPadding;
-			global::PagerSlidingTabStrip.Resource.Styleable.PagerSlidingTabStrip_tabPaddingLeftRight = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.PagerSlidingTabStrip_tabPaddingLeftRight;
-			global::PagerSlidingTabStrip.Resource.Styleable.PagerSlidingTabStrip_tabTextAllCaps = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.PagerSlidingTabStrip_tabTextAllCaps;
-			global::PagerSlidingTabStrip.Resource.Styleable.PagerSlidingTabStrip_underlineColor = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.PagerSlidingTabStrip_underlineColor;
-			global::PagerSlidingTabStrip.Resource.Styleable.PagerSlidingTabStrip_underlineHeight = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.PagerSlidingTabStrip_underlineHeight;
+			global::com.refractored.Resource.Animation.abc_fade_in = global::Etl_Analytics_Mobile_Version_01.Resource.Animation.abc_fade_in;
+			global::com.refractored.Resource.Animation.abc_fade_out = global::Etl_Analytics_Mobile_Version_01.Resource.Animation.abc_fade_out;
+			global::com.refractored.Resource.Animation.abc_grow_fade_in_from_bottom = global::Etl_Analytics_Mobile_Version_01.Resource.Animation.abc_grow_fade_in_from_bottom;
+			global::com.refractored.Resource.Animation.abc_popup_enter = global::Etl_Analytics_Mobile_Version_01.Resource.Animation.abc_popup_enter;
+			global::com.refractored.Resource.Animation.abc_popup_exit = global::Etl_Analytics_Mobile_Version_01.Resource.Animation.abc_popup_exit;
+			global::com.refractored.Resource.Animation.abc_shrink_fade_out_from_bottom = global::Etl_Analytics_Mobile_Version_01.Resource.Animation.abc_shrink_fade_out_from_bottom;
+			global::com.refractored.Resource.Animation.abc_slide_in_bottom = global::Etl_Analytics_Mobile_Version_01.Resource.Animation.abc_slide_in_bottom;
+			global::com.refractored.Resource.Animation.abc_slide_in_top = global::Etl_Analytics_Mobile_Version_01.Resource.Animation.abc_slide_in_top;
+			global::com.refractored.Resource.Animation.abc_slide_out_bottom = global::Etl_Analytics_Mobile_Version_01.Resource.Animation.abc_slide_out_bottom;
+			global::com.refractored.Resource.Animation.abc_slide_out_top = global::Etl_Analytics_Mobile_Version_01.Resource.Animation.abc_slide_out_top;
+			global::com.refractored.Resource.Attribute.actionBarDivider = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.actionBarDivider;
+			global::com.refractored.Resource.Attribute.actionBarItemBackground = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.actionBarItemBackground;
+			global::com.refractored.Resource.Attribute.actionBarPopupTheme = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.actionBarPopupTheme;
+			global::com.refractored.Resource.Attribute.actionBarSize = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.actionBarSize;
+			global::com.refractored.Resource.Attribute.actionBarSplitStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.actionBarSplitStyle;
+			global::com.refractored.Resource.Attribute.actionBarStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.actionBarStyle;
+			global::com.refractored.Resource.Attribute.actionBarTabBarStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.actionBarTabBarStyle;
+			global::com.refractored.Resource.Attribute.actionBarTabStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.actionBarTabStyle;
+			global::com.refractored.Resource.Attribute.actionBarTabTextStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.actionBarTabTextStyle;
+			global::com.refractored.Resource.Attribute.actionBarTheme = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.actionBarTheme;
+			global::com.refractored.Resource.Attribute.actionBarWidgetTheme = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.actionBarWidgetTheme;
+			global::com.refractored.Resource.Attribute.actionButtonStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.actionButtonStyle;
+			global::com.refractored.Resource.Attribute.actionDropDownStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.actionDropDownStyle;
+			global::com.refractored.Resource.Attribute.actionLayout = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.actionLayout;
+			global::com.refractored.Resource.Attribute.actionMenuTextAppearance = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.actionMenuTextAppearance;
+			global::com.refractored.Resource.Attribute.actionMenuTextColor = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.actionMenuTextColor;
+			global::com.refractored.Resource.Attribute.actionModeBackground = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.actionModeBackground;
+			global::com.refractored.Resource.Attribute.actionModeCloseButtonStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.actionModeCloseButtonStyle;
+			global::com.refractored.Resource.Attribute.actionModeCloseDrawable = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.actionModeCloseDrawable;
+			global::com.refractored.Resource.Attribute.actionModeCopyDrawable = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.actionModeCopyDrawable;
+			global::com.refractored.Resource.Attribute.actionModeCutDrawable = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.actionModeCutDrawable;
+			global::com.refractored.Resource.Attribute.actionModeFindDrawable = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.actionModeFindDrawable;
+			global::com.refractored.Resource.Attribute.actionModePasteDrawable = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.actionModePasteDrawable;
+			global::com.refractored.Resource.Attribute.actionModePopupWindowStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.actionModePopupWindowStyle;
+			global::com.refractored.Resource.Attribute.actionModeSelectAllDrawable = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.actionModeSelectAllDrawable;
+			global::com.refractored.Resource.Attribute.actionModeShareDrawable = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.actionModeShareDrawable;
+			global::com.refractored.Resource.Attribute.actionModeSplitBackground = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.actionModeSplitBackground;
+			global::com.refractored.Resource.Attribute.actionModeStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.actionModeStyle;
+			global::com.refractored.Resource.Attribute.actionModeWebSearchDrawable = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.actionModeWebSearchDrawable;
+			global::com.refractored.Resource.Attribute.actionOverflowButtonStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.actionOverflowButtonStyle;
+			global::com.refractored.Resource.Attribute.actionOverflowMenuStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.actionOverflowMenuStyle;
+			global::com.refractored.Resource.Attribute.actionProviderClass = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.actionProviderClass;
+			global::com.refractored.Resource.Attribute.actionViewClass = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.actionViewClass;
+			global::com.refractored.Resource.Attribute.activityChooserViewStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.activityChooserViewStyle;
+			global::com.refractored.Resource.Attribute.alertDialogButtonGroupStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.alertDialogButtonGroupStyle;
+			global::com.refractored.Resource.Attribute.alertDialogCenterButtons = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.alertDialogCenterButtons;
+			global::com.refractored.Resource.Attribute.alertDialogStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.alertDialogStyle;
+			global::com.refractored.Resource.Attribute.alertDialogTheme = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.alertDialogTheme;
+			global::com.refractored.Resource.Attribute.allowStacking = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.allowStacking;
+			global::com.refractored.Resource.Attribute.arrowHeadLength = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.arrowHeadLength;
+			global::com.refractored.Resource.Attribute.arrowShaftLength = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.arrowShaftLength;
+			global::com.refractored.Resource.Attribute.autoCompleteTextViewStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.autoCompleteTextViewStyle;
+			global::com.refractored.Resource.Attribute.background = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.background;
+			global::com.refractored.Resource.Attribute.backgroundSplit = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.backgroundSplit;
+			global::com.refractored.Resource.Attribute.backgroundStacked = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.backgroundStacked;
+			global::com.refractored.Resource.Attribute.backgroundTint = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.backgroundTint;
+			global::com.refractored.Resource.Attribute.backgroundTintMode = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.backgroundTintMode;
+			global::com.refractored.Resource.Attribute.barLength = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.barLength;
+			global::com.refractored.Resource.Attribute.borderlessButtonStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.borderlessButtonStyle;
+			global::com.refractored.Resource.Attribute.buttonBarButtonStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.buttonBarButtonStyle;
+			global::com.refractored.Resource.Attribute.buttonBarNegativeButtonStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.buttonBarNegativeButtonStyle;
+			global::com.refractored.Resource.Attribute.buttonBarNeutralButtonStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.buttonBarNeutralButtonStyle;
+			global::com.refractored.Resource.Attribute.buttonBarPositiveButtonStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.buttonBarPositiveButtonStyle;
+			global::com.refractored.Resource.Attribute.buttonBarStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.buttonBarStyle;
+			global::com.refractored.Resource.Attribute.buttonPanelSideLayout = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.buttonPanelSideLayout;
+			global::com.refractored.Resource.Attribute.buttonStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.buttonStyle;
+			global::com.refractored.Resource.Attribute.buttonStyleSmall = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.buttonStyleSmall;
+			global::com.refractored.Resource.Attribute.buttonTint = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.buttonTint;
+			global::com.refractored.Resource.Attribute.buttonTintMode = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.buttonTintMode;
+			global::com.refractored.Resource.Attribute.checkboxStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.checkboxStyle;
+			global::com.refractored.Resource.Attribute.checkedTextViewStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.checkedTextViewStyle;
+			global::com.refractored.Resource.Attribute.closeIcon = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.closeIcon;
+			global::com.refractored.Resource.Attribute.closeItemLayout = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.closeItemLayout;
+			global::com.refractored.Resource.Attribute.collapseContentDescription = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.collapseContentDescription;
+			global::com.refractored.Resource.Attribute.collapseIcon = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.collapseIcon;
+			global::com.refractored.Resource.Attribute.color = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.color;
+			global::com.refractored.Resource.Attribute.colorAccent = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.colorAccent;
+			global::com.refractored.Resource.Attribute.colorButtonNormal = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.colorButtonNormal;
+			global::com.refractored.Resource.Attribute.colorControlActivated = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.colorControlActivated;
+			global::com.refractored.Resource.Attribute.colorControlHighlight = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.colorControlHighlight;
+			global::com.refractored.Resource.Attribute.colorControlNormal = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.colorControlNormal;
+			global::com.refractored.Resource.Attribute.colorPrimary = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.colorPrimary;
+			global::com.refractored.Resource.Attribute.colorPrimaryDark = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.colorPrimaryDark;
+			global::com.refractored.Resource.Attribute.colorSwitchThumbNormal = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.colorSwitchThumbNormal;
+			global::com.refractored.Resource.Attribute.commitIcon = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.commitIcon;
+			global::com.refractored.Resource.Attribute.contentInsetEnd = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.contentInsetEnd;
+			global::com.refractored.Resource.Attribute.contentInsetLeft = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.contentInsetLeft;
+			global::com.refractored.Resource.Attribute.contentInsetRight = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.contentInsetRight;
+			global::com.refractored.Resource.Attribute.contentInsetStart = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.contentInsetStart;
+			global::com.refractored.Resource.Attribute.controlBackground = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.controlBackground;
+			global::com.refractored.Resource.Attribute.customNavigationLayout = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.customNavigationLayout;
+			global::com.refractored.Resource.Attribute.defaultQueryHint = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.defaultQueryHint;
+			global::com.refractored.Resource.Attribute.dialogPreferredPadding = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.dialogPreferredPadding;
+			global::com.refractored.Resource.Attribute.dialogTheme = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.dialogTheme;
+			global::com.refractored.Resource.Attribute.displayOptions = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.displayOptions;
+			global::com.refractored.Resource.Attribute.divider = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.divider;
+			global::com.refractored.Resource.Attribute.dividerHorizontal = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.dividerHorizontal;
+			global::com.refractored.Resource.Attribute.dividerPadding = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.dividerPadding;
+			global::com.refractored.Resource.Attribute.dividerVertical = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.dividerVertical;
+			global::com.refractored.Resource.Attribute.drawableSize = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.drawableSize;
+			global::com.refractored.Resource.Attribute.drawerArrowStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.drawerArrowStyle;
+			global::com.refractored.Resource.Attribute.dropDownListViewStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.dropDownListViewStyle;
+			global::com.refractored.Resource.Attribute.dropdownListPreferredItemHeight = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.dropdownListPreferredItemHeight;
+			global::com.refractored.Resource.Attribute.editTextBackground = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.editTextBackground;
+			global::com.refractored.Resource.Attribute.editTextColor = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.editTextColor;
+			global::com.refractored.Resource.Attribute.editTextStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.editTextStyle;
+			global::com.refractored.Resource.Attribute.elevation = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.elevation;
+			global::com.refractored.Resource.Attribute.expandActivityOverflowButtonDrawable = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.expandActivityOverflowButtonDrawable;
+			global::com.refractored.Resource.Attribute.gapBetweenBars = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.gapBetweenBars;
+			global::com.refractored.Resource.Attribute.goIcon = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.goIcon;
+			global::com.refractored.Resource.Attribute.height = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.height;
+			global::com.refractored.Resource.Attribute.hideOnContentScroll = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.hideOnContentScroll;
+			global::com.refractored.Resource.Attribute.homeAsUpIndicator = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.homeAsUpIndicator;
+			global::com.refractored.Resource.Attribute.homeLayout = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.homeLayout;
+			global::com.refractored.Resource.Attribute.icon = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.icon;
+			global::com.refractored.Resource.Attribute.iconifiedByDefault = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.iconifiedByDefault;
+			global::com.refractored.Resource.Attribute.imageButtonStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.imageButtonStyle;
+			global::com.refractored.Resource.Attribute.indeterminateProgressStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.indeterminateProgressStyle;
+			global::com.refractored.Resource.Attribute.initialActivityCount = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.initialActivityCount;
+			global::com.refractored.Resource.Attribute.isLightTheme = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.isLightTheme;
+			global::com.refractored.Resource.Attribute.itemPadding = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.itemPadding;
+			global::com.refractored.Resource.Attribute.layout = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.layout;
+			global::com.refractored.Resource.Attribute.listChoiceBackgroundIndicator = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.listChoiceBackgroundIndicator;
+			global::com.refractored.Resource.Attribute.listDividerAlertDialog = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.listDividerAlertDialog;
+			global::com.refractored.Resource.Attribute.listItemLayout = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.listItemLayout;
+			global::com.refractored.Resource.Attribute.listLayout = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.listLayout;
+			global::com.refractored.Resource.Attribute.listPopupWindowStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.listPopupWindowStyle;
+			global::com.refractored.Resource.Attribute.listPreferredItemHeight = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.listPreferredItemHeight;
+			global::com.refractored.Resource.Attribute.listPreferredItemHeightLarge = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.listPreferredItemHeightLarge;
+			global::com.refractored.Resource.Attribute.listPreferredItemHeightSmall = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.listPreferredItemHeightSmall;
+			global::com.refractored.Resource.Attribute.listPreferredItemPaddingLeft = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.listPreferredItemPaddingLeft;
+			global::com.refractored.Resource.Attribute.listPreferredItemPaddingRight = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.listPreferredItemPaddingRight;
+			global::com.refractored.Resource.Attribute.logo = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.logo;
+			global::com.refractored.Resource.Attribute.logoDescription = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.logoDescription;
+			global::com.refractored.Resource.Attribute.maxButtonHeight = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.maxButtonHeight;
+			global::com.refractored.Resource.Attribute.measureWithLargestChild = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.measureWithLargestChild;
+			global::com.refractored.Resource.Attribute.multiChoiceItemLayout = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.multiChoiceItemLayout;
+			global::com.refractored.Resource.Attribute.navigationContentDescription = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.navigationContentDescription;
+			global::com.refractored.Resource.Attribute.navigationIcon = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.navigationIcon;
+			global::com.refractored.Resource.Attribute.navigationMode = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.navigationMode;
+			global::com.refractored.Resource.Attribute.overlapAnchor = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.overlapAnchor;
+			global::com.refractored.Resource.Attribute.paddingEnd = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.paddingEnd;
+			global::com.refractored.Resource.Attribute.paddingStart = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.paddingStart;
+			global::com.refractored.Resource.Attribute.panelBackground = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.panelBackground;
+			global::com.refractored.Resource.Attribute.panelMenuListTheme = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.panelMenuListTheme;
+			global::com.refractored.Resource.Attribute.panelMenuListWidth = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.panelMenuListWidth;
+			global::com.refractored.Resource.Attribute.popupMenuStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.popupMenuStyle;
+			global::com.refractored.Resource.Attribute.popupTheme = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.popupTheme;
+			global::com.refractored.Resource.Attribute.popupWindowStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.popupWindowStyle;
+			global::com.refractored.Resource.Attribute.preserveIconSpacing = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.preserveIconSpacing;
+			global::com.refractored.Resource.Attribute.progressBarPadding = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.progressBarPadding;
+			global::com.refractored.Resource.Attribute.progressBarStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.progressBarStyle;
+			global::com.refractored.Resource.Attribute.pstsDividerColor = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.pstsDividerColor;
+			global::com.refractored.Resource.Attribute.pstsDividerPadding = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.pstsDividerPadding;
+			global::com.refractored.Resource.Attribute.pstsDividerWidth = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.pstsDividerWidth;
+			global::com.refractored.Resource.Attribute.pstsIndicatorColor = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.pstsIndicatorColor;
+			global::com.refractored.Resource.Attribute.pstsIndicatorHeight = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.pstsIndicatorHeight;
+			global::com.refractored.Resource.Attribute.pstsPaddingMiddle = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.pstsPaddingMiddle;
+			global::com.refractored.Resource.Attribute.pstsScrollOffset = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.pstsScrollOffset;
+			global::com.refractored.Resource.Attribute.pstsShouldExpand = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.pstsShouldExpand;
+			global::com.refractored.Resource.Attribute.pstsTabBackground = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.pstsTabBackground;
+			global::com.refractored.Resource.Attribute.pstsTabPaddingLeftRight = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.pstsTabPaddingLeftRight;
+			global::com.refractored.Resource.Attribute.pstsTextAllCaps = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.pstsTextAllCaps;
+			global::com.refractored.Resource.Attribute.pstsTextAlpha = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.pstsTextAlpha;
+			global::com.refractored.Resource.Attribute.pstsTextColorSelected = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.pstsTextColorSelected;
+			global::com.refractored.Resource.Attribute.pstsTextSelectedStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.pstsTextSelectedStyle;
+			global::com.refractored.Resource.Attribute.pstsTextStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.pstsTextStyle;
+			global::com.refractored.Resource.Attribute.pstsUnderlineColor = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.pstsUnderlineColor;
+			global::com.refractored.Resource.Attribute.pstsUnderlineHeight = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.pstsUnderlineHeight;
+			global::com.refractored.Resource.Attribute.queryBackground = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.queryBackground;
+			global::com.refractored.Resource.Attribute.queryHint = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.queryHint;
+			global::com.refractored.Resource.Attribute.radioButtonStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.radioButtonStyle;
+			global::com.refractored.Resource.Attribute.ratingBarStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.ratingBarStyle;
+			global::com.refractored.Resource.Attribute.ratingBarStyleIndicator = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.ratingBarStyleIndicator;
+			global::com.refractored.Resource.Attribute.ratingBarStyleSmall = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.ratingBarStyleSmall;
+			global::com.refractored.Resource.Attribute.searchHintIcon = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.searchHintIcon;
+			global::com.refractored.Resource.Attribute.searchIcon = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.searchIcon;
+			global::com.refractored.Resource.Attribute.searchViewStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.searchViewStyle;
+			global::com.refractored.Resource.Attribute.seekBarStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.seekBarStyle;
+			global::com.refractored.Resource.Attribute.selectableItemBackground = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.selectableItemBackground;
+			global::com.refractored.Resource.Attribute.selectableItemBackgroundBorderless = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.selectableItemBackgroundBorderless;
+			global::com.refractored.Resource.Attribute.showAsAction = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.showAsAction;
+			global::com.refractored.Resource.Attribute.showDividers = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.showDividers;
+			global::com.refractored.Resource.Attribute.showText = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.showText;
+			global::com.refractored.Resource.Attribute.singleChoiceItemLayout = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.singleChoiceItemLayout;
+			global::com.refractored.Resource.Attribute.spinBars = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.spinBars;
+			global::com.refractored.Resource.Attribute.spinnerDropDownItemStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.spinnerDropDownItemStyle;
+			global::com.refractored.Resource.Attribute.spinnerStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.spinnerStyle;
+			global::com.refractored.Resource.Attribute.splitTrack = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.splitTrack;
+			global::com.refractored.Resource.Attribute.srcCompat = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.srcCompat;
+			global::com.refractored.Resource.Attribute.state_above_anchor = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.state_above_anchor;
+			global::com.refractored.Resource.Attribute.submitBackground = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.submitBackground;
+			global::com.refractored.Resource.Attribute.subtitle = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.subtitle;
+			global::com.refractored.Resource.Attribute.subtitleTextAppearance = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.subtitleTextAppearance;
+			global::com.refractored.Resource.Attribute.subtitleTextColor = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.subtitleTextColor;
+			global::com.refractored.Resource.Attribute.subtitleTextStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.subtitleTextStyle;
+			global::com.refractored.Resource.Attribute.suggestionRowLayout = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.suggestionRowLayout;
+			global::com.refractored.Resource.Attribute.switchMinWidth = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.switchMinWidth;
+			global::com.refractored.Resource.Attribute.switchPadding = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.switchPadding;
+			global::com.refractored.Resource.Attribute.switchStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.switchStyle;
+			global::com.refractored.Resource.Attribute.switchTextAppearance = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.switchTextAppearance;
+			global::com.refractored.Resource.Attribute.textAllCaps = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.textAllCaps;
+			global::com.refractored.Resource.Attribute.textAppearanceLargePopupMenu = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.textAppearanceLargePopupMenu;
+			global::com.refractored.Resource.Attribute.textAppearanceListItem = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.textAppearanceListItem;
+			global::com.refractored.Resource.Attribute.textAppearanceListItemSmall = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.textAppearanceListItemSmall;
+			global::com.refractored.Resource.Attribute.textAppearanceSearchResultSubtitle = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.textAppearanceSearchResultSubtitle;
+			global::com.refractored.Resource.Attribute.textAppearanceSearchResultTitle = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.textAppearanceSearchResultTitle;
+			global::com.refractored.Resource.Attribute.textAppearanceSmallPopupMenu = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.textAppearanceSmallPopupMenu;
+			global::com.refractored.Resource.Attribute.textColorAlertDialogListItem = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.textColorAlertDialogListItem;
+			global::com.refractored.Resource.Attribute.textColorSearchUrl = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.textColorSearchUrl;
+			global::com.refractored.Resource.Attribute.theme = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.theme;
+			global::com.refractored.Resource.Attribute.thickness = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.thickness;
+			global::com.refractored.Resource.Attribute.thumbTextPadding = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.thumbTextPadding;
+			global::com.refractored.Resource.Attribute.title = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.title;
+			global::com.refractored.Resource.Attribute.titleMarginBottom = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.titleMarginBottom;
+			global::com.refractored.Resource.Attribute.titleMarginEnd = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.titleMarginEnd;
+			global::com.refractored.Resource.Attribute.titleMarginStart = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.titleMarginStart;
+			global::com.refractored.Resource.Attribute.titleMarginTop = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.titleMarginTop;
+			global::com.refractored.Resource.Attribute.titleMargins = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.titleMargins;
+			global::com.refractored.Resource.Attribute.titleTextAppearance = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.titleTextAppearance;
+			global::com.refractored.Resource.Attribute.titleTextColor = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.titleTextColor;
+			global::com.refractored.Resource.Attribute.titleTextStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.titleTextStyle;
+			global::com.refractored.Resource.Attribute.toolbarNavigationButtonStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.toolbarNavigationButtonStyle;
+			global::com.refractored.Resource.Attribute.toolbarStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.toolbarStyle;
+			global::com.refractored.Resource.Attribute.track = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.track;
+			global::com.refractored.Resource.Attribute.voiceIcon = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.voiceIcon;
+			global::com.refractored.Resource.Attribute.windowActionBar = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.windowActionBar;
+			global::com.refractored.Resource.Attribute.windowActionBarOverlay = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.windowActionBarOverlay;
+			global::com.refractored.Resource.Attribute.windowActionModeOverlay = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.windowActionModeOverlay;
+			global::com.refractored.Resource.Attribute.windowFixedHeightMajor = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.windowFixedHeightMajor;
+			global::com.refractored.Resource.Attribute.windowFixedHeightMinor = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.windowFixedHeightMinor;
+			global::com.refractored.Resource.Attribute.windowFixedWidthMajor = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.windowFixedWidthMajor;
+			global::com.refractored.Resource.Attribute.windowFixedWidthMinor = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.windowFixedWidthMinor;
+			global::com.refractored.Resource.Attribute.windowMinWidthMajor = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.windowMinWidthMajor;
+			global::com.refractored.Resource.Attribute.windowMinWidthMinor = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.windowMinWidthMinor;
+			global::com.refractored.Resource.Attribute.windowNoTitle = global::Etl_Analytics_Mobile_Version_01.Resource.Attribute.windowNoTitle;
+			global::com.refractored.Resource.Boolean.abc_action_bar_embed_tabs = global::Etl_Analytics_Mobile_Version_01.Resource.Boolean.abc_action_bar_embed_tabs;
+			global::com.refractored.Resource.Boolean.abc_action_bar_embed_tabs_pre_jb = global::Etl_Analytics_Mobile_Version_01.Resource.Boolean.abc_action_bar_embed_tabs_pre_jb;
+			global::com.refractored.Resource.Boolean.abc_action_bar_expanded_action_views_exclusive = global::Etl_Analytics_Mobile_Version_01.Resource.Boolean.abc_action_bar_expanded_action_views_exclusive;
+			global::com.refractored.Resource.Boolean.abc_allow_stacked_button_bar = global::Etl_Analytics_Mobile_Version_01.Resource.Boolean.abc_allow_stacked_button_bar;
+			global::com.refractored.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::Etl_Analytics_Mobile_Version_01.Resource.Boolean.abc_config_actionMenuItemAllCaps;
+			global::com.refractored.Resource.Boolean.abc_config_allowActionMenuItemTextWithIcon = global::Etl_Analytics_Mobile_Version_01.Resource.Boolean.abc_config_allowActionMenuItemTextWithIcon;
+			global::com.refractored.Resource.Boolean.abc_config_closeDialogWhenTouchOutside = global::Etl_Analytics_Mobile_Version_01.Resource.Boolean.abc_config_closeDialogWhenTouchOutside;
+			global::com.refractored.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent = global::Etl_Analytics_Mobile_Version_01.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent;
+			global::com.refractored.Resource.Color.abc_background_cache_hint_selector_material_dark = global::Etl_Analytics_Mobile_Version_01.Resource.Color.abc_background_cache_hint_selector_material_dark;
+			global::com.refractored.Resource.Color.abc_background_cache_hint_selector_material_light = global::Etl_Analytics_Mobile_Version_01.Resource.Color.abc_background_cache_hint_selector_material_light;
+			global::com.refractored.Resource.Color.abc_color_highlight_material = global::Etl_Analytics_Mobile_Version_01.Resource.Color.abc_color_highlight_material;
+			global::com.refractored.Resource.Color.abc_input_method_navigation_guard = global::Etl_Analytics_Mobile_Version_01.Resource.Color.abc_input_method_navigation_guard;
+			global::com.refractored.Resource.Color.abc_primary_text_disable_only_material_dark = global::Etl_Analytics_Mobile_Version_01.Resource.Color.abc_primary_text_disable_only_material_dark;
+			global::com.refractored.Resource.Color.abc_primary_text_disable_only_material_light = global::Etl_Analytics_Mobile_Version_01.Resource.Color.abc_primary_text_disable_only_material_light;
+			global::com.refractored.Resource.Color.abc_primary_text_material_dark = global::Etl_Analytics_Mobile_Version_01.Resource.Color.abc_primary_text_material_dark;
+			global::com.refractored.Resource.Color.abc_primary_text_material_light = global::Etl_Analytics_Mobile_Version_01.Resource.Color.abc_primary_text_material_light;
+			global::com.refractored.Resource.Color.abc_search_url_text = global::Etl_Analytics_Mobile_Version_01.Resource.Color.abc_search_url_text;
+			global::com.refractored.Resource.Color.abc_search_url_text_normal = global::Etl_Analytics_Mobile_Version_01.Resource.Color.abc_search_url_text_normal;
+			global::com.refractored.Resource.Color.abc_search_url_text_pressed = global::Etl_Analytics_Mobile_Version_01.Resource.Color.abc_search_url_text_pressed;
+			global::com.refractored.Resource.Color.abc_search_url_text_selected = global::Etl_Analytics_Mobile_Version_01.Resource.Color.abc_search_url_text_selected;
+			global::com.refractored.Resource.Color.abc_secondary_text_material_dark = global::Etl_Analytics_Mobile_Version_01.Resource.Color.abc_secondary_text_material_dark;
+			global::com.refractored.Resource.Color.abc_secondary_text_material_light = global::Etl_Analytics_Mobile_Version_01.Resource.Color.abc_secondary_text_material_light;
+			global::com.refractored.Resource.Color.accent_material_dark = global::Etl_Analytics_Mobile_Version_01.Resource.Color.accent_material_dark;
+			global::com.refractored.Resource.Color.accent_material_light = global::Etl_Analytics_Mobile_Version_01.Resource.Color.accent_material_light;
+			global::com.refractored.Resource.Color.background_floating_material_dark = global::Etl_Analytics_Mobile_Version_01.Resource.Color.background_floating_material_dark;
+			global::com.refractored.Resource.Color.background_floating_material_light = global::Etl_Analytics_Mobile_Version_01.Resource.Color.background_floating_material_light;
+			global::com.refractored.Resource.Color.background_material_dark = global::Etl_Analytics_Mobile_Version_01.Resource.Color.background_material_dark;
+			global::com.refractored.Resource.Color.background_material_light = global::Etl_Analytics_Mobile_Version_01.Resource.Color.background_material_light;
+			global::com.refractored.Resource.Color.bright_foreground_disabled_material_dark = global::Etl_Analytics_Mobile_Version_01.Resource.Color.bright_foreground_disabled_material_dark;
+			global::com.refractored.Resource.Color.bright_foreground_disabled_material_light = global::Etl_Analytics_Mobile_Version_01.Resource.Color.bright_foreground_disabled_material_light;
+			global::com.refractored.Resource.Color.bright_foreground_inverse_material_dark = global::Etl_Analytics_Mobile_Version_01.Resource.Color.bright_foreground_inverse_material_dark;
+			global::com.refractored.Resource.Color.bright_foreground_inverse_material_light = global::Etl_Analytics_Mobile_Version_01.Resource.Color.bright_foreground_inverse_material_light;
+			global::com.refractored.Resource.Color.bright_foreground_material_dark = global::Etl_Analytics_Mobile_Version_01.Resource.Color.bright_foreground_material_dark;
+			global::com.refractored.Resource.Color.bright_foreground_material_light = global::Etl_Analytics_Mobile_Version_01.Resource.Color.bright_foreground_material_light;
+			global::com.refractored.Resource.Color.button_material_dark = global::Etl_Analytics_Mobile_Version_01.Resource.Color.button_material_dark;
+			global::com.refractored.Resource.Color.button_material_light = global::Etl_Analytics_Mobile_Version_01.Resource.Color.button_material_light;
+			global::com.refractored.Resource.Color.dim_foreground_disabled_material_dark = global::Etl_Analytics_Mobile_Version_01.Resource.Color.dim_foreground_disabled_material_dark;
+			global::com.refractored.Resource.Color.dim_foreground_disabled_material_light = global::Etl_Analytics_Mobile_Version_01.Resource.Color.dim_foreground_disabled_material_light;
+			global::com.refractored.Resource.Color.dim_foreground_material_dark = global::Etl_Analytics_Mobile_Version_01.Resource.Color.dim_foreground_material_dark;
+			global::com.refractored.Resource.Color.dim_foreground_material_light = global::Etl_Analytics_Mobile_Version_01.Resource.Color.dim_foreground_material_light;
+			global::com.refractored.Resource.Color.foreground_material_dark = global::Etl_Analytics_Mobile_Version_01.Resource.Color.foreground_material_dark;
+			global::com.refractored.Resource.Color.foreground_material_light = global::Etl_Analytics_Mobile_Version_01.Resource.Color.foreground_material_light;
+			global::com.refractored.Resource.Color.highlighted_text_material_dark = global::Etl_Analytics_Mobile_Version_01.Resource.Color.highlighted_text_material_dark;
+			global::com.refractored.Resource.Color.highlighted_text_material_light = global::Etl_Analytics_Mobile_Version_01.Resource.Color.highlighted_text_material_light;
+			global::com.refractored.Resource.Color.hint_foreground_material_dark = global::Etl_Analytics_Mobile_Version_01.Resource.Color.hint_foreground_material_dark;
+			global::com.refractored.Resource.Color.hint_foreground_material_light = global::Etl_Analytics_Mobile_Version_01.Resource.Color.hint_foreground_material_light;
+			global::com.refractored.Resource.Color.material_blue_grey_800 = global::Etl_Analytics_Mobile_Version_01.Resource.Color.material_blue_grey_800;
+			global::com.refractored.Resource.Color.material_blue_grey_900 = global::Etl_Analytics_Mobile_Version_01.Resource.Color.material_blue_grey_900;
+			global::com.refractored.Resource.Color.material_blue_grey_950 = global::Etl_Analytics_Mobile_Version_01.Resource.Color.material_blue_grey_950;
+			global::com.refractored.Resource.Color.material_deep_teal_200 = global::Etl_Analytics_Mobile_Version_01.Resource.Color.material_deep_teal_200;
+			global::com.refractored.Resource.Color.material_deep_teal_500 = global::Etl_Analytics_Mobile_Version_01.Resource.Color.material_deep_teal_500;
+			global::com.refractored.Resource.Color.material_grey_100 = global::Etl_Analytics_Mobile_Version_01.Resource.Color.material_grey_100;
+			global::com.refractored.Resource.Color.material_grey_300 = global::Etl_Analytics_Mobile_Version_01.Resource.Color.material_grey_300;
+			global::com.refractored.Resource.Color.material_grey_50 = global::Etl_Analytics_Mobile_Version_01.Resource.Color.material_grey_50;
+			global::com.refractored.Resource.Color.material_grey_600 = global::Etl_Analytics_Mobile_Version_01.Resource.Color.material_grey_600;
+			global::com.refractored.Resource.Color.material_grey_800 = global::Etl_Analytics_Mobile_Version_01.Resource.Color.material_grey_800;
+			global::com.refractored.Resource.Color.material_grey_850 = global::Etl_Analytics_Mobile_Version_01.Resource.Color.material_grey_850;
+			global::com.refractored.Resource.Color.material_grey_900 = global::Etl_Analytics_Mobile_Version_01.Resource.Color.material_grey_900;
+			global::com.refractored.Resource.Color.primary_dark_material_dark = global::Etl_Analytics_Mobile_Version_01.Resource.Color.primary_dark_material_dark;
+			global::com.refractored.Resource.Color.primary_dark_material_light = global::Etl_Analytics_Mobile_Version_01.Resource.Color.primary_dark_material_light;
+			global::com.refractored.Resource.Color.primary_material_dark = global::Etl_Analytics_Mobile_Version_01.Resource.Color.primary_material_dark;
+			global::com.refractored.Resource.Color.primary_material_light = global::Etl_Analytics_Mobile_Version_01.Resource.Color.primary_material_light;
+			global::com.refractored.Resource.Color.primary_text_default_material_dark = global::Etl_Analytics_Mobile_Version_01.Resource.Color.primary_text_default_material_dark;
+			global::com.refractored.Resource.Color.primary_text_default_material_light = global::Etl_Analytics_Mobile_Version_01.Resource.Color.primary_text_default_material_light;
+			global::com.refractored.Resource.Color.primary_text_disabled_material_dark = global::Etl_Analytics_Mobile_Version_01.Resource.Color.primary_text_disabled_material_dark;
+			global::com.refractored.Resource.Color.primary_text_disabled_material_light = global::Etl_Analytics_Mobile_Version_01.Resource.Color.primary_text_disabled_material_light;
+			global::com.refractored.Resource.Color.psts_background_tab_pressed = global::Etl_Analytics_Mobile_Version_01.Resource.Color.psts_background_tab_pressed;
+			global::com.refractored.Resource.Color.ripple_material_dark = global::Etl_Analytics_Mobile_Version_01.Resource.Color.ripple_material_dark;
+			global::com.refractored.Resource.Color.ripple_material_light = global::Etl_Analytics_Mobile_Version_01.Resource.Color.ripple_material_light;
+			global::com.refractored.Resource.Color.secondary_text_default_material_dark = global::Etl_Analytics_Mobile_Version_01.Resource.Color.secondary_text_default_material_dark;
+			global::com.refractored.Resource.Color.secondary_text_default_material_light = global::Etl_Analytics_Mobile_Version_01.Resource.Color.secondary_text_default_material_light;
+			global::com.refractored.Resource.Color.secondary_text_disabled_material_dark = global::Etl_Analytics_Mobile_Version_01.Resource.Color.secondary_text_disabled_material_dark;
+			global::com.refractored.Resource.Color.secondary_text_disabled_material_light = global::Etl_Analytics_Mobile_Version_01.Resource.Color.secondary_text_disabled_material_light;
+			global::com.refractored.Resource.Color.switch_thumb_disabled_material_dark = global::Etl_Analytics_Mobile_Version_01.Resource.Color.switch_thumb_disabled_material_dark;
+			global::com.refractored.Resource.Color.switch_thumb_disabled_material_light = global::Etl_Analytics_Mobile_Version_01.Resource.Color.switch_thumb_disabled_material_light;
+			global::com.refractored.Resource.Color.switch_thumb_material_dark = global::Etl_Analytics_Mobile_Version_01.Resource.Color.switch_thumb_material_dark;
+			global::com.refractored.Resource.Color.switch_thumb_material_light = global::Etl_Analytics_Mobile_Version_01.Resource.Color.switch_thumb_material_light;
+			global::com.refractored.Resource.Color.switch_thumb_normal_material_dark = global::Etl_Analytics_Mobile_Version_01.Resource.Color.switch_thumb_normal_material_dark;
+			global::com.refractored.Resource.Color.switch_thumb_normal_material_light = global::Etl_Analytics_Mobile_Version_01.Resource.Color.switch_thumb_normal_material_light;
+			global::com.refractored.Resource.Dimension.abc_action_bar_content_inset_material = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_action_bar_content_inset_material;
+			global::com.refractored.Resource.Dimension.abc_action_bar_default_height_material = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_action_bar_default_height_material;
+			global::com.refractored.Resource.Dimension.abc_action_bar_default_padding_end_material = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_action_bar_default_padding_end_material;
+			global::com.refractored.Resource.Dimension.abc_action_bar_default_padding_start_material = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_action_bar_default_padding_start_material;
+			global::com.refractored.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
+			global::com.refractored.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
+			global::com.refractored.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
+			global::com.refractored.Resource.Dimension.abc_action_bar_progress_bar_size = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_action_bar_progress_bar_size;
+			global::com.refractored.Resource.Dimension.abc_action_bar_stacked_max_height = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_action_bar_stacked_max_height;
+			global::com.refractored.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
+			global::com.refractored.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
+			global::com.refractored.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
+			global::com.refractored.Resource.Dimension.abc_action_button_min_height_material = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_action_button_min_height_material;
+			global::com.refractored.Resource.Dimension.abc_action_button_min_width_material = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_action_button_min_width_material;
+			global::com.refractored.Resource.Dimension.abc_action_button_min_width_overflow_material = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_action_button_min_width_overflow_material;
+			global::com.refractored.Resource.Dimension.abc_alert_dialog_button_bar_height = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_alert_dialog_button_bar_height;
+			global::com.refractored.Resource.Dimension.abc_button_inset_horizontal_material = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_button_inset_horizontal_material;
+			global::com.refractored.Resource.Dimension.abc_button_inset_vertical_material = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_button_inset_vertical_material;
+			global::com.refractored.Resource.Dimension.abc_button_padding_horizontal_material = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_button_padding_horizontal_material;
+			global::com.refractored.Resource.Dimension.abc_button_padding_vertical_material = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_button_padding_vertical_material;
+			global::com.refractored.Resource.Dimension.abc_config_prefDialogWidth = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_config_prefDialogWidth;
+			global::com.refractored.Resource.Dimension.abc_control_corner_material = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_control_corner_material;
+			global::com.refractored.Resource.Dimension.abc_control_inset_material = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_control_inset_material;
+			global::com.refractored.Resource.Dimension.abc_control_padding_material = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_control_padding_material;
+			global::com.refractored.Resource.Dimension.abc_dialog_fixed_height_major = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_dialog_fixed_height_major;
+			global::com.refractored.Resource.Dimension.abc_dialog_fixed_height_minor = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_dialog_fixed_height_minor;
+			global::com.refractored.Resource.Dimension.abc_dialog_fixed_width_major = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_dialog_fixed_width_major;
+			global::com.refractored.Resource.Dimension.abc_dialog_fixed_width_minor = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_dialog_fixed_width_minor;
+			global::com.refractored.Resource.Dimension.abc_dialog_list_padding_vertical_material = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_dialog_list_padding_vertical_material;
+			global::com.refractored.Resource.Dimension.abc_dialog_min_width_major = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_dialog_min_width_major;
+			global::com.refractored.Resource.Dimension.abc_dialog_min_width_minor = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_dialog_min_width_minor;
+			global::com.refractored.Resource.Dimension.abc_dialog_padding_material = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_dialog_padding_material;
+			global::com.refractored.Resource.Dimension.abc_dialog_padding_top_material = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_dialog_padding_top_material;
+			global::com.refractored.Resource.Dimension.abc_disabled_alpha_material_dark = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_disabled_alpha_material_dark;
+			global::com.refractored.Resource.Dimension.abc_disabled_alpha_material_light = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_disabled_alpha_material_light;
+			global::com.refractored.Resource.Dimension.abc_dropdownitem_icon_width = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_dropdownitem_icon_width;
+			global::com.refractored.Resource.Dimension.abc_dropdownitem_text_padding_left = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_dropdownitem_text_padding_left;
+			global::com.refractored.Resource.Dimension.abc_dropdownitem_text_padding_right = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_dropdownitem_text_padding_right;
+			global::com.refractored.Resource.Dimension.abc_edit_text_inset_bottom_material = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_edit_text_inset_bottom_material;
+			global::com.refractored.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_edit_text_inset_horizontal_material;
+			global::com.refractored.Resource.Dimension.abc_edit_text_inset_top_material = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_edit_text_inset_top_material;
+			global::com.refractored.Resource.Dimension.abc_floating_window_z = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_floating_window_z;
+			global::com.refractored.Resource.Dimension.abc_list_item_padding_horizontal_material = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_list_item_padding_horizontal_material;
+			global::com.refractored.Resource.Dimension.abc_panel_menu_list_width = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_panel_menu_list_width;
+			global::com.refractored.Resource.Dimension.abc_search_view_preferred_width = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_search_view_preferred_width;
+			global::com.refractored.Resource.Dimension.abc_search_view_text_min_width = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_search_view_text_min_width;
+			global::com.refractored.Resource.Dimension.abc_seekbar_track_background_height_material = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_seekbar_track_background_height_material;
+			global::com.refractored.Resource.Dimension.abc_seekbar_track_progress_height_material = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_seekbar_track_progress_height_material;
+			global::com.refractored.Resource.Dimension.abc_select_dialog_padding_start_material = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_select_dialog_padding_start_material;
+			global::com.refractored.Resource.Dimension.abc_switch_padding = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_switch_padding;
+			global::com.refractored.Resource.Dimension.abc_text_size_body_1_material = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_text_size_body_1_material;
+			global::com.refractored.Resource.Dimension.abc_text_size_body_2_material = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_text_size_body_2_material;
+			global::com.refractored.Resource.Dimension.abc_text_size_button_material = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_text_size_button_material;
+			global::com.refractored.Resource.Dimension.abc_text_size_caption_material = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_text_size_caption_material;
+			global::com.refractored.Resource.Dimension.abc_text_size_display_1_material = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_text_size_display_1_material;
+			global::com.refractored.Resource.Dimension.abc_text_size_display_2_material = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_text_size_display_2_material;
+			global::com.refractored.Resource.Dimension.abc_text_size_display_3_material = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_text_size_display_3_material;
+			global::com.refractored.Resource.Dimension.abc_text_size_display_4_material = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_text_size_display_4_material;
+			global::com.refractored.Resource.Dimension.abc_text_size_headline_material = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_text_size_headline_material;
+			global::com.refractored.Resource.Dimension.abc_text_size_large_material = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_text_size_large_material;
+			global::com.refractored.Resource.Dimension.abc_text_size_medium_material = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_text_size_medium_material;
+			global::com.refractored.Resource.Dimension.abc_text_size_menu_material = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_text_size_menu_material;
+			global::com.refractored.Resource.Dimension.abc_text_size_small_material = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_text_size_small_material;
+			global::com.refractored.Resource.Dimension.abc_text_size_subhead_material = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_text_size_subhead_material;
+			global::com.refractored.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
+			global::com.refractored.Resource.Dimension.abc_text_size_title_material = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_text_size_title_material;
+			global::com.refractored.Resource.Dimension.abc_text_size_title_material_toolbar = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.abc_text_size_title_material_toolbar;
+			global::com.refractored.Resource.Dimension.disabled_alpha_material_dark = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.disabled_alpha_material_dark;
+			global::com.refractored.Resource.Dimension.disabled_alpha_material_light = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.disabled_alpha_material_light;
+			global::com.refractored.Resource.Dimension.highlight_alpha_material_colored = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.highlight_alpha_material_colored;
+			global::com.refractored.Resource.Dimension.highlight_alpha_material_dark = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.highlight_alpha_material_dark;
+			global::com.refractored.Resource.Dimension.highlight_alpha_material_light = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.highlight_alpha_material_light;
+			global::com.refractored.Resource.Dimension.notification_large_icon_height = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.notification_large_icon_height;
+			global::com.refractored.Resource.Dimension.notification_large_icon_width = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.notification_large_icon_width;
+			global::com.refractored.Resource.Dimension.notification_subtext_size = global::Etl_Analytics_Mobile_Version_01.Resource.Dimension.notification_subtext_size;
+			global::com.refractored.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_action_bar_item_background_material = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_action_bar_item_background_material;
+			global::com.refractored.Resource.Drawable.abc_btn_borderless_material = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_btn_borderless_material;
+			global::com.refractored.Resource.Drawable.abc_btn_check_material = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_btn_check_material;
+			global::com.refractored.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
+			global::com.refractored.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
+			global::com.refractored.Resource.Drawable.abc_btn_colored_material = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_btn_colored_material;
+			global::com.refractored.Resource.Drawable.abc_btn_default_mtrl_shape = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_btn_default_mtrl_shape;
+			global::com.refractored.Resource.Drawable.abc_btn_radio_material = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_btn_radio_material;
+			global::com.refractored.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
+			global::com.refractored.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
+			global::com.refractored.Resource.Drawable.abc_btn_rating_star_off_mtrl_alpha = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_btn_rating_star_off_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_btn_rating_star_on_mtrl_alpha = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_btn_rating_star_on_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
+			global::com.refractored.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
+			global::com.refractored.Resource.Drawable.abc_cab_background_internal_bg = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_cab_background_internal_bg;
+			global::com.refractored.Resource.Drawable.abc_cab_background_top_material = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_cab_background_top_material;
+			global::com.refractored.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_control_background_material = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_control_background_material;
+			global::com.refractored.Resource.Drawable.abc_dialog_material_background_dark = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_dialog_material_background_dark;
+			global::com.refractored.Resource.Drawable.abc_dialog_material_background_light = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_dialog_material_background_light;
+			global::com.refractored.Resource.Drawable.abc_edit_text_material = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_edit_text_material;
+			global::com.refractored.Resource.Drawable.abc_ic_ab_back_mtrl_am_alpha = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_ic_ab_back_mtrl_am_alpha;
+			global::com.refractored.Resource.Drawable.abc_ic_clear_mtrl_alpha = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_ic_clear_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_ic_go_search_api_mtrl_alpha = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_ic_go_search_api_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
+			global::com.refractored.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_ic_menu_moreoverflow_mtrl_alpha = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_ic_menu_moreoverflow_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
+			global::com.refractored.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_ic_search_api_mtrl_alpha = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_ic_search_api_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_ic_star_black_16dp = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_ic_star_black_16dp;
+			global::com.refractored.Resource.Drawable.abc_ic_star_black_36dp = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_ic_star_black_36dp;
+			global::com.refractored.Resource.Drawable.abc_ic_star_half_black_16dp = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_ic_star_half_black_16dp;
+			global::com.refractored.Resource.Drawable.abc_ic_star_half_black_36dp = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_ic_star_half_black_36dp;
+			global::com.refractored.Resource.Drawable.abc_ic_voice_search_api_mtrl_alpha = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_ic_voice_search_api_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_item_background_holo_dark = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_item_background_holo_dark;
+			global::com.refractored.Resource.Drawable.abc_item_background_holo_light = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_item_background_holo_light;
+			global::com.refractored.Resource.Drawable.abc_list_divider_mtrl_alpha = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_list_divider_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_list_focused_holo = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_list_focused_holo;
+			global::com.refractored.Resource.Drawable.abc_list_longpressed_holo = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_list_longpressed_holo;
+			global::com.refractored.Resource.Drawable.abc_list_pressed_holo_dark = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_list_pressed_holo_dark;
+			global::com.refractored.Resource.Drawable.abc_list_pressed_holo_light = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_list_pressed_holo_light;
+			global::com.refractored.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
+			global::com.refractored.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_list_selector_background_transition_holo_light;
+			global::com.refractored.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_list_selector_disabled_holo_dark;
+			global::com.refractored.Resource.Drawable.abc_list_selector_disabled_holo_light = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_list_selector_disabled_holo_light;
+			global::com.refractored.Resource.Drawable.abc_list_selector_holo_dark = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_list_selector_holo_dark;
+			global::com.refractored.Resource.Drawable.abc_list_selector_holo_light = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_list_selector_holo_light;
+			global::com.refractored.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
+			global::com.refractored.Resource.Drawable.abc_popup_background_mtrl_mult = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_popup_background_mtrl_mult;
+			global::com.refractored.Resource.Drawable.abc_ratingbar_full_material = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_ratingbar_full_material;
+			global::com.refractored.Resource.Drawable.abc_ratingbar_indicator_material = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_ratingbar_indicator_material;
+			global::com.refractored.Resource.Drawable.abc_ratingbar_small_material = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_ratingbar_small_material;
+			global::com.refractored.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000 = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000;
+			global::com.refractored.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005 = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005;
+			global::com.refractored.Resource.Drawable.abc_scrubber_primary_mtrl_alpha = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_scrubber_primary_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_scrubber_track_mtrl_alpha = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_scrubber_track_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_seekbar_thumb_material = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_seekbar_thumb_material;
+			global::com.refractored.Resource.Drawable.abc_seekbar_track_material = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_seekbar_track_material;
+			global::com.refractored.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_spinner_mtrl_am_alpha;
+			global::com.refractored.Resource.Drawable.abc_spinner_textfield_background_material = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_spinner_textfield_background_material;
+			global::com.refractored.Resource.Drawable.abc_switch_thumb_material = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_switch_thumb_material;
+			global::com.refractored.Resource.Drawable.abc_switch_track_mtrl_alpha = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_switch_track_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_tab_indicator_material = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_tab_indicator_material;
+			global::com.refractored.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_text_cursor_material = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_text_cursor_material;
+			global::com.refractored.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_textfield_default_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_textfield_search_material = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.abc_textfield_search_material;
+			global::com.refractored.Resource.Drawable.notification_template_icon_bg = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.notification_template_icon_bg;
+			global::com.refractored.Resource.Drawable.psts_background_tab = global::Etl_Analytics_Mobile_Version_01.Resource.Drawable.psts_background_tab;
+			global::com.refractored.Resource.Id.action0 = global::Etl_Analytics_Mobile_Version_01.Resource.Id.action0;
+			global::com.refractored.Resource.Id.action_bar = global::Etl_Analytics_Mobile_Version_01.Resource.Id.action_bar;
+			global::com.refractored.Resource.Id.action_bar_activity_content = global::Etl_Analytics_Mobile_Version_01.Resource.Id.action_bar_activity_content;
+			global::com.refractored.Resource.Id.action_bar_container = global::Etl_Analytics_Mobile_Version_01.Resource.Id.action_bar_container;
+			global::com.refractored.Resource.Id.action_bar_root = global::Etl_Analytics_Mobile_Version_01.Resource.Id.action_bar_root;
+			global::com.refractored.Resource.Id.action_bar_spinner = global::Etl_Analytics_Mobile_Version_01.Resource.Id.action_bar_spinner;
+			global::com.refractored.Resource.Id.action_bar_subtitle = global::Etl_Analytics_Mobile_Version_01.Resource.Id.action_bar_subtitle;
+			global::com.refractored.Resource.Id.action_bar_title = global::Etl_Analytics_Mobile_Version_01.Resource.Id.action_bar_title;
+			global::com.refractored.Resource.Id.action_context_bar = global::Etl_Analytics_Mobile_Version_01.Resource.Id.action_context_bar;
+			global::com.refractored.Resource.Id.action_divider = global::Etl_Analytics_Mobile_Version_01.Resource.Id.action_divider;
+			global::com.refractored.Resource.Id.action_menu_divider = global::Etl_Analytics_Mobile_Version_01.Resource.Id.action_menu_divider;
+			global::com.refractored.Resource.Id.action_menu_presenter = global::Etl_Analytics_Mobile_Version_01.Resource.Id.action_menu_presenter;
+			global::com.refractored.Resource.Id.action_mode_bar = global::Etl_Analytics_Mobile_Version_01.Resource.Id.action_mode_bar;
+			global::com.refractored.Resource.Id.action_mode_bar_stub = global::Etl_Analytics_Mobile_Version_01.Resource.Id.action_mode_bar_stub;
+			global::com.refractored.Resource.Id.action_mode_close_button = global::Etl_Analytics_Mobile_Version_01.Resource.Id.action_mode_close_button;
+			global::com.refractored.Resource.Id.activity_chooser_view_content = global::Etl_Analytics_Mobile_Version_01.Resource.Id.activity_chooser_view_content;
+			global::com.refractored.Resource.Id.alertTitle = global::Etl_Analytics_Mobile_Version_01.Resource.Id.alertTitle;
+			global::com.refractored.Resource.Id.always = global::Etl_Analytics_Mobile_Version_01.Resource.Id.always;
+			global::com.refractored.Resource.Id.beginning = global::Etl_Analytics_Mobile_Version_01.Resource.Id.beginning;
+			global::com.refractored.Resource.Id.bold = global::Etl_Analytics_Mobile_Version_01.Resource.Id.bold;
+			global::com.refractored.Resource.Id.buttonPanel = global::Etl_Analytics_Mobile_Version_01.Resource.Id.buttonPanel;
+			global::com.refractored.Resource.Id.cancel_action = global::Etl_Analytics_Mobile_Version_01.Resource.Id.cancel_action;
+			global::com.refractored.Resource.Id.checkbox = global::Etl_Analytics_Mobile_Version_01.Resource.Id.checkbox;
+			global::com.refractored.Resource.Id.chronometer = global::Etl_Analytics_Mobile_Version_01.Resource.Id.chronometer;
+			global::com.refractored.Resource.Id.collapseActionView = global::Etl_Analytics_Mobile_Version_01.Resource.Id.collapseActionView;
+			global::com.refractored.Resource.Id.contentPanel = global::Etl_Analytics_Mobile_Version_01.Resource.Id.contentPanel;
+			global::com.refractored.Resource.Id.custom = global::Etl_Analytics_Mobile_Version_01.Resource.Id.custom;
+			global::com.refractored.Resource.Id.customPanel = global::Etl_Analytics_Mobile_Version_01.Resource.Id.customPanel;
+			global::com.refractored.Resource.Id.decor_content_parent = global::Etl_Analytics_Mobile_Version_01.Resource.Id.decor_content_parent;
+			global::com.refractored.Resource.Id.default_activity_button = global::Etl_Analytics_Mobile_Version_01.Resource.Id.default_activity_button;
+			global::com.refractored.Resource.Id.disableHome = global::Etl_Analytics_Mobile_Version_01.Resource.Id.disableHome;
+			global::com.refractored.Resource.Id.edit_query = global::Etl_Analytics_Mobile_Version_01.Resource.Id.edit_query;
+			global::com.refractored.Resource.Id.end = global::Etl_Analytics_Mobile_Version_01.Resource.Id.end;
+			global::com.refractored.Resource.Id.end_padder = global::Etl_Analytics_Mobile_Version_01.Resource.Id.end_padder;
+			global::com.refractored.Resource.Id.expand_activities_button = global::Etl_Analytics_Mobile_Version_01.Resource.Id.expand_activities_button;
+			global::com.refractored.Resource.Id.expanded_menu = global::Etl_Analytics_Mobile_Version_01.Resource.Id.expanded_menu;
+			global::com.refractored.Resource.Id.home = global::Etl_Analytics_Mobile_Version_01.Resource.Id.home;
+			global::com.refractored.Resource.Id.homeAsUp = global::Etl_Analytics_Mobile_Version_01.Resource.Id.homeAsUp;
+			global::com.refractored.Resource.Id.icon = global::Etl_Analytics_Mobile_Version_01.Resource.Id.icon;
+			global::com.refractored.Resource.Id.ifRoom = global::Etl_Analytics_Mobile_Version_01.Resource.Id.ifRoom;
+			global::com.refractored.Resource.Id.image = global::Etl_Analytics_Mobile_Version_01.Resource.Id.image;
+			global::com.refractored.Resource.Id.info = global::Etl_Analytics_Mobile_Version_01.Resource.Id.info;
+			global::com.refractored.Resource.Id.italic = global::Etl_Analytics_Mobile_Version_01.Resource.Id.italic;
+			global::com.refractored.Resource.Id.line1 = global::Etl_Analytics_Mobile_Version_01.Resource.Id.line1;
+			global::com.refractored.Resource.Id.line3 = global::Etl_Analytics_Mobile_Version_01.Resource.Id.line3;
+			global::com.refractored.Resource.Id.listMode = global::Etl_Analytics_Mobile_Version_01.Resource.Id.listMode;
+			global::com.refractored.Resource.Id.list_item = global::Etl_Analytics_Mobile_Version_01.Resource.Id.list_item;
+			global::com.refractored.Resource.Id.media_actions = global::Etl_Analytics_Mobile_Version_01.Resource.Id.media_actions;
+			global::com.refractored.Resource.Id.middle = global::Etl_Analytics_Mobile_Version_01.Resource.Id.middle;
+			global::com.refractored.Resource.Id.multiply = global::Etl_Analytics_Mobile_Version_01.Resource.Id.multiply;
+			global::com.refractored.Resource.Id.never = global::Etl_Analytics_Mobile_Version_01.Resource.Id.never;
+			global::com.refractored.Resource.Id.none = global::Etl_Analytics_Mobile_Version_01.Resource.Id.none;
+			global::com.refractored.Resource.Id.normal = global::Etl_Analytics_Mobile_Version_01.Resource.Id.normal;
+			global::com.refractored.Resource.Id.parentPanel = global::Etl_Analytics_Mobile_Version_01.Resource.Id.parentPanel;
+			global::com.refractored.Resource.Id.progress_circular = global::Etl_Analytics_Mobile_Version_01.Resource.Id.progress_circular;
+			global::com.refractored.Resource.Id.progress_horizontal = global::Etl_Analytics_Mobile_Version_01.Resource.Id.progress_horizontal;
+			global::com.refractored.Resource.Id.psts_tab_title = global::Etl_Analytics_Mobile_Version_01.Resource.Id.psts_tab_title;
+			global::com.refractored.Resource.Id.radio = global::Etl_Analytics_Mobile_Version_01.Resource.Id.radio;
+			global::com.refractored.Resource.Id.screen = global::Etl_Analytics_Mobile_Version_01.Resource.Id.screen;
+			global::com.refractored.Resource.Id.scrollIndicatorDown = global::Etl_Analytics_Mobile_Version_01.Resource.Id.scrollIndicatorDown;
+			global::com.refractored.Resource.Id.scrollIndicatorUp = global::Etl_Analytics_Mobile_Version_01.Resource.Id.scrollIndicatorUp;
+			global::com.refractored.Resource.Id.scrollView = global::Etl_Analytics_Mobile_Version_01.Resource.Id.scrollView;
+			global::com.refractored.Resource.Id.search_badge = global::Etl_Analytics_Mobile_Version_01.Resource.Id.search_badge;
+			global::com.refractored.Resource.Id.search_bar = global::Etl_Analytics_Mobile_Version_01.Resource.Id.search_bar;
+			global::com.refractored.Resource.Id.search_button = global::Etl_Analytics_Mobile_Version_01.Resource.Id.search_button;
+			global::com.refractored.Resource.Id.search_close_btn = global::Etl_Analytics_Mobile_Version_01.Resource.Id.search_close_btn;
+			global::com.refractored.Resource.Id.search_edit_frame = global::Etl_Analytics_Mobile_Version_01.Resource.Id.search_edit_frame;
+			global::com.refractored.Resource.Id.search_go_btn = global::Etl_Analytics_Mobile_Version_01.Resource.Id.search_go_btn;
+			global::com.refractored.Resource.Id.search_mag_icon = global::Etl_Analytics_Mobile_Version_01.Resource.Id.search_mag_icon;
+			global::com.refractored.Resource.Id.search_plate = global::Etl_Analytics_Mobile_Version_01.Resource.Id.search_plate;
+			global::com.refractored.Resource.Id.search_src_text = global::Etl_Analytics_Mobile_Version_01.Resource.Id.search_src_text;
+			global::com.refractored.Resource.Id.search_voice_btn = global::Etl_Analytics_Mobile_Version_01.Resource.Id.search_voice_btn;
+			global::com.refractored.Resource.Id.select_dialog_listview = global::Etl_Analytics_Mobile_Version_01.Resource.Id.select_dialog_listview;
+			global::com.refractored.Resource.Id.shortcut = global::Etl_Analytics_Mobile_Version_01.Resource.Id.shortcut;
+			global::com.refractored.Resource.Id.showCustom = global::Etl_Analytics_Mobile_Version_01.Resource.Id.showCustom;
+			global::com.refractored.Resource.Id.showHome = global::Etl_Analytics_Mobile_Version_01.Resource.Id.showHome;
+			global::com.refractored.Resource.Id.showTitle = global::Etl_Analytics_Mobile_Version_01.Resource.Id.showTitle;
+			global::com.refractored.Resource.Id.spacer = global::Etl_Analytics_Mobile_Version_01.Resource.Id.spacer;
+			global::com.refractored.Resource.Id.split_action_bar = global::Etl_Analytics_Mobile_Version_01.Resource.Id.split_action_bar;
+			global::com.refractored.Resource.Id.src_atop = global::Etl_Analytics_Mobile_Version_01.Resource.Id.src_atop;
+			global::com.refractored.Resource.Id.src_in = global::Etl_Analytics_Mobile_Version_01.Resource.Id.src_in;
+			global::com.refractored.Resource.Id.src_over = global::Etl_Analytics_Mobile_Version_01.Resource.Id.src_over;
+			global::com.refractored.Resource.Id.status_bar_latest_event_content = global::Etl_Analytics_Mobile_Version_01.Resource.Id.status_bar_latest_event_content;
+			global::com.refractored.Resource.Id.submit_area = global::Etl_Analytics_Mobile_Version_01.Resource.Id.submit_area;
+			global::com.refractored.Resource.Id.tabMode = global::Etl_Analytics_Mobile_Version_01.Resource.Id.tabMode;
+			global::com.refractored.Resource.Id.text = global::Etl_Analytics_Mobile_Version_01.Resource.Id.text;
+			global::com.refractored.Resource.Id.text2 = global::Etl_Analytics_Mobile_Version_01.Resource.Id.text2;
+			global::com.refractored.Resource.Id.textSpacerNoButtons = global::Etl_Analytics_Mobile_Version_01.Resource.Id.textSpacerNoButtons;
+			global::com.refractored.Resource.Id.time = global::Etl_Analytics_Mobile_Version_01.Resource.Id.time;
+			global::com.refractored.Resource.Id.title = global::Etl_Analytics_Mobile_Version_01.Resource.Id.title;
+			global::com.refractored.Resource.Id.title_template = global::Etl_Analytics_Mobile_Version_01.Resource.Id.title_template;
+			global::com.refractored.Resource.Id.topPanel = global::Etl_Analytics_Mobile_Version_01.Resource.Id.topPanel;
+			global::com.refractored.Resource.Id.up = global::Etl_Analytics_Mobile_Version_01.Resource.Id.up;
+			global::com.refractored.Resource.Id.useLogo = global::Etl_Analytics_Mobile_Version_01.Resource.Id.useLogo;
+			global::com.refractored.Resource.Id.withText = global::Etl_Analytics_Mobile_Version_01.Resource.Id.withText;
+			global::com.refractored.Resource.Id.wrap_content = global::Etl_Analytics_Mobile_Version_01.Resource.Id.wrap_content;
+			global::com.refractored.Resource.Integer.abc_config_activityDefaultDur = global::Etl_Analytics_Mobile_Version_01.Resource.Integer.abc_config_activityDefaultDur;
+			global::com.refractored.Resource.Integer.abc_config_activityShortDur = global::Etl_Analytics_Mobile_Version_01.Resource.Integer.abc_config_activityShortDur;
+			global::com.refractored.Resource.Integer.abc_max_action_buttons = global::Etl_Analytics_Mobile_Version_01.Resource.Integer.abc_max_action_buttons;
+			global::com.refractored.Resource.Integer.cancel_button_image_alpha = global::Etl_Analytics_Mobile_Version_01.Resource.Integer.cancel_button_image_alpha;
+			global::com.refractored.Resource.Integer.status_bar_notification_info_maxnum = global::Etl_Analytics_Mobile_Version_01.Resource.Integer.status_bar_notification_info_maxnum;
+			global::com.refractored.Resource.Layout.abc_action_bar_title_item = global::Etl_Analytics_Mobile_Version_01.Resource.Layout.abc_action_bar_title_item;
+			global::com.refractored.Resource.Layout.abc_action_bar_up_container = global::Etl_Analytics_Mobile_Version_01.Resource.Layout.abc_action_bar_up_container;
+			global::com.refractored.Resource.Layout.abc_action_bar_view_list_nav_layout = global::Etl_Analytics_Mobile_Version_01.Resource.Layout.abc_action_bar_view_list_nav_layout;
+			global::com.refractored.Resource.Layout.abc_action_menu_item_layout = global::Etl_Analytics_Mobile_Version_01.Resource.Layout.abc_action_menu_item_layout;
+			global::com.refractored.Resource.Layout.abc_action_menu_layout = global::Etl_Analytics_Mobile_Version_01.Resource.Layout.abc_action_menu_layout;
+			global::com.refractored.Resource.Layout.abc_action_mode_bar = global::Etl_Analytics_Mobile_Version_01.Resource.Layout.abc_action_mode_bar;
+			global::com.refractored.Resource.Layout.abc_action_mode_close_item_material = global::Etl_Analytics_Mobile_Version_01.Resource.Layout.abc_action_mode_close_item_material;
+			global::com.refractored.Resource.Layout.abc_activity_chooser_view = global::Etl_Analytics_Mobile_Version_01.Resource.Layout.abc_activity_chooser_view;
+			global::com.refractored.Resource.Layout.abc_activity_chooser_view_list_item = global::Etl_Analytics_Mobile_Version_01.Resource.Layout.abc_activity_chooser_view_list_item;
+			global::com.refractored.Resource.Layout.abc_alert_dialog_button_bar_material = global::Etl_Analytics_Mobile_Version_01.Resource.Layout.abc_alert_dialog_button_bar_material;
+			global::com.refractored.Resource.Layout.abc_alert_dialog_material = global::Etl_Analytics_Mobile_Version_01.Resource.Layout.abc_alert_dialog_material;
+			global::com.refractored.Resource.Layout.abc_dialog_title_material = global::Etl_Analytics_Mobile_Version_01.Resource.Layout.abc_dialog_title_material;
+			global::com.refractored.Resource.Layout.abc_expanded_menu_layout = global::Etl_Analytics_Mobile_Version_01.Resource.Layout.abc_expanded_menu_layout;
+			global::com.refractored.Resource.Layout.abc_list_menu_item_checkbox = global::Etl_Analytics_Mobile_Version_01.Resource.Layout.abc_list_menu_item_checkbox;
+			global::com.refractored.Resource.Layout.abc_list_menu_item_icon = global::Etl_Analytics_Mobile_Version_01.Resource.Layout.abc_list_menu_item_icon;
+			global::com.refractored.Resource.Layout.abc_list_menu_item_layout = global::Etl_Analytics_Mobile_Version_01.Resource.Layout.abc_list_menu_item_layout;
+			global::com.refractored.Resource.Layout.abc_list_menu_item_radio = global::Etl_Analytics_Mobile_Version_01.Resource.Layout.abc_list_menu_item_radio;
+			global::com.refractored.Resource.Layout.abc_popup_menu_item_layout = global::Etl_Analytics_Mobile_Version_01.Resource.Layout.abc_popup_menu_item_layout;
+			global::com.refractored.Resource.Layout.abc_screen_content_include = global::Etl_Analytics_Mobile_Version_01.Resource.Layout.abc_screen_content_include;
+			global::com.refractored.Resource.Layout.abc_screen_simple = global::Etl_Analytics_Mobile_Version_01.Resource.Layout.abc_screen_simple;
+			global::com.refractored.Resource.Layout.abc_screen_simple_overlay_action_mode = global::Etl_Analytics_Mobile_Version_01.Resource.Layout.abc_screen_simple_overlay_action_mode;
+			global::com.refractored.Resource.Layout.abc_screen_toolbar = global::Etl_Analytics_Mobile_Version_01.Resource.Layout.abc_screen_toolbar;
+			global::com.refractored.Resource.Layout.abc_search_dropdown_item_icons_2line = global::Etl_Analytics_Mobile_Version_01.Resource.Layout.abc_search_dropdown_item_icons_2line;
+			global::com.refractored.Resource.Layout.abc_search_view = global::Etl_Analytics_Mobile_Version_01.Resource.Layout.abc_search_view;
+			global::com.refractored.Resource.Layout.abc_select_dialog_material = global::Etl_Analytics_Mobile_Version_01.Resource.Layout.abc_select_dialog_material;
+			global::com.refractored.Resource.Layout.notification_media_action = global::Etl_Analytics_Mobile_Version_01.Resource.Layout.notification_media_action;
+			global::com.refractored.Resource.Layout.notification_media_cancel_action = global::Etl_Analytics_Mobile_Version_01.Resource.Layout.notification_media_cancel_action;
+			global::com.refractored.Resource.Layout.notification_template_big_media = global::Etl_Analytics_Mobile_Version_01.Resource.Layout.notification_template_big_media;
+			global::com.refractored.Resource.Layout.notification_template_big_media_narrow = global::Etl_Analytics_Mobile_Version_01.Resource.Layout.notification_template_big_media_narrow;
+			global::com.refractored.Resource.Layout.notification_template_lines = global::Etl_Analytics_Mobile_Version_01.Resource.Layout.notification_template_lines;
+			global::com.refractored.Resource.Layout.notification_template_media = global::Etl_Analytics_Mobile_Version_01.Resource.Layout.notification_template_media;
+			global::com.refractored.Resource.Layout.notification_template_part_chronometer = global::Etl_Analytics_Mobile_Version_01.Resource.Layout.notification_template_part_chronometer;
+			global::com.refractored.Resource.Layout.notification_template_part_time = global::Etl_Analytics_Mobile_Version_01.Resource.Layout.notification_template_part_time;
+			global::com.refractored.Resource.Layout.psts_tab = global::Etl_Analytics_Mobile_Version_01.Resource.Layout.psts_tab;
+			global::com.refractored.Resource.Layout.select_dialog_item_material = global::Etl_Analytics_Mobile_Version_01.Resource.Layout.select_dialog_item_material;
+			global::com.refractored.Resource.Layout.select_dialog_multichoice_material = global::Etl_Analytics_Mobile_Version_01.Resource.Layout.select_dialog_multichoice_material;
+			global::com.refractored.Resource.Layout.select_dialog_singlechoice_material = global::Etl_Analytics_Mobile_Version_01.Resource.Layout.select_dialog_singlechoice_material;
+			global::com.refractored.Resource.Layout.support_simple_spinner_dropdown_item = global::Etl_Analytics_Mobile_Version_01.Resource.Layout.support_simple_spinner_dropdown_item;
+			global::com.refractored.Resource.String.abc_action_bar_home_description = global::Etl_Analytics_Mobile_Version_01.Resource.String.abc_action_bar_home_description;
+			global::com.refractored.Resource.String.abc_action_bar_home_description_format = global::Etl_Analytics_Mobile_Version_01.Resource.String.abc_action_bar_home_description_format;
+			global::com.refractored.Resource.String.abc_action_bar_home_subtitle_description_format = global::Etl_Analytics_Mobile_Version_01.Resource.String.abc_action_bar_home_subtitle_description_format;
+			global::com.refractored.Resource.String.abc_action_bar_up_description = global::Etl_Analytics_Mobile_Version_01.Resource.String.abc_action_bar_up_description;
+			global::com.refractored.Resource.String.abc_action_menu_overflow_description = global::Etl_Analytics_Mobile_Version_01.Resource.String.abc_action_menu_overflow_description;
+			global::com.refractored.Resource.String.abc_action_mode_done = global::Etl_Analytics_Mobile_Version_01.Resource.String.abc_action_mode_done;
+			global::com.refractored.Resource.String.abc_activity_chooser_view_see_all = global::Etl_Analytics_Mobile_Version_01.Resource.String.abc_activity_chooser_view_see_all;
+			global::com.refractored.Resource.String.abc_activitychooserview_choose_application = global::Etl_Analytics_Mobile_Version_01.Resource.String.abc_activitychooserview_choose_application;
+			global::com.refractored.Resource.String.abc_capital_off = global::Etl_Analytics_Mobile_Version_01.Resource.String.abc_capital_off;
+			global::com.refractored.Resource.String.abc_capital_on = global::Etl_Analytics_Mobile_Version_01.Resource.String.abc_capital_on;
+			global::com.refractored.Resource.String.abc_search_hint = global::Etl_Analytics_Mobile_Version_01.Resource.String.abc_search_hint;
+			global::com.refractored.Resource.String.abc_searchview_description_clear = global::Etl_Analytics_Mobile_Version_01.Resource.String.abc_searchview_description_clear;
+			global::com.refractored.Resource.String.abc_searchview_description_query = global::Etl_Analytics_Mobile_Version_01.Resource.String.abc_searchview_description_query;
+			global::com.refractored.Resource.String.abc_searchview_description_search = global::Etl_Analytics_Mobile_Version_01.Resource.String.abc_searchview_description_search;
+			global::com.refractored.Resource.String.abc_searchview_description_submit = global::Etl_Analytics_Mobile_Version_01.Resource.String.abc_searchview_description_submit;
+			global::com.refractored.Resource.String.abc_searchview_description_voice = global::Etl_Analytics_Mobile_Version_01.Resource.String.abc_searchview_description_voice;
+			global::com.refractored.Resource.String.abc_shareactionprovider_share_with = global::Etl_Analytics_Mobile_Version_01.Resource.String.abc_shareactionprovider_share_with;
+			global::com.refractored.Resource.String.abc_shareactionprovider_share_with_application = global::Etl_Analytics_Mobile_Version_01.Resource.String.abc_shareactionprovider_share_with_application;
+			global::com.refractored.Resource.String.abc_toolbar_collapse_description = global::Etl_Analytics_Mobile_Version_01.Resource.String.abc_toolbar_collapse_description;
+			global::com.refractored.Resource.String.status_bar_notification_info_overflow = global::Etl_Analytics_Mobile_Version_01.Resource.String.status_bar_notification_info_overflow;
+			global::com.refractored.Resource.Style.AlertDialog_AppCompat = global::Etl_Analytics_Mobile_Version_01.Resource.Style.AlertDialog_AppCompat;
+			global::com.refractored.Resource.Style.AlertDialog_AppCompat_Light = global::Etl_Analytics_Mobile_Version_01.Resource.Style.AlertDialog_AppCompat_Light;
+			global::com.refractored.Resource.Style.Animation_AppCompat_Dialog = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Animation_AppCompat_Dialog;
+			global::com.refractored.Resource.Style.Animation_AppCompat_DropDownUp = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Animation_AppCompat_DropDownUp;
+			global::com.refractored.Resource.Style.Base_AlertDialog_AppCompat = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_AlertDialog_AppCompat;
+			global::com.refractored.Resource.Style.Base_AlertDialog_AppCompat_Light = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_AlertDialog_AppCompat_Light;
+			global::com.refractored.Resource.Style.Base_Animation_AppCompat_Dialog = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Animation_AppCompat_Dialog;
+			global::com.refractored.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Animation_AppCompat_DropDownUp;
+			global::com.refractored.Resource.Style.Base_DialogWindowTitle_AppCompat = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_DialogWindowTitle_AppCompat;
+			global::com.refractored.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_TextAppearance_AppCompat;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_TextAppearance_AppCompat_Body1;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_TextAppearance_AppCompat_Body2;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Button = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_TextAppearance_AppCompat_Button;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_TextAppearance_AppCompat_Caption;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_TextAppearance_AppCompat_Display1;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_TextAppearance_AppCompat_Display2;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_TextAppearance_AppCompat_Display3;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_TextAppearance_AppCompat_Display4;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_TextAppearance_AppCompat_Headline;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Large = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_TextAppearance_AppCompat_Large;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_TextAppearance_AppCompat_Medium;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_TextAppearance_AppCompat_Menu;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Small = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_TextAppearance_AppCompat_Small;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Title = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_TextAppearance_AppCompat_Title;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::com.refractored.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::com.refractored.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::com.refractored.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::com.refractored.Resource.Style.Base_Theme_AppCompat = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Theme_AppCompat;
+			global::com.refractored.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Theme_AppCompat_CompactMenu;
+			global::com.refractored.Resource.Style.Base_Theme_AppCompat_Dialog = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Theme_AppCompat_Dialog;
+			global::com.refractored.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
+			global::com.refractored.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
+			global::com.refractored.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
+			global::com.refractored.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
+			global::com.refractored.Resource.Style.Base_Theme_AppCompat_Light = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Theme_AppCompat_Light;
+			global::com.refractored.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
+			global::com.refractored.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
+			global::com.refractored.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
+			global::com.refractored.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
+			global::com.refractored.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
+			global::com.refractored.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
+			global::com.refractored.Resource.Style.Base_ThemeOverlay_AppCompat = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_ThemeOverlay_AppCompat;
+			global::com.refractored.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
+			global::com.refractored.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
+			global::com.refractored.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::com.refractored.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
+			global::com.refractored.Resource.Style.Base_V11_Theme_AppCompat_Dialog = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_V11_Theme_AppCompat_Dialog;
+			global::com.refractored.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog;
+			global::com.refractored.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView;
+			global::com.refractored.Resource.Style.Base_V12_Widget_AppCompat_EditText = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_V12_Widget_AppCompat_EditText;
+			global::com.refractored.Resource.Style.Base_V21_Theme_AppCompat = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_V21_Theme_AppCompat;
+			global::com.refractored.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
+			global::com.refractored.Resource.Style.Base_V21_Theme_AppCompat_Light = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_V21_Theme_AppCompat_Light;
+			global::com.refractored.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
+			global::com.refractored.Resource.Style.Base_V22_Theme_AppCompat = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_V22_Theme_AppCompat;
+			global::com.refractored.Resource.Style.Base_V22_Theme_AppCompat_Light = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_V22_Theme_AppCompat_Light;
+			global::com.refractored.Resource.Style.Base_V23_Theme_AppCompat = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_V23_Theme_AppCompat;
+			global::com.refractored.Resource.Style.Base_V23_Theme_AppCompat_Light = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_V23_Theme_AppCompat_Light;
+			global::com.refractored.Resource.Style.Base_V7_Theme_AppCompat = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_V7_Theme_AppCompat;
+			global::com.refractored.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
+			global::com.refractored.Resource.Style.Base_V7_Theme_AppCompat_Light = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_V7_Theme_AppCompat_Light;
+			global::com.refractored.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
+			global::com.refractored.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
+			global::com.refractored.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_V7_Widget_AppCompat_EditText;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_ActionBar = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_ActionBar;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_ActionButton = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_ActionButton;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_ActionMode = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_ActionMode;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_Button = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_Button;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_Button_Colored;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_Button_Small = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_Button_Small;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_ButtonBar;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_EditText = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_EditText;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_ImageButton = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_ImageButton;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_ListView = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_ListView;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_PopupMenu;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_PopupWindow;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_ProgressBar;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_RatingBar = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_RatingBar;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_RatingBar_Small = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_RatingBar_Small;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_SearchView = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_SearchView;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_SeekBar = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_SeekBar;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_Spinner = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_Spinner;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_Toolbar = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_Toolbar;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
+			global::com.refractored.Resource.Style.Platform_AppCompat = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Platform_AppCompat;
+			global::com.refractored.Resource.Style.Platform_AppCompat_Light = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Platform_AppCompat_Light;
+			global::com.refractored.Resource.Style.Platform_ThemeOverlay_AppCompat = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Platform_ThemeOverlay_AppCompat;
+			global::com.refractored.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
+			global::com.refractored.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
+			global::com.refractored.Resource.Style.Platform_V11_AppCompat = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Platform_V11_AppCompat;
+			global::com.refractored.Resource.Style.Platform_V11_AppCompat_Light = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Platform_V11_AppCompat_Light;
+			global::com.refractored.Resource.Style.Platform_V14_AppCompat = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Platform_V14_AppCompat;
+			global::com.refractored.Resource.Style.Platform_V14_AppCompat_Light = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Platform_V14_AppCompat_Light;
+			global::com.refractored.Resource.Style.Platform_Widget_AppCompat_Spinner = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Platform_Widget_AppCompat_Spinner;
+			global::com.refractored.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::Etl_Analytics_Mobile_Version_01.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
+			global::com.refractored.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::Etl_Analytics_Mobile_Version_01.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
+			global::com.refractored.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::Etl_Analytics_Mobile_Version_01.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
+			global::com.refractored.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::Etl_Analytics_Mobile_Version_01.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
+			global::com.refractored.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::Etl_Analytics_Mobile_Version_01.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
+			global::com.refractored.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::Etl_Analytics_Mobile_Version_01.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
+			global::com.refractored.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::Etl_Analytics_Mobile_Version_01.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
+			global::com.refractored.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::Etl_Analytics_Mobile_Version_01.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
+			global::com.refractored.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::Etl_Analytics_Mobile_Version_01.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
+			global::com.refractored.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::Etl_Analytics_Mobile_Version_01.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
+			global::com.refractored.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::Etl_Analytics_Mobile_Version_01.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
+			global::com.refractored.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::Etl_Analytics_Mobile_Version_01.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
+			global::com.refractored.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::Etl_Analytics_Mobile_Version_01.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
+			global::com.refractored.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::Etl_Analytics_Mobile_Version_01.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat = global::Etl_Analytics_Mobile_Version_01.Resource.Style.TextAppearance_AppCompat;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Body1 = global::Etl_Analytics_Mobile_Version_01.Resource.Style.TextAppearance_AppCompat_Body1;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Body2 = global::Etl_Analytics_Mobile_Version_01.Resource.Style.TextAppearance_AppCompat_Body2;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Button = global::Etl_Analytics_Mobile_Version_01.Resource.Style.TextAppearance_AppCompat_Button;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Caption = global::Etl_Analytics_Mobile_Version_01.Resource.Style.TextAppearance_AppCompat_Caption;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Display1 = global::Etl_Analytics_Mobile_Version_01.Resource.Style.TextAppearance_AppCompat_Display1;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Display2 = global::Etl_Analytics_Mobile_Version_01.Resource.Style.TextAppearance_AppCompat_Display2;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Display3 = global::Etl_Analytics_Mobile_Version_01.Resource.Style.TextAppearance_AppCompat_Display3;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Display4 = global::Etl_Analytics_Mobile_Version_01.Resource.Style.TextAppearance_AppCompat_Display4;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Headline = global::Etl_Analytics_Mobile_Version_01.Resource.Style.TextAppearance_AppCompat_Headline;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Inverse = global::Etl_Analytics_Mobile_Version_01.Resource.Style.TextAppearance_AppCompat_Inverse;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Large = global::Etl_Analytics_Mobile_Version_01.Resource.Style.TextAppearance_AppCompat_Large;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::Etl_Analytics_Mobile_Version_01.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::Etl_Analytics_Mobile_Version_01.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::Etl_Analytics_Mobile_Version_01.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::Etl_Analytics_Mobile_Version_01.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::Etl_Analytics_Mobile_Version_01.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Medium = global::Etl_Analytics_Mobile_Version_01.Resource.Style.TextAppearance_AppCompat_Medium;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::Etl_Analytics_Mobile_Version_01.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Menu = global::Etl_Analytics_Mobile_Version_01.Resource.Style.TextAppearance_AppCompat_Menu;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::Etl_Analytics_Mobile_Version_01.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::Etl_Analytics_Mobile_Version_01.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Small = global::Etl_Analytics_Mobile_Version_01.Resource.Style.TextAppearance_AppCompat_Small;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::Etl_Analytics_Mobile_Version_01.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Subhead = global::Etl_Analytics_Mobile_Version_01.Resource.Style.TextAppearance_AppCompat_Subhead;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::Etl_Analytics_Mobile_Version_01.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Title = global::Etl_Analytics_Mobile_Version_01.Resource.Style.TextAppearance_AppCompat_Title;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::Etl_Analytics_Mobile_Version_01.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::Etl_Analytics_Mobile_Version_01.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::Etl_Analytics_Mobile_Version_01.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::Etl_Analytics_Mobile_Version_01.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::Etl_Analytics_Mobile_Version_01.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::Etl_Analytics_Mobile_Version_01.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::Etl_Analytics_Mobile_Version_01.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::Etl_Analytics_Mobile_Version_01.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::Etl_Analytics_Mobile_Version_01.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::Etl_Analytics_Mobile_Version_01.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::Etl_Analytics_Mobile_Version_01.Resource.Style.TextAppearance_AppCompat_Widget_Button;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::Etl_Analytics_Mobile_Version_01.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::Etl_Analytics_Mobile_Version_01.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::Etl_Analytics_Mobile_Version_01.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::Etl_Analytics_Mobile_Version_01.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::Etl_Analytics_Mobile_Version_01.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::Etl_Analytics_Mobile_Version_01.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::com.refractored.Resource.Style.TextAppearance_StatusBar_EventContent = global::Etl_Analytics_Mobile_Version_01.Resource.Style.TextAppearance_StatusBar_EventContent;
+			global::com.refractored.Resource.Style.TextAppearance_StatusBar_EventContent_Info = global::Etl_Analytics_Mobile_Version_01.Resource.Style.TextAppearance_StatusBar_EventContent_Info;
+			global::com.refractored.Resource.Style.TextAppearance_StatusBar_EventContent_Line2 = global::Etl_Analytics_Mobile_Version_01.Resource.Style.TextAppearance_StatusBar_EventContent_Line2;
+			global::com.refractored.Resource.Style.TextAppearance_StatusBar_EventContent_Time = global::Etl_Analytics_Mobile_Version_01.Resource.Style.TextAppearance_StatusBar_EventContent_Time;
+			global::com.refractored.Resource.Style.TextAppearance_StatusBar_EventContent_Title = global::Etl_Analytics_Mobile_Version_01.Resource.Style.TextAppearance_StatusBar_EventContent_Title;
+			global::com.refractored.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::Etl_Analytics_Mobile_Version_01.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::com.refractored.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::Etl_Analytics_Mobile_Version_01.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::com.refractored.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::Etl_Analytics_Mobile_Version_01.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::com.refractored.Resource.Style.Theme_AppCompat = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Theme_AppCompat;
+			global::com.refractored.Resource.Style.Theme_AppCompat_CompactMenu = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Theme_AppCompat_CompactMenu;
+			global::com.refractored.Resource.Style.Theme_AppCompat_DayNight = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Theme_AppCompat_DayNight;
+			global::com.refractored.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
+			global::com.refractored.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Theme_AppCompat_DayNight_Dialog;
+			global::com.refractored.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
+			global::com.refractored.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
+			global::com.refractored.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
+			global::com.refractored.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
+			global::com.refractored.Resource.Style.Theme_AppCompat_Dialog = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Theme_AppCompat_Dialog;
+			global::com.refractored.Resource.Style.Theme_AppCompat_Dialog_Alert = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Theme_AppCompat_Dialog_Alert;
+			global::com.refractored.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
+			global::com.refractored.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Theme_AppCompat_DialogWhenLarge;
+			global::com.refractored.Resource.Style.Theme_AppCompat_Light = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Theme_AppCompat_Light;
+			global::com.refractored.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
+			global::com.refractored.Resource.Style.Theme_AppCompat_Light_Dialog = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Theme_AppCompat_Light_Dialog;
+			global::com.refractored.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
+			global::com.refractored.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
+			global::com.refractored.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
+			global::com.refractored.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Theme_AppCompat_Light_NoActionBar;
+			global::com.refractored.Resource.Style.Theme_AppCompat_NoActionBar = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Theme_AppCompat_NoActionBar;
+			global::com.refractored.Resource.Style.ThemeOverlay_AppCompat = global::Etl_Analytics_Mobile_Version_01.Resource.Style.ThemeOverlay_AppCompat;
+			global::com.refractored.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::Etl_Analytics_Mobile_Version_01.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
+			global::com.refractored.Resource.Style.ThemeOverlay_AppCompat_Dark = global::Etl_Analytics_Mobile_Version_01.Resource.Style.ThemeOverlay_AppCompat_Dark;
+			global::com.refractored.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::Etl_Analytics_Mobile_Version_01.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::com.refractored.Resource.Style.ThemeOverlay_AppCompat_Light = global::Etl_Analytics_Mobile_Version_01.Resource.Style.ThemeOverlay_AppCompat_Light;
+			global::com.refractored.Resource.Style.Widget_AppCompat_ActionBar = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_ActionBar;
+			global::com.refractored.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_ActionBar_Solid;
+			global::com.refractored.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
+			global::com.refractored.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_ActionBar_TabText;
+			global::com.refractored.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_ActionBar_TabView;
+			global::com.refractored.Resource.Style.Widget_AppCompat_ActionButton = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_ActionButton;
+			global::com.refractored.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
+			global::com.refractored.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
+			global::com.refractored.Resource.Style.Widget_AppCompat_ActionMode = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_ActionMode;
+			global::com.refractored.Resource.Style.Widget_AppCompat_ActivityChooserView = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_ActivityChooserView;
+			global::com.refractored.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Button = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_Button;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Button_Borderless = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_Button_Borderless;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Button_Colored = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_Button_Colored;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Button_Small = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_Button_Small;
+			global::com.refractored.Resource.Style.Widget_AppCompat_ButtonBar = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_ButtonBar;
+			global::com.refractored.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
+			global::com.refractored.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
+			global::com.refractored.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
+			global::com.refractored.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
+			global::com.refractored.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
+			global::com.refractored.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
+			global::com.refractored.Resource.Style.Widget_AppCompat_EditText = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_EditText;
+			global::com.refractored.Resource.Style.Widget_AppCompat_ImageButton = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_ImageButton;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_ActionBar = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_Light_ActionBar;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_ActionButton = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_Light_ActionButton;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_Light_PopupMenu;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_SearchView = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_Light_SearchView;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
+			global::com.refractored.Resource.Style.Widget_AppCompat_ListPopupWindow = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_ListPopupWindow;
+			global::com.refractored.Resource.Style.Widget_AppCompat_ListView = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_ListView;
+			global::com.refractored.Resource.Style.Widget_AppCompat_ListView_DropDown = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_ListView_DropDown;
+			global::com.refractored.Resource.Style.Widget_AppCompat_ListView_Menu = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_ListView_Menu;
+			global::com.refractored.Resource.Style.Widget_AppCompat_PopupMenu = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_PopupMenu;
+			global::com.refractored.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
+			global::com.refractored.Resource.Style.Widget_AppCompat_PopupWindow = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_PopupWindow;
+			global::com.refractored.Resource.Style.Widget_AppCompat_ProgressBar = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_ProgressBar;
+			global::com.refractored.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
+			global::com.refractored.Resource.Style.Widget_AppCompat_RatingBar = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_RatingBar;
+			global::com.refractored.Resource.Style.Widget_AppCompat_RatingBar_Indicator = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_RatingBar_Indicator;
+			global::com.refractored.Resource.Style.Widget_AppCompat_RatingBar_Small = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_RatingBar_Small;
+			global::com.refractored.Resource.Style.Widget_AppCompat_SearchView = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_SearchView;
+			global::com.refractored.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
+			global::com.refractored.Resource.Style.Widget_AppCompat_SeekBar = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_SeekBar;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Spinner = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_Spinner;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_Spinner_DropDown;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_Spinner_Underlined;
+			global::com.refractored.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Toolbar = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_Toolbar;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::Etl_Analytics_Mobile_Version_01.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
+			global::com.refractored.Resource.Styleable.ActionBar = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ActionBar;
+			global::com.refractored.Resource.Styleable.ActionBar_background = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ActionBar_background;
+			global::com.refractored.Resource.Styleable.ActionBar_backgroundSplit = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ActionBar_backgroundSplit;
+			global::com.refractored.Resource.Styleable.ActionBar_backgroundStacked = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ActionBar_backgroundStacked;
+			global::com.refractored.Resource.Styleable.ActionBar_contentInsetEnd = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ActionBar_contentInsetEnd;
+			global::com.refractored.Resource.Styleable.ActionBar_contentInsetLeft = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ActionBar_contentInsetLeft;
+			global::com.refractored.Resource.Styleable.ActionBar_contentInsetRight = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ActionBar_contentInsetRight;
+			global::com.refractored.Resource.Styleable.ActionBar_contentInsetStart = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ActionBar_contentInsetStart;
+			global::com.refractored.Resource.Styleable.ActionBar_customNavigationLayout = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ActionBar_customNavigationLayout;
+			global::com.refractored.Resource.Styleable.ActionBar_displayOptions = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ActionBar_displayOptions;
+			global::com.refractored.Resource.Styleable.ActionBar_divider = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ActionBar_divider;
+			global::com.refractored.Resource.Styleable.ActionBar_elevation = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ActionBar_elevation;
+			global::com.refractored.Resource.Styleable.ActionBar_height = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ActionBar_height;
+			global::com.refractored.Resource.Styleable.ActionBar_hideOnContentScroll = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ActionBar_hideOnContentScroll;
+			global::com.refractored.Resource.Styleable.ActionBar_homeAsUpIndicator = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ActionBar_homeAsUpIndicator;
+			global::com.refractored.Resource.Styleable.ActionBar_homeLayout = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ActionBar_homeLayout;
+			global::com.refractored.Resource.Styleable.ActionBar_icon = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ActionBar_icon;
+			global::com.refractored.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ActionBar_indeterminateProgressStyle;
+			global::com.refractored.Resource.Styleable.ActionBar_itemPadding = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ActionBar_itemPadding;
+			global::com.refractored.Resource.Styleable.ActionBar_logo = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ActionBar_logo;
+			global::com.refractored.Resource.Styleable.ActionBar_navigationMode = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ActionBar_navigationMode;
+			global::com.refractored.Resource.Styleable.ActionBar_popupTheme = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ActionBar_popupTheme;
+			global::com.refractored.Resource.Styleable.ActionBar_progressBarPadding = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ActionBar_progressBarPadding;
+			global::com.refractored.Resource.Styleable.ActionBar_progressBarStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ActionBar_progressBarStyle;
+			global::com.refractored.Resource.Styleable.ActionBar_subtitle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ActionBar_subtitle;
+			global::com.refractored.Resource.Styleable.ActionBar_subtitleTextStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ActionBar_subtitleTextStyle;
+			global::com.refractored.Resource.Styleable.ActionBar_title = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ActionBar_title;
+			global::com.refractored.Resource.Styleable.ActionBar_titleTextStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ActionBar_titleTextStyle;
+			global::com.refractored.Resource.Styleable.ActionBarLayout = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ActionBarLayout;
+			global::com.refractored.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ActionBarLayout_android_layout_gravity;
+			global::com.refractored.Resource.Styleable.ActionMenuItemView = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ActionMenuItemView;
+			global::com.refractored.Resource.Styleable.ActionMenuItemView_android_minWidth = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ActionMenuItemView_android_minWidth;
+			global::com.refractored.Resource.Styleable.ActionMenuView = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ActionMenuView;
+			global::com.refractored.Resource.Styleable.ActionMode = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ActionMode;
+			global::com.refractored.Resource.Styleable.ActionMode_background = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ActionMode_background;
+			global::com.refractored.Resource.Styleable.ActionMode_backgroundSplit = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ActionMode_backgroundSplit;
+			global::com.refractored.Resource.Styleable.ActionMode_closeItemLayout = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ActionMode_closeItemLayout;
+			global::com.refractored.Resource.Styleable.ActionMode_height = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ActionMode_height;
+			global::com.refractored.Resource.Styleable.ActionMode_subtitleTextStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ActionMode_subtitleTextStyle;
+			global::com.refractored.Resource.Styleable.ActionMode_titleTextStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ActionMode_titleTextStyle;
+			global::com.refractored.Resource.Styleable.ActivityChooserView = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ActivityChooserView;
+			global::com.refractored.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
+			global::com.refractored.Resource.Styleable.ActivityChooserView_initialActivityCount = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ActivityChooserView_initialActivityCount;
+			global::com.refractored.Resource.Styleable.AlertDialog = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AlertDialog;
+			global::com.refractored.Resource.Styleable.AlertDialog_android_layout = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AlertDialog_android_layout;
+			global::com.refractored.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
+			global::com.refractored.Resource.Styleable.AlertDialog_listItemLayout = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AlertDialog_listItemLayout;
+			global::com.refractored.Resource.Styleable.AlertDialog_listLayout = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AlertDialog_listLayout;
+			global::com.refractored.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
+			global::com.refractored.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
+			global::com.refractored.Resource.Styleable.AppCompatImageView = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatImageView;
+			global::com.refractored.Resource.Styleable.AppCompatImageView_android_src = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatImageView_android_src;
+			global::com.refractored.Resource.Styleable.AppCompatImageView_srcCompat = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatImageView_srcCompat;
+			global::com.refractored.Resource.Styleable.AppCompatTextView = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTextView;
+			global::com.refractored.Resource.Styleable.AppCompatTextView_android_textAppearance = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTextView_android_textAppearance;
+			global::com.refractored.Resource.Styleable.AppCompatTextView_textAllCaps = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTextView_textAllCaps;
+			global::com.refractored.Resource.Styleable.AppCompatTheme = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionBarDivider = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_actionBarDivider;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionBarPopupTheme = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_actionBarPopupTheme;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionBarSize = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_actionBarSize;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionBarSplitStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_actionBarSplitStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionBarStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_actionBarStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionBarTabStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_actionBarTabStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionBarTheme = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_actionBarTheme;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionButtonStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_actionButtonStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionDropDownStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_actionDropDownStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionMenuTextColor = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_actionMenuTextColor;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionModeBackground = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_actionModeBackground;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionModeCutDrawable = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_actionModeCutDrawable;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionModeFindDrawable = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_actionModeFindDrawable;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionModePasteDrawable = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_actionModePasteDrawable;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionModeShareDrawable = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_actionModeShareDrawable;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionModeSplitBackground = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_actionModeSplitBackground;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionModeStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_actionModeStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_activityChooserViewStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_activityChooserViewStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_alertDialogStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_alertDialogStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_alertDialogTheme = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_alertDialogTheme;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_android_windowIsFloating = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_android_windowIsFloating;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_borderlessButtonStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_borderlessButtonStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_buttonBarStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_buttonBarStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_buttonStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_buttonStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_buttonStyleSmall = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_buttonStyleSmall;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_checkboxStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_checkboxStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_checkedTextViewStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_checkedTextViewStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_colorAccent = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_colorAccent;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_colorButtonNormal = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_colorButtonNormal;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_colorControlActivated = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_colorControlActivated;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_colorControlHighlight = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_colorControlHighlight;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_colorControlNormal = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_colorControlNormal;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_colorPrimary = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_colorPrimary;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_colorPrimaryDark = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_colorPrimaryDark;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_controlBackground = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_controlBackground;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_dialogPreferredPadding = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_dialogPreferredPadding;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_dialogTheme = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_dialogTheme;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_dividerHorizontal;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_dividerVertical = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_dividerVertical;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_editTextBackground = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_editTextBackground;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_editTextColor = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_editTextColor;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_editTextStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_editTextStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_imageButtonStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_panelBackground = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_panelBackground;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_popupMenuStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_popupMenuStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_popupWindowStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_popupWindowStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_radioButtonStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_radioButtonStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_ratingBarStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_ratingBarStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_searchViewStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_searchViewStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_seekBarStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_seekBarStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_selectableItemBackground = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_selectableItemBackground;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_spinnerStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_spinnerStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_switchStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_switchStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_textAppearanceListItem = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_textAppearanceListItem;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_textColorSearchUrl = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_textColorSearchUrl;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_toolbarStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_toolbarStyle;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_windowActionBar = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_windowActionBar;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_windowActionBarOverlay = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_windowActionBarOverlay;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_windowActionModeOverlay = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_windowActionModeOverlay;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_windowMinWidthMajor = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_windowMinWidthMajor;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_windowMinWidthMinor = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_windowMinWidthMinor;
+			global::com.refractored.Resource.Styleable.AppCompatTheme_windowNoTitle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.AppCompatTheme_windowNoTitle;
+			global::com.refractored.Resource.Styleable.ButtonBarLayout = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ButtonBarLayout;
+			global::com.refractored.Resource.Styleable.ButtonBarLayout_allowStacking = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ButtonBarLayout_allowStacking;
+			global::com.refractored.Resource.Styleable.CompoundButton = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.CompoundButton;
+			global::com.refractored.Resource.Styleable.CompoundButton_android_button = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.CompoundButton_android_button;
+			global::com.refractored.Resource.Styleable.CompoundButton_buttonTint = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.CompoundButton_buttonTint;
+			global::com.refractored.Resource.Styleable.CompoundButton_buttonTintMode = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.CompoundButton_buttonTintMode;
+			global::com.refractored.Resource.Styleable.DrawerArrowToggle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.DrawerArrowToggle;
+			global::com.refractored.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
+			global::com.refractored.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
+			global::com.refractored.Resource.Styleable.DrawerArrowToggle_barLength = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.DrawerArrowToggle_barLength;
+			global::com.refractored.Resource.Styleable.DrawerArrowToggle_color = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.DrawerArrowToggle_color;
+			global::com.refractored.Resource.Styleable.DrawerArrowToggle_drawableSize = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.DrawerArrowToggle_drawableSize;
+			global::com.refractored.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
+			global::com.refractored.Resource.Styleable.DrawerArrowToggle_spinBars = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.DrawerArrowToggle_spinBars;
+			global::com.refractored.Resource.Styleable.DrawerArrowToggle_thickness = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.DrawerArrowToggle_thickness;
+			global::com.refractored.Resource.Styleable.LinearLayoutCompat = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.LinearLayoutCompat;
+			global::com.refractored.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
+			global::com.refractored.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
+			global::com.refractored.Resource.Styleable.LinearLayoutCompat_android_gravity = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.LinearLayoutCompat_android_gravity;
+			global::com.refractored.Resource.Styleable.LinearLayoutCompat_android_orientation = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.LinearLayoutCompat_android_orientation;
+			global::com.refractored.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.LinearLayoutCompat_android_weightSum;
+			global::com.refractored.Resource.Styleable.LinearLayoutCompat_divider = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.LinearLayoutCompat_divider;
+			global::com.refractored.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.LinearLayoutCompat_dividerPadding;
+			global::com.refractored.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
+			global::com.refractored.Resource.Styleable.LinearLayoutCompat_showDividers = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.LinearLayoutCompat_showDividers;
+			global::com.refractored.Resource.Styleable.LinearLayoutCompat_Layout = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.LinearLayoutCompat_Layout;
+			global::com.refractored.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
+			global::com.refractored.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
+			global::com.refractored.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
+			global::com.refractored.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
+			global::com.refractored.Resource.Styleable.ListPopupWindow = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ListPopupWindow;
+			global::com.refractored.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
+			global::com.refractored.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
+			global::com.refractored.Resource.Styleable.MenuGroup = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.MenuGroup;
+			global::com.refractored.Resource.Styleable.MenuGroup_android_checkableBehavior = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.MenuGroup_android_checkableBehavior;
+			global::com.refractored.Resource.Styleable.MenuGroup_android_enabled = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.MenuGroup_android_enabled;
+			global::com.refractored.Resource.Styleable.MenuGroup_android_id = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.MenuGroup_android_id;
+			global::com.refractored.Resource.Styleable.MenuGroup_android_menuCategory = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.MenuGroup_android_menuCategory;
+			global::com.refractored.Resource.Styleable.MenuGroup_android_orderInCategory = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.MenuGroup_android_orderInCategory;
+			global::com.refractored.Resource.Styleable.MenuGroup_android_visible = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.MenuGroup_android_visible;
+			global::com.refractored.Resource.Styleable.MenuItem = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.MenuItem;
+			global::com.refractored.Resource.Styleable.MenuItem_actionLayout = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.MenuItem_actionLayout;
+			global::com.refractored.Resource.Styleable.MenuItem_actionProviderClass = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.MenuItem_actionProviderClass;
+			global::com.refractored.Resource.Styleable.MenuItem_actionViewClass = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.MenuItem_actionViewClass;
+			global::com.refractored.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.MenuItem_android_alphabeticShortcut;
+			global::com.refractored.Resource.Styleable.MenuItem_android_checkable = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.MenuItem_android_checkable;
+			global::com.refractored.Resource.Styleable.MenuItem_android_checked = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.MenuItem_android_checked;
+			global::com.refractored.Resource.Styleable.MenuItem_android_enabled = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.MenuItem_android_enabled;
+			global::com.refractored.Resource.Styleable.MenuItem_android_icon = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.MenuItem_android_icon;
+			global::com.refractored.Resource.Styleable.MenuItem_android_id = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.MenuItem_android_id;
+			global::com.refractored.Resource.Styleable.MenuItem_android_menuCategory = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.MenuItem_android_menuCategory;
+			global::com.refractored.Resource.Styleable.MenuItem_android_numericShortcut = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.MenuItem_android_numericShortcut;
+			global::com.refractored.Resource.Styleable.MenuItem_android_onClick = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.MenuItem_android_onClick;
+			global::com.refractored.Resource.Styleable.MenuItem_android_orderInCategory = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.MenuItem_android_orderInCategory;
+			global::com.refractored.Resource.Styleable.MenuItem_android_title = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.MenuItem_android_title;
+			global::com.refractored.Resource.Styleable.MenuItem_android_titleCondensed = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.MenuItem_android_titleCondensed;
+			global::com.refractored.Resource.Styleable.MenuItem_android_visible = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.MenuItem_android_visible;
+			global::com.refractored.Resource.Styleable.MenuItem_showAsAction = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.MenuItem_showAsAction;
+			global::com.refractored.Resource.Styleable.MenuView = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.MenuView;
+			global::com.refractored.Resource.Styleable.MenuView_android_headerBackground = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.MenuView_android_headerBackground;
+			global::com.refractored.Resource.Styleable.MenuView_android_horizontalDivider = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.MenuView_android_horizontalDivider;
+			global::com.refractored.Resource.Styleable.MenuView_android_itemBackground = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.MenuView_android_itemBackground;
+			global::com.refractored.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
+			global::com.refractored.Resource.Styleable.MenuView_android_itemTextAppearance = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.MenuView_android_itemTextAppearance;
+			global::com.refractored.Resource.Styleable.MenuView_android_verticalDivider = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.MenuView_android_verticalDivider;
+			global::com.refractored.Resource.Styleable.MenuView_android_windowAnimationStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.MenuView_android_windowAnimationStyle;
+			global::com.refractored.Resource.Styleable.MenuView_preserveIconSpacing = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.MenuView_preserveIconSpacing;
+			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.PagerSlidingTabStrip;
+			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip_pstsDividerColor = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.PagerSlidingTabStrip_pstsDividerColor;
+			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip_pstsDividerPadding = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.PagerSlidingTabStrip_pstsDividerPadding;
+			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip_pstsDividerWidth = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.PagerSlidingTabStrip_pstsDividerWidth;
+			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip_pstsIndicatorColor = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.PagerSlidingTabStrip_pstsIndicatorColor;
+			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip_pstsIndicatorHeight = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.PagerSlidingTabStrip_pstsIndicatorHeight;
+			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip_pstsPaddingMiddle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.PagerSlidingTabStrip_pstsPaddingMiddle;
+			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip_pstsScrollOffset = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.PagerSlidingTabStrip_pstsScrollOffset;
+			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip_pstsShouldExpand = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.PagerSlidingTabStrip_pstsShouldExpand;
+			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip_pstsTabBackground = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.PagerSlidingTabStrip_pstsTabBackground;
+			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip_pstsTabPaddingLeftRight = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.PagerSlidingTabStrip_pstsTabPaddingLeftRight;
+			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip_pstsTextAllCaps = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.PagerSlidingTabStrip_pstsTextAllCaps;
+			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip_pstsTextAlpha = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.PagerSlidingTabStrip_pstsTextAlpha;
+			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip_pstsTextColorSelected = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.PagerSlidingTabStrip_pstsTextColorSelected;
+			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip_pstsTextSelectedStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.PagerSlidingTabStrip_pstsTextSelectedStyle;
+			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip_pstsTextStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.PagerSlidingTabStrip_pstsTextStyle;
+			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip_pstsUnderlineColor = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.PagerSlidingTabStrip_pstsUnderlineColor;
+			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip_pstsUnderlineHeight = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.PagerSlidingTabStrip_pstsUnderlineHeight;
+			global::com.refractored.Resource.Styleable.PopupWindow = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.PopupWindow;
+			global::com.refractored.Resource.Styleable.PopupWindow_android_popupBackground = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.PopupWindow_android_popupBackground;
+			global::com.refractored.Resource.Styleable.PopupWindow_overlapAnchor = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.PopupWindow_overlapAnchor;
+			global::com.refractored.Resource.Styleable.PopupWindowBackgroundState = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.PopupWindowBackgroundState;
+			global::com.refractored.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
+			global::com.refractored.Resource.Styleable.SearchView = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.SearchView;
+			global::com.refractored.Resource.Styleable.SearchView_android_focusable = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.SearchView_android_focusable;
+			global::com.refractored.Resource.Styleable.SearchView_android_imeOptions = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.SearchView_android_imeOptions;
+			global::com.refractored.Resource.Styleable.SearchView_android_inputType = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.SearchView_android_inputType;
+			global::com.refractored.Resource.Styleable.SearchView_android_maxWidth = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.SearchView_android_maxWidth;
+			global::com.refractored.Resource.Styleable.SearchView_closeIcon = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.SearchView_closeIcon;
+			global::com.refractored.Resource.Styleable.SearchView_commitIcon = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.SearchView_commitIcon;
+			global::com.refractored.Resource.Styleable.SearchView_defaultQueryHint = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.SearchView_defaultQueryHint;
+			global::com.refractored.Resource.Styleable.SearchView_goIcon = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.SearchView_goIcon;
+			global::com.refractored.Resource.Styleable.SearchView_iconifiedByDefault = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.SearchView_iconifiedByDefault;
+			global::com.refractored.Resource.Styleable.SearchView_layout = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.SearchView_layout;
+			global::com.refractored.Resource.Styleable.SearchView_queryBackground = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.SearchView_queryBackground;
+			global::com.refractored.Resource.Styleable.SearchView_queryHint = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.SearchView_queryHint;
+			global::com.refractored.Resource.Styleable.SearchView_searchHintIcon = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.SearchView_searchHintIcon;
+			global::com.refractored.Resource.Styleable.SearchView_searchIcon = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.SearchView_searchIcon;
+			global::com.refractored.Resource.Styleable.SearchView_submitBackground = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.SearchView_submitBackground;
+			global::com.refractored.Resource.Styleable.SearchView_suggestionRowLayout = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.SearchView_suggestionRowLayout;
+			global::com.refractored.Resource.Styleable.SearchView_voiceIcon = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.SearchView_voiceIcon;
+			global::com.refractored.Resource.Styleable.Spinner = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.Spinner;
+			global::com.refractored.Resource.Styleable.Spinner_android_dropDownWidth = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.Spinner_android_dropDownWidth;
+			global::com.refractored.Resource.Styleable.Spinner_android_entries = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.Spinner_android_entries;
+			global::com.refractored.Resource.Styleable.Spinner_android_popupBackground = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.Spinner_android_popupBackground;
+			global::com.refractored.Resource.Styleable.Spinner_android_prompt = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.Spinner_android_prompt;
+			global::com.refractored.Resource.Styleable.Spinner_popupTheme = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.Spinner_popupTheme;
+			global::com.refractored.Resource.Styleable.SwitchCompat = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.SwitchCompat;
+			global::com.refractored.Resource.Styleable.SwitchCompat_android_textOff = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.SwitchCompat_android_textOff;
+			global::com.refractored.Resource.Styleable.SwitchCompat_android_textOn = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.SwitchCompat_android_textOn;
+			global::com.refractored.Resource.Styleable.SwitchCompat_android_thumb = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.SwitchCompat_android_thumb;
+			global::com.refractored.Resource.Styleable.SwitchCompat_showText = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.SwitchCompat_showText;
+			global::com.refractored.Resource.Styleable.SwitchCompat_splitTrack = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.SwitchCompat_splitTrack;
+			global::com.refractored.Resource.Styleable.SwitchCompat_switchMinWidth = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.SwitchCompat_switchMinWidth;
+			global::com.refractored.Resource.Styleable.SwitchCompat_switchPadding = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.SwitchCompat_switchPadding;
+			global::com.refractored.Resource.Styleable.SwitchCompat_switchTextAppearance = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.SwitchCompat_switchTextAppearance;
+			global::com.refractored.Resource.Styleable.SwitchCompat_thumbTextPadding = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.SwitchCompat_thumbTextPadding;
+			global::com.refractored.Resource.Styleable.SwitchCompat_track = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.SwitchCompat_track;
+			global::com.refractored.Resource.Styleable.TextAppearance = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.TextAppearance;
+			global::com.refractored.Resource.Styleable.TextAppearance_android_shadowColor = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.TextAppearance_android_shadowColor;
+			global::com.refractored.Resource.Styleable.TextAppearance_android_shadowDx = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.TextAppearance_android_shadowDx;
+			global::com.refractored.Resource.Styleable.TextAppearance_android_shadowDy = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.TextAppearance_android_shadowDy;
+			global::com.refractored.Resource.Styleable.TextAppearance_android_shadowRadius = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.TextAppearance_android_shadowRadius;
+			global::com.refractored.Resource.Styleable.TextAppearance_android_textColor = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.TextAppearance_android_textColor;
+			global::com.refractored.Resource.Styleable.TextAppearance_android_textSize = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.TextAppearance_android_textSize;
+			global::com.refractored.Resource.Styleable.TextAppearance_android_textStyle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.TextAppearance_android_textStyle;
+			global::com.refractored.Resource.Styleable.TextAppearance_android_typeface = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.TextAppearance_android_typeface;
+			global::com.refractored.Resource.Styleable.TextAppearance_textAllCaps = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.TextAppearance_textAllCaps;
+			global::com.refractored.Resource.Styleable.Toolbar = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.Toolbar;
+			global::com.refractored.Resource.Styleable.Toolbar_android_gravity = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.Toolbar_android_gravity;
+			global::com.refractored.Resource.Styleable.Toolbar_android_minHeight = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.Toolbar_android_minHeight;
+			global::com.refractored.Resource.Styleable.Toolbar_collapseContentDescription = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.Toolbar_collapseContentDescription;
+			global::com.refractored.Resource.Styleable.Toolbar_collapseIcon = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.Toolbar_collapseIcon;
+			global::com.refractored.Resource.Styleable.Toolbar_contentInsetEnd = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.Toolbar_contentInsetEnd;
+			global::com.refractored.Resource.Styleable.Toolbar_contentInsetLeft = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.Toolbar_contentInsetLeft;
+			global::com.refractored.Resource.Styleable.Toolbar_contentInsetRight = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.Toolbar_contentInsetRight;
+			global::com.refractored.Resource.Styleable.Toolbar_contentInsetStart = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.Toolbar_contentInsetStart;
+			global::com.refractored.Resource.Styleable.Toolbar_logo = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.Toolbar_logo;
+			global::com.refractored.Resource.Styleable.Toolbar_logoDescription = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.Toolbar_logoDescription;
+			global::com.refractored.Resource.Styleable.Toolbar_maxButtonHeight = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.Toolbar_maxButtonHeight;
+			global::com.refractored.Resource.Styleable.Toolbar_navigationContentDescription = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.Toolbar_navigationContentDescription;
+			global::com.refractored.Resource.Styleable.Toolbar_navigationIcon = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.Toolbar_navigationIcon;
+			global::com.refractored.Resource.Styleable.Toolbar_popupTheme = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.Toolbar_popupTheme;
+			global::com.refractored.Resource.Styleable.Toolbar_subtitle = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.Toolbar_subtitle;
+			global::com.refractored.Resource.Styleable.Toolbar_subtitleTextAppearance = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.Toolbar_subtitleTextAppearance;
+			global::com.refractored.Resource.Styleable.Toolbar_subtitleTextColor = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.Toolbar_subtitleTextColor;
+			global::com.refractored.Resource.Styleable.Toolbar_title = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.Toolbar_title;
+			global::com.refractored.Resource.Styleable.Toolbar_titleMarginBottom = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.Toolbar_titleMarginBottom;
+			global::com.refractored.Resource.Styleable.Toolbar_titleMarginEnd = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.Toolbar_titleMarginEnd;
+			global::com.refractored.Resource.Styleable.Toolbar_titleMarginStart = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.Toolbar_titleMarginStart;
+			global::com.refractored.Resource.Styleable.Toolbar_titleMarginTop = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.Toolbar_titleMarginTop;
+			global::com.refractored.Resource.Styleable.Toolbar_titleMargins = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.Toolbar_titleMargins;
+			global::com.refractored.Resource.Styleable.Toolbar_titleTextAppearance = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.Toolbar_titleTextAppearance;
+			global::com.refractored.Resource.Styleable.Toolbar_titleTextColor = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.Toolbar_titleTextColor;
+			global::com.refractored.Resource.Styleable.View = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.View;
+			global::com.refractored.Resource.Styleable.View_android_focusable = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.View_android_focusable;
+			global::com.refractored.Resource.Styleable.View_android_theme = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.View_android_theme;
+			global::com.refractored.Resource.Styleable.View_paddingEnd = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.View_paddingEnd;
+			global::com.refractored.Resource.Styleable.View_paddingStart = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.View_paddingStart;
+			global::com.refractored.Resource.Styleable.View_theme = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.View_theme;
+			global::com.refractored.Resource.Styleable.ViewBackgroundHelper = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ViewBackgroundHelper;
+			global::com.refractored.Resource.Styleable.ViewBackgroundHelper_android_background = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ViewBackgroundHelper_android_background;
+			global::com.refractored.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
+			global::com.refractored.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
+			global::com.refractored.Resource.Styleable.ViewStubCompat = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ViewStubCompat;
+			global::com.refractored.Resource.Styleable.ViewStubCompat_android_id = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ViewStubCompat_android_id;
+			global::com.refractored.Resource.Styleable.ViewStubCompat_android_inflatedId = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ViewStubCompat_android_inflatedId;
+			global::com.refractored.Resource.Styleable.ViewStubCompat_android_layout = global::Etl_Analytics_Mobile_Version_01.Resource.Styleable.ViewStubCompat_android_layout;
 		}
 		
 		public partial class Animation
@@ -366,9 +1626,6 @@ namespace Etl_Analytics_Mobile_Version_01
 			// aapt resource value: 0x7f01000b
 			public const int divider = 2130771979;
 			
-			// aapt resource value: 0x7f0100d3
-			public const int dividerColor = 2130772179;
-			
 			// aapt resource value: 0x7f01005c
 			public const int dividerHorizontal = 2130772060;
 			
@@ -434,12 +1691,6 @@ namespace Etl_Analytics_Mobile_Version_01
 			
 			// aapt resource value: 0x7f010012
 			public const int indeterminateProgressStyle = 2130771986;
-			
-			// aapt resource value: 0x7f0100d1
-			public const int indicatorColor = 2130772177;
-			
-			// aapt resource value: 0x7f0100d4
-			public const int indicatorHeight = 2130772180;
 			
 			// aapt resource value: 0x7f01001d
 			public const int initialActivityCount = 2130771997;
@@ -543,6 +1794,57 @@ namespace Etl_Analytics_Mobile_Version_01
 			// aapt resource value: 0x7f010011
 			public const int progressBarStyle = 2130771985;
 			
+			// aapt resource value: 0x7f0100d3
+			public const int pstsDividerColor = 2130772179;
+			
+			// aapt resource value: 0x7f0100d7
+			public const int pstsDividerPadding = 2130772183;
+			
+			// aapt resource value: 0x7f0100d4
+			public const int pstsDividerWidth = 2130772180;
+			
+			// aapt resource value: 0x7f0100d1
+			public const int pstsIndicatorColor = 2130772177;
+			
+			// aapt resource value: 0x7f0100d5
+			public const int pstsIndicatorHeight = 2130772181;
+			
+			// aapt resource value: 0x7f0100dd
+			public const int pstsPaddingMiddle = 2130772189;
+			
+			// aapt resource value: 0x7f0100d9
+			public const int pstsScrollOffset = 2130772185;
+			
+			// aapt resource value: 0x7f0100db
+			public const int pstsShouldExpand = 2130772187;
+			
+			// aapt resource value: 0x7f0100da
+			public const int pstsTabBackground = 2130772186;
+			
+			// aapt resource value: 0x7f0100d8
+			public const int pstsTabPaddingLeftRight = 2130772184;
+			
+			// aapt resource value: 0x7f0100dc
+			public const int pstsTextAllCaps = 2130772188;
+			
+			// aapt resource value: 0x7f0100df
+			public const int pstsTextAlpha = 2130772191;
+			
+			// aapt resource value: 0x7f0100de
+			public const int pstsTextColorSelected = 2130772190;
+			
+			// aapt resource value: 0x7f0100e1
+			public const int pstsTextSelectedStyle = 2130772193;
+			
+			// aapt resource value: 0x7f0100e0
+			public const int pstsTextStyle = 2130772192;
+			
+			// aapt resource value: 0x7f0100d2
+			public const int pstsUnderlineColor = 2130772178;
+			
+			// aapt resource value: 0x7f0100d6
+			public const int pstsUnderlineHeight = 2130772182;
+			
 			// aapt resource value: 0x7f0100b4
 			public const int queryBackground = 2130772148;
 			
@@ -561,9 +1863,6 @@ namespace Etl_Analytics_Mobile_Version_01
 			// aapt resource value: 0x7f010090
 			public const int ratingBarStyleSmall = 2130772112;
 			
-			// aapt resource value: 0x7f0100d8
-			public const int scrollOffset = 2130772184;
-			
 			// aapt resource value: 0x7f0100b0
 			public const int searchHintIcon = 2130772144;
 			
@@ -581,9 +1880,6 @@ namespace Etl_Analytics_Mobile_Version_01
 			
 			// aapt resource value: 0x7f010059
 			public const int selectableItemBackgroundBorderless = 2130772057;
-			
-			// aapt resource value: 0x7f0100da
-			public const int shouldExpand = 2130772186;
 			
 			// aapt resource value: 0x7f0100a2
 			public const int showAsAction = 2130772130;
@@ -644,18 +1940,6 @@ namespace Etl_Analytics_Mobile_Version_01
 			
 			// aapt resource value: 0x7f0100b8
 			public const int switchTextAppearance = 2130772152;
-			
-			// aapt resource value: 0x7f0100d9
-			public const int tabBackground = 2130772185;
-			
-			// aapt resource value: 0x7f0100d6
-			public const int tabDividerPadding = 2130772182;
-			
-			// aapt resource value: 0x7f0100d7
-			public const int tabPaddingLeftRight = 2130772183;
-			
-			// aapt resource value: 0x7f0100db
-			public const int tabTextAllCaps = 2130772187;
 			
 			// aapt resource value: 0x7f010025
 			public const int textAllCaps = 2130772005;
@@ -728,12 +2012,6 @@ namespace Etl_Analytics_Mobile_Version_01
 			
 			// aapt resource value: 0x7f0100b6
 			public const int track = 2130772150;
-			
-			// aapt resource value: 0x7f0100d2
-			public const int underlineColor = 2130772178;
-			
-			// aapt resource value: 0x7f0100d5
-			public const int underlineHeight = 2130772181;
 			
 			// aapt resource value: 0x7f0100b1
 			public const int voiceIcon = 2130772145;
@@ -878,9 +2156,6 @@ namespace Etl_Analytics_Mobile_Version_01
 			// aapt resource value: 0x7f0a0009
 			public const int background_material_light = 2131361801;
 			
-			// aapt resource value: 0x7f0a003a
-			public const int background_tab_pressed = 2131361850;
-			
 			// aapt resource value: 0x7f0a000a
 			public const int bright_foreground_disabled_material_dark = 2131361802;
 			
@@ -994,6 +2269,9 @@ namespace Etl_Analytics_Mobile_Version_01
 			
 			// aapt resource value: 0x7f0a002f
 			public const int primary_text_disabled_material_light = 2131361839;
+			
+			// aapt resource value: 0x7f0a003a
+			public const int psts_background_tab_pressed = 2131361850;
 			
 			// aapt resource value: 0x7f0a0030
 			public const int ripple_material_dark = 2131361840;
@@ -1514,40 +2792,58 @@ namespace Etl_Analytics_Mobile_Version_01
 			public const int ButtonSignInStyle = 2130837580;
 			
 			// aapt resource value: 0x7f02004d
-			public const int ic_action_overflow = 2130837581;
+			public const int edit_text_style = 2130837581;
 			
 			// aapt resource value: 0x7f02004e
-			public const int ic_action_search = 2130837582;
+			public const int ic_action_dial_pad = 2130837582;
 			
 			// aapt resource value: 0x7f02004f
-			public const int Icon = 2130837583;
+			public const int ic_action_favorite = 2130837583;
 			
 			// aapt resource value: 0x7f020050
-			public const int list = 2130837584;
+			public const int ic_action_group = 2130837584;
 			
 			// aapt resource value: 0x7f020051
-			public const int location = 2130837585;
+			public const int ic_action_overflow = 2130837585;
 			
 			// aapt resource value: 0x7f020052
-			public const int note = 2130837586;
-			
-			// aapt resource value: 0x7f020058
-			public const int notification_template_icon_bg = 2130837592;
+			public const int ic_action_phone = 2130837586;
 			
 			// aapt resource value: 0x7f020053
-			public const int pagerslidingtabstrip_background_tab = 2130837587;
+			public const int ic_action_search = 2130837587;
 			
 			// aapt resource value: 0x7f020054
-			public const int ProgressBarStyle = 2130837588;
+			public const int Icon = 2130837588;
 			
 			// aapt resource value: 0x7f020055
-			public const int SignInDialogStyle = 2130837589;
+			public const int list = 2130837589;
 			
 			// aapt resource value: 0x7f020056
-			public const int sound = 2130837590;
+			public const int location = 2130837590;
 			
 			// aapt resource value: 0x7f020057
-			public const int xs = 2130837591;
+			public const int note = 2130837591;
+			
+			// aapt resource value: 0x7f02005e
+			public const int notification_template_icon_bg = 2130837598;
+			
+			// aapt resource value: 0x7f020058
+			public const int ProgressBarStyle = 2130837592;
+			
+			// aapt resource value: 0x7f020059
+			public const int psts_background_tab = 2130837593;
+			
+			// aapt resource value: 0x7f02005a
+			public const int selector = 2130837594;
+			
+			// aapt resource value: 0x7f02005b
+			public const int SignInDialogStyle = 2130837595;
+			
+			// aapt resource value: 0x7f02005c
+			public const int sound = 2130837596;
+			
+			// aapt resource value: 0x7f02005d
+			public const int xs = 2130837597;
 			
 			static Drawable()
 			{
@@ -1562,44 +2858,44 @@ namespace Etl_Analytics_Mobile_Version_01
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f0b0063
-			public const int Drawer = 2131427427;
+			// aapt resource value: 0x7f0b0071
+			public const int Drawer = 2131427441;
 			
-			// aapt resource value: 0x7f0b0066
-			public const int ListView = 2131427430;
+			// aapt resource value: 0x7f0b0074
+			public const int ListView = 2131427444;
 			
-			// aapt resource value: 0x7f0b0054
-			public const int LogInID = 2131427412;
+			// aapt resource value: 0x7f0b0062
+			public const int LogInID = 2131427426;
 			
-			// aapt resource value: 0x7f0b006a
-			public const int action0 = 2131427434;
+			// aapt resource value: 0x7f0b007a
+			public const int action0 = 2131427450;
 			
-			// aapt resource value: 0x7f0b0041
-			public const int action_bar = 2131427393;
+			// aapt resource value: 0x7f0b0043
+			public const int action_bar = 2131427395;
 			
 			// aapt resource value: 0x7f0b0000
 			public const int action_bar_activity_content = 2131427328;
 			
-			// aapt resource value: 0x7f0b0040
-			public const int action_bar_container = 2131427392;
+			// aapt resource value: 0x7f0b0042
+			public const int action_bar_container = 2131427394;
 			
-			// aapt resource value: 0x7f0b003c
-			public const int action_bar_root = 2131427388;
+			// aapt resource value: 0x7f0b003e
+			public const int action_bar_root = 2131427390;
 			
 			// aapt resource value: 0x7f0b0001
 			public const int action_bar_spinner = 2131427329;
 			
-			// aapt resource value: 0x7f0b0022
-			public const int action_bar_subtitle = 2131427362;
+			// aapt resource value: 0x7f0b0024
+			public const int action_bar_subtitle = 2131427364;
 			
-			// aapt resource value: 0x7f0b0021
-			public const int action_bar_title = 2131427361;
+			// aapt resource value: 0x7f0b0023
+			public const int action_bar_title = 2131427363;
 			
-			// aapt resource value: 0x7f0b0042
-			public const int action_context_bar = 2131427394;
+			// aapt resource value: 0x7f0b0044
+			public const int action_context_bar = 2131427396;
 			
-			// aapt resource value: 0x7f0b006e
-			public const int action_divider = 2131427438;
+			// aapt resource value: 0x7f0b007e
+			public const int action_divider = 2131427454;
 			
 			// aapt resource value: 0x7f0b0002
 			public const int action_menu_divider = 2131427330;
@@ -1607,20 +2903,20 @@ namespace Etl_Analytics_Mobile_Version_01
 			// aapt resource value: 0x7f0b0003
 			public const int action_menu_presenter = 2131427331;
 			
-			// aapt resource value: 0x7f0b003e
-			public const int action_mode_bar = 2131427390;
+			// aapt resource value: 0x7f0b0040
+			public const int action_mode_bar = 2131427392;
 			
-			// aapt resource value: 0x7f0b003d
-			public const int action_mode_bar_stub = 2131427389;
+			// aapt resource value: 0x7f0b003f
+			public const int action_mode_bar_stub = 2131427391;
 			
-			// aapt resource value: 0x7f0b0023
-			public const int action_mode_close_button = 2131427363;
+			// aapt resource value: 0x7f0b0025
+			public const int action_mode_close_button = 2131427365;
 			
-			// aapt resource value: 0x7f0b0024
-			public const int activity_chooser_view_content = 2131427364;
+			// aapt resource value: 0x7f0b0026
+			public const int activity_chooser_view_content = 2131427366;
 			
-			// aapt resource value: 0x7f0b0030
-			public const int alertTitle = 2131427376;
+			// aapt resource value: 0x7f0b0032
+			public const int alertTitle = 2131427378;
 			
 			// aapt resource value: 0x7f0b001c
 			public const int always = 2131427356;
@@ -1628,77 +2924,80 @@ namespace Etl_Analytics_Mobile_Version_01
 			// aapt resource value: 0x7f0b0019
 			public const int beginning = 2131427353;
 			
-			// aapt resource value: 0x7f0b007a
-			public const int btnDialogSignUp = 2131427450;
+			// aapt resource value: 0x7f0b0021
+			public const int bold = 2131427361;
 			
-			// aapt resource value: 0x7f0b005e
-			public const int btnLogIn = 2131427422;
+			// aapt resource value: 0x7f0b008b
+			public const int btnDialogSignUp = 2131427467;
 			
-			// aapt resource value: 0x7f0b0060
-			public const int btnSignIn = 2131427424;
+			// aapt resource value: 0x7f0b006c
+			public const int btnLogIn = 2131427436;
 			
-			// aapt resource value: 0x7f0b002b
-			public const int buttonPanel = 2131427371;
+			// aapt resource value: 0x7f0b006e
+			public const int btnSignIn = 2131427438;
 			
-			// aapt resource value: 0x7f0b006b
-			public const int cancel_action = 2131427435;
+			// aapt resource value: 0x7f0b002d
+			public const int buttonPanel = 2131427373;
 			
-			// aapt resource value: 0x7f0b0039
-			public const int checkbox = 2131427385;
+			// aapt resource value: 0x7f0b007b
+			public const int cancel_action = 2131427451;
 			
-			// aapt resource value: 0x7f0b0071
-			public const int chronometer = 2131427441;
+			// aapt resource value: 0x7f0b003b
+			public const int checkbox = 2131427387;
+			
+			// aapt resource value: 0x7f0b0081
+			public const int chronometer = 2131427457;
 			
 			// aapt resource value: 0x7f0b001d
 			public const int collapseActionView = 2131427357;
 			
-			// aapt resource value: 0x7f0b0031
-			public const int contentPanel = 2131427377;
+			// aapt resource value: 0x7f0b0033
+			public const int contentPanel = 2131427379;
 			
-			// aapt resource value: 0x7f0b0064
-			public const int content_frame = 2131427428;
+			// aapt resource value: 0x7f0b0072
+			public const int content_frame = 2131427442;
 			
-			// aapt resource value: 0x7f0b0037
-			public const int custom = 2131427383;
+			// aapt resource value: 0x7f0b0039
+			public const int custom = 2131427385;
 			
-			// aapt resource value: 0x7f0b0036
-			public const int customPanel = 2131427382;
+			// aapt resource value: 0x7f0b0038
+			public const int customPanel = 2131427384;
 			
-			// aapt resource value: 0x7f0b0067
-			public const int dateTime = 2131427431;
+			// aapt resource value: 0x7f0b0077
+			public const int dateTime = 2131427447;
 			
-			// aapt resource value: 0x7f0b003f
-			public const int decor_content_parent = 2131427391;
+			// aapt resource value: 0x7f0b0041
+			public const int decor_content_parent = 2131427393;
 			
-			// aapt resource value: 0x7f0b0027
-			public const int default_activity_button = 2131427367;
+			// aapt resource value: 0x7f0b0029
+			public const int default_activity_button = 2131427369;
 			
 			// aapt resource value: 0x7f0b000c
 			public const int disableHome = 2131427340;
 			
-			// aapt resource value: 0x7f0b0043
-			public const int edit_query = 2131427395;
+			// aapt resource value: 0x7f0b0045
+			public const int edit_query = 2131427397;
 			
 			// aapt resource value: 0x7f0b001a
 			public const int end = 2131427354;
 			
-			// aapt resource value: 0x7f0b0076
-			public const int end_padder = 2131427446;
+			// aapt resource value: 0x7f0b0086
+			public const int end_padder = 2131427462;
 			
-			// aapt resource value: 0x7f0b007f
-			public const int etSearch = 2131427455;
+			// aapt resource value: 0x7f0b0090
+			public const int etSearch = 2131427472;
 			
-			// aapt resource value: 0x7f0b0025
-			public const int expand_activities_button = 2131427365;
+			// aapt resource value: 0x7f0b0027
+			public const int expand_activities_button = 2131427367;
 			
-			// aapt resource value: 0x7f0b0038
-			public const int expanded_menu = 2131427384;
+			// aapt resource value: 0x7f0b003a
+			public const int expanded_menu = 2131427386;
 			
-			// aapt resource value: 0x7f0b0065
-			public const int expendableListView = 2131427429;
+			// aapt resource value: 0x7f0b0073
+			public const int expendableListView = 2131427443;
 			
-			// aapt resource value: 0x7f0b0069
-			public const int grid_view_image_text = 2131427433;
+			// aapt resource value: 0x7f0b0079
+			public const int grid_view_image_text = 2131427449;
 			
 			// aapt resource value: 0x7f0b0004
 			public const int home = 2131427332;
@@ -1706,44 +3005,74 @@ namespace Etl_Analytics_Mobile_Version_01
 			// aapt resource value: 0x7f0b000d
 			public const int homeAsUp = 2131427341;
 			
-			// aapt resource value: 0x7f0b0029
-			public const int icon = 2131427369;
+			// aapt resource value: 0x7f0b002b
+			public const int icon = 2131427371;
 			
 			// aapt resource value: 0x7f0b001e
 			public const int ifRoom = 2131427358;
 			
-			// aapt resource value: 0x7f0b0026
-			public const int image = 2131427366;
+			// aapt resource value: 0x7f0b0028
+			public const int image = 2131427368;
+			
+			// aapt resource value: 0x7f0b0060
+			public const int imageView = 2131427424;
+			
+			// aapt resource value: 0x7f0b0053
+			public const int imageView1 = 2131427411;
+			
+			// aapt resource value: 0x7f0b0056
+			public const int imageView2 = 2131427414;
+			
+			// aapt resource value: 0x7f0b0059
+			public const int imageView3 = 2131427417;
+			
+			// aapt resource value: 0x7f0b005c
+			public const int imageView4 = 2131427420;
+			
+			// aapt resource value: 0x7f0b0085
+			public const int info = 2131427461;
+			
+			// aapt resource value: 0x7f0b0022
+			public const int italic = 2131427362;
+			
+			// aapt resource value: 0x7f0b0078
+			public const int item = 2131427448;
+			
+			// aapt resource value: 0x7f0b007f
+			public const int line1 = 2131427455;
+			
+			// aapt resource value: 0x7f0b0083
+			public const int line3 = 2131427459;
 			
 			// aapt resource value: 0x7f0b0052
-			public const int imageView = 2131427410;
+			public const int linearLayout1 = 2131427410;
 			
-			// aapt resource value: 0x7f0b0075
-			public const int info = 2131427445;
+			// aapt resource value: 0x7f0b0055
+			public const int linearLayout2 = 2131427413;
 			
-			// aapt resource value: 0x7f0b0068
-			public const int item = 2131427432;
+			// aapt resource value: 0x7f0b0058
+			public const int linearLayout3 = 2131427416;
 			
-			// aapt resource value: 0x7f0b006f
-			public const int line1 = 2131427439;
-			
-			// aapt resource value: 0x7f0b0073
-			public const int line3 = 2131427443;
+			// aapt resource value: 0x7f0b005b
+			public const int linearLayout4 = 2131427419;
 			
 			// aapt resource value: 0x7f0b0009
 			public const int listMode = 2131427337;
 			
-			// aapt resource value: 0x7f0b0028
-			public const int list_item = 2131427368;
+			// aapt resource value: 0x7f0b0091
+			public const int listViewStatsTable = 2131427473;
 			
-			// aapt resource value: 0x7f0b007c
-			public const int llContainer = 2131427452;
+			// aapt resource value: 0x7f0b002a
+			public const int list_item = 2131427370;
 			
-			// aapt resource value: 0x7f0b006d
-			public const int media_actions = 2131427437;
+			// aapt resource value: 0x7f0b008d
+			public const int llContainer = 2131427469;
 			
-			// aapt resource value: 0x7f0b0081
-			public const int menu = 2131427457;
+			// aapt resource value: 0x7f0b007d
+			public const int media_actions = 2131427453;
+			
+			// aapt resource value: 0x7f0b0099
+			public const int menu = 2131427481;
 			
 			// aapt resource value: 0x7f0b001b
 			public const int middle = 2131427355;
@@ -1760,11 +3089,11 @@ namespace Etl_Analytics_Mobile_Version_01
 			// aapt resource value: 0x7f0b000a
 			public const int normal = 2131427338;
 			
-			// aapt resource value: 0x7f0b002d
-			public const int parentPanel = 2131427373;
+			// aapt resource value: 0x7f0b002f
+			public const int parentPanel = 2131427375;
 			
-			// aapt resource value: 0x7f0b0061
-			public const int progressBar1 = 2131427425;
+			// aapt resource value: 0x7f0b006f
+			public const int progressBar1 = 2131427439;
 			
 			// aapt resource value: 0x7f0b0005
 			public const int progress_circular = 2131427333;
@@ -1772,65 +3101,68 @@ namespace Etl_Analytics_Mobile_Version_01
 			// aapt resource value: 0x7f0b0006
 			public const int progress_horizontal = 2131427334;
 			
-			// aapt resource value: 0x7f0b003b
-			public const int radio = 2131427387;
+			// aapt resource value: 0x7f0b0087
+			public const int psts_tab_title = 2131427463;
 			
-			// aapt resource value: 0x7f0b007e
-			public const int sample_content_fragment = 2131427454;
+			// aapt resource value: 0x7f0b003d
+			public const int radio = 2131427389;
 			
-			// aapt resource value: 0x7f0b007b
-			public const int sample_main_layout = 2131427451;
+			// aapt resource value: 0x7f0b008f
+			public const int sample_content_fragment = 2131427471;
+			
+			// aapt resource value: 0x7f0b008c
+			public const int sample_main_layout = 2131427468;
 			
 			// aapt resource value: 0x7f0b0015
 			public const int screen = 2131427349;
 			
+			// aapt resource value: 0x7f0b0037
+			public const int scrollIndicatorDown = 2131427383;
+			
+			// aapt resource value: 0x7f0b0034
+			public const int scrollIndicatorUp = 2131427380;
+			
 			// aapt resource value: 0x7f0b0035
-			public const int scrollIndicatorDown = 2131427381;
+			public const int scrollView = 2131427381;
 			
-			// aapt resource value: 0x7f0b0032
-			public const int scrollIndicatorUp = 2131427378;
-			
-			// aapt resource value: 0x7f0b0033
-			public const int scrollView = 2131427379;
-			
-			// aapt resource value: 0x7f0b0080
-			public const int search = 2131427456;
-			
-			// aapt resource value: 0x7f0b0045
-			public const int search_badge = 2131427397;
-			
-			// aapt resource value: 0x7f0b0044
-			public const int search_bar = 2131427396;
-			
-			// aapt resource value: 0x7f0b0046
-			public const int search_button = 2131427398;
-			
-			// aapt resource value: 0x7f0b004b
-			public const int search_close_btn = 2131427403;
+			// aapt resource value: 0x7f0b0098
+			public const int search = 2131427480;
 			
 			// aapt resource value: 0x7f0b0047
-			public const int search_edit_frame = 2131427399;
+			public const int search_badge = 2131427399;
 			
-			// aapt resource value: 0x7f0b004d
-			public const int search_go_btn = 2131427405;
+			// aapt resource value: 0x7f0b0046
+			public const int search_bar = 2131427398;
 			
 			// aapt resource value: 0x7f0b0048
-			public const int search_mag_icon = 2131427400;
+			public const int search_button = 2131427400;
+			
+			// aapt resource value: 0x7f0b004d
+			public const int search_close_btn = 2131427405;
 			
 			// aapt resource value: 0x7f0b0049
-			public const int search_plate = 2131427401;
-			
-			// aapt resource value: 0x7f0b004a
-			public const int search_src_text = 2131427402;
-			
-			// aapt resource value: 0x7f0b004e
-			public const int search_voice_btn = 2131427406;
+			public const int search_edit_frame = 2131427401;
 			
 			// aapt resource value: 0x7f0b004f
-			public const int select_dialog_listview = 2131427407;
+			public const int search_go_btn = 2131427407;
 			
-			// aapt resource value: 0x7f0b003a
-			public const int shortcut = 2131427386;
+			// aapt resource value: 0x7f0b004a
+			public const int search_mag_icon = 2131427402;
+			
+			// aapt resource value: 0x7f0b004b
+			public const int search_plate = 2131427403;
+			
+			// aapt resource value: 0x7f0b004c
+			public const int search_src_text = 2131427404;
+			
+			// aapt resource value: 0x7f0b0050
+			public const int search_voice_btn = 2131427408;
+			
+			// aapt resource value: 0x7f0b0051
+			public const int select_dialog_listview = 2131427409;
+			
+			// aapt resource value: 0x7f0b003c
+			public const int shortcut = 2131427388;
 			
 			// aapt resource value: 0x7f0b000f
 			public const int showCustom = 2131427343;
@@ -1841,11 +3173,11 @@ namespace Etl_Analytics_Mobile_Version_01
 			// aapt resource value: 0x7f0b0011
 			public const int showTitle = 2131427345;
 			
-			// aapt resource value: 0x7f0b0050
-			public const int sliding_tabs = 2131427408;
+			// aapt resource value: 0x7f0b005e
+			public const int sliding_tabs = 2131427422;
 			
-			// aapt resource value: 0x7f0b002c
-			public const int spacer = 2131427372;
+			// aapt resource value: 0x7f0b002e
+			public const int spacer = 2131427374;
 			
 			// aapt resource value: 0x7f0b0007
 			public const int split_action_bar = 2131427335;
@@ -1859,80 +3191,116 @@ namespace Etl_Analytics_Mobile_Version_01
 			// aapt resource value: 0x7f0b0018
 			public const int src_over = 2131427352;
 			
-			// aapt resource value: 0x7f0b006c
-			public const int status_bar_latest_event_content = 2131427436;
+			// aapt resource value: 0x7f0b007c
+			public const int status_bar_latest_event_content = 2131427452;
 			
-			// aapt resource value: 0x7f0b004c
-			public const int submit_area = 2131427404;
+			// aapt resource value: 0x7f0b004e
+			public const int submit_area = 2131427406;
 			
 			// aapt resource value: 0x7f0b000b
 			public const int tabMode = 2131427339;
 			
-			// aapt resource value: 0x7f0b0056
-			public const int tableLayout1 = 2131427414;
+			// aapt resource value: 0x7f0b0064
+			public const int tableLayout1 = 2131427428;
+			
+			// aapt resource value: 0x7f0b0065
+			public const int tableRow1 = 2131427429;
+			
+			// aapt resource value: 0x7f0b0068
+			public const int tableRow2 = 2131427432;
+			
+			// aapt resource value: 0x7f0b0069
+			public const int tableRow3 = 2131427433;
+			
+			// aapt resource value: 0x7f0b0076
+			public const int test = 2131427446;
+			
+			// aapt resource value: 0x7f0b008e
+			public const int testView = 2131427470;
+			
+			// aapt resource value: 0x7f0b0084
+			public const int text = 2131427460;
+			
+			// aapt resource value: 0x7f0b0082
+			public const int text2 = 2131427458;
+			
+			// aapt resource value: 0x7f0b0063
+			public const int textLogIn = 2131427427;
+			
+			// aapt resource value: 0x7f0b006d
+			public const int textOR = 2131427437;
+			
+			// aapt resource value: 0x7f0b0036
+			public const int textSpacerNoButtons = 2131427382;
+			
+			// aapt resource value: 0x7f0b0061
+			public const int textView = 2131427425;
+			
+			// aapt resource value: 0x7f0b0054
+			public const int textView1 = 2131427412;
+			
+			// aapt resource value: 0x7f0b0066
+			public const int textView10 = 2131427430;
+			
+			// aapt resource value: 0x7f0b006a
+			public const int textView12 = 2131427434;
 			
 			// aapt resource value: 0x7f0b0057
-			public const int tableRow1 = 2131427415;
+			public const int textView2 = 2131427415;
 			
 			// aapt resource value: 0x7f0b005a
-			public const int tableRow2 = 2131427418;
-			
-			// aapt resource value: 0x7f0b005b
-			public const int tableRow3 = 2131427419;
-			
-			// aapt resource value: 0x7f0b0074
-			public const int text = 2131427444;
-			
-			// aapt resource value: 0x7f0b0072
-			public const int text2 = 2131427442;
-			
-			// aapt resource value: 0x7f0b0055
-			public const int textLogIn = 2131427413;
-			
-			// aapt resource value: 0x7f0b005f
-			public const int textOR = 2131427423;
-			
-			// aapt resource value: 0x7f0b0034
-			public const int textSpacerNoButtons = 2131427380;
-			
-			// aapt resource value: 0x7f0b0053
-			public const int textView = 2131427411;
-			
-			// aapt resource value: 0x7f0b0058
-			public const int textView10 = 2131427416;
-			
-			// aapt resource value: 0x7f0b005c
-			public const int textView12 = 2131427420;
-			
-			// aapt resource value: 0x7f0b0070
-			public const int time = 2131427440;
-			
-			// aapt resource value: 0x7f0b002a
-			public const int title = 2131427370;
-			
-			// aapt resource value: 0x7f0b002f
-			public const int title_template = 2131427375;
-			
-			// aapt resource value: 0x7f0b0062
-			public const int toolbar = 2131427426;
-			
-			// aapt resource value: 0x7f0b002e
-			public const int topPanel = 2131427374;
-			
-			// aapt resource value: 0x7f0b0079
-			public const int txtEmail = 2131427449;
-			
-			// aapt resource value: 0x7f0b0077
-			public const int txtFirstName = 2131427447;
-			
-			// aapt resource value: 0x7f0b0078
-			public const int txtLastName = 2131427448;
+			public const int textView3 = 2131427418;
 			
 			// aapt resource value: 0x7f0b005d
-			public const int txtPassword = 2131427421;
+			public const int textView4 = 2131427421;
 			
-			// aapt resource value: 0x7f0b0059
-			public const int txtUserName = 2131427417;
+			// aapt resource value: 0x7f0b0080
+			public const int time = 2131427456;
+			
+			// aapt resource value: 0x7f0b002c
+			public const int title = 2131427372;
+			
+			// aapt resource value: 0x7f0b0031
+			public const int title_template = 2131427377;
+			
+			// aapt resource value: 0x7f0b0070
+			public const int toolbar = 2131427440;
+			
+			// aapt resource value: 0x7f0b0030
+			public const int topPanel = 2131427376;
+			
+			// aapt resource value: 0x7f0b0095
+			public const int txtAmount = 2131427477;
+			
+			// aapt resource value: 0x7f0b0097
+			public const int txtBigDeviation = 2131427479;
+			
+			// aapt resource value: 0x7f0b0093
+			public const int txtDate = 2131427475;
+			
+			// aapt resource value: 0x7f0b0096
+			public const int txtDifference = 2131427478;
+			
+			// aapt resource value: 0x7f0b008a
+			public const int txtEmail = 2131427466;
+			
+			// aapt resource value: 0x7f0b0088
+			public const int txtFirstName = 2131427464;
+			
+			// aapt resource value: 0x7f0b0089
+			public const int txtLastName = 2131427465;
+			
+			// aapt resource value: 0x7f0b0094
+			public const int txtNullColumns = 2131427476;
+			
+			// aapt resource value: 0x7f0b006b
+			public const int txtPassword = 2131427435;
+			
+			// aapt resource value: 0x7f0b0092
+			public const int txtTableName = 2131427474;
+			
+			// aapt resource value: 0x7f0b0067
+			public const int txtUserName = 2131427431;
 			
 			// aapt resource value: 0x7f0b0008
 			public const int up = 2131427336;
@@ -1940,11 +3308,11 @@ namespace Etl_Analytics_Mobile_Version_01
 			// aapt resource value: 0x7f0b0012
 			public const int useLogo = 2131427346;
 			
-			// aapt resource value: 0x7f0b007d
-			public const int viewId = 2131427453;
+			// aapt resource value: 0x7f0b0075
+			public const int viewChart = 2131427445;
 			
-			// aapt resource value: 0x7f0b0051
-			public const int viewpager = 2131427409;
+			// aapt resource value: 0x7f0b005f
+			public const int viewpager = 2131427423;
 			
 			// aapt resource value: 0x7f0b0020
 			public const int withText = 2131427360;
@@ -2069,76 +3437,94 @@ namespace Etl_Analytics_Mobile_Version_01
 			public const int abc_select_dialog_material = 2130903064;
 			
 			// aapt resource value: 0x7f030019
-			public const int ConfigurationColumns = 2130903065;
+			public const int Action_bar = 2130903065;
 			
 			// aapt resource value: 0x7f03001a
-			public const int fragment_sample = 2130903066;
+			public const int ConfigurationColumns = 2130903066;
 			
 			// aapt resource value: 0x7f03001b
-			public const int GridViewPage = 2130903067;
+			public const int fragment_sample = 2130903067;
 			
 			// aapt resource value: 0x7f03001c
-			public const int LogIn = 2130903068;
+			public const int Graph = 2130903068;
 			
 			// aapt resource value: 0x7f03001d
-			public const int LogTable = 2130903069;
+			public const int GridViewPage = 2130903069;
 			
 			// aapt resource value: 0x7f03001e
-			public const int LogTableGroupItem = 2130903070;
+			public const int LogIn = 2130903070;
 			
 			// aapt resource value: 0x7f03001f
-			public const int LogTableRow = 2130903071;
+			public const int LogTable = 2130903071;
 			
 			// aapt resource value: 0x7f030020
-			public const int MainPage = 2130903072;
+			public const int LogTableChart = 2130903072;
 			
 			// aapt resource value: 0x7f030021
-			public const int notification_media_action = 2130903073;
+			public const int LogTableDescription = 2130903073;
 			
 			// aapt resource value: 0x7f030022
-			public const int notification_media_cancel_action = 2130903074;
+			public const int LogTableGroupItem = 2130903074;
 			
 			// aapt resource value: 0x7f030023
-			public const int notification_template_big_media = 2130903075;
+			public const int LogTableRow = 2130903075;
 			
 			// aapt resource value: 0x7f030024
-			public const int notification_template_big_media_narrow = 2130903076;
+			public const int MainPage = 2130903076;
 			
 			// aapt resource value: 0x7f030025
-			public const int notification_template_lines = 2130903077;
+			public const int notification_media_action = 2130903077;
 			
 			// aapt resource value: 0x7f030026
-			public const int notification_template_media = 2130903078;
+			public const int notification_media_cancel_action = 2130903078;
 			
 			// aapt resource value: 0x7f030027
-			public const int notification_template_part_chronometer = 2130903079;
+			public const int notification_template_big_media = 2130903079;
 			
 			// aapt resource value: 0x7f030028
-			public const int notification_template_part_time = 2130903080;
+			public const int notification_template_big_media_narrow = 2130903080;
 			
 			// aapt resource value: 0x7f030029
-			public const int pager_item = 2130903081;
+			public const int notification_template_lines = 2130903081;
 			
 			// aapt resource value: 0x7f03002a
-			public const int pagerslidingtabstrip_texttab = 2130903082;
+			public const int notification_template_media = 2130903082;
 			
 			// aapt resource value: 0x7f03002b
-			public const int select_dialog_item_material = 2130903083;
+			public const int notification_template_part_chronometer = 2130903083;
 			
 			// aapt resource value: 0x7f03002c
-			public const int select_dialog_multichoice_material = 2130903084;
+			public const int notification_template_part_time = 2130903084;
 			
 			// aapt resource value: 0x7f03002d
-			public const int select_dialog_singlechoice_material = 2130903085;
+			public const int psts_tab = 2130903085;
 			
 			// aapt resource value: 0x7f03002e
-			public const int SignInDialog = 2130903086;
+			public const int select_dialog_item_material = 2130903086;
 			
 			// aapt resource value: 0x7f03002f
-			public const int SlidingBar = 2130903087;
+			public const int select_dialog_multichoice_material = 2130903087;
 			
 			// aapt resource value: 0x7f030030
-			public const int support_simple_spinner_dropdown_item = 2130903088;
+			public const int select_dialog_singlechoice_material = 2130903088;
+			
+			// aapt resource value: 0x7f030031
+			public const int SignInDialog = 2130903089;
+			
+			// aapt resource value: 0x7f030032
+			public const int SlidingBar = 2130903090;
+			
+			// aapt resource value: 0x7f030033
+			public const int StatsTable = 2130903091;
+			
+			// aapt resource value: 0x7f030034
+			public const int StatsTableAllTable = 2130903092;
+			
+			// aapt resource value: 0x7f030035
+			public const int StatsTableRow = 2130903093;
+			
+			// aapt resource value: 0x7f030036
+			public const int support_simple_spinner_dropdown_item = 2130903094;
 			
 			static Layout()
 			{
@@ -2698,8 +4084,14 @@ namespace Etl_Analytics_Mobile_Version_01
 			// aapt resource value: 0x7f080143
 			public const int CustomActionBarTheme = 2131231043;
 			
+			// aapt resource value: 0x7f080145
+			public const int CustomActionBarTheme1 = 2131231045;
+			
 			// aapt resource value: 0x7f080144
 			public const int MyActionBar = 2131231044;
+			
+			// aapt resource value: 0x7f080146
+			public const int MyActionBar1 = 2131231046;
 			
 			// aapt resource value: 0x7f080140
 			public const int MyDrawerArrowStyle = 2131231040;
@@ -4162,40 +5554,64 @@ namespace Etl_Analytics_Mobile_Version_01
 					2130772184,
 					2130772185,
 					2130772186,
-					2130772187};
+					2130772187,
+					2130772188,
+					2130772189,
+					2130772190,
+					2130772191,
+					2130772192,
+					2130772193};
 			
 			// aapt resource value: 2
-			public const int PagerSlidingTabStrip_dividerColor = 2;
-			
-			// aapt resource value: 0
-			public const int PagerSlidingTabStrip_indicatorColor = 0;
-			
-			// aapt resource value: 3
-			public const int PagerSlidingTabStrip_indicatorHeight = 3;
-			
-			// aapt resource value: 7
-			public const int PagerSlidingTabStrip_scrollOffset = 7;
-			
-			// aapt resource value: 9
-			public const int PagerSlidingTabStrip_shouldExpand = 9;
-			
-			// aapt resource value: 8
-			public const int PagerSlidingTabStrip_tabBackground = 8;
-			
-			// aapt resource value: 5
-			public const int PagerSlidingTabStrip_tabDividerPadding = 5;
+			public const int PagerSlidingTabStrip_pstsDividerColor = 2;
 			
 			// aapt resource value: 6
-			public const int PagerSlidingTabStrip_tabPaddingLeftRight = 6;
+			public const int PagerSlidingTabStrip_pstsDividerPadding = 6;
 			
-			// aapt resource value: 10
-			public const int PagerSlidingTabStrip_tabTextAllCaps = 10;
+			// aapt resource value: 3
+			public const int PagerSlidingTabStrip_pstsDividerWidth = 3;
 			
-			// aapt resource value: 1
-			public const int PagerSlidingTabStrip_underlineColor = 1;
+			// aapt resource value: 0
+			public const int PagerSlidingTabStrip_pstsIndicatorColor = 0;
 			
 			// aapt resource value: 4
-			public const int PagerSlidingTabStrip_underlineHeight = 4;
+			public const int PagerSlidingTabStrip_pstsIndicatorHeight = 4;
+			
+			// aapt resource value: 12
+			public const int PagerSlidingTabStrip_pstsPaddingMiddle = 12;
+			
+			// aapt resource value: 8
+			public const int PagerSlidingTabStrip_pstsScrollOffset = 8;
+			
+			// aapt resource value: 10
+			public const int PagerSlidingTabStrip_pstsShouldExpand = 10;
+			
+			// aapt resource value: 9
+			public const int PagerSlidingTabStrip_pstsTabBackground = 9;
+			
+			// aapt resource value: 7
+			public const int PagerSlidingTabStrip_pstsTabPaddingLeftRight = 7;
+			
+			// aapt resource value: 11
+			public const int PagerSlidingTabStrip_pstsTextAllCaps = 11;
+			
+			// aapt resource value: 14
+			public const int PagerSlidingTabStrip_pstsTextAlpha = 14;
+			
+			// aapt resource value: 13
+			public const int PagerSlidingTabStrip_pstsTextColorSelected = 13;
+			
+			// aapt resource value: 16
+			public const int PagerSlidingTabStrip_pstsTextSelectedStyle = 16;
+			
+			// aapt resource value: 15
+			public const int PagerSlidingTabStrip_pstsTextStyle = 15;
+			
+			// aapt resource value: 1
+			public const int PagerSlidingTabStrip_pstsUnderlineColor = 1;
+			
+			// aapt resource value: 5
+			public const int PagerSlidingTabStrip_pstsUnderlineHeight = 5;
 			
 			public static int[] PopupWindow = new int[] {
 					16843126,

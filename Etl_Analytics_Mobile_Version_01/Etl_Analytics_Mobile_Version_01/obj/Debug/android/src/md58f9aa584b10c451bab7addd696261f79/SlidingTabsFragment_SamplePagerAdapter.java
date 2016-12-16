@@ -10,6 +10,7 @@ public class SlidingTabsFragment_SamplePagerAdapter
 	public static final String __md_methods;
 	static {
 		__md_methods = 
+			"n_saveState:()Landroid/os/Parcelable;:GetSaveStateHandler\n" +
 			"n_getCount:()I:GetGetCountHandler\n" +
 			"n_isViewFromObject:(Landroid/view/View;Ljava/lang/Object;)Z:GetIsViewFromObject_Landroid_view_View_Ljava_lang_Object_Handler\n" +
 			"n_instantiateItem:(Landroid/view/ViewGroup;I)Ljava/lang/Object;:GetInstantiateItem_Landroid_view_ViewGroup_IHandler\n" +
@@ -25,6 +26,14 @@ public class SlidingTabsFragment_SamplePagerAdapter
 		if (getClass () == SlidingTabsFragment_SamplePagerAdapter.class)
 			mono.android.TypeManager.Activate ("Etl_Analytics_Mobile_Version_01.Class.SlidingTabsFragment+SamplePagerAdapter, Etl_Analytics_Mobile_Version_01, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
 	}
+
+
+	public android.os.Parcelable saveState ()
+	{
+		return n_saveState ();
+	}
+
+	private native android.os.Parcelable n_saveState ();
 
 
 	public int getCount ()
