@@ -6,7 +6,6 @@ using Android.Views;
 using Android.Widget;
 using Android.Support.V4.View;
 using Etl_Analytics_Mobile_Version_01.Class.Table_Constructor;
-using BarChart;
 using System;
 using System.Linq;
 using Etl_Analytics_Mobile_Version_01.AllActivity;
@@ -96,40 +95,42 @@ namespace Etl_Analytics_Mobile_Version_01.Class
 
                 if (position == 0)
                 {
-                    float[] data = new float[listStatsTable.Count];
-                    int counter = 0;
-                    view = LayoutInflater.From(container.Context).Inflate(Resource.Layout.LogTableChart, container, false);
-                    BarChartView viewChart = view.FindViewById<BarChartView>(Resource.Id.viewChart);
+                    //float[] data = new float[listStatsTable.Count];
+                    //string[] dataTest = new string[listStatsTable.Count];
+                    //int counter = 0;
+                    //view = LayoutInflater.From(container.Context).Inflate(Resource.Layout.LogTableChart, container, false);
+                    //BarChartView viewChart = view.FindViewById<BarChartView>(Resource.Id.viewChart);
 
-                    foreach (StatsTables item in listStatsTable)
-                    {
-                        data[counter] = item.diff_last_trans;
-                        counter++;
-                    }
+                    //foreach (StatsTables item in listStatsTable)
+                    //{
+                    //    data[counter] = item.diff_last_trans;
+                    //    dataTest[counter] = item.table_name;
+                    //    counter++;
+                    //}
 
-                    viewChart = new BarChartView(container.Context)
-                    {
-                        ItemsSource = Array.ConvertAll(data, v => new BarModel
-                        {
-                            Value = v,
-                            Legend = "Table name",
-                            ValueCaptionHidden = false,
-                        })
-                    };
-                    viewChart.AutoLevelsEnabled = false;
-                    for (int i = 0; i <= 100; i += 10)
-                    {
-                        viewChart.AddLevelIndicator(i);
-                    }
-                    viewChart.LegendColor = Color.Red;
-                    viewChart.SetBackgroundColor(Color.White);
-                    viewChart.LegendFontSize = 30;
-                    viewChart.BarCaptionFontSize = 20;
-                    viewChart.BarCaptionOuterColor = Color.Black;
-                    viewChart.BarCaptionInnerColor = Color.White;
-                    viewChart.BarWidth = 100;
-                    viewChart.BarOffset = 100;
-                    view = viewChart;
+                    //viewChart = new BarChartView(container.Context)
+                    //{
+                    //    ItemsSource = Array.ConvertAll(data, v => new BarModel
+                    //    {
+                    //        Value = 50,
+                    //        ValueCaptionHidden = false,
+                    //    })
+                    //};
+
+                    //viewChart.AutoLevelsEnabled = false;
+                    //for (int i = 0; i <= 100; i += 10)
+                    //{
+                    //    viewChart.AddLevelIndicator(i);
+                    //}
+                    //viewChart.LegendColor = Color.Red;
+                    //viewChart.SetBackgroundColor(Color.White);
+                    //viewChart.LegendFontSize = 30;
+                    //viewChart.BarCaptionFontSize = 20;
+                    //viewChart.BarCaptionOuterColor = Color.Black;
+                    //viewChart.BarCaptionInnerColor = Color.White;
+                    //viewChart.BarWidth = 100;
+                    //viewChart.BarOffset = 100;
+                    //view = viewChart;
                 } 
 
                 else if (position == 1)

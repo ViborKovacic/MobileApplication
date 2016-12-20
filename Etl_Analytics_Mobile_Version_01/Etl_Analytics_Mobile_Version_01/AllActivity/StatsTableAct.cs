@@ -8,7 +8,7 @@ using Android.Views.InputMethods;
 
 namespace Etl_Analytics_Mobile_Version_01.AllActivity
 {
-    [Activity(Label = "Table statistics", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "Table statistics", Icon = "@drawable/icon")]
     public class StatsTableAct : Activity
     {
         private static bool mAnimatedDown;

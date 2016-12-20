@@ -27,7 +27,7 @@ using Android.Support.V7.Widget;
 
 namespace Etl_Analytics_Mobile_Version_01.AllActivity
 {
-    [Activity(Label = "MainPageAct", MainLauncher = true, Icon = "@drawable/icon", Theme = "@style/MyTheme2")]
+    [Activity(Label = "MainPageAct", Icon = "@drawable/icon", Theme = "@style/MyTheme2")]
     public class MainPageAct : AppCompatActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
@@ -66,7 +66,7 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
 
             gridView.ItemClick += (s, ed) =>
             {
-                Toast.MakeText(this, "Open: " + gridViewString[ed.Position], ToastLength.Short).Show();
+                Toast.MakeText(this, "Open: " + gridViewString[ed.Position].Replace("\n", ""), ToastLength.Short).Show();
                 //Opening LogTable list
                 if ("Log table" == gridViewString[ed.Position])
                 {
@@ -86,7 +86,13 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
 
                 else if ("Stats columns\n\n\n" == gridViewString[ed.Position])
                 {
-                    Intent intent = new Intent(this, typeof(TestGraphs));
+                    Intent intent = new Intent(this, typeof(MPAndroidChart));
+                    this.StartActivity(intent);
+                }
+
+                else if ("User table" == gridViewString[ed.Position])
+                {
+                    Intent intent = new Intent(this, typeof(UserTableAct));
                     this.StartActivity(intent);
                 }
 

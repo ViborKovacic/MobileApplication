@@ -18,7 +18,7 @@ using SupportToolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace Etl_Analytics_Mobile_Version_01.AllActivity
 {
-    [Activity(Label = "Log table", MainLauncher = true, Icon = "@drawable/icon", Theme = "@style/MyTheme3")]
+    [Activity(Label = "Log table", Icon = "@drawable/icon", Theme = "@style/MyTheme3")]
     public class LogTableAct : ActionBarActivity
     {
         ExpandableListViewAdapter mAdapter;

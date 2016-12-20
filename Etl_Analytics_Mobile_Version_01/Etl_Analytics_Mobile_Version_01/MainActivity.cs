@@ -25,7 +25,7 @@ using Etl_Analytics_Mobile_Version_01.AllActivity;
 
 namespace Etl_Analytics_Mobile_Version_01
 {
-    [Activity(Label = "Etl_Analytics_Mobile_Version", MainLauncher = true, Icon = "@drawable/icon", Theme = "@style/MyTheme")]
+    [Activity(Label = "Etl_Analytics_Mobile_Version", Icon = "@drawable/icon", Theme = "@style/MyTheme")]
     public class MainActivity : AppCompatActivity
     {
         private Button btnSignIn;

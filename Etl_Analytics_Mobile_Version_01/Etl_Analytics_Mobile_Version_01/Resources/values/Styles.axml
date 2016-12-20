@@ -4,4 +4,10 @@
     <item name="android:windowEnterAnimation">@anim/SlideUpAnimation</item>
     <item name="android:windowExitAnimation">@anim/SlideRightAnimation</item>
   </style>
+
+  <style name="Theme.Splash" parent="android:Theme">
+    <item name="android:windowBackground">@drawable/logo1</item>
+    <item name="android:scaleType">centerInside</item>
+    <item name="android:windowNoTitle">true</item>
+  </style>
 </resources>
