@@ -26,6 +26,14 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
             layoutBigDeviation = FindViewById<LinearLayout>(Resource.Id.linearLayout2);
             layoutAllTable = FindViewById<LinearLayout>(Resource.Id.linearLayout3);
             layoutContacts = FindViewById<LinearLayout>(Resource.Id.linearLayout4);
+
+            layoutChart.Click += LayoutChart_Click;
+        }
+
+        private void LayoutChart_Click(object sender, System.EventArgs e)
+        {
+            Fragment fragment = new Fragment();
+            
         }
     }
 }

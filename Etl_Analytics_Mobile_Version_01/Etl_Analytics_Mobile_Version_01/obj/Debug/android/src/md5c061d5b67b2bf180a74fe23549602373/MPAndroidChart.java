@@ -2,7 +2,7 @@ package md5c061d5b67b2bf180a74fe23549602373;
 
 
 public class MPAndroidChart
-	extends android.support.v7.app.AppCompatActivity
+	extends android.app.Activity
 	implements
 		mono.android.IGCUserPeer
 {

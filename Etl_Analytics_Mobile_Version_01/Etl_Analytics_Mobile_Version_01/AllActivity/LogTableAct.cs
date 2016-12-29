@@ -1,39 +1,33 @@
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 using Android.App;
-using Android.Content;
 using Android.OS;
-using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Etl_Analytics_Mobile_Version_01.Class;
 using Android.Support.V7.App;
-using Etl_Analytics_Mobile_Version_01.Class.Table_Constructor;
 using Android.Support.V4.Widget;
 using SupportToolbar = Android.Support.V7.Widget.Toolbar;
-
+using SupportFragment = Android.Support.V4.App.Fragment;
+using Etl_Analytics_Mobile_Version_01.Fragments;
 
 namespace Etl_Analytics_Mobile_Version_01.AllActivity
 {
-    [Activity(Label = "Log table", Icon = "@drawable/icon", Theme = "@style/MyTheme3")]
+    [Activity(Label = "Log table", Icon = "@drawable/icon", Theme = "@style/MyTheme2"/*, ConfigurationChanges =Android.Content.PM.ConfigChanges.ScreenSize | Android.Content.PM.ConfigChanges.Orientation*/)]
     public class LogTableAct : ActionBarActivity
-    {
-        ExpandableListViewAdapter mAdapter;
-        ExpandableListView expandableListView;
-        List<string> group = new List<string>();
-        Dictionary<string, List<string>> dicMyMap = new Dictionary<string, List<string>>();
-        WebService webService;
-        List<LogTable> logTable;
 
+    {
         private SupportToolbar suppToolbar;
         private MyActionBarDrawerToggle drawerToogle;
         private DrawerLayout drawerLayout;
         private ListView viewDrawer;
-        List<string> listDrawer;
-        ArrayAdapter adapterDrawer;
+        private List<string> listDrawer;
+        private ArrayAdapter adapterDrawer;
+        private SupportFragment mCurrentFragment;
+        private Fragment1 mFragment1;
+        private Fragment2 mFragment2;
+        private Stack<SupportFragment> mStackFragment;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -42,15 +36,26 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
             suppToolbar = FindViewById<SupportToolbar>(Resource.Id.toolbar);
             drawerLayout = FindViewById<DrawerLayout>(Resource.Id.Drawer);
             viewDrawer = FindViewById<ListView>(Resource.Id.ListView);
-            expandableListView = FindViewById<ExpandableListView>(Resource.Id.expendableListView);
 
-            SetData(out mAdapter);
-            expandableListView.SetAdapter(mAdapter);
+            if (SupportFragmentManager.FindFragmentByTag("Fragment1") != null)
+            {
+                mFragment1 = SupportFragmentManager.FindFragmentByTag("Fragment1") as Fragment1;
+            }
+            else
+            {
+                mFragment1 = new Fragment1();
+                mFragment2 = new Fragment2();
 
-            
+                var trans = SupportFragmentManager.BeginTransaction();
+                trans.Add(Resource.Id.fragmentContainer, mFragment1, "Fragment1");
+                trans.Commit();
+
+                mCurrentFragment = mFragment1;
+            }            
+
+            mStackFragment = new Stack<SupportFragment>();          
 
             listDrawer = new List<string>();
-            listDrawer.Add("Log table");
             listDrawer.Add("Configuration columns");
             listDrawer.Add("Configuration table");
             listDrawer.Add("Stats columns");
@@ -75,30 +80,42 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
             return base.OnCreateOptionsMenu(menu);
         }
 
-        private void SetData(out ExpandableListViewAdapter mAdapter)
+        public override bool OnOptionsItemSelected(IMenuItem item)
         {
-            webService = new WebService();
-            logTable = new List<LogTable>();
-            logTable = webService.GetAllDataLogTable();
-            int counter = 0;
-
-            foreach (LogTable row in logTable)
+            switch (item.ItemId)
             {
-                List<string> groupA = new List<string>();
-                group.Add((counter + 1).ToString() + " " + row.PROCEDURE_NAME.ToString() + " " + row.DATE_TIME.ToString() + " " + row.ACTION.ToString()); ;
-                groupA.Add(" Id procedure: " + row.PROCEDURE_ID.ToString());
-                //groupA.Add(" Ime procedure: " + row.PROCEDURE_NAME.ToString());
-                if (row.ERROR_DESCRIPTION != null)
-                {
-                    groupA.Add(" Error: " + row.ERROR_DESCRIPTION);
-                }             
+                case Resource.Id.action_fragment1:
+                    ReplaceFragment(mFragment1);
+                    return true;
+                case Resource.Id.action_fragment2:
+                    ReplaceFragment(mFragment2);
+                    return true;
+                default:
+                    return base.OnOptionsItemSelected(item);
+            }
+        }
 
-                dicMyMap.Add(group[counter], groupA);
-                counter++;
+        public void ReplaceFragment(SupportFragment fragment)
+        {
+            if (fragment.IsVisible)
+            {
+                return;
             }
 
-            mAdapter = new ExpandableListViewAdapter(this, group, dicMyMap);
+            else
+            {
+                var trans = SupportFragmentManager.BeginTransaction();
+                trans.Replace(Resource.Id.fragmentContainer, fragment);
+                trans.AddToBackStack(null);
+                trans.Commit();
 
+                mCurrentFragment = fragment;
+            }
+        }
+
+        public override void OnBackPressed()
+        {
+            base.OnBackPressed();      
         }
     }
 }

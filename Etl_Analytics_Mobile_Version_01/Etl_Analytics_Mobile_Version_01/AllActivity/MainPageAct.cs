@@ -96,6 +96,12 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
                     this.StartActivity(intent);
                 }
 
+                else if ("Configuration columns \n\n\n" == gridViewString[ed.Position])
+                {
+                    Intent intent = new Intent(this, typeof(DrawerLayoutActionBar));
+                    this.StartActivity(intent);
+                }
+
             };
         }
     }

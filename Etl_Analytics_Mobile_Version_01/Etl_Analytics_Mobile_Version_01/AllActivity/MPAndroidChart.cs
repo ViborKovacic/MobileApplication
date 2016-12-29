@@ -15,11 +15,11 @@ using MikePhil.Charting.Formatter;
 
 namespace Etl_Analytics_Mobile_Version_01.AllActivity
 {
-    [Activity(Label = "Activity1", Theme = "@style/MyTheme2")]
-    public class MPAndroidChart : AppCompatActivity
+    [Activity(Label = "Activity1")]
+    public class MPAndroidChart : Activity
     {
         private Dictionary<string, List<BarEntry>> dicOfDataSets;
-        private List<LegendEntry> listOfStrings;
+        private List<float> listOfEntry;
         private List<string> listTableNames;
         private WebService webService;
         private List<StatsTables> listStatsTables;
@@ -31,12 +31,12 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
             // Create your application here
             SetContentView(Resource.Layout.Graph);
             dicOfDataSets = new Dictionary<string, List<BarEntry>>();
-            listOfStrings = new List<LegendEntry>();
+            listOfEntry = new List<float>();
             listTableNames = new List<string>();
             BarChart chart = FindViewById<BarChart>(Resource.Id.chart);
             webService = new WebService();
             listStatsTables = webService.GetAllDataStatsTable();
-
+            
 
             foreach (StatsTables row in listStatsTables)
             {
@@ -45,7 +45,10 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
                     listTableNames.Add(row.table_name);                    
                 }
             }
+
             int counter = 0;
+
+            string[] testTableNames = listTableNames.ToArray();
 
             foreach (string table in listTableNames)
             {
@@ -63,32 +66,34 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
 
             BarData data = new BarData();
 
-            string[] test = { "" };
-
             foreach (KeyValuePair<string, List<BarEntry>> dicDataSet in dicOfDataSets)
             {
-                dataSet = new BarDataSet(dicDataSet.Value, "");
+                dataSet = new BarDataSet(dicDataSet.Value, dicDataSet.Key + "\n");
+                dataSet.SetStackLabels(testTableNames);
+                dataSet.SetColor(Color.Red, 200);
+                dataSet.Label = dicDataSet.Key;
+
                 foreach (BarEntry item in dicDataSet.Value)
                 {
                     if (item.GetY() > 70)
                     {
-                        dataSet.SetColor(Color.Red, 200);                    
+                        dataSet.AddColor(Color.Red);
+
                     }
 
                     else
                     {
-                        dataSet.AddColor(Color.Blue);
+                        dataSet.SetColor(Color.Blue, 200);
                     }
                 }
 
                 data.AddDataSet(dataSet);
-                //data.SetValueTextColor(Color.CadetBlue);
-                //data.SetValueTextSize(40);
             }
 
             chart.Data = data;
+            chart.AxisRight.SetDrawLabels(false);
+            chart.XAxis.SetDrawLabels(false);
             chart.AnimateXY(3000, 3000);
-            chart.SetDrawGridBackground(false);
         }
     }
 }

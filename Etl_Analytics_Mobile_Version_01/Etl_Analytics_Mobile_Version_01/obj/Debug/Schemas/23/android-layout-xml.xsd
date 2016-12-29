@@ -3,7 +3,7 @@
   <xs:import schemaLocation="schemas.android.com.apk.res.android.xsd" namespace="http://schemas.android.com/apk/res/android" />
   <xs:annotation>
     <xs:documentation>v23</xs:documentation>
-    <xs:documentation>21.12.2016. 16:33:20</xs:documentation>
+    <xs:documentation>29.12.2016. 16:16:37</xs:documentation>
   </xs:annotation>
   <xs:group name="any-view">
     <xs:choice>
@@ -104,8 +104,8 @@
       <xs:element ref="android.support.v4.view.PagerTabStrip" />
       <xs:element ref="android.support.v4.view.ViewPager" />
       <xs:element ref="android.support.v4.app.FragmentTabHost" />
-      <xs:element ref="android.support.v7.widget.RecyclerView" />
-      <xs:element ref="android.support.v7.widget.CardView" />
+      <xs:element ref="android.support.v7.view.menu.ExpandedMenuView" />
+      <xs:element ref="android.support.v7.view.menu.ListMenuItemView" />
       <xs:element ref="android.support.v7.widget.ViewStubCompat" />
       <xs:element ref="android.support.v7.widget.SwitchCompat" />
       <xs:element ref="android.support.v7.widget.SearchView" />
@@ -126,8 +126,8 @@
       <xs:element ref="android.support.v7.widget.ActionBarContainer" />
       <xs:element ref="android.support.v7.widget.AbsActionBarView" />
       <xs:element ref="android.support.v7.widget.Toolbar" />
-      <xs:element ref="android.support.v7.view.menu.ExpandedMenuView" />
-      <xs:element ref="android.support.v7.view.menu.ListMenuItemView" />
+      <xs:element ref="android.support.v7.widget.CardView" />
+      <xs:element ref="android.support.v7.widget.RecyclerView" />
       <xs:element ref="Etl_Analytics_Mobile_Version_01.Class.SlidingTabScrollView" />
       <xs:element ref="Etl_Analytics_Mobile_Version_01.Class.SlidingTabStrip" />
     </xs:choice>
@@ -1663,24 +1663,24 @@
       <xs:extension base="TabHost" />
     </xs:complexContent>
   </xs:complexType>
-  <xs:element name="android.support.v7.widget.RecyclerView" type="android.support.v7.widget.RecyclerView">
+  <xs:element name="android.support.v7.view.menu.ExpandedMenuView" type="android.support.v7.view.menu.ExpandedMenuView">
     <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V7.Widget.RecyclerView</xs:documentation>
+      <xs:documentation>Runtime Type: Android.Support.V7.View.Menu.ExpandedMenuView</xs:documentation>
     </xs:annotation>
   </xs:element>
-  <xs:complexType name="android.support.v7.widget.RecyclerView">
+  <xs:complexType name="android.support.v7.view.menu.ExpandedMenuView">
     <xs:complexContent mixed="false">
-      <xs:extension base="ViewGroup" />
+      <xs:extension base="ListView" />
     </xs:complexContent>
   </xs:complexType>
-  <xs:element name="android.support.v7.widget.CardView" type="android.support.v7.widget.CardView">
+  <xs:element name="android.support.v7.view.menu.ListMenuItemView" type="android.support.v7.view.menu.ListMenuItemView">
     <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V7.Widget.CardView</xs:documentation>
+      <xs:documentation>Runtime Type: Android.Support.V7.View.Menu.ListMenuItemView</xs:documentation>
     </xs:annotation>
   </xs:element>
-  <xs:complexType name="android.support.v7.widget.CardView">
+  <xs:complexType name="android.support.v7.view.menu.ListMenuItemView">
     <xs:complexContent mixed="false">
-      <xs:extension base="FrameLayout" />
+      <xs:extension base="LinearLayout" />
     </xs:complexContent>
   </xs:complexType>
   <xs:element name="android.support.v7.widget.ViewStubCompat" type="android.support.v7.widget.ViewStubCompat">
@@ -1946,24 +1946,24 @@
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-  <xs:element name="android.support.v7.view.menu.ExpandedMenuView" type="android.support.v7.view.menu.ExpandedMenuView">
+  <xs:element name="android.support.v7.widget.CardView" type="android.support.v7.widget.CardView">
     <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V7.View.Menu.ExpandedMenuView</xs:documentation>
+      <xs:documentation>Runtime Type: Android.Support.V7.Widget.CardView</xs:documentation>
     </xs:annotation>
   </xs:element>
-  <xs:complexType name="android.support.v7.view.menu.ExpandedMenuView">
+  <xs:complexType name="android.support.v7.widget.CardView">
     <xs:complexContent mixed="false">
-      <xs:extension base="ListView" />
+      <xs:extension base="FrameLayout" />
     </xs:complexContent>
   </xs:complexType>
-  <xs:element name="android.support.v7.view.menu.ListMenuItemView" type="android.support.v7.view.menu.ListMenuItemView">
+  <xs:element name="android.support.v7.widget.RecyclerView" type="android.support.v7.widget.RecyclerView">
     <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V7.View.Menu.ListMenuItemView</xs:documentation>
+      <xs:documentation>Runtime Type: Android.Support.V7.Widget.RecyclerView</xs:documentation>
     </xs:annotation>
   </xs:element>
-  <xs:complexType name="android.support.v7.view.menu.ListMenuItemView">
+  <xs:complexType name="android.support.v7.widget.RecyclerView">
     <xs:complexContent mixed="false">
-      <xs:extension base="LinearLayout" />
+      <xs:extension base="ViewGroup" />
     </xs:complexContent>
   </xs:complexType>
   <xs:element name="Etl_Analytics_Mobile_Version_01.Class.SlidingTabScrollView" type="Etl_Analytics_Mobile_Version_01.Class.SlidingTabScrollView">

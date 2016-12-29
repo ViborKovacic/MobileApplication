@@ -11,35 +11,25 @@
         android:minHeight="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        local:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
-  
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
     <android.support.v4.widget.DrawerLayout
-          android:id="@+id/Drawer"
-          android:layout_width="match_parent"
-          android:layout_height="match_parent">
-      
-      <!-- The main content view -->
-      <RelativeLayout
-          android:id="@+id/content_frame"
-          android:layout_width="match_parent"
-          android:layout_height="match_parent">
-        
-          <ExpandableListView
-          android:layout_height="match_parent"
-          android:layout_width="match_parent"
-          android:id="@+id/expendableListView" />        
-      </RelativeLayout>
-      
-      <!-- The navigation drawer -->
-      <ListView
-          android:id="@+id/ListView"
-          android:layout_width="240dp"
-          android:layout_height="match_parent"
-          android:layout_gravity="start"
-          android:choiceMode="singleChoice"
-          android:divider="#D2D2D2"
-          android:dividerHeight="2dp"
-          android:background="#F2F2F2" />
+        android:id="@+id/Drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <!-- The main content view -->
+        <FrameLayout
+            android:id="@+id/fragmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    <!-- The navigation drawer -->
+        <ListView
+            android:id="@+id/ListView"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:choiceMode="singleChoice"
+            android:divider="#D2D2D2"
+            android:dividerHeight="2dp"
+            android:background="#F2F2F2" />
     </android.support.v4.widget.DrawerLayout>
-    
 </LinearLayout>

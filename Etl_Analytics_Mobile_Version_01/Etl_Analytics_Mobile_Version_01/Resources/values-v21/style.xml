@@ -17,10 +17,10 @@
 
   <style name="MyTheme2" parent="Theme.AppCompat.Light.NoActionBar">
     <item name="colorPrimary">#00897B</item>
-    <item name="drawerArrowStyle">@style/MyDrawerArrowStyle</item>
+    <item name="drawerArrowStyle">@style/MyDrawerArrowStyle2</item>
   </style>
 
-  <style name="MyDrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+  <style name="MyDrawerArrowStyle2" parent="Widget.AppCompat.DrawerArrowToggle">
     <item name="color">#F5F5F5</item>
     <item name="spinBars">true</item>
   </style>
