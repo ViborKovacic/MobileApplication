@@ -10,10 +10,11 @@ using Android.Support.V4.Widget;
 using SupportToolbar = Android.Support.V7.Widget.Toolbar;
 using SupportFragment = Android.Support.V4.App.Fragment;
 using Etl_Analytics_Mobile_Version_01.Fragments;
+using Android.Content;
 
 namespace Etl_Analytics_Mobile_Version_01.AllActivity
 {
-    [Activity(Label = "Log table", Icon = "@drawable/icon", Theme = "@style/MyTheme2"/*, ConfigurationChanges =Android.Content.PM.ConfigChanges.ScreenSize | Android.Content.PM.ConfigChanges.Orientation*/)]
+    [Activity(Label = "Log table", Icon = "@drawable/icon", Theme = "@style/MyTheme2")]
     public class LogTableAct : ActionBarActivity
 
     {
@@ -27,6 +28,7 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
         private Fragment1 mFragment1;
         private Fragment2 mFragment2;
         private Stack<SupportFragment> mStackFragment;
+        private Intent intent;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -51,9 +53,7 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
                 trans.Commit();
 
                 mCurrentFragment = mFragment1;
-            }            
-
-            mStackFragment = new Stack<SupportFragment>();          
+            }                 
 
             listDrawer = new List<string>();
             listDrawer.Add("Configuration columns");
@@ -65,13 +65,46 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
             adapterDrawer = new ArrayAdapter(this, Android.Resource.Layout.SimpleListItem1, listDrawer);
             viewDrawer.Adapter = adapterDrawer;
 
-            SetSupportActionBar(suppToolbar);
+            viewDrawer.ItemClick += ViewDrawer_ItemClick;
 
+            SetSupportActionBar(suppToolbar);
+            
             drawerToogle = new MyActionBarDrawerToggle(this /*host*/, drawerLayout, Resource.String.open_drawer, Resource.String.close_drawer);
 
             SupportActionBar.SetHomeButtonEnabled(true);
             SupportActionBar.SetDisplayShowTitleEnabled(true);
             drawerToogle.SyncState();
+        }
+
+        private void ViewDrawer_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
+        {
+            string switchCheck = listDrawer[e.Position];
+
+            switch (switchCheck)
+            {
+                case "Configuration columns":
+                    intent = new Intent(this, typeof(DrawerLayoutActionBar));
+                    this.StartActivity(intent);
+                    break;
+                case "Configuration table":
+                    intent = new Intent(this, typeof(SlidingTabAct));
+                    this.StartActivity(intent);
+                    break;
+                case "Stats columns":
+                    intent = new Intent(this, typeof(MPAndroidChart));
+                    this.StartActivity(intent);
+                    break;
+                case "Stats tables":
+                    intent = new Intent(this, typeof(UserTableAct));
+                    this.StartActivity(intent);
+                    break;
+                case "User table":
+                    intent = new Intent(this, typeof(SlidingTabAct));
+                    this.StartActivity(intent);
+                    break;
+                default:
+                    break;
+            }
         }
 
         public override bool OnCreateOptionsMenu(IMenu menu)

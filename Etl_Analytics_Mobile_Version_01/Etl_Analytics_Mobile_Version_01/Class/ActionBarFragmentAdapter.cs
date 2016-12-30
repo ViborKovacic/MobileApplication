@@ -10,7 +10,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.Support.V4.App;
-using Etl_Analytics_Mobile_Version_01.Class.Fragments;
+using Etl_Analytics_Mobile_Version_01.Fragments;
 
 namespace Etl_Analytics_Mobile_Version_01.Class
 {

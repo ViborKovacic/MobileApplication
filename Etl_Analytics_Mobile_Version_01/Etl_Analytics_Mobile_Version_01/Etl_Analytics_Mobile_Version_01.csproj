@@ -108,8 +108,6 @@
     <Compile Include="Class\ExtMethods.cs" />
     <Compile Include="Class\Fragment2RecycleAdapter.cs" />
     <Compile Include="Class\Fragment2View.cs" />
-    <Compile Include="Class\Fragments\FragmentChart.cs" />
-    <Compile Include="Class\Fragments\FragmentBigDeviation.cs" />
     <Compile Include="Class\MyActionBarDrawerToggle.cs" />
     <Compile Include="Class\DialogSignIn.cs" />
     <Compile Include="Class\MyAnimation.cs" />
@@ -129,6 +127,9 @@
     <Compile Include="Class\WebService.cs" />
     <Compile Include="Fragments\Fragment1.cs" />
     <Compile Include="Fragments\Fragment2.cs" />
+    <Compile Include="Fragments\FragmentAllTable.cs" />
+    <Compile Include="Fragments\FragmentBigDeviation.cs" />
+    <Compile Include="Fragments\FragmentChart.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\CustomGridViewAdapter.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
@@ -357,7 +358,9 @@
     <AndroidResource Include="Resources\values\MyThemeStyles.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\menu\action_menu.xml" />
+    <AndroidResource Include="Resources\menu\action_menu.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\ic_action_help.png" />
