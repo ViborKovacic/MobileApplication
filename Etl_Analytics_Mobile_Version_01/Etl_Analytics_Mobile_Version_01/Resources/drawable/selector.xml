@@ -19,7 +19,7 @@
     <!--Default-->
 
     <shape>
-      <solid android:color="#00007F" />
+      <solid android:color="#00897B" />
     </shape>
   </item>
 

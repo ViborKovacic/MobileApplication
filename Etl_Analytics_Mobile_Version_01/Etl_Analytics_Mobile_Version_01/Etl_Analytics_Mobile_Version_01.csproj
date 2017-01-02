@@ -97,11 +97,11 @@
   <ItemGroup>
     <Compile Include="AllActivity\DrawerLayoutActionBar.cs" />
     <Compile Include="AllActivity\LoadingScreen.cs" />
-    <Compile Include="AllActivity\MPAndroidChart.cs" />
-    <Compile Include="AllActivity\LogTableAct.cs" />
+    <Compile Include="AllActivity\ConfigTablesAct.cs" />
     <Compile Include="AllActivity\MainPageAct.cs" />
-    <Compile Include="AllActivity\SlidingTabAct.cs" />
+    <Compile Include="AllActivity\StatsColumnsAct.cs" />
     <Compile Include="AllActivity\StatsTableAct.cs" />
+    <Compile Include="AllActivity\TestStatsTableAct.cs" />
     <Compile Include="AllActivity\UserTableAct.cs" />
     <Compile Include="Class\ActionBarFragmentAdapter.cs" />
     <Compile Include="Class\ExpandableListViewAdapter.cs" />
@@ -123,13 +123,17 @@
     <Compile Include="Class\Table Constructor\ColumnName.cs" />
     <Compile Include="Class\Table Constructor\LogTable.cs" />
     <Compile Include="Class\Table Constructor\StatsTables.cs" />
+    <Compile Include="Class\Table Constructor\TableName.cs" />
     <Compile Include="Class\Table Constructor\UserTable.cs" />
     <Compile Include="Class\WebService.cs" />
+    <Compile Include="Fragments\StatsTable\ChartAllTablesDialog.cs" />
     <Compile Include="Fragments\Fragment1.cs" />
     <Compile Include="Fragments\Fragment2.cs" />
-    <Compile Include="Fragments\FragmentAllTable.cs" />
-    <Compile Include="Fragments\FragmentBigDeviation.cs" />
-    <Compile Include="Fragments\FragmentChart.cs" />
+    <Compile Include="Fragments\StatsTable\ChartErrorDialog.cs" />
+    <Compile Include="Fragments\StatsTable\ChartSuccessDialog.cs" />
+    <Compile Include="Fragments\StatsTable\FragmentAllTable.cs" />
+    <Compile Include="Fragments\StatsTable\FragmentBigDeviation.cs" />
+    <Compile Include="Fragments\StatsTable\FragmentChart.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\CustomGridViewAdapter.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
@@ -188,9 +192,6 @@
     <AndroidResource Include="Resources\layout\StatsTableRow.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\Graph.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
     <AndroidResource Include="Resources\layout\UserTableMain.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
@@ -219,6 +220,18 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\Fragment2RowCardView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\StatsTableGraph.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ChartAllTablesDialog.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ChartSuccessDialog.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ChartErrorDialog.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

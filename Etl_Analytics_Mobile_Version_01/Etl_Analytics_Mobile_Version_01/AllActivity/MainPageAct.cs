@@ -37,6 +37,7 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
             // Create your application here
             SetContentView(Resource.Layout.MainPage);
             DoThis();
+            RequestedOrientation = Android.Content.PM.ScreenOrientation.Portrait;
         }
 
         private void DoThis()
@@ -70,23 +71,23 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
                 //Opening LogTable list
                 if ("Log table" == gridViewString[ed.Position])
                 {
-                    Intent intent = new Intent(this, typeof(LogTableAct));
+                    Intent intent = new Intent(this, typeof(TestStatsTableAct));
                     this.StartActivity(intent);
                 }
                 else if ("Configuration table" == gridViewString[ed.Position])
                 {
-                    Intent intent = new Intent(this, typeof(SlidingTabAct));
+                    Intent intent = new Intent(this, typeof(ConfigTablesAct));
                     this.StartActivity(intent);
                 }
                 else if ("Stats tables" == gridViewString[ed.Position])
                 {
-                    Intent intent = new Intent(this, typeof(StatsTableAct));
+                    Intent intent = new Intent(this, typeof(StatsColumnsAct));
                     this.StartActivity(intent);
                 }
 
                 else if ("Stats columns\n\n\n" == gridViewString[ed.Position])
                 {
-                    Intent intent = new Intent(this, typeof(MPAndroidChart));
+                    Intent intent = new Intent(this, typeof(StatsTableAct));
                     this.StartActivity(intent);
                 }
 

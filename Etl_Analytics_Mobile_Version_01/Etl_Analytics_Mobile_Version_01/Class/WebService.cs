@@ -55,12 +55,13 @@ namespace Etl_Analytics_Mobile_Version_01.Class
             return response.Content.ToString();
         }
 
-        public List<ColumnName> GetAllColumnNames(string table_name)
+        public List<ColumnName> GetAllColumnNames(string owner, string table_name)
         {
             List<ColumnName> columnNamesList = new List<ColumnName>();
             client = new RestClient("http://insite2crm6.in2.hr");
             request = new RestRequest("etlservice/api/ColumnName", Method.GET);
             request.AddParameter("table_name", table_name);
+            request.AddParameter("owner", owner);
             columnNamesList = client.Execute<List<ColumnName>>(request).Data;
 
             return columnNamesList;
@@ -74,6 +75,17 @@ namespace Etl_Analytics_Mobile_Version_01.Class
             statTable = client.Execute<List<StatsTables>>(request).Data;
 
             return statTable;
+        }
+
+        public List<TableName> GetAllDataTableName(string owner)
+        {
+            List<TableName> tableName = new List<TableName>();
+            client = new RestClient("http://insite2crm6.in2.hr");
+            request = new RestRequest("etlservice/api/TableNames", Method.GET);
+            request.AddParameter("owner", owner);
+            tableName = client.Execute<List<TableName>>(request).Data;
+
+            return tableName;
         }
     }
 }

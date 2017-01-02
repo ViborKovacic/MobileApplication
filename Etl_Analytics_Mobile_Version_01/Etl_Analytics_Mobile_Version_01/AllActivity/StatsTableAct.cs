@@ -1,129 +1,84 @@
 using Android.App;
-using Android.Content;
 using Android.OS;
-using Android.Views;
+using Android.Support.V7.App;
 using Android.Widget;
-using Etl_Analytics_Mobile_Version_01.Class;
-using Android.Views.InputMethods;
+using Etl_Analytics_Mobile_Version_01.Fragments;
+using SupportFragment = Android.Support.V4.App.Fragment;
 
 namespace Etl_Analytics_Mobile_Version_01.AllActivity
 {
-    [Activity(Label = "Table statistics", Icon = "@drawable/icon")]
-    public class StatsTableAct : Activity
+    [Activity(Label = "SlidingTabAct", Icon = "@drawable/xs", Theme ="@style/MyTheme2")]
+    public class StatsTableAct : ActionBarActivity
     {
-        private static bool mAnimatedDown;
-        private static bool mIsAnimating;
-        private EditText mSearch;
-        private static LinearLayout mContainer;
-        private View test;
+        private LinearLayout layoutChart;
+        private LinearLayout layoutBigDeviation;
+        private LinearLayout layoutAllTable;
+        private SupportFragment mCurrentFragment;
+        private FragmentChart mFragmentChart;
+        private FragmentAllTable mFragmentAllTable;
+        private FragmentBigDeviation mFragmentBigDeviation;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+            SetContentView(Resource.Layout.Action_bar);
 
-            // Create your application here
-            SetContentView(Resource.Layout.SlidingBar);
-            mSearch = FindViewById<EditText>(Resource.Id.etSearch);           
-            mContainer = FindViewById<LinearLayout>(Resource.Id.llContainer); ;
-            test = FindViewById<View>(Resource.Id.testView);
+            layoutChart = FindViewById<LinearLayout>(Resource.Id.linearLayout1);
+            layoutBigDeviation = FindViewById<LinearLayout>(Resource.Id.linearLayout2);
+            layoutAllTable = FindViewById<LinearLayout>(Resource.Id.linearLayout3);
 
-            mSearch.Alpha = 0;
-            mSearch.TextChanged += MSearch_TextChanged;
-
-            FragmentTransaction transaction = FragmentManager.BeginTransaction();
-            SlidingTabsFragment fragment = new SlidingTabsFragment();
-            transaction.Replace(Resource.Id.sample_content_fragment, fragment);
-            transaction.Commit();
-
-            //HideSoftKeyboard();
-        }
-
-        public void MSearch_TextChanged(object sender, Android.Text.TextChangedEventArgs e)
-        {
-            FragmentTransaction transaction = FragmentManager.BeginTransaction();
-            SlidingTabsFragment fragment = new SlidingTabsFragment();
-            SlidingTabsFragment.mSearchText = mSearch.Text;
-            transaction.Replace(Resource.Id.sample_content_fragment, fragment);
-            transaction.Commit();
-        }
-
-        public override bool OnCreateOptionsMenu(IMenu menu)
-        {
-            MenuInflater.Inflate(Resource.Menu.actionbar_main, menu);
-            return base.OnCreateOptionsMenu(menu);
-        }
-
-        public override bool OnOptionsItemSelected(IMenuItem item)
-        {
-            switch (item.ItemId)
+            if (SupportFragmentManager.FindFragmentByTag("FragmentChart") != null)
             {
-
-                case Resource.Id.search:
-                    //Search icon has been clicked
-
-                    if (mIsAnimating)
-                    {
-                        return true;
-                    }
-
-                    if (!mAnimatedDown)
-                    {
-                        //Listview is up
-                        MyAnimation anim = new MyAnimation(test, test.Height - mSearch.Height);
-                        anim.Duration = 500;
-                        test.StartAnimation(anim);
-                        anim.AnimationStart += anim_AnimationStartDown;
-                        anim.AnimationEnd += anim_AnimationEndDown;
-                        mContainer.Animate().TranslationYBy(mSearch.Height).SetDuration(500).Start();
-                    }
-
-                    else
-                    {
-                        //Listview is down
-                        MyAnimation anim = new MyAnimation(test, test.Height + mSearch.Height);
-                        anim.Duration = 500;
-                        test.StartAnimation(anim);
-                        anim.AnimationStart += anim_AnimationStartUp;
-                        anim.AnimationEnd += anim_AnimationEndUp;
-                        mContainer.Animate().TranslationYBy(-mSearch.Height).SetDuration(500).Start();
-                    }
-
-                    mAnimatedDown = !mAnimatedDown;
-                    return true;
-
-                default:
-                    return base.OnOptionsItemSelected(item);
+                mFragmentChart = SupportFragmentManager.FindFragmentByTag("FragmentChart") as FragmentChart;
             }
+            else
+            {
+                mFragmentChart = new FragmentChart();
+                mFragmentAllTable = new FragmentAllTable();
+                mFragmentBigDeviation = new FragmentBigDeviation();
+
+                var trans = SupportFragmentManager.BeginTransaction();
+                trans.Add(Resource.Id.fragmenContainerActionBar, mFragmentChart, "FragmentChart");
+                trans.Commit();
+
+                mCurrentFragment = mFragmentChart;                
+            }
+
+            layoutChart.Click += LayoutChart_Click;
+            layoutBigDeviation.Click += LayoutBigDeviation_Click;
+            layoutAllTable.Click += LayoutAllTable_Click;
         }
 
-        //public void HideSoftKeyboard()
-        //{
-        //    InputMethodManager manager = (InputMethodManager)GetSystemService(Context.InputMethodService);
-        //    manager.HideSoftInputFromWindow(CurrentFocus.WindowToken, 0);
-        //}
-
-        void anim_AnimationEndUp(object sender, Android.Views.Animations.Animation.AnimationEndEventArgs e)
+        private void LayoutChart_Click(object sender, System.EventArgs e)
         {
-            mIsAnimating = false;
-            mSearch.ClearFocus();
-            InputMethodManager inputManager = (InputMethodManager)this.GetSystemService(Context.InputMethodService);
-            inputManager.HideSoftInputFromWindow(this.CurrentFocus.WindowToken, HideSoftInputFlags.NotAlways);
+            ReplaceFragment(mFragmentChart);
         }
 
-        void anim_AnimationEndDown(object sender, Android.Views.Animations.Animation.AnimationEndEventArgs e)
+        private void LayoutBigDeviation_Click(object sender, System.EventArgs e)
         {
-            mIsAnimating = false;
+            ReplaceFragment(mFragmentBigDeviation);
         }
 
-        void anim_AnimationStartDown(object sender, Android.Views.Animations.Animation.AnimationStartEventArgs e)
+        private void LayoutAllTable_Click(object sender, System.EventArgs e)
         {
-            mIsAnimating = true;
-            mSearch.Animate().AlphaBy(1.0f).SetDuration(500).Start();
+            ReplaceFragment(mFragmentAllTable);
         }
 
-        void anim_AnimationStartUp(object sender, Android.Views.Animations.Animation.AnimationStartEventArgs e)
+        private void ReplaceFragment(SupportFragment fragment)
         {
-            mIsAnimating = true;
-            mSearch.Animate().AlphaBy(-1.0f).SetDuration(300).Start();
+            if (fragment.IsVisible)
+            {
+                return;
+            }
+            else
+            {
+                var trans = SupportFragmentManager.BeginTransaction();
+                trans.Replace(Resource.Id.fragmenContainerActionBar, fragment);
+                trans.AddToBackStack(null);
+                trans.Commit();
+
+                mCurrentFragment = fragment;
+            }
         }
     }
 }

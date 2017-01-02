@@ -13,11 +13,11 @@
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
-    <activity android:label="Activity1" android:name="md5c061d5b67b2bf180a74fe23549602373.MPAndroidChart" />
-    <activity android:icon="@drawable/icon" android:label="Log table" android:theme="@style/MyTheme2" android:name="md5c061d5b67b2bf180a74fe23549602373.LogTableAct" />
+    <activity android:icon="@drawable/icon" android:label="Log table" android:theme="@style/MyTheme2" android:name="md5c061d5b67b2bf180a74fe23549602373.ConfigTablesAct" />
     <activity android:icon="@drawable/icon" android:label="MainPageAct" android:theme="@style/MyTheme2" android:name="md5c061d5b67b2bf180a74fe23549602373.MainPageAct" />
-    <activity android:icon="@drawable/xs" android:label="SlidingTabAct" android:theme="@style/MyTheme2" android:name="md5c061d5b67b2bf180a74fe23549602373.SlidingTabAct" />
-    <activity android:icon="@drawable/icon" android:label="Table statistics" android:name="md5c061d5b67b2bf180a74fe23549602373.StatsTableAct" />
+    <activity android:icon="@drawable/xs" android:label="StatsColumnsAct" android:theme="@style/MyTheme2" android:name="md5c061d5b67b2bf180a74fe23549602373.StatsColumnsAct" />
+    <activity android:icon="@drawable/xs" android:label="SlidingTabAct" android:theme="@style/MyTheme2" android:name="md5c061d5b67b2bf180a74fe23549602373.StatsTableAct" />
+    <activity android:icon="@drawable/icon" android:label="Table statistics" android:name="md5c061d5b67b2bf180a74fe23549602373.TestStatsTableAct" />
     <activity android:icon="@drawable/icon" android:label="UserTableAct" android:theme="@style/CustomActionBarTheme3" android:name="md5c061d5b67b2bf180a74fe23549602373.UserTableAct" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.mono.MonoRuntimeProvider.__mono_init__" />
     <!--suppress ExportedReceiver-->
