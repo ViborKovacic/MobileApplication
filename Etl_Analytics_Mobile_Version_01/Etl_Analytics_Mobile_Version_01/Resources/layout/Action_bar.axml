@@ -7,13 +7,13 @@
         android:orientation="horizontal"
         android:layout_width="fill_parent"
         android:layout_height="75dp"
-        android:weightSum="100">
+        android:weightSum="66">
         <LinearLayout
             android:orientation="vertical"
-            android:layout_weight="33.33"
+            android:layout_weight="22"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:id="@+id/linearLayout1"
+            android:id="@+id/linerLayoutChart"
             android:background="@drawable/selector"
             android:padding="0dp"
             android:weightSum="100"
@@ -37,10 +37,10 @@
         </LinearLayout>
         <LinearLayout
             android:orientation="vertical"
-            android:layout_weight="33.33"
+            android:layout_weight="22"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:id="@+id/linearLayout2"
+            android:id="@+id/linearLayoutDeviation"
             android:background="@drawable/selector"
             android:weightSum="100"
             android:padding="0dp"
@@ -55,7 +55,7 @@
                 android:scaleType="fitCenter"
                 android:adjustViewBounds="false" />
             <TextView
-                android:text="Big deviation"
+                android:text="Deviation"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="30"
@@ -64,10 +64,10 @@
         </LinearLayout>
         <LinearLayout
             android:orientation="vertical"
-            android:layout_weight="33"
+            android:layout_weight="22"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:id="@+id/linearLayout3"
+            android:id="@+id/linearLayoutAllTable"
             android:background="@drawable/selector"
             android:weightSum="100"
             android:padding="0dp"

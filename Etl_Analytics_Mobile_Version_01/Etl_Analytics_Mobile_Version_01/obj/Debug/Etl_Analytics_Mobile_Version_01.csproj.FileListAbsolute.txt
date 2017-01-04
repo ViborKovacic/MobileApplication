@@ -540,7 +540,6 @@ C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics
 C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\layout\statstablealltable.xml
 C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\layout\slidingbar.xml
 C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\layout\action_bar.xml
-C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\layout\statstable.xml
 C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\layout\logtablechart.xml
 C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\layout\logtabledescription.xml
 C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\layout\statstablerow.xml
@@ -636,5 +635,8 @@ C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics
 C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\layout\chartalltablesdialog.xml
 C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\layout\chartsuccessdialog.xml
 C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\layout\charterrordialog.xml
+C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\layout\statscolumnsgraph.xml
+C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\layout\statscolumnsalltable.xml
+C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\layout\statscolumnsrow.xml
 C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\Etl_Analytics_Mobile_Version_01.dll.mdb
 C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\Etl_Analytics_Mobile_Version_01.dll.mdb

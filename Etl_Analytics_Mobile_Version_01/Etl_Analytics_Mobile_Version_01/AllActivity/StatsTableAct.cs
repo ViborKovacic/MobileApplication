@@ -23,9 +23,9 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.Action_bar);
 
-            layoutChart = FindViewById<LinearLayout>(Resource.Id.linearLayout1);
-            layoutBigDeviation = FindViewById<LinearLayout>(Resource.Id.linearLayout2);
-            layoutAllTable = FindViewById<LinearLayout>(Resource.Id.linearLayout3);
+            layoutChart = FindViewById<LinearLayout>(Resource.Id.linerLayoutChart);
+            layoutBigDeviation = FindViewById<LinearLayout>(Resource.Id.linearLayoutDeviation);
+            layoutAllTable = FindViewById<LinearLayout>(Resource.Id.linearLayoutAllTable);
 
             if (SupportFragmentManager.FindFragmentByTag("FragmentChart") != null)
             {

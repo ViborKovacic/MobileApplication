@@ -16,6 +16,7 @@ using Etl_Analytics_Mobile_Version_01.Class.Table_Constructor;
 using MikePhil.Charting.Data;
 using Android.Graphics;
 using Android.Support.V4.App;
+using MikePhil.Charting.Components;
 
 namespace Etl_Analytics_Mobile_Version_01.Fragments
 {
@@ -51,7 +52,7 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
             {
                 if (!listTableNames.Contains(row.table_name))
                 {
-                    listTableNames.Add(row.table_name);
+                    listTableNames.Add(row.table_id + row.table_name);
                 }
             }
 
@@ -82,23 +83,49 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
                 {
                     if (item.GetY() > 70)
                     {
-                        dataSet.SetColor(Color.Red, 200);
+                        dataSet.SetColor(Color.DarkRed, 200);
 
                     }
 
                     else
                     {
-                        dataSet.AddColor(Color.Green);
+                        dataSet.AddColor(Color.DarkGreen);
                     }
                 }
 
                 data.AddDataSet(dataSet);
             }
 
+            LimitLine limitLine = new LimitLine(70f);
+            limitLine.LineColor = Color.DarkRed;
+            limitLine.Enabled = true;
+
+            XAxis xAxis = mChartAllTables.XAxis;
+            xAxis.SetCenterAxisLabels(false);
+            xAxis.SetDrawLabels(false);
+            xAxis.Position = XAxis.XAxisPosition.BottomInside;
+            xAxis.SetDrawGridLines(false);
+
+            YAxis yAxis = mChartAllTables.AxisLeft;
+            yAxis.SetDrawGridLines(true);
+            yAxis.AddLimitLine(limitLine);
+
+            Legend l = mChartAllTables.Legend;
+            l.VerticalAlignment = Legend.LegendVerticalAlignment.Top;
+            l.HorizontalAlignment = Legend.LegendHorizontalAlignment.Right;
+            l.Orientation = Legend.LegendOrientation.Vertical;
+            l.WordWrapEnabled = true;
+            l.SetDrawInside(true);
+
             mChartAllTables.Data = data;
             mChartAllTables.AxisRight.SetDrawLabels(false);
             mChartAllTables.XAxis.SetDrawLabels(false);
             mChartAllTables.AnimateXY(3000, 3000);
+
+            mChartAllTables.Description.Enabled = true;
+            mChartAllTables.Description.Text = "All tables chart";
+
+            mChartAllTables.Invalidate();
 
             return mView;
         }

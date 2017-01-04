@@ -8,6 +8,8 @@ using Etl_Analytics_Mobile_Version_01.Class.Table_Constructor;
 using System.Linq;
 using System;
 using Android.Graphics;
+using MikePhil.Charting.Components;
+using MikePhil.Charting.Highlight;
 
 namespace Etl_Analytics_Mobile_Version_01.Fragments.StatsTable
 {
@@ -73,16 +75,40 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments.StatsTable
             foreach (KeyValuePair<string, List<BarEntry>> dicDataSet in dicOfDataSets)
             {
                 dataSet = new BarDataSet(dicDataSet.Value, dicDataSet.Key);
-                dataSet.SetColor(Color.Red, 200);
+                dataSet.SetColor(Color.DarkRed, 200);
                 data.AddDataSet(dataSet);
             }
+            XAxis xAxis = chartError.XAxis;
+            xAxis.SetCenterAxisLabels(false);
+            xAxis.SetDrawLabels(false);
+            xAxis.Position = XAxis.XAxisPosition.BottomInside;
+            xAxis.SetDrawGridLines(false);
+
+            Legend l = chartError.Legend;
+            l.VerticalAlignment = Legend.LegendVerticalAlignment.Top;
+            l.HorizontalAlignment = Legend.LegendHorizontalAlignment.Right;
+            l.Orientation = Legend.LegendOrientation.Vertical;
+            l.WordWrapEnabled = true;
+            l.SetDrawInside(true);
 
             chartError.Data = data;
             chartError.AxisRight.SetDrawLabels(false);
             chartError.XAxis.SetDrawLabels(false);
-            chartError.AnimateXY(3000, 3000);
+            chartError.AnimateXY(2000, 2000);
+
+            chartError.Description.Enabled = true;
+            chartError.Description.Text = "Tables with big deviation";
+
+            chartError.Invalidate();
 
             return mView;
+        }
+
+        public override void OnActivityCreated(Bundle savedInstanceState)
+        {
+            Dialog.Window.RequestFeature(WindowFeatures.NoTitle);
+            base.OnActivityCreated(savedInstanceState);
+            Dialog.Window.Attributes.WindowAnimations = Resource.Style.dialog_animation;
         }
     }
 }

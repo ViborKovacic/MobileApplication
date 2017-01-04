@@ -2,7 +2,7 @@ using Android.App;
 using Android.OS;
 using Android.Support.V7.App;
 using Android.Widget;
-using Etl_Analytics_Mobile_Version_01.Fragments;
+using Etl_Analytics_Mobile_Version_01.Fragments.StatsColumnsFragments;
 using SupportFragment = Android.Support.V4.App.Fragment;
 
 namespace Etl_Analytics_Mobile_Version_01.AllActivity
@@ -10,13 +10,12 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
     [Activity(Label = "StatsColumnsAct", Icon = "@drawable/xs", Theme = "@style/MyTheme2")]
     public class StatsColumnsAct : ActionBarActivity
     {
-        private LinearLayout layoutChart;
-        private LinearLayout layoutBigDeviation;
-        private LinearLayout layoutAllTable;
+        private LinearLayout mLayoutChart;
+        private LinearLayout mLayoutDeviation;
+        private LinearLayout mLayoutAllTable;
+        private FragmentStatsColumnsChart mFragmentChart;
+        private FragmentStatsColumnsAllTable mFragmentAllTable;
         private SupportFragment mCurrentFragment;
-        private FragmentChart mFragmentChart;
-        private FragmentAllTable mFragmentAllTable;
-        private FragmentBigDeviation mFragmentBigDeviation;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -24,19 +23,19 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
             // Create your application here
             SetContentView(Resource.Layout.Action_bar);
 
-            layoutChart = FindViewById<LinearLayout>(Resource.Id.linearLayout1);
-            layoutBigDeviation = FindViewById<LinearLayout>(Resource.Id.linearLayout2);
-            layoutAllTable = FindViewById<LinearLayout>(Resource.Id.linearLayout3);
+            mLayoutChart = FindViewById<LinearLayout>(Resource.Id.linerLayoutChart);
+            mLayoutDeviation = FindViewById<LinearLayout>(Resource.Id.linearLayoutDeviation);
+            mLayoutAllTable = FindViewById<LinearLayout>(Resource.Id.linearLayoutAllTable);
+
 
             if (SupportFragmentManager.FindFragmentByTag("FragmentChart") != null)
             {
-                mFragmentChart = SupportFragmentManager.FindFragmentByTag("FragmentChart") as FragmentChart;
+                mFragmentChart = SupportFragmentManager.FindFragmentByTag("FragmentChart") as FragmentStatsColumnsChart;
             }
             else
             {
-                mFragmentChart = new FragmentChart();
-                mFragmentAllTable = new FragmentAllTable();
-                mFragmentBigDeviation = new FragmentBigDeviation();
+                mFragmentChart = new FragmentStatsColumnsChart();
+                mFragmentAllTable = new FragmentStatsColumnsAllTable();
 
                 var trans = SupportFragmentManager.BeginTransaction();
                 trans.Add(Resource.Id.fragmenContainerActionBar, mFragmentChart, "FragmentChart");
@@ -45,9 +44,9 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
                 mCurrentFragment = mFragmentChart;
             }
 
-            layoutChart.Click += LayoutChart_Click;
-            layoutBigDeviation.Click += LayoutBigDeviation_Click;
-            layoutAllTable.Click += LayoutAllTable_Click;
+            mLayoutChart.Click += LayoutChart_Click;
+            mLayoutDeviation.Click += LayoutBigDeviation_Click;
+            mLayoutAllTable.Click += LayoutAllTable_Click;
         }
 
         private void LayoutChart_Click(object sender, System.EventArgs e)
@@ -57,7 +56,7 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
 
         private void LayoutBigDeviation_Click(object sender, System.EventArgs e)
         {
-            ReplaceFragment(mFragmentBigDeviation);
+            ReplaceFragment(mFragmentChart);
         }
 
         private void LayoutAllTable_Click(object sender, System.EventArgs e)

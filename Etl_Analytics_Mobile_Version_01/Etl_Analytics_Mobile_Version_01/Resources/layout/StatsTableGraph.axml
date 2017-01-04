@@ -7,9 +7,9 @@
         android:layout_width="match_parent"
         android:layout_height="250dp">
         <TextView
+            android:id="@+id/txtAllTable"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="All tables chart"
             android:textSize="18dp"
             android:textStyle="bold" />
         <com.github.mikephil.charting.charts.BarChart
@@ -29,8 +29,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Success tables chart"
-                android:id="@+id/textView2"
+                android:id="@+id/textSuccess"
                 android:textSize="18dp"
                 android:textStyle="bold" />
             <com.github.mikephil.charting.charts.BarChart
@@ -46,9 +45,9 @@
             android:layout_toRightOf="@id/leftRelativeLayout"
             android:layout_marginLeft="5dp">
             <TextView
+                android:id="@+id/textError"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Error tables chart"
                 android:textSize="18dp"
                 android:textStyle="bold" />
             <com.github.mikephil.charting.charts.BarChart

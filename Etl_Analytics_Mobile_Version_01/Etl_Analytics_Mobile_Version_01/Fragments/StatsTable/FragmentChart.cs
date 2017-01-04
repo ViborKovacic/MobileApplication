@@ -12,6 +12,10 @@ using MikePhil.Charting.Charts;
 using Android.Graphics;
 using Etl_Analytics_Mobile_Version_01.Fragments.StatsTable;
 using Android.Content;
+using Android.Widget;
+using Java.Util;
+using MikePhil.Charting.Components;
+using MikePhil.Charting.Util;
 
 namespace Etl_Analytics_Mobile_Version_01.Fragments
 {
@@ -27,6 +31,9 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
         private BarChart chartAllTables;
         private BarChart chartSuccess;
         private BarChart chartError;
+        private TextView mTextAllTable;
+        private TextView mTextSuccess;
+        private TextView mTextError;
         public override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -44,7 +51,14 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
             view = inflater.Inflate(Resource.Layout.StatsTableGraph, container, false);
             chartAllTables = view.FindViewById<BarChart>(Resource.Id.chartAllTables);
             chartSuccess = view.FindViewById<BarChart>(Resource.Id.chartSuccess);
-            chartError = view.FindViewById<BarChart>(Resource.Id.chartError);            
+            chartError = view.FindViewById<BarChart>(Resource.Id.chartError);
+            mTextAllTable = view.FindViewById<TextView>(Resource.Id.txtAllTable);
+            mTextSuccess = view.FindViewById<TextView>(Resource.Id.textSuccess);
+            mTextError = view.FindViewById<TextView>(Resource.Id.textError);
+
+            mTextAllTable.Text = "All tables chart";
+            mTextSuccess.Text = "Success tables chart";
+            mTextError.Text = "Error tables chart";
 
             ChartAllTables();
             ChartSuccess();
@@ -117,23 +131,44 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
                 {
                     if (item.GetY() > 70)
                     {
-                        dataSet.SetColor(Color.Red, 200);
+                        dataSet.SetColor(Color.DarkRed, 200);
 
                     }
 
                     else
                     {
-                        dataSet.AddColor(Color.Green);
+                        dataSet.AddColor(Color.DarkGreen);
                     }
                 }
-
                 data.AddDataSet(dataSet);
             }
 
+            LimitLine limitLine = new LimitLine(70f);
+            limitLine.LineColor = Color.DarkRed;
+            limitLine.Enabled = true;        
+
+            XAxis xAxis = chartAllTables.XAxis;
+            xAxis.SetDrawLabels(false);
+            xAxis.Position = XAxis.XAxisPosition.BottomInside;
+            xAxis.SetDrawGridLines(true);
+
+            YAxis yAxis = chartAllTables.AxisLeft;
+            yAxis.SetDrawGridLines(true);
+            yAxis.AddLimitLine(limitLine);
+
             chartAllTables.Data = data;
             chartAllTables.AxisRight.SetDrawLabels(false);
-            chartAllTables.XAxis.SetDrawLabels(false);
             chartAllTables.AnimateXY(3000, 3000);
+
+            chartAllTables.Legend.Enabled = false;
+            chartAllTables.SetTouchEnabled(true);
+            chartAllTables.SetPinchZoom(false);
+            chartAllTables.DoubleTapToZoomEnabled = false;
+
+            chartAllTables.Description.Enabled = true;
+            chartAllTables.Description.Text = "All tables chart";
+
+            chartAllTables.Invalidate();
         }
 
         private void ChartSuccess()
@@ -173,14 +208,29 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
             foreach (KeyValuePair<string, List<BarEntry>> dicDataSet in dicOfDataSets)
             {
                 dataSet = new BarDataSet(dicDataSet.Value, dicDataSet.Key);
-                dataSet.SetColor(Color.Green, 200);
+                dataSet.SetColor(Color.DarkGreen, 200);
                 data.AddDataSet(dataSet);
             }
+            XAxis xAxis = chartSuccess.XAxis;
+            xAxis.SetCenterAxisLabels(false);
+            xAxis.SetDrawLabels(false);
+            xAxis.Position = XAxis.XAxisPosition.BottomInside;
+            xAxis.SetDrawGridLines(false);
 
             chartSuccess.Data = data;
             chartSuccess.AxisRight.SetDrawLabels(false);
             chartSuccess.XAxis.SetDrawLabels(false);
             chartSuccess.AnimateXY(3000, 3000);
+
+            chartSuccess.Legend.Enabled = false;
+            chartSuccess.SetTouchEnabled(true);
+            chartSuccess.SetPinchZoom(false);
+            chartSuccess.DoubleTapToZoomEnabled = false;
+
+            chartSuccess.Description.Enabled = true;
+            chartSuccess.Description.Text = "Tables without big deviation";
+
+            chartSuccess.Invalidate();
         }
 
         private void ChartError()
@@ -220,14 +270,29 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
             foreach (KeyValuePair<string, List<BarEntry>> dicDataSet in dicOfDataSets)
             {
                 dataSet = new BarDataSet(dicDataSet.Value, dicDataSet.Key);
-                dataSet.SetColor(Color.Red, 200);
+                dataSet.SetColor(Color.DarkRed, 200);
                 data.AddDataSet(dataSet);
             }
+            XAxis xAxis = chartError.XAxis;
+            xAxis.SetCenterAxisLabels(false);
+            xAxis.SetDrawLabels(false);
+            xAxis.Position = XAxis.XAxisPosition.BottomInside;
+            xAxis.SetDrawGridLines(false);
 
             chartError.Data = data;
             chartError.AxisRight.SetDrawLabels(false);
             chartError.XAxis.SetDrawLabels(false);
-            chartError.AnimateXY(3000, 3000);
+            chartError.AnimateXY(2000, 2000);
+
+            chartError.Legend.Enabled = false;
+            chartError.SetTouchEnabled(true);
+            chartError.SetPinchZoom(false);
+            chartError.DoubleTapToZoomEnabled = false;
+
+            chartError.Description.Enabled = true;
+            chartError.Description.Text = "Tables with big deviation";
+
+            chartError.Invalidate();
         }
     }
 }

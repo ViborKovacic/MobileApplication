@@ -8,19 +8,24 @@ using Etl_Analytics_Mobile_Version_01.Class.Table_Constructor;
 using System.Linq;
 using System;
 using Android.Graphics;
+using MikePhil.Charting.Components;
+using MikePhil.Charting.Util;
+using MikePhil.Charting.Formatter;
+using MikePhil.Charting.Interfaces.Datasets;
 
 namespace Etl_Analytics_Mobile_Version_01.Fragments.StatsTable
 {
     public class ChartSuccessDialog : Android.Support.V4.App.DialogFragment
     {
         private View mView;
-        private BarChart chartError;
+        private BarChart chartSuccess;
         private Dictionary<string, List<BarEntry>> dicOfDataSets;
         private List<float> listOfEntry;
         private List<string> listTableNames;
         private WebService webService;
         private List<StatsTables> listStatsTables;
         private BarDataSet dataSet;
+        private List<BarEntry> barEntry;
 
         public override void OnCreate(Bundle savedInstanceState)
         {
@@ -36,7 +41,7 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments.StatsTable
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             mView = inflater.Inflate(Resource.Layout.ChartAllTablesDialog, container, false);
-            chartError = mView.FindViewById<BarChart>(Resource.Id.chartAllTablesDialog);
+            chartSuccess = mView.FindViewById<BarChart>(Resource.Id.chartAllTablesDialog);
 
             dicOfDataSets = new Dictionary<string, List<BarEntry>>();
 
@@ -53,10 +58,10 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments.StatsTable
             }
 
             int counter = 0;
-
+            
             foreach (string table in listTableNames)
             {
-                List<BarEntry> barEntry = new List<BarEntry>();
+                barEntry = new List<BarEntry>();
                 foreach (StatsTables item in searchedTable)
                 {
                     if (table == item.table_name)
@@ -73,16 +78,43 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments.StatsTable
             foreach (KeyValuePair<string, List<BarEntry>> dicDataSet in dicOfDataSets)
             {
                 dataSet = new BarDataSet(dicDataSet.Value, dicDataSet.Key);
-                dataSet.SetColor(Color.Green, 200);
+                dataSet.SetColor(Color.DarkGreen, 200);
                 data.AddDataSet(dataSet);
             }
 
-            chartError.Data = data;
-            chartError.AxisRight.SetDrawLabels(false);
-            chartError.XAxis.SetDrawLabels(false);
-            chartError.AnimateXY(3000, 3000);
+            XAxis xAxis = chartSuccess.XAxis;
+            xAxis.SetCenterAxisLabels(false);
+            xAxis.SetDrawLabels(false);
+            xAxis.Position = XAxis.XAxisPosition.BottomInside;
+            xAxis.SetDrawGridLines(false);
+            xAxis.SetAvoidFirstLastClipping(true);
+            xAxis.XOffset = 10;
+
+            Legend l = chartSuccess.Legend;
+            l.VerticalAlignment = Legend.LegendVerticalAlignment.Top;
+            l.HorizontalAlignment = Legend.LegendHorizontalAlignment.Right;
+            l.Orientation = Legend.LegendOrientation.Vertical;
+            l.WordWrapEnabled = true;
+            l.SetDrawInside(true);
+
+            chartSuccess.Data = data;
+            chartSuccess.AxisRight.SetDrawLabels(false);
+            chartSuccess.XAxis.SetDrawLabels(false);
+            chartSuccess.AnimateXY(3000, 3000);
+
+            chartSuccess.Description.Enabled = true;
+            chartSuccess.Description.Text = "Tables without big deviation";
+
+            chartSuccess.Invalidate();
 
             return mView;
+        }
+
+        public override void OnActivityCreated(Bundle savedInstanceState)
+        {
+            Dialog.Window.RequestFeature(WindowFeatures.NoTitle);
+            base.OnActivityCreated(savedInstanceState);
+            Dialog.Window.Attributes.WindowAnimations = Resource.Style.dialog_animation;
         }
     }
 }

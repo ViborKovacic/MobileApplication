@@ -119,13 +119,17 @@
     <Compile Include="Class\SlidingTabScrollView.cs" />
     <Compile Include="Class\SlidingTabsFragment.cs" />
     <Compile Include="Class\SlidingTabStrip.cs" />
+    <Compile Include="Class\StatsColumnsAdapter.cs" />
     <Compile Include="Class\StatsTableAdapter.cs" />
     <Compile Include="Class\Table Constructor\ColumnName.cs" />
     <Compile Include="Class\Table Constructor\LogTable.cs" />
+    <Compile Include="Class\Table Constructor\StatsColumns.cs" />
     <Compile Include="Class\Table Constructor\StatsTables.cs" />
     <Compile Include="Class\Table Constructor\TableName.cs" />
     <Compile Include="Class\Table Constructor\UserTable.cs" />
     <Compile Include="Class\WebService.cs" />
+    <Compile Include="Fragments\StatsColumnsFragments\FragmentStatsColumnsAllTable.cs" />
+    <Compile Include="Fragments\StatsColumnsFragments\FragmentStatsColumnsChart.cs" />
     <Compile Include="Fragments\StatsTable\ChartAllTablesDialog.cs" />
     <Compile Include="Fragments\Fragment1.cs" />
     <Compile Include="Fragments\Fragment2.cs" />
@@ -180,9 +184,6 @@
     <AndroidResource Include="Resources\layout\Action_bar.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\StatsTable.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
     <AndroidResource Include="Resources\layout\LogTableChart.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
@@ -232,6 +233,15 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\ChartErrorDialog.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\StatsColumnsGraph.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\StatsColumnsAllTable.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\StatsColumnsRow.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
