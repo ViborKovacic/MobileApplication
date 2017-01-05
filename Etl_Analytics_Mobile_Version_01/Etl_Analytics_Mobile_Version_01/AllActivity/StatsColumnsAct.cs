@@ -7,7 +7,7 @@ using SupportFragment = Android.Support.V4.App.Fragment;
 
 namespace Etl_Analytics_Mobile_Version_01.AllActivity
 {
-    [Activity(Label = "StatsColumnsAct", Icon = "@drawable/xs", Theme = "@style/MyTheme2")]
+    [Activity(Label = "StatsColumnsAct", Icon = "@drawable/xs", Theme = "@style/MyTheme3")]
     public class StatsColumnsAct : ActionBarActivity
     {
         private LinearLayout mLayoutChart;
@@ -23,62 +23,62 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
             // Create your application here
             SetContentView(Resource.Layout.Action_bar);
 
-            mLayoutChart = FindViewById<LinearLayout>(Resource.Id.linerLayoutChart);
-            mLayoutDeviation = FindViewById<LinearLayout>(Resource.Id.linearLayoutDeviation);
-            mLayoutAllTable = FindViewById<LinearLayout>(Resource.Id.linearLayoutAllTable);
+            //mLayoutChart = FindViewById<LinearLayout>(Resource.Id.linerLayoutChart);
+            //mLayoutDeviation = FindViewById<LinearLayout>(Resource.Id.linearLayoutDeviation);
+            //mLayoutAllTable = FindViewById<LinearLayout>(Resource.Id.linearLayoutAllTable);
 
 
-            if (SupportFragmentManager.FindFragmentByTag("FragmentChart") != null)
-            {
-                mFragmentChart = SupportFragmentManager.FindFragmentByTag("FragmentChart") as FragmentStatsColumnsChart;
-            }
-            else
-            {
-                mFragmentChart = new FragmentStatsColumnsChart();
-                mFragmentAllTable = new FragmentStatsColumnsAllTable();
+            //if (SupportFragmentManager.FindFragmentByTag("FragmentChart") != null)
+            //{
+            //    mFragmentChart = SupportFragmentManager.FindFragmentByTag("FragmentChart") as FragmentStatsColumnsChart;
+            //}
+            //else
+            //{
+            //    mFragmentChart = new FragmentStatsColumnsChart();
+            //    mFragmentAllTable = new FragmentStatsColumnsAllTable();
 
-                var trans = SupportFragmentManager.BeginTransaction();
-                trans.Add(Resource.Id.fragmenContainerActionBar, mFragmentChart, "FragmentChart");
-                trans.Commit();
+            //    var trans = SupportFragmentManager.BeginTransaction();
+            //    trans.Add(Resource.Id.fragmenContainerActionBar, mFragmentChart, "FragmentChart");
+            //    trans.Commit();
 
-                mCurrentFragment = mFragmentChart;
-            }
+            //    mCurrentFragment = mFragmentChart;
+            //}
 
-            mLayoutChart.Click += LayoutChart_Click;
-            mLayoutDeviation.Click += LayoutBigDeviation_Click;
-            mLayoutAllTable.Click += LayoutAllTable_Click;
+            //mLayoutChart.Click += LayoutChart_Click;
+            //mLayoutDeviation.Click += LayoutBigDeviation_Click;
+            //mLayoutAllTable.Click += LayoutAllTable_Click;
         }
 
-        private void LayoutChart_Click(object sender, System.EventArgs e)
-        {
-            ReplaceFragment(mFragmentChart);
-        }
+        //private void LayoutChart_Click(object sender, System.EventArgs e)
+        //{
+        //    ReplaceFragment(mFragmentChart);
+        //}
 
-        private void LayoutBigDeviation_Click(object sender, System.EventArgs e)
-        {
-            ReplaceFragment(mFragmentChart);
-        }
+        //private void LayoutBigDeviation_Click(object sender, System.EventArgs e)
+        //{
+        //    ReplaceFragment(mFragmentChart);
+        //}
 
-        private void LayoutAllTable_Click(object sender, System.EventArgs e)
-        {
-            ReplaceFragment(mFragmentAllTable);
-        }
+        //private void LayoutAllTable_Click(object sender, System.EventArgs e)
+        //{
+        //    ReplaceFragment(mFragmentAllTable);
+        //}
 
         private void ReplaceFragment(SupportFragment fragment)
         {
-            if (fragment.IsVisible)
-            {
-                return;
-            }
-            else
-            {
-                var trans = SupportFragmentManager.BeginTransaction();
-                trans.Replace(Resource.Id.fragmenContainerActionBar, fragment);
-                trans.AddToBackStack(null);
-                trans.Commit();
+            //if (fragment.IsVisible)
+            //{
+            //    return;
+            //}
+            //else
+            //{
+            //    var trans = SupportFragmentManager.BeginTransaction();
+            //    trans.Replace(Resource.Id.fragmenContainerActionBar, fragment);
+            //    trans.AddToBackStack(null);
+            //    trans.Commit();
 
-                mCurrentFragment = fragment;
-            }
+            //    mCurrentFragment = fragment;
+            //}
         }
     }
 }

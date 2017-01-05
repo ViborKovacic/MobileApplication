@@ -16,24 +16,34 @@ using Android.Widget;
 using Java.Util;
 using MikePhil.Charting.Components;
 using MikePhil.Charting.Util;
+using Android.Graphics.Drawables;
 
 namespace Etl_Analytics_Mobile_Version_01.Fragments
 {
     public class FragmentChart : Android.Support.V4.App.Fragment
     {
+        private View view;
+        private View mActionBarView;
+
         private Dictionary<string, List<BarEntry>> dicOfDataSets;
         private List<float> listOfEntry;
         private List<string> listTableNames;
-        private WebService webService;
         private List<StatsTables> listStatsTables;
+
+        private WebService webService;
+
         private BarDataSet dataSet;
-        private View view;
         private BarChart chartAllTables;
         private BarChart chartSuccess;
         private BarChart chartError;
+
         private TextView mTextAllTable;
         private TextView mTextSuccess;
         private TextView mTextError;
+
+        private ImageView mImageViewChart;
+        private ImageView mImageViewAction;
+        private ImageView mImageViewTable;
         public override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -54,7 +64,14 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
             chartError = view.FindViewById<BarChart>(Resource.Id.chartError);
             mTextAllTable = view.FindViewById<TextView>(Resource.Id.txtAllTable);
             mTextSuccess = view.FindViewById<TextView>(Resource.Id.textSuccess);
-            mTextError = view.FindViewById<TextView>(Resource.Id.textError);
+            mTextError = view.FindViewById<TextView>(Resource.Id.textError);            
+
+            mActionBarView = inflater.Inflate(Resource.Layout.Action_bar, container, false);
+            //mImageViewChart = mActionBarView.FindViewById<ImageView>(Resource.Id.imageChart);
+            //mImageViewAction = mActionBarView.FindViewById<ImageView>(Resource.Id.imageAction);
+            //mImageViewTable = mActionBarView.FindViewById<ImageView>(Resource.Id.imageTable);
+
+            //mImageViewChart.SetImageResource(Resource.Drawable.barchart_icon);
 
             mTextAllTable.Text = "All tables chart";
             mTextSuccess.Text = "Success tables chart";

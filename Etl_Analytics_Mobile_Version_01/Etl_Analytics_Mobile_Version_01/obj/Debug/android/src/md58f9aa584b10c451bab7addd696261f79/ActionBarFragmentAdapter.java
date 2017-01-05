@@ -12,6 +12,7 @@ public class ActionBarFragmentAdapter
 		__md_methods = 
 			"n_getCount:()I:GetGetCountHandler\n" +
 			"n_getItem:(I)Landroid/support/v4/app/Fragment;:GetGetItem_IHandler\n" +
+			"n_getPageTitle:(I)Ljava/lang/CharSequence;:GetGetPageTitle_IHandler\n" +
 			"";
 		mono.android.Runtime.register ("Etl_Analytics_Mobile_Version_01.Class.ActionBarFragmentAdapter, Etl_Analytics_Mobile_Version_01, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", ActionBarFragmentAdapter.class, __md_methods);
 	}
@@ -39,6 +40,14 @@ public class ActionBarFragmentAdapter
 	}
 
 	private native android.support.v4.app.Fragment n_getItem (int p0);
+
+
+	public java.lang.CharSequence getPageTitle (int p0)
+	{
+		return n_getPageTitle (p0);
+	}
+
+	private native java.lang.CharSequence n_getPageTitle (int p0);
 
 	private java.util.ArrayList refList;
 	public void monodroidAddReference (java.lang.Object obj)

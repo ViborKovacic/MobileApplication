@@ -19,9 +19,15 @@ public final class R {
         public static final int abc_slide_in_top=0x7f040007;
         public static final int abc_slide_out_bottom=0x7f040008;
         public static final int abc_slide_out_top=0x7f040009;
-        public static final int sliderightanimation=0x7f04000a;
-        public static final int slideupanimation=0x7f04000b;
-        public static final int slideupcardview=0x7f04000c;
+        public static final int design_bottom_sheet_slide_in=0x7f04000a;
+        public static final int design_bottom_sheet_slide_out=0x7f04000b;
+        public static final int design_fab_in=0x7f04000c;
+        public static final int design_fab_out=0x7f04000d;
+        public static final int design_snackbar_in=0x7f04000e;
+        public static final int design_snackbar_out=0x7f04000f;
+        public static final int sliderightanimation=0x7f040010;
+        public static final int slideupanimation=0x7f040011;
+        public static final int slideupcardview=0x7f040012;
     }
     public static final class attr {
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
@@ -285,10 +291,56 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int barLength=0x7f0100ac;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int behavior_hideable=0x7f0100e4;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int behavior_overlapTop=0x7f01010a;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int behavior_peekHeight=0x7f0100e3;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int borderWidth=0x7f010100;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int borderlessButtonStyle=0x7f010069;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int bottomSheetDialogTheme=0x7f0100fa;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int bottomSheetStyle=0x7f0100fb;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -427,6 +479,29 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int collapseIcon=0x7f0100d4;
+        /** <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>top</code></td><td>0x30</td><td></td></tr>
+<tr><td><code>bottom</code></td><td>0x50</td><td></td></tr>
+<tr><td><code>left</code></td><td>0x03</td><td></td></tr>
+<tr><td><code>right</code></td><td>0x05</td><td></td></tr>
+<tr><td><code>center_vertical</code></td><td>0x10</td><td></td></tr>
+<tr><td><code>fill_vertical</code></td><td>0x70</td><td></td></tr>
+<tr><td><code>center_horizontal</code></td><td>0x01</td><td></td></tr>
+<tr><td><code>center</code></td><td>0x11</td><td></td></tr>
+<tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
+<tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
+</table>
+         */
+        public static final int collapsedTitleGravity=0x7f0100f1;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int collapsedTitleTextAppearance=0x7f0100ed;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -602,10 +677,43 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int contentPaddingTop=0x7f01000d;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int contentScrim=0x7f0100ee;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int controlBackground=0x7f01008d;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int counterEnabled=0x7f010120;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int counterMaxLength=0x7f010121;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int counterOverflowTextAppearance=0x7f010123;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int counterTextAppearance=0x7f010122;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -722,10 +830,122 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int elevation=0x7f010029;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int errorEnabled=0x7f01011e;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int errorTextAppearance=0x7f01011f;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int expandActivityOverflowButtonDrawable=0x7f01002d;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int expanded=0x7f0100e0;
+        /** <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>top</code></td><td>0x30</td><td></td></tr>
+<tr><td><code>bottom</code></td><td>0x50</td><td></td></tr>
+<tr><td><code>left</code></td><td>0x03</td><td></td></tr>
+<tr><td><code>right</code></td><td>0x05</td><td></td></tr>
+<tr><td><code>center_vertical</code></td><td>0x10</td><td></td></tr>
+<tr><td><code>fill_vertical</code></td><td>0x70</td><td></td></tr>
+<tr><td><code>center_horizontal</code></td><td>0x01</td><td></td></tr>
+<tr><td><code>center</code></td><td>0x11</td><td></td></tr>
+<tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
+<tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
+</table>
+         */
+        public static final int expandedTitleGravity=0x7f0100f2;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int expandedTitleMargin=0x7f0100e7;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int expandedTitleMarginBottom=0x7f0100eb;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int expandedTitleMarginEnd=0x7f0100ea;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int expandedTitleMarginStart=0x7f0100e8;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int expandedTitleMarginTop=0x7f0100e9;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int expandedTitleTextAppearance=0x7f0100ec;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>normal</code></td><td>0</td><td></td></tr>
+<tr><td><code>mini</code></td><td>1</td><td></td></tr>
+</table>
+         */
+        public static final int fabSize=0x7f0100fe;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int foregroundInsidePadding=0x7f010102;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -740,6 +960,10 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int goIcon=0x7f0100bd;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int headerLayout=0x7f010108;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -758,6 +982,26 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int hideOnContentScroll=0x7f010024;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int hintAnimationEnabled=0x7f010124;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int hintEnabled=0x7f01011d;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int hintTextAppearance=0x7f01011c;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -794,6 +1038,12 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int initialActivityCount=0x7f01002c;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int insetForeground=0x7f010109;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -802,6 +1052,19 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int isLightTheme=0x7f010011;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int itemBackground=0x7f010106;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int itemIconTint=0x7f010104;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -815,6 +1078,23 @@ containing a value of this type.
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
+        public static final int itemTextAppearance=0x7f010107;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int itemTextColor=0x7f010105;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int keylines=0x7f0100f4;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
         public static final int layout=0x7f0100b8;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
@@ -824,6 +1104,87 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int layoutManager=0x7f010000;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int layout_anchor=0x7f0100f7;
+        /** <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>top</code></td><td>0x30</td><td></td></tr>
+<tr><td><code>bottom</code></td><td>0x50</td><td></td></tr>
+<tr><td><code>left</code></td><td>0x03</td><td></td></tr>
+<tr><td><code>right</code></td><td>0x05</td><td></td></tr>
+<tr><td><code>center_vertical</code></td><td>0x10</td><td></td></tr>
+<tr><td><code>fill_vertical</code></td><td>0x70</td><td></td></tr>
+<tr><td><code>center_horizontal</code></td><td>0x01</td><td></td></tr>
+<tr><td><code>fill_horizontal</code></td><td>0x07</td><td></td></tr>
+<tr><td><code>center</code></td><td>0x11</td><td></td></tr>
+<tr><td><code>fill</code></td><td>0x77</td><td></td></tr>
+<tr><td><code>clip_vertical</code></td><td>0x80</td><td></td></tr>
+<tr><td><code>clip_horizontal</code></td><td>0x08</td><td></td></tr>
+<tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
+<tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
+</table>
+         */
+        public static final int layout_anchorGravity=0x7f0100f9;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int layout_behavior=0x7f0100f6;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>none</code></td><td>0</td><td></td></tr>
+<tr><td><code>pin</code></td><td>1</td><td></td></tr>
+<tr><td><code>parallax</code></td><td>2</td><td></td></tr>
+</table>
+         */
+        public static final int layout_collapseMode=0x7f0100e5;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int layout_collapseParallaxMultiplier=0x7f0100e6;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int layout_keyline=0x7f0100f8;
+        /** <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>scroll</code></td><td>0x1</td><td></td></tr>
+<tr><td><code>exitUntilCollapsed</code></td><td>0x2</td><td></td></tr>
+<tr><td><code>enterAlways</code></td><td>0x4</td><td></td></tr>
+<tr><td><code>enterAlwaysCollapsed</code></td><td>0x8</td><td></td></tr>
+<tr><td><code>snap</code></td><td>0x10</td><td></td></tr>
+</table>
+         */
+        public static final int layout_scrollFlags=0x7f0100e1;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int layout_scrollInterpolator=0x7f0100e2;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -915,6 +1276,16 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
+        public static final int maxActionInlineWidth=0x7f01010b;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
         public static final int maxButtonHeight=0x7f0100d3;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
@@ -924,6 +1295,10 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int measureWithLargestChild=0x7f0100ae;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int menu=0x7f010103;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -1027,6 +1402,16 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
+        public static final int pressedTranslationZ=0x7f0100ff;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
         public static final int progressBarPadding=0x7f010022;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
@@ -1040,7 +1425,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int pstsDividerColor=0x7f0100e2;
+        public static final int pstsDividerColor=0x7f010127;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -1050,7 +1435,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int pstsDividerPadding=0x7f0100e6;
+        public static final int pstsDividerPadding=0x7f01012b;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -1060,7 +1445,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int pstsDividerWidth=0x7f0100e3;
+        public static final int pstsDividerWidth=0x7f010128;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -1069,7 +1454,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int pstsIndicatorColor=0x7f0100e0;
+        public static final int pstsIndicatorColor=0x7f010125;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -1079,7 +1464,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int pstsIndicatorHeight=0x7f0100e4;
+        public static final int pstsIndicatorHeight=0x7f010129;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -1087,7 +1472,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int pstsPaddingMiddle=0x7f0100ec;
+        public static final int pstsPaddingMiddle=0x7f010131;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -1097,7 +1482,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int pstsScrollOffset=0x7f0100e8;
+        public static final int pstsScrollOffset=0x7f01012d;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -1105,11 +1490,11 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int pstsShouldExpand=0x7f0100ea;
+        public static final int pstsShouldExpand=0x7f01012f;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int pstsTabBackground=0x7f0100e9;
+        public static final int pstsTabBackground=0x7f01012e;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -1119,7 +1504,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int pstsTabPaddingLeftRight=0x7f0100e7;
+        public static final int pstsTabPaddingLeftRight=0x7f01012c;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -1127,7 +1512,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int pstsTextAllCaps=0x7f0100eb;
+        public static final int pstsTextAllCaps=0x7f010130;
         /** <p>Must be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -1135,7 +1520,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int pstsTextAlpha=0x7f0100ee;
+        public static final int pstsTextAlpha=0x7f010133;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -1144,7 +1529,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int pstsTextColorSelected=0x7f0100ed;
+        public static final int pstsTextColorSelected=0x7f010132;
         /** <p>Must be one or more (separated by '|') of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -1156,7 +1541,7 @@ containing a value of this type.
 <tr><td><code>italic</code></td><td>0x2</td><td></td></tr>
 </table>
          */
-        public static final int pstsTextSelectedStyle=0x7f0100f0;
+        public static final int pstsTextSelectedStyle=0x7f010135;
         /** <p>Must be one or more (separated by '|') of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -1168,7 +1553,7 @@ containing a value of this type.
 <tr><td><code>italic</code></td><td>0x2</td><td></td></tr>
 </table>
          */
-        public static final int pstsTextStyle=0x7f0100ef;
+        public static final int pstsTextStyle=0x7f010134;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -1177,7 +1562,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int pstsUnderlineColor=0x7f0100e1;
+        public static final int pstsUnderlineColor=0x7f010126;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -1187,7 +1572,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int pstsUnderlineHeight=0x7f0100e5;
+        public static final int pstsUnderlineHeight=0x7f01012a;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -1224,6 +1609,15 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int reverseLayout=0x7f010002;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int rippleColor=0x7f0100fd;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -1342,6 +1736,19 @@ containing a value of this type.
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
+        public static final int statusBarBackground=0x7f0100f5;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int statusBarScrim=0x7f0100ef;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
         public static final int submitBackground=0x7f0100c4;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
@@ -1400,6 +1807,153 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int switchTextAppearance=0x7f0100c7;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int tabBackground=0x7f01010f;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int tabContentStart=0x7f01010e;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>fill</code></td><td>0</td><td></td></tr>
+<tr><td><code>center</code></td><td>1</td><td></td></tr>
+</table>
+         */
+        public static final int tabGravity=0x7f010111;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int tabIndicatorColor=0x7f01010c;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int tabIndicatorHeight=0x7f01010d;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int tabMaxWidth=0x7f010113;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int tabMinWidth=0x7f010112;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>scrollable</code></td><td>0</td><td></td></tr>
+<tr><td><code>fixed</code></td><td>1</td><td></td></tr>
+</table>
+         */
+        public static final int tabMode=0x7f010110;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int tabPadding=0x7f01011b;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int tabPaddingBottom=0x7f01011a;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int tabPaddingEnd=0x7f010119;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int tabPaddingStart=0x7f010117;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int tabPaddingTop=0x7f010118;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int tabSelectedTextColor=0x7f010116;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int tabTextAppearance=0x7f010114;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int tabTextColor=0x7f010115;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
@@ -1435,6 +1989,15 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
         public static final int textColorAlertDialogListItem=0x7f010092;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int textColorError=0x7f0100fc;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
@@ -1473,6 +2036,14 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int title=0x7f010012;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int titleEnabled=0x7f0100f3;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -1543,6 +2114,10 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
+        public static final int toolbarId=0x7f0100f0;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
         public static final int toolbarNavigationButtonStyle=0x7f01006e;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
@@ -1552,6 +2127,14 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int track=0x7f0100c5;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int useCompatPadding=0x7f010101;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -1678,20 +2261,20 @@ containing a value of this type.
         public static final int abc_config_showMenuShortcutsWhenKeyboardPresent=0x7f0a0007;
     }
     public static final class color {
-        public static final int abc_background_cache_hint_selector_material_dark=0x7f08003f;
-        public static final int abc_background_cache_hint_selector_material_light=0x7f080040;
-        public static final int abc_color_highlight_material=0x7f080041;
+        public static final int abc_background_cache_hint_selector_material_dark=0x7f080049;
+        public static final int abc_background_cache_hint_selector_material_light=0x7f08004a;
+        public static final int abc_color_highlight_material=0x7f08004b;
         public static final int abc_input_method_navigation_guard=0x7f080004;
-        public static final int abc_primary_text_disable_only_material_dark=0x7f080042;
-        public static final int abc_primary_text_disable_only_material_light=0x7f080043;
-        public static final int abc_primary_text_material_dark=0x7f080044;
-        public static final int abc_primary_text_material_light=0x7f080045;
-        public static final int abc_search_url_text=0x7f080046;
+        public static final int abc_primary_text_disable_only_material_dark=0x7f08004c;
+        public static final int abc_primary_text_disable_only_material_light=0x7f08004d;
+        public static final int abc_primary_text_material_dark=0x7f08004e;
+        public static final int abc_primary_text_material_light=0x7f08004f;
+        public static final int abc_search_url_text=0x7f080050;
         public static final int abc_search_url_text_normal=0x7f080005;
         public static final int abc_search_url_text_pressed=0x7f080006;
         public static final int abc_search_url_text_selected=0x7f080007;
-        public static final int abc_secondary_text_material_dark=0x7f080047;
-        public static final int abc_secondary_text_material_light=0x7f080048;
+        public static final int abc_secondary_text_material_dark=0x7f080051;
+        public static final int abc_secondary_text_material_light=0x7f080052;
         public static final int accent_material_dark=0x7f080008;
         public static final int accent_material_light=0x7f080009;
         public static final int background_floating_material_dark=0x7f08000a;
@@ -1710,6 +2293,16 @@ containing a value of this type.
         public static final int cardview_light_background=0x7f080001;
         public static final int cardview_shadow_end_color=0x7f080002;
         public static final int cardview_shadow_start_color=0x7f080003;
+        public static final int design_fab_shadow_end_color=0x7f08003e;
+        public static final int design_fab_shadow_mid_color=0x7f08003f;
+        public static final int design_fab_shadow_start_color=0x7f080040;
+        public static final int design_fab_stroke_end_inner_color=0x7f080041;
+        public static final int design_fab_stroke_end_outer_color=0x7f080042;
+        public static final int design_fab_stroke_top_inner_color=0x7f080043;
+        public static final int design_fab_stroke_top_outer_color=0x7f080044;
+        public static final int design_snackbar_background_color=0x7f080045;
+        public static final int design_textinput_error_color_dark=0x7f080046;
+        public static final int design_textinput_error_color_light=0x7f080047;
         public static final int dim_foreground_disabled_material_dark=0x7f080016;
         public static final int dim_foreground_disabled_material_light=0x7f080017;
         public static final int dim_foreground_material_dark=0x7f080018;
@@ -1740,7 +2333,7 @@ containing a value of this type.
         public static final int primary_text_default_material_light=0x7f080031;
         public static final int primary_text_disabled_material_dark=0x7f080032;
         public static final int primary_text_disabled_material_light=0x7f080033;
-        public static final int psts_background_tab_pressed=0x7f08003e;
+        public static final int psts_background_tab_pressed=0x7f080048;
         public static final int ripple_material_dark=0x7f080034;
         public static final int ripple_material_light=0x7f080035;
         public static final int secondary_text_default_material_dark=0x7f080036;
@@ -1749,8 +2342,8 @@ containing a value of this type.
         public static final int secondary_text_disabled_material_light=0x7f080039;
         public static final int switch_thumb_disabled_material_dark=0x7f08003a;
         public static final int switch_thumb_disabled_material_light=0x7f08003b;
-        public static final int switch_thumb_material_dark=0x7f080049;
-        public static final int switch_thumb_material_light=0x7f08004a;
+        public static final int switch_thumb_material_dark=0x7f080053;
+        public static final int switch_thumb_material_light=0x7f080054;
         public static final int switch_thumb_normal_material_dark=0x7f08003c;
         public static final int switch_thumb_normal_material_light=0x7f08003d;
     }
@@ -1825,6 +2418,35 @@ containing a value of this type.
         public static final int cardview_compat_inset_shadow=0x7f050003;
         public static final int cardview_default_elevation=0x7f050004;
         public static final int cardview_default_radius=0x7f050005;
+        public static final int design_appbar_elevation=0x7f050059;
+        public static final int design_bottom_sheet_modal_elevation=0x7f05005a;
+        public static final int design_bottom_sheet_modal_peek_height=0x7f05005b;
+        public static final int design_fab_border_width=0x7f05005c;
+        public static final int design_fab_elevation=0x7f05005d;
+        public static final int design_fab_image_size=0x7f05005e;
+        public static final int design_fab_size_mini=0x7f05005f;
+        public static final int design_fab_size_normal=0x7f050060;
+        public static final int design_fab_translation_z_pressed=0x7f050061;
+        public static final int design_navigation_elevation=0x7f050062;
+        public static final int design_navigation_icon_padding=0x7f050063;
+        public static final int design_navigation_icon_size=0x7f050064;
+        public static final int design_navigation_max_width=0x7f050051;
+        public static final int design_navigation_padding_bottom=0x7f050065;
+        public static final int design_navigation_separator_vertical_padding=0x7f050066;
+        public static final int design_snackbar_action_inline_max_width=0x7f050052;
+        public static final int design_snackbar_background_corner_radius=0x7f050053;
+        public static final int design_snackbar_elevation=0x7f050067;
+        public static final int design_snackbar_extra_spacing_horizontal=0x7f050054;
+        public static final int design_snackbar_max_width=0x7f050055;
+        public static final int design_snackbar_min_width=0x7f050056;
+        public static final int design_snackbar_padding_horizontal=0x7f050068;
+        public static final int design_snackbar_padding_vertical=0x7f050069;
+        public static final int design_snackbar_padding_vertical_2lines=0x7f050057;
+        public static final int design_snackbar_text_size=0x7f05006a;
+        public static final int design_tab_max_width=0x7f05006b;
+        public static final int design_tab_scrollable_min_width=0x7f050058;
+        public static final int design_tab_text_size=0x7f05006c;
+        public static final int design_tab_text_size_2line=0x7f05006d;
         public static final int disabled_alpha_material_dark=0x7f050049;
         public static final int disabled_alpha_material_light=0x7f05004a;
         public static final int highlight_alpha_material_colored=0x7f05004b;
@@ -1913,243 +2535,281 @@ containing a value of this type.
         public static final int abc_textfield_search_activated_mtrl_alpha=0x7f020048;
         public static final int abc_textfield_search_default_mtrl_alpha=0x7f020049;
         public static final int abc_textfield_search_material=0x7f02004a;
-        public static final int bground=0x7f02004b;
-        public static final int buttonloginstyle=0x7f02004c;
-        public static final int buttonsigninstyle=0x7f02004d;
-        public static final int edit_text_style=0x7f02004e;
-        public static final int ic_action_dial_pad=0x7f02004f;
-        public static final int ic_action_discard=0x7f020050;
-        public static final int ic_action_favorite=0x7f020051;
-        public static final int ic_action_forward=0x7f020052;
-        public static final int ic_action_group=0x7f020053;
-        public static final int ic_action_help=0x7f020054;
-        public static final int ic_action_new=0x7f020055;
-        public static final int ic_action_overflow=0x7f020056;
-        public static final int ic_action_phone=0x7f020057;
-        public static final int ic_action_read=0x7f020058;
-        public static final int ic_action_refresh=0x7f020059;
-        public static final int ic_action_save=0x7f02005a;
-        public static final int ic_action_search=0x7f02005b;
-        public static final int icon=0x7f02005c;
-        public static final int list=0x7f02005d;
-        public static final int location=0x7f02005e;
-        public static final int logo=0x7f02005f;
-        public static final int logo1=0x7f020060;
-        public static final int logologin=0x7f020061;
-        public static final int lollipop=0x7f020062;
-        public static final int lollipop_android5=0x7f020063;
-        public static final int mojaslikica=0x7f020064;
-        public static final int note=0x7f020065;
-        public static final int notification_template_icon_bg=0x7f02006c;
-        public static final int progressbarstyle=0x7f020066;
-        public static final int psts_background_tab=0x7f020067;
-        public static final int selector=0x7f020068;
-        public static final int signindialogstyle=0x7f020069;
-        public static final int sound=0x7f02006a;
-        public static final int xs=0x7f02006b;
+        public static final int barchart_icon=0x7f02004b;
+        public static final int bground=0x7f02004c;
+        public static final int buttonloginstyle=0x7f02004d;
+        public static final int buttonsigninstyle=0x7f02004e;
+        public static final int design_fab_background=0x7f02004f;
+        public static final int design_snackbar_background=0x7f020050;
+        public static final int edit_text_style=0x7f020051;
+        public static final int ic_action_dial_pad=0x7f020052;
+        public static final int ic_action_discard=0x7f020053;
+        public static final int ic_action_favorite=0x7f020054;
+        public static final int ic_action_forward=0x7f020055;
+        public static final int ic_action_group=0x7f020056;
+        public static final int ic_action_help=0x7f020057;
+        public static final int ic_action_new=0x7f020058;
+        public static final int ic_action_overflow=0x7f020059;
+        public static final int ic_action_phone=0x7f02005a;
+        public static final int ic_action_read=0x7f02005b;
+        public static final int ic_action_refresh=0x7f02005c;
+        public static final int ic_action_save=0x7f02005d;
+        public static final int ic_action_search=0x7f02005e;
+        public static final int icon=0x7f02005f;
+        public static final int list=0x7f020060;
+        public static final int list_icon=0x7f020061;
+        public static final int location=0x7f020062;
+        public static final int logo=0x7f020063;
+        public static final int logo1=0x7f020064;
+        public static final int logologin=0x7f020065;
+        public static final int lollipop=0x7f020066;
+        public static final int lollipop_android5=0x7f020067;
+        public static final int mojaslikica=0x7f020068;
+        public static final int note=0x7f020069;
+        public static final int notification_template_icon_bg=0x7f020073;
+        public static final int pie_chart_icon=0x7f02006a;
+        public static final int piechart_icon=0x7f02006b;
+        public static final int progressbarstyle=0x7f02006c;
+        public static final int psts_background_tab=0x7f02006d;
+        public static final int selector=0x7f02006e;
+        public static final int signindialogstyle=0x7f02006f;
+        public static final int sound=0x7f020070;
+        public static final int table_icon=0x7f020071;
+        public static final int xs=0x7f020072;
     }
     public static final class id {
-        public static final int Drawer=0x7f060061;
-        public static final int ListView=0x7f060086;
-        public static final int ListViewLeft=0x7f060063;
-        public static final int LogInID=0x7f060076;
-        public static final int SearchImage=0x7f0600a5;
-        public static final int action0=0x7f06008b;
-        public static final int action_bar=0x7f060044;
+        public static final int Drawer=0x7f06007e;
+        public static final int ListView=0x7f0600a4;
+        public static final int ListViewLeft=0x7f060080;
+        public static final int LogInID=0x7f060094;
+        public static final int action0=0x7f0600a9;
+        public static final int action_bar=0x7f06005c;
         public static final int action_bar_activity_content=0x7f060001;
-        public static final int action_bar_container=0x7f060043;
-        public static final int action_bar_root=0x7f06003f;
+        public static final int action_bar_container=0x7f06005b;
+        public static final int action_bar_root=0x7f060057;
         public static final int action_bar_spinner=0x7f060002;
-        public static final int action_bar_subtitle=0x7f060025;
-        public static final int action_bar_title=0x7f060024;
-        public static final int action_context_bar=0x7f060045;
-        public static final int action_divider=0x7f06008f;
-        public static final int action_fragment1=0x7f0600be;
-        public static final int action_fragment2=0x7f0600bf;
-        public static final int action_help=0x7f0600bd;
+        public static final int action_bar_subtitle=0x7f06003d;
+        public static final int action_bar_title=0x7f06003c;
+        public static final int action_context_bar=0x7f06005d;
+        public static final int action_divider=0x7f0600ad;
+        public static final int action_fragment1=0x7f0600db;
+        public static final int action_fragment2=0x7f0600dc;
+        public static final int action_help=0x7f0600da;
         public static final int action_menu_divider=0x7f060003;
         public static final int action_menu_presenter=0x7f060004;
-        public static final int action_mode_bar=0x7f060041;
-        public static final int action_mode_bar_stub=0x7f060040;
-        public static final int action_mode_close_button=0x7f060026;
-        public static final int activity_chooser_view_content=0x7f060027;
-        public static final int add=0x7f0600c1;
-        public static final int alertTitle=0x7f060033;
-        public static final int always=0x7f06001d;
-        public static final int beginning=0x7f06001a;
-        public static final int bold=0x7f060022;
-        public static final int btnDialogSignUp=0x7f06009f;
-        public static final int btnLogIn=0x7f060080;
-        public static final int btnSignIn=0x7f060082;
-        public static final int buttonPanel=0x7f06002e;
-        public static final int cancel_action=0x7f06008c;
-        public static final int card_view=0x7f06006c;
-        public static final int cbxStart=0x7f06009d;
-        public static final int chartAllTables=0x7f0600b0;
-        public static final int chartAllTablesDialog=0x7f06005d;
-        public static final int chartError=0x7f0600b6;
-        public static final int chartErrorDialog=0x7f06005e;
-        public static final int chartSuccess=0x7f0600b3;
-        public static final int chartSuccessDialog=0x7f06005f;
-        public static final int checkbox=0x7f06003c;
-        public static final int chronometer=0x7f060092;
-        public static final int collapseActionView=0x7f06001e;
-        public static final int contentPanel=0x7f060034;
-        public static final int content_frame=0x7f060062;
-        public static final int custom=0x7f06003a;
-        public static final int customPanel=0x7f060039;
-        public static final int dateTime=0x7f060088;
-        public static final int decor_content_parent=0x7f060042;
-        public static final int default_activity_button=0x7f06002a;
-        public static final int disableHome=0x7f06000d;
-        public static final int discard=0x7f0600c2;
-        public static final int edit_query=0x7f060046;
-        public static final int end=0x7f06001b;
-        public static final int end_padder=0x7f060097;
-        public static final int etSearch=0x7f0600a4;
-        public static final int expand_activities_button=0x7f060028;
-        public static final int expanded_menu=0x7f06003b;
-        public static final int expendableListView=0x7f060064;
-        public static final int fragmenContainerActionBar=0x7f06005c;
-        public static final int fragment2RecycleView=0x7f060065;
-        public static final int fragmentContainer=0x7f060085;
-        public static final int grid_view_image_text=0x7f06008a;
+        public static final int action_mode_bar=0x7f060059;
+        public static final int action_mode_bar_stub=0x7f060058;
+        public static final int action_mode_close_button=0x7f06003e;
+        public static final int activity_chooser_view_content=0x7f06003f;
+        public static final int add=0x7f0600de;
+        public static final int alertTitle=0x7f06004b;
+        public static final int always=0x7f06001e;
+        public static final int beginning=0x7f06001b;
+        public static final int bold=0x7f06003a;
+        public static final int bottom=0x7f06002a;
+        public static final int btnDialogSignUp=0x7f0600bd;
+        public static final int btnLogIn=0x7f06009e;
+        public static final int btnSignIn=0x7f0600a0;
+        public static final int buttonPanel=0x7f060046;
+        public static final int cancel_action=0x7f0600aa;
+        public static final int card_view=0x7f060089;
+        public static final int cbxStart=0x7f0600bb;
+        public static final int center=0x7f06002b;
+        public static final int center_horizontal=0x7f06002c;
+        public static final int center_vertical=0x7f06002d;
+        public static final int chartAllTables=0x7f0600cd;
+        public static final int chartAllTablesDialog=0x7f060071;
+        public static final int chartError=0x7f0600d3;
+        public static final int chartErrorDialog=0x7f060072;
+        public static final int chartSuccess=0x7f0600d0;
+        public static final int chartSuccessDialog=0x7f060073;
+        public static final int checkbox=0x7f060054;
+        public static final int chronometer=0x7f0600b0;
+        public static final int clip_horizontal=0x7f060033;
+        public static final int clip_vertical=0x7f060034;
+        public static final int collapseActionView=0x7f06001f;
+        public static final int contentPanel=0x7f06004c;
+        public static final int content_frame=0x7f06007f;
+        public static final int custom=0x7f060052;
+        public static final int customPanel=0x7f060051;
+        public static final int dateTime=0x7f0600a6;
+        public static final int decor_content_parent=0x7f06005a;
+        public static final int default_activity_button=0x7f060042;
+        public static final int design_bottom_sheet=0x7f060075;
+        public static final int design_menu_item_action_area=0x7f06007c;
+        public static final int design_menu_item_action_area_stub=0x7f06007b;
+        public static final int design_menu_item_text=0x7f06007a;
+        public static final int design_navigation_view=0x7f060079;
+        public static final int disableHome=0x7f06000e;
+        public static final int discard=0x7f0600df;
+        public static final int edit_query=0x7f06005e;
+        public static final int end=0x7f06001c;
+        public static final int end_padder=0x7f0600b5;
+        public static final int enterAlways=0x7f060023;
+        public static final int enterAlwaysCollapsed=0x7f060024;
+        public static final int etSearch=0x7f0600c2;
+        public static final int exitUntilCollapsed=0x7f060025;
+        public static final int expand_activities_button=0x7f060040;
+        public static final int expanded_menu=0x7f060053;
+        public static final int expendableListView=0x7f060081;
+        public static final int fill=0x7f060035;
+        public static final int fill_horizontal=0x7f060036;
+        public static final int fill_vertical=0x7f06002e;
+        public static final int fixed=0x7f060038;
+        public static final int fragment2RecycleView=0x7f060082;
+        public static final int fragmentContainer=0x7f0600a3;
+        public static final int grid_view_image_text=0x7f0600a8;
         public static final int home=0x7f060005;
-        public static final int homeAsUp=0x7f06000e;
-        public static final int icon=0x7f06002c;
-        public static final int ifRoom=0x7f06001f;
-        public static final int image=0x7f060029;
-        public static final int imageButton1=0x7f06006e;
-        public static final int imageButton2=0x7f06006f;
-        public static final int imageButton3=0x7f060070;
-        public static final int imageView=0x7f060073;
-        public static final int imageView1=0x7f060054;
-        public static final int imageView2=0x7f060057;
-        public static final int imageView3=0x7f06005a;
-        public static final int imgView=0x7f06009e;
-        public static final int info=0x7f060096;
-        public static final int italic=0x7f060023;
-        public static final int item=0x7f060089;
+        public static final int homeAsUp=0x7f06000f;
+        public static final int icon=0x7f060044;
+        public static final int ifRoom=0x7f060020;
+        public static final int image=0x7f060041;
+        public static final int imageActionBarTab=0x7f06006f;
+        public static final int imageButton1=0x7f06008b;
+        public static final int imageButton2=0x7f06008c;
+        public static final int imageButton3=0x7f06008d;
+        public static final int imageView=0x7f060090;
+        public static final int imageView1=0x7f060092;
+        public static final int imgView=0x7f0600bc;
+        public static final int info=0x7f0600b4;
+        public static final int italic=0x7f06003b;
+        public static final int item=0x7f0600a7;
         public static final int item_touch_helper_previous_elevation=0x7f060000;
-        public static final int leftRelativeLayout=0x7f0600b1;
-        public static final int line1=0x7f060090;
-        public static final int line3=0x7f060094;
-        public static final int linearLayoutAllTable=0x7f060059;
-        public static final int linearLayoutDeviation=0x7f060056;
-        public static final int linerLayoutChart=0x7f060053;
-        public static final int listMode=0x7f06000a;
-        public static final int listViewStatsColumns=0x7f0600a6;
-        public static final int listViewStatsTable=0x7f0600ae;
-        public static final int list_item=0x7f06002b;
-        public static final int llContainer=0x7f0600a1;
-        public static final int media_actions=0x7f06008e;
-        public static final int middle=0x7f06001c;
-        public static final int multiply=0x7f060015;
-        public static final int never=0x7f060020;
-        public static final int none=0x7f06000f;
-        public static final int normal=0x7f06000b;
-        public static final int parentPanel=0x7f060030;
-        public static final int pieChart=0x7f0600a7;
-        public static final int progressBar1=0x7f060083;
-        public static final int progressBarLoading=0x7f060075;
+        public static final int left=0x7f06002f;
+        public static final int leftRelativeLayout=0x7f0600ce;
+        public static final int line1=0x7f0600ae;
+        public static final int line3=0x7f0600b2;
+        public static final int linearLayoutActionBar=0x7f06006b;
+        public static final int linearLayoutActionBarTab=0x7f06006e;
+        public static final int listMode=0x7f06000b;
+        public static final int listViewStatsColumns=0x7f0600c3;
+        public static final int listViewStatsTable=0x7f0600cb;
+        public static final int list_item=0x7f060043;
+        public static final int llContainer=0x7f0600bf;
+        public static final int media_actions=0x7f0600ac;
+        public static final int middle=0x7f06001d;
+        public static final int mini=0x7f060037;
+        public static final int multiply=0x7f060016;
+        public static final int navigation_header_container=0x7f060078;
+        public static final int never=0x7f060021;
+        public static final int none=0x7f060010;
+        public static final int normal=0x7f06000c;
+        public static final int pagerActionBar=0x7f06006d;
+        public static final int parallax=0x7f060028;
+        public static final int parentPanel=0x7f060048;
+        public static final int pieChart=0x7f0600c4;
+        public static final int pin=0x7f060029;
+        public static final int progressBar1=0x7f0600a1;
+        public static final int progressBarLoading=0x7f060093;
         public static final int progress_circular=0x7f060006;
         public static final int progress_horizontal=0x7f060007;
-        public static final int psts_tab_title=0x7f060098;
-        public static final int radio=0x7f06003e;
-        public static final int rightRelativeLayout=0x7f0600b4;
-        public static final int sample_content_fragment=0x7f0600a3;
-        public static final int sample_main_layout=0x7f0600a0;
-        public static final int screen=0x7f060016;
-        public static final int scrollIndicatorDown=0x7f060038;
-        public static final int scrollIndicatorUp=0x7f060035;
-        public static final int scrollView=0x7f060036;
-        public static final int search=0x7f0600c0;
-        public static final int search_badge=0x7f060048;
-        public static final int search_bar=0x7f060047;
-        public static final int search_button=0x7f060049;
-        public static final int search_close_btn=0x7f06004e;
-        public static final int search_edit_frame=0x7f06004a;
-        public static final int search_go_btn=0x7f060050;
-        public static final int search_mag_icon=0x7f06004b;
-        public static final int search_plate=0x7f06004c;
-        public static final int search_src_text=0x7f06004d;
-        public static final int search_voice_btn=0x7f060051;
-        public static final int select_dialog_listview=0x7f060052;
-        public static final int shortcut=0x7f06003d;
-        public static final int showCustom=0x7f060010;
-        public static final int showHome=0x7f060011;
-        public static final int showTitle=0x7f060012;
-        public static final int sliding_tabs=0x7f060071;
-        public static final int spacer=0x7f06002f;
+        public static final int psts_tab_title=0x7f0600b6;
+        public static final int radio=0x7f060056;
+        public static final int right=0x7f060030;
+        public static final int rightRelativeLayout=0x7f0600d1;
+        public static final int sample_content_fragment=0x7f0600c1;
+        public static final int sample_main_layout=0x7f0600be;
+        public static final int screen=0x7f060017;
+        public static final int scroll=0x7f060026;
+        public static final int scrollIndicatorDown=0x7f060050;
+        public static final int scrollIndicatorUp=0x7f06004d;
+        public static final int scrollView=0x7f06004e;
+        public static final int scrollable=0x7f060039;
+        public static final int search=0x7f0600dd;
+        public static final int search_badge=0x7f060060;
+        public static final int search_bar=0x7f06005f;
+        public static final int search_button=0x7f060061;
+        public static final int search_close_btn=0x7f060066;
+        public static final int search_edit_frame=0x7f060062;
+        public static final int search_go_btn=0x7f060068;
+        public static final int search_mag_icon=0x7f060063;
+        public static final int search_plate=0x7f060064;
+        public static final int search_src_text=0x7f060065;
+        public static final int search_voice_btn=0x7f060069;
+        public static final int select_dialog_listview=0x7f06006a;
+        public static final int shortcut=0x7f060055;
+        public static final int showCustom=0x7f060011;
+        public static final int showHome=0x7f060012;
+        public static final int showTitle=0x7f060013;
+        public static final int slidingTabsActionBar=0x7f06006c;
+        public static final int sliding_tabs=0x7f06008e;
+        public static final int snackbar_action=0x7f060077;
+        public static final int snackbar_text=0x7f060076;
+        public static final int snap=0x7f060027;
+        public static final int spacer=0x7f060047;
         public static final int split_action_bar=0x7f060008;
-        public static final int src_atop=0x7f060017;
-        public static final int src_in=0x7f060018;
-        public static final int src_over=0x7f060019;
-        public static final int status_bar_latest_event_content=0x7f06008d;
-        public static final int submit_area=0x7f06004f;
-        public static final int tabMode=0x7f06000c;
-        public static final int tableLayout1=0x7f060078;
-        public static final int tableRow1=0x7f060079;
-        public static final int tableRow2=0x7f06007c;
-        public static final int tableRow3=0x7f06007d;
-        public static final int test=0x7f060087;
-        public static final int testView=0x7f0600a2;
-        public static final int text=0x7f060095;
-        public static final int text2=0x7f060093;
-        public static final int textError=0x7f0600b5;
-        public static final int textLogIn=0x7f060077;
-        public static final int textOR=0x7f060081;
-        public static final int textSpacerNoButtons=0x7f060037;
-        public static final int textSuccess=0x7f0600b2;
-        public static final int textView=0x7f060074;
-        public static final int textView1=0x7f060055;
-        public static final int textView10=0x7f06007a;
-        public static final int textView12=0x7f06007e;
-        public static final int textView2=0x7f060058;
-        public static final int textView3=0x7f06005b;
-        public static final int time=0x7f060091;
-        public static final int title=0x7f06002d;
-        public static final int title_template=0x7f060032;
-        public static final int toolbar=0x7f060084;
-        public static final int toolbarDrawer=0x7f060060;
-        public static final int topPanel=0x7f060031;
-        public static final int txtAction=0x7f06006a;
-        public static final int txtAllTable=0x7f0600af;
-        public static final int txtAmount=0x7f0600b9;
-        public static final int txtBigDeviation=0x7f0600bb;
-        public static final int txtDate=0x7f060069;
-        public static final int txtDifference=0x7f0600ba;
-        public static final int txtEmail=0x7f06009b;
-        public static final int txtErrorDescription=0x7f06006b;
-        public static final int txtFirstName=0x7f060099;
-        public static final int txtLastName=0x7f06009a;
-        public static final int txtLogId=0x7f060066;
-        public static final int txtNullColumns=0x7f0600b8;
-        public static final int txtPassword=0x7f06007f;
-        public static final int txtProcedureId=0x7f060067;
-        public static final int txtProcedureName=0x7f060068;
-        public static final int txtStatsColumnsColumnName=0x7f0600aa;
-        public static final int txtStatsColumnsDate=0x7f0600a8;
-        public static final int txtStatsColumnsFillPrecentage=0x7f0600ad;
-        public static final int txtStatsColumnsNotNullRows=0x7f0600ac;
-        public static final int txtStatsColumnsNullRows=0x7f0600ab;
-        public static final int txtStatsColumnsTableName=0x7f0600a9;
-        public static final int txtTableName=0x7f0600b7;
-        public static final int txtTime=0x7f06006d;
-        public static final int txtUserName=0x7f06007b;
-        public static final int txtUserType=0x7f06009c;
+        public static final int src_atop=0x7f060018;
+        public static final int src_in=0x7f060019;
+        public static final int src_over=0x7f06001a;
+        public static final int start=0x7f060031;
+        public static final int status_bar_latest_event_content=0x7f0600ab;
+        public static final int submit_area=0x7f060067;
+        public static final int tabMode=0x7f06000d;
+        public static final int tableLayout1=0x7f060096;
+        public static final int tableRow1=0x7f060097;
+        public static final int tableRow2=0x7f06009a;
+        public static final int tableRow3=0x7f06009b;
+        public static final int test=0x7f0600a5;
+        public static final int testView=0x7f0600c0;
+        public static final int text=0x7f0600b3;
+        public static final int text2=0x7f0600b1;
+        public static final int textError=0x7f0600d2;
+        public static final int textLogIn=0x7f060095;
+        public static final int textOR=0x7f06009f;
+        public static final int textSpacerNoButtons=0x7f06004f;
+        public static final int textSuccess=0x7f0600cf;
+        public static final int textView=0x7f060091;
+        public static final int textView10=0x7f060098;
+        public static final int textView12=0x7f06009c;
+        public static final int textViewActionBarTab=0x7f060070;
+        public static final int time=0x7f0600af;
+        public static final int title=0x7f060045;
+        public static final int title_template=0x7f06004a;
+        public static final int toolbar=0x7f0600a2;
+        public static final int toolbarDrawer=0x7f06007d;
+        public static final int top=0x7f060032;
+        public static final int topPanel=0x7f060049;
+        public static final int touch_outside=0x7f060074;
+        public static final int txtAction=0x7f060087;
+        public static final int txtAllTable=0x7f0600cc;
+        public static final int txtAmount=0x7f0600d6;
+        public static final int txtBigDeviation=0x7f0600d8;
+        public static final int txtDate=0x7f060086;
+        public static final int txtDifference=0x7f0600d7;
+        public static final int txtEmail=0x7f0600b9;
+        public static final int txtErrorDescription=0x7f060088;
+        public static final int txtFirstName=0x7f0600b7;
+        public static final int txtLastName=0x7f0600b8;
+        public static final int txtLogId=0x7f060083;
+        public static final int txtNullColumns=0x7f0600d5;
+        public static final int txtPassword=0x7f06009d;
+        public static final int txtProcedureId=0x7f060084;
+        public static final int txtProcedureName=0x7f060085;
+        public static final int txtStatsColumnsColumnName=0x7f0600c7;
+        public static final int txtStatsColumnsDate=0x7f0600c5;
+        public static final int txtStatsColumnsFillPrecentage=0x7f0600ca;
+        public static final int txtStatsColumnsNotNullRows=0x7f0600c9;
+        public static final int txtStatsColumnsNullRows=0x7f0600c8;
+        public static final int txtStatsColumnsTableName=0x7f0600c6;
+        public static final int txtTableName=0x7f0600d4;
+        public static final int txtTime=0x7f06008a;
+        public static final int txtUserName=0x7f060099;
+        public static final int txtUserType=0x7f0600ba;
         public static final int up=0x7f060009;
-        public static final int useLogo=0x7f060013;
-        public static final int userTableRecycleView=0x7f0600bc;
-        public static final int viewpager=0x7f060072;
-        public static final int withText=0x7f060021;
-        public static final int wrap_content=0x7f060014;
+        public static final int useLogo=0x7f060014;
+        public static final int userTableRecycleView=0x7f0600d9;
+        public static final int view_offset_helper=0x7f06000a;
+        public static final int viewpager=0x7f06008f;
+        public static final int withText=0x7f060022;
+        public static final int wrap_content=0x7f060015;
     }
     public static final class integer {
         public static final int abc_config_activityDefaultDur=0x7f0b0001;
         public static final int abc_config_activityShortDur=0x7f0b0002;
         public static final int abc_max_action_buttons=0x7f0b0000;
+        public static final int bottom_sheet_slide_duration=0x7f0b0006;
         public static final int cancel_button_image_alpha=0x7f0b0003;
+        public static final int design_snackbar_text_max_lines=0x7f0b0005;
         public static final int status_bar_notification_info_maxnum=0x7f0b0004;
     }
     public static final class layout {
@@ -2179,50 +2839,63 @@ containing a value of this type.
         public static final int abc_search_view=0x7f030017;
         public static final int abc_select_dialog_material=0x7f030018;
         public static final int action_bar=0x7f030019;
-        public static final int chartalltablesdialog=0x7f03001a;
-        public static final int charterrordialog=0x7f03001b;
-        public static final int chartsuccessdialog=0x7f03001c;
-        public static final int configurationcolumns=0x7f03001d;
-        public static final int drawerlayout=0x7f03001e;
-        public static final int fragment1=0x7f03001f;
-        public static final int fragment2=0x7f030020;
-        public static final int fragment2row=0x7f030021;
-        public static final int fragment2rowcardview=0x7f030022;
-        public static final int fragment_sample=0x7f030023;
-        public static final int gridviewpage=0x7f030024;
-        public static final int loadingscreen=0x7f030025;
-        public static final int login=0x7f030026;
-        public static final int logtable=0x7f030027;
-        public static final int logtablechart=0x7f030028;
-        public static final int logtabledescription=0x7f030029;
-        public static final int logtablegroupitem=0x7f03002a;
-        public static final int logtablerow=0x7f03002b;
-        public static final int mainpage=0x7f03002c;
-        public static final int notification_media_action=0x7f03002d;
-        public static final int notification_media_cancel_action=0x7f03002e;
-        public static final int notification_template_big_media=0x7f03002f;
-        public static final int notification_template_big_media_narrow=0x7f030030;
-        public static final int notification_template_lines=0x7f030031;
-        public static final int notification_template_media=0x7f030032;
-        public static final int notification_template_part_chronometer=0x7f030033;
-        public static final int notification_template_part_time=0x7f030034;
-        public static final int psts_tab=0x7f030035;
-        public static final int row=0x7f030036;
-        public static final int rowcardview=0x7f030037;
-        public static final int rowcardview2=0x7f030038;
-        public static final int select_dialog_item_material=0x7f030039;
-        public static final int select_dialog_multichoice_material=0x7f03003a;
-        public static final int select_dialog_singlechoice_material=0x7f03003b;
-        public static final int signindialog=0x7f03003c;
-        public static final int slidingbar=0x7f03003d;
-        public static final int statscolumnsalltable=0x7f03003e;
-        public static final int statscolumnsgraph=0x7f03003f;
-        public static final int statscolumnsrow=0x7f030040;
-        public static final int statstablealltable=0x7f030041;
-        public static final int statstablegraph=0x7f030042;
-        public static final int statstablerow=0x7f030043;
-        public static final int support_simple_spinner_dropdown_item=0x7f030044;
-        public static final int usertablemain=0x7f030045;
+        public static final int actionbartab=0x7f03001a;
+        public static final int chartalltablesdialog=0x7f03001b;
+        public static final int charterrordialog=0x7f03001c;
+        public static final int chartsuccessdialog=0x7f03001d;
+        public static final int configurationcolumns=0x7f03001e;
+        public static final int design_bottom_sheet_dialog=0x7f03001f;
+        public static final int design_layout_snackbar=0x7f030020;
+        public static final int design_layout_snackbar_include=0x7f030021;
+        public static final int design_layout_tab_icon=0x7f030022;
+        public static final int design_layout_tab_text=0x7f030023;
+        public static final int design_menu_item_action_area=0x7f030024;
+        public static final int design_navigation_item=0x7f030025;
+        public static final int design_navigation_item_header=0x7f030026;
+        public static final int design_navigation_item_separator=0x7f030027;
+        public static final int design_navigation_item_subheader=0x7f030028;
+        public static final int design_navigation_menu=0x7f030029;
+        public static final int design_navigation_menu_item=0x7f03002a;
+        public static final int drawerlayout=0x7f03002b;
+        public static final int fragment1=0x7f03002c;
+        public static final int fragment2=0x7f03002d;
+        public static final int fragment2row=0x7f03002e;
+        public static final int fragment2rowcardview=0x7f03002f;
+        public static final int fragment_sample=0x7f030030;
+        public static final int gridviewpage=0x7f030031;
+        public static final int loadingscreen=0x7f030032;
+        public static final int login=0x7f030033;
+        public static final int logtable=0x7f030034;
+        public static final int logtablechart=0x7f030035;
+        public static final int logtabledescription=0x7f030036;
+        public static final int logtablegroupitem=0x7f030037;
+        public static final int logtablerow=0x7f030038;
+        public static final int mainpage=0x7f030039;
+        public static final int notification_media_action=0x7f03003a;
+        public static final int notification_media_cancel_action=0x7f03003b;
+        public static final int notification_template_big_media=0x7f03003c;
+        public static final int notification_template_big_media_narrow=0x7f03003d;
+        public static final int notification_template_lines=0x7f03003e;
+        public static final int notification_template_media=0x7f03003f;
+        public static final int notification_template_part_chronometer=0x7f030040;
+        public static final int notification_template_part_time=0x7f030041;
+        public static final int psts_tab=0x7f030042;
+        public static final int row=0x7f030043;
+        public static final int rowcardview=0x7f030044;
+        public static final int rowcardview2=0x7f030045;
+        public static final int select_dialog_item_material=0x7f030046;
+        public static final int select_dialog_multichoice_material=0x7f030047;
+        public static final int select_dialog_singlechoice_material=0x7f030048;
+        public static final int signindialog=0x7f030049;
+        public static final int slidingbar=0x7f03004a;
+        public static final int statscolumnsalltable=0x7f03004b;
+        public static final int statscolumnsgraph=0x7f03004c;
+        public static final int statscolumnsrow=0x7f03004d;
+        public static final int statstablealltable=0x7f03004e;
+        public static final int statstablegraph=0x7f03004f;
+        public static final int statstablerow=0x7f030050;
+        public static final int support_simple_spinner_dropdown_item=0x7f030051;
+        public static final int usertablemain=0x7f030052;
     }
     public static final class menu {
         public static final int action_menu=0x7f0c0000;
@@ -2231,8 +2904,8 @@ containing a value of this type.
         public static final int actionbarrecycleview=0x7f0c0003;
     }
     public static final class string {
-        public static final int ApplicationName=0x7f090015;
-        public static final int Hello=0x7f090014;
+        public static final int ApplicationName=0x7f090018;
+        public static final int Hello=0x7f090017;
         public static final int abc_action_bar_home_description=0x7f090000;
         public static final int abc_action_bar_home_description_format=0x7f090001;
         public static final int abc_action_bar_home_subtitle_description_format=0x7f090002;
@@ -2252,8 +2925,11 @@ containing a value of this type.
         public static final int abc_shareactionprovider_share_with=0x7f090010;
         public static final int abc_shareactionprovider_share_with_application=0x7f090011;
         public static final int abc_toolbar_collapse_description=0x7f090012;
-        public static final int close_drawer=0x7f090017;
-        public static final int open_drawer=0x7f090016;
+        public static final int appbar_scrolling_view_behavior=0x7f090014;
+        public static final int bottom_sheet_behavior=0x7f090015;
+        public static final int character_counter_pattern=0x7f090016;
+        public static final int close_drawer=0x7f09001a;
+        public static final int open_drawer=0x7f090019;
         public static final int status_bar_notification_info_overflow=0x7f090013;
     }
     public static final class style {
@@ -2261,6 +2937,7 @@ containing a value of this type.
         public static final int AlertDialog_AppCompat_Light=0x7f07008b;
         public static final int Animation_AppCompat_Dialog=0x7f07008c;
         public static final int Animation_AppCompat_DropDownUp=0x7f07008d;
+        public static final int Animation_Design_BottomSheetDialog=0x7f070143;
         public static final int Base_AlertDialog_AppCompat=0x7f07008e;
         public static final int Base_AlertDialog_AppCompat_Light=0x7f07008f;
         public static final int Base_Animation_AppCompat_Dialog=0x7f070090;
@@ -2404,32 +3081,33 @@ containing a value of this type.
         public static final int Base_Widget_AppCompat_TextView_SpinnerItem=0x7f07007c;
         public static final int Base_Widget_AppCompat_Toolbar=0x7f0700b9;
         public static final int Base_Widget_AppCompat_Toolbar_Button_Navigation=0x7f07007d;
+        public static final int Base_Widget_Design_TabLayout=0x7f070144;
         public static final int CardView=0x7f070000;
         public static final int CardView_Dark=0x7f070002;
         public static final int CardView_Light=0x7f070003;
         /**  the theme applied to the application or activity 
          */
-        public static final int CustomActionBarTheme=0x7f07014a;
-        public static final int CustomActionBarTheme1=0x7f07014c;
-        public static final int CustomActionBarTheme3=0x7f07014e;
+        public static final int CustomActionBarTheme=0x7f070163;
+        public static final int CustomActionBarTheme1=0x7f070165;
+        public static final int CustomActionBarTheme3=0x7f070167;
         /**  ActionBar styles 
          */
-        public static final int MyActionBar=0x7f07014b;
-        public static final int MyActionBar1=0x7f07014d;
+        public static final int MyActionBar=0x7f070164;
+        public static final int MyActionBar1=0x7f070166;
         /**  ActionBar styles 
          */
-        public static final int MyActionBar2=0x7f07014f;
-        public static final int MyDrawerArrowStyle=0x7f070143;
-        public static final int MyDrawerArrowStyle2=0x7f070146;
+        public static final int MyActionBar2=0x7f070168;
+        public static final int MyDrawerArrowStyle=0x7f07015c;
+        public static final int MyDrawerArrowStyle2=0x7f07015f;
         /** 
         Base application theme for API 21+. This theme replaces
         MyTheme from res/values/styles.xml on API 21+ devices.
     
          */
-        public static final int MyTheme=0x7f070144;
-        public static final int MyTheme2=0x7f070145;
-        public static final int MyTheme3=0x7f070147;
-        public static final int MyThemeDrawerLayout=0x7f070142;
+        public static final int MyTheme=0x7f07015d;
+        public static final int MyTheme2=0x7f07015e;
+        public static final int MyTheme3=0x7f070160;
+        public static final int MyThemeDrawerLayout=0x7f07015b;
         public static final int Platform_AppCompat=0x7f07001b;
         public static final int Platform_AppCompat_Light=0x7f07001c;
         public static final int Platform_ThemeOverlay_AppCompat=0x7f07007e;
@@ -2498,6 +3176,13 @@ containing a value of this type.
         public static final int TextAppearance_AppCompat_Widget_PopupMenu_Small=0x7f0700e3;
         public static final int TextAppearance_AppCompat_Widget_Switch=0x7f0700e4;
         public static final int TextAppearance_AppCompat_Widget_TextView_SpinnerItem=0x7f0700e5;
+        public static final int TextAppearance_Design_CollapsingToolbar_Expanded=0x7f070145;
+        public static final int TextAppearance_Design_Counter=0x7f070146;
+        public static final int TextAppearance_Design_Counter_Overflow=0x7f070147;
+        public static final int TextAppearance_Design_Error=0x7f070148;
+        public static final int TextAppearance_Design_Hint=0x7f070149;
+        public static final int TextAppearance_Design_Snackbar_Message=0x7f07014a;
+        public static final int TextAppearance_Design_Tab=0x7f07014b;
         public static final int TextAppearance_StatusBar_EventContent=0x7f070027;
         public static final int TextAppearance_StatusBar_EventContent_Info=0x7f070028;
         public static final int TextAppearance_StatusBar_EventContent_Line2=0x7f070029;
@@ -2527,7 +3212,13 @@ containing a value of this type.
         public static final int Theme_AppCompat_Light_DialogWhenLarge=0x7f0700f4;
         public static final int Theme_AppCompat_Light_NoActionBar=0x7f0700f5;
         public static final int Theme_AppCompat_NoActionBar=0x7f0700f6;
-        public static final int Theme_Splash=0x7f070149;
+        public static final int Theme_Design=0x7f07014c;
+        public static final int Theme_Design_BottomSheetDialog=0x7f07014d;
+        public static final int Theme_Design_Light=0x7f07014e;
+        public static final int Theme_Design_Light_BottomSheetDialog=0x7f07014f;
+        public static final int Theme_Design_Light_NoActionBar=0x7f070150;
+        public static final int Theme_Design_NoActionBar=0x7f070151;
+        public static final int Theme_Splash=0x7f070162;
         public static final int ThemeOverlay_AppCompat=0x7f0700f7;
         public static final int ThemeOverlay_AppCompat_ActionBar=0x7f0700f8;
         public static final int ThemeOverlay_AppCompat_Dark=0x7f0700f9;
@@ -2603,7 +3294,17 @@ containing a value of this type.
         public static final int Widget_AppCompat_TextView_SpinnerItem=0x7f07013f;
         public static final int Widget_AppCompat_Toolbar=0x7f070140;
         public static final int Widget_AppCompat_Toolbar_Button_Navigation=0x7f070141;
-        public static final int dialog_animation=0x7f070148;
+        public static final int Widget_Design_AppBarLayout=0x7f070152;
+        public static final int Widget_Design_BottomSheet_Modal=0x7f070153;
+        public static final int Widget_Design_CollapsingToolbar=0x7f070154;
+        public static final int Widget_Design_CoordinatorLayout=0x7f070155;
+        public static final int Widget_Design_FloatingActionButton=0x7f070156;
+        public static final int Widget_Design_NavigationView=0x7f070157;
+        public static final int Widget_Design_ScrimInsetsFrameLayout=0x7f070158;
+        public static final int Widget_Design_Snackbar=0x7f070159;
+        public static final int Widget_Design_TabLayout=0x7f070142;
+        public static final int Widget_Design_TextInputLayout=0x7f07015a;
+        public static final int dialog_animation=0x7f070161;
     }
     public static final class styleable {
         /** Attributes that can be used with a ActionBar.
@@ -3285,6 +3986,104 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:singleChoiceItemLayout
         */
         public static final int AlertDialog_singleChoiceItemLayout = 4;
+        /** Attributes that can be used with a AppBarLayout.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #AppBarLayout_android_background android:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_elevation Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_expanded Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:expanded}</code></td><td></td></tr>
+           </table>
+           @see #AppBarLayout_android_background
+           @see #AppBarLayout_elevation
+           @see #AppBarLayout_expanded
+         */
+        public static final int[] AppBarLayout = {
+            0x010100d4, 0x7f010029, 0x7f0100e0
+        };
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#background}
+          attribute's value can be found in the {@link #AppBarLayout} array.
+          @attr name android:background
+        */
+        public static final int AppBarLayout_android_background = 0;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#elevation}
+          attribute's value can be found in the {@link #AppBarLayout} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:elevation
+        */
+        public static final int AppBarLayout_elevation = 1;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#expanded}
+          attribute's value can be found in the {@link #AppBarLayout} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:expanded
+        */
+        public static final int AppBarLayout_expanded = 2;
+        /** Attributes that can be used with a AppBarLayout_LayoutParams.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #AppBarLayout_LayoutParams_layout_scrollFlags Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:layout_scrollFlags}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_LayoutParams_layout_scrollInterpolator Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:layout_scrollInterpolator}</code></td><td></td></tr>
+           </table>
+           @see #AppBarLayout_LayoutParams_layout_scrollFlags
+           @see #AppBarLayout_LayoutParams_layout_scrollInterpolator
+         */
+        public static final int[] AppBarLayout_LayoutParams = {
+            0x7f0100e1, 0x7f0100e2
+        };
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#layout_scrollFlags}
+          attribute's value can be found in the {@link #AppBarLayout_LayoutParams} array.
+
+
+          <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>scroll</code></td><td>0x1</td><td></td></tr>
+<tr><td><code>exitUntilCollapsed</code></td><td>0x2</td><td></td></tr>
+<tr><td><code>enterAlways</code></td><td>0x4</td><td></td></tr>
+<tr><td><code>enterAlwaysCollapsed</code></td><td>0x8</td><td></td></tr>
+<tr><td><code>snap</code></td><td>0x10</td><td></td></tr>
+</table>
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:layout_scrollFlags
+        */
+        public static final int AppBarLayout_LayoutParams_layout_scrollFlags = 0;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#layout_scrollInterpolator}
+          attribute's value can be found in the {@link #AppBarLayout_LayoutParams} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:layout_scrollInterpolator
+        */
+        public static final int AppBarLayout_LayoutParams_layout_scrollInterpolator = 1;
         /** Attributes that can be used with a AppCompatImageView.
            <p>Includes the following attributes:</p>
            <table>
@@ -4906,6 +5705,51 @@ containing a value of this type.
           @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:windowNoTitle
         */
         public static final int AppCompatTheme_windowNoTitle = 3;
+        /** Attributes that can be used with a BottomSheetBehavior_Params.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #BottomSheetBehavior_Params_behavior_hideable Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:behavior_hideable}</code></td><td></td></tr>
+           <tr><td><code>{@link #BottomSheetBehavior_Params_behavior_peekHeight Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:behavior_peekHeight}</code></td><td></td></tr>
+           </table>
+           @see #BottomSheetBehavior_Params_behavior_hideable
+           @see #BottomSheetBehavior_Params_behavior_peekHeight
+         */
+        public static final int[] BottomSheetBehavior_Params = {
+            0x7f0100e3, 0x7f0100e4
+        };
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#behavior_hideable}
+          attribute's value can be found in the {@link #BottomSheetBehavior_Params} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:behavior_hideable
+        */
+        public static final int BottomSheetBehavior_Params_behavior_hideable = 1;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#behavior_peekHeight}
+          attribute's value can be found in the {@link #BottomSheetBehavior_Params} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:behavior_peekHeight
+        */
+        public static final int BottomSheetBehavior_Params_behavior_peekHeight = 0;
         /** Attributes that can be used with a ButtonBarLayout.
            <p>Includes the following attributes:</p>
            <table>
@@ -5156,6 +6000,313 @@ containing a value of this type.
           @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:contentPaddingTop
         */
         public static final int CardView_contentPaddingTop = 11;
+        /** Attributes that can be used with a CollapsingAppBarLayout_LayoutParams.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #CollapsingAppBarLayout_LayoutParams_layout_collapseMode Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:layout_collapseMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingAppBarLayout_LayoutParams_layout_collapseParallaxMultiplier Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:layout_collapseParallaxMultiplier}</code></td><td></td></tr>
+           </table>
+           @see #CollapsingAppBarLayout_LayoutParams_layout_collapseMode
+           @see #CollapsingAppBarLayout_LayoutParams_layout_collapseParallaxMultiplier
+         */
+        public static final int[] CollapsingAppBarLayout_LayoutParams = {
+            0x7f0100e5, 0x7f0100e6
+        };
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#layout_collapseMode}
+          attribute's value can be found in the {@link #CollapsingAppBarLayout_LayoutParams} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>none</code></td><td>0</td><td></td></tr>
+<tr><td><code>pin</code></td><td>1</td><td></td></tr>
+<tr><td><code>parallax</code></td><td>2</td><td></td></tr>
+</table>
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:layout_collapseMode
+        */
+        public static final int CollapsingAppBarLayout_LayoutParams_layout_collapseMode = 0;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#layout_collapseParallaxMultiplier}
+          attribute's value can be found in the {@link #CollapsingAppBarLayout_LayoutParams} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:layout_collapseParallaxMultiplier
+        */
+        public static final int CollapsingAppBarLayout_LayoutParams_layout_collapseParallaxMultiplier = 1;
+        /** Attributes that can be used with a CollapsingToolbarLayout.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleGravity Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:collapsedTitleGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleTextAppearance Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:collapsedTitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_contentScrim Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:contentScrim}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleGravity Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:expandedTitleGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMargin Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:expandedTitleMargin}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginBottom Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:expandedTitleMarginBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginEnd Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:expandedTitleMarginEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginStart Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:expandedTitleMarginStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginTop Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:expandedTitleMarginTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleTextAppearance Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:expandedTitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_statusBarScrim Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:statusBarScrim}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_title Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_titleEnabled Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:titleEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_toolbarId Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:toolbarId}</code></td><td></td></tr>
+           </table>
+           @see #CollapsingToolbarLayout_collapsedTitleGravity
+           @see #CollapsingToolbarLayout_collapsedTitleTextAppearance
+           @see #CollapsingToolbarLayout_contentScrim
+           @see #CollapsingToolbarLayout_expandedTitleGravity
+           @see #CollapsingToolbarLayout_expandedTitleMargin
+           @see #CollapsingToolbarLayout_expandedTitleMarginBottom
+           @see #CollapsingToolbarLayout_expandedTitleMarginEnd
+           @see #CollapsingToolbarLayout_expandedTitleMarginStart
+           @see #CollapsingToolbarLayout_expandedTitleMarginTop
+           @see #CollapsingToolbarLayout_expandedTitleTextAppearance
+           @see #CollapsingToolbarLayout_statusBarScrim
+           @see #CollapsingToolbarLayout_title
+           @see #CollapsingToolbarLayout_titleEnabled
+           @see #CollapsingToolbarLayout_toolbarId
+         */
+        public static final int[] CollapsingToolbarLayout = {
+            0x7f010012, 0x7f0100e7, 0x7f0100e8, 0x7f0100e9,
+            0x7f0100ea, 0x7f0100eb, 0x7f0100ec, 0x7f0100ed,
+            0x7f0100ee, 0x7f0100ef, 0x7f0100f0, 0x7f0100f1,
+            0x7f0100f2, 0x7f0100f3
+        };
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#collapsedTitleGravity}
+          attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
+
+
+          <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>top</code></td><td>0x30</td><td></td></tr>
+<tr><td><code>bottom</code></td><td>0x50</td><td></td></tr>
+<tr><td><code>left</code></td><td>0x03</td><td></td></tr>
+<tr><td><code>right</code></td><td>0x05</td><td></td></tr>
+<tr><td><code>center_vertical</code></td><td>0x10</td><td></td></tr>
+<tr><td><code>fill_vertical</code></td><td>0x70</td><td></td></tr>
+<tr><td><code>center_horizontal</code></td><td>0x01</td><td></td></tr>
+<tr><td><code>center</code></td><td>0x11</td><td></td></tr>
+<tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
+<tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
+</table>
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:collapsedTitleGravity
+        */
+        public static final int CollapsingToolbarLayout_collapsedTitleGravity = 11;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#collapsedTitleTextAppearance}
+          attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:collapsedTitleTextAppearance
+        */
+        public static final int CollapsingToolbarLayout_collapsedTitleTextAppearance = 7;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#contentScrim}
+          attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:contentScrim
+        */
+        public static final int CollapsingToolbarLayout_contentScrim = 8;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#expandedTitleGravity}
+          attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
+
+
+          <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>top</code></td><td>0x30</td><td></td></tr>
+<tr><td><code>bottom</code></td><td>0x50</td><td></td></tr>
+<tr><td><code>left</code></td><td>0x03</td><td></td></tr>
+<tr><td><code>right</code></td><td>0x05</td><td></td></tr>
+<tr><td><code>center_vertical</code></td><td>0x10</td><td></td></tr>
+<tr><td><code>fill_vertical</code></td><td>0x70</td><td></td></tr>
+<tr><td><code>center_horizontal</code></td><td>0x01</td><td></td></tr>
+<tr><td><code>center</code></td><td>0x11</td><td></td></tr>
+<tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
+<tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
+</table>
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:expandedTitleGravity
+        */
+        public static final int CollapsingToolbarLayout_expandedTitleGravity = 12;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#expandedTitleMargin}
+          attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:expandedTitleMargin
+        */
+        public static final int CollapsingToolbarLayout_expandedTitleMargin = 1;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#expandedTitleMarginBottom}
+          attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:expandedTitleMarginBottom
+        */
+        public static final int CollapsingToolbarLayout_expandedTitleMarginBottom = 5;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#expandedTitleMarginEnd}
+          attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:expandedTitleMarginEnd
+        */
+        public static final int CollapsingToolbarLayout_expandedTitleMarginEnd = 4;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#expandedTitleMarginStart}
+          attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:expandedTitleMarginStart
+        */
+        public static final int CollapsingToolbarLayout_expandedTitleMarginStart = 2;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#expandedTitleMarginTop}
+          attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:expandedTitleMarginTop
+        */
+        public static final int CollapsingToolbarLayout_expandedTitleMarginTop = 3;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#expandedTitleTextAppearance}
+          attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:expandedTitleTextAppearance
+        */
+        public static final int CollapsingToolbarLayout_expandedTitleTextAppearance = 6;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#statusBarScrim}
+          attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:statusBarScrim
+        */
+        public static final int CollapsingToolbarLayout_statusBarScrim = 9;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#title}
+          attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:title
+        */
+        public static final int CollapsingToolbarLayout_title = 0;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#titleEnabled}
+          attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:titleEnabled
+        */
+        public static final int CollapsingToolbarLayout_titleEnabled = 13;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#toolbarId}
+          attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:toolbarId
+        */
+        public static final int CollapsingToolbarLayout_toolbarId = 10;
         /** Attributes that can be used with a CompoundButton.
            <p>Includes the following attributes:</p>
            <table>
@@ -5214,6 +6365,188 @@ containing a value of this type.
           @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:buttonTintMode
         */
         public static final int CompoundButton_buttonTintMode = 2;
+        /** Attributes that can be used with a CoordinatorLayout.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #CoordinatorLayout_keylines Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:keylines}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_statusBarBackground Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:statusBarBackground}</code></td><td></td></tr>
+           </table>
+           @see #CoordinatorLayout_keylines
+           @see #CoordinatorLayout_statusBarBackground
+         */
+        public static final int[] CoordinatorLayout = {
+            0x7f0100f4, 0x7f0100f5
+        };
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#keylines}
+          attribute's value can be found in the {@link #CoordinatorLayout} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:keylines
+        */
+        public static final int CoordinatorLayout_keylines = 0;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#statusBarBackground}
+          attribute's value can be found in the {@link #CoordinatorLayout} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:statusBarBackground
+        */
+        public static final int CoordinatorLayout_statusBarBackground = 1;
+        /** Attributes that can be used with a CoordinatorLayout_LayoutParams.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_android_layout_gravity android:layout_gravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_anchor Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:layout_anchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_anchorGravity Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:layout_anchorGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_behavior Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:layout_behavior}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_keyline Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:layout_keyline}</code></td><td></td></tr>
+           </table>
+           @see #CoordinatorLayout_LayoutParams_android_layout_gravity
+           @see #CoordinatorLayout_LayoutParams_layout_anchor
+           @see #CoordinatorLayout_LayoutParams_layout_anchorGravity
+           @see #CoordinatorLayout_LayoutParams_layout_behavior
+           @see #CoordinatorLayout_LayoutParams_layout_keyline
+         */
+        public static final int[] CoordinatorLayout_LayoutParams = {
+            0x010100b3, 0x7f0100f6, 0x7f0100f7, 0x7f0100f8,
+            0x7f0100f9
+        };
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#layout_gravity}
+          attribute's value can be found in the {@link #CoordinatorLayout_LayoutParams} array.
+          @attr name android:layout_gravity
+        */
+        public static final int CoordinatorLayout_LayoutParams_android_layout_gravity = 0;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#layout_anchor}
+          attribute's value can be found in the {@link #CoordinatorLayout_LayoutParams} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:layout_anchor
+        */
+        public static final int CoordinatorLayout_LayoutParams_layout_anchor = 2;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#layout_anchorGravity}
+          attribute's value can be found in the {@link #CoordinatorLayout_LayoutParams} array.
+
+
+          <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>top</code></td><td>0x30</td><td></td></tr>
+<tr><td><code>bottom</code></td><td>0x50</td><td></td></tr>
+<tr><td><code>left</code></td><td>0x03</td><td></td></tr>
+<tr><td><code>right</code></td><td>0x05</td><td></td></tr>
+<tr><td><code>center_vertical</code></td><td>0x10</td><td></td></tr>
+<tr><td><code>fill_vertical</code></td><td>0x70</td><td></td></tr>
+<tr><td><code>center_horizontal</code></td><td>0x01</td><td></td></tr>
+<tr><td><code>fill_horizontal</code></td><td>0x07</td><td></td></tr>
+<tr><td><code>center</code></td><td>0x11</td><td></td></tr>
+<tr><td><code>fill</code></td><td>0x77</td><td></td></tr>
+<tr><td><code>clip_vertical</code></td><td>0x80</td><td></td></tr>
+<tr><td><code>clip_horizontal</code></td><td>0x08</td><td></td></tr>
+<tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
+<tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
+</table>
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:layout_anchorGravity
+        */
+        public static final int CoordinatorLayout_LayoutParams_layout_anchorGravity = 4;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#layout_behavior}
+          attribute's value can be found in the {@link #CoordinatorLayout_LayoutParams} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:layout_behavior
+        */
+        public static final int CoordinatorLayout_LayoutParams_layout_behavior = 1;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#layout_keyline}
+          attribute's value can be found in the {@link #CoordinatorLayout_LayoutParams} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:layout_keyline
+        */
+        public static final int CoordinatorLayout_LayoutParams_layout_keyline = 3;
+        /** Attributes that can be used with a DesignTheme.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #DesignTheme_bottomSheetDialogTheme Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:bottomSheetDialogTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #DesignTheme_bottomSheetStyle Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:bottomSheetStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #DesignTheme_textColorError Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:textColorError}</code></td><td></td></tr>
+           </table>
+           @see #DesignTheme_bottomSheetDialogTheme
+           @see #DesignTheme_bottomSheetStyle
+           @see #DesignTheme_textColorError
+         */
+        public static final int[] DesignTheme = {
+            0x7f0100fa, 0x7f0100fb, 0x7f0100fc
+        };
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#bottomSheetDialogTheme}
+          attribute's value can be found in the {@link #DesignTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:bottomSheetDialogTheme
+        */
+        public static final int DesignTheme_bottomSheetDialogTheme = 0;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#bottomSheetStyle}
+          attribute's value can be found in the {@link #DesignTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:bottomSheetStyle
+        */
+        public static final int DesignTheme_bottomSheetStyle = 1;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#textColorError}
+          attribute's value can be found in the {@link #DesignTheme} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:textColorError
+        */
+        public static final int DesignTheme_textColorError = 2;
         /** Attributes that can be used with a DrawerArrowToggle.
            <p>Includes the following attributes:</p>
            <table>
@@ -5367,6 +6700,206 @@ containing a value of this type.
           @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:thickness
         */
         public static final int DrawerArrowToggle_thickness = 7;
+        /** Attributes that can be used with a FloatingActionButton.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #FloatingActionButton_backgroundTint Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:backgroundTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_backgroundTintMode Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:backgroundTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_borderWidth Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:borderWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_elevation Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_fabSize Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:fabSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_pressedTranslationZ Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:pressedTranslationZ}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_rippleColor Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:rippleColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_useCompatPadding Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:useCompatPadding}</code></td><td></td></tr>
+           </table>
+           @see #FloatingActionButton_backgroundTint
+           @see #FloatingActionButton_backgroundTintMode
+           @see #FloatingActionButton_borderWidth
+           @see #FloatingActionButton_elevation
+           @see #FloatingActionButton_fabSize
+           @see #FloatingActionButton_pressedTranslationZ
+           @see #FloatingActionButton_rippleColor
+           @see #FloatingActionButton_useCompatPadding
+         */
+        public static final int[] FloatingActionButton = {
+            0x7f010029, 0x7f0100de, 0x7f0100df, 0x7f0100fd,
+            0x7f0100fe, 0x7f0100ff, 0x7f010100, 0x7f010101
+        };
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#backgroundTint}
+          attribute's value can be found in the {@link #FloatingActionButton} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:backgroundTint
+        */
+        public static final int FloatingActionButton_backgroundTint = 1;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#backgroundTintMode}
+          attribute's value can be found in the {@link #FloatingActionButton} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>src_over</code></td><td>3</td><td></td></tr>
+<tr><td><code>src_in</code></td><td>5</td><td></td></tr>
+<tr><td><code>src_atop</code></td><td>9</td><td></td></tr>
+<tr><td><code>multiply</code></td><td>14</td><td></td></tr>
+<tr><td><code>screen</code></td><td>15</td><td></td></tr>
+</table>
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:backgroundTintMode
+        */
+        public static final int FloatingActionButton_backgroundTintMode = 2;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#borderWidth}
+          attribute's value can be found in the {@link #FloatingActionButton} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:borderWidth
+        */
+        public static final int FloatingActionButton_borderWidth = 6;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#elevation}
+          attribute's value can be found in the {@link #FloatingActionButton} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:elevation
+        */
+        public static final int FloatingActionButton_elevation = 0;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#fabSize}
+          attribute's value can be found in the {@link #FloatingActionButton} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>normal</code></td><td>0</td><td></td></tr>
+<tr><td><code>mini</code></td><td>1</td><td></td></tr>
+</table>
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:fabSize
+        */
+        public static final int FloatingActionButton_fabSize = 4;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#pressedTranslationZ}
+          attribute's value can be found in the {@link #FloatingActionButton} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:pressedTranslationZ
+        */
+        public static final int FloatingActionButton_pressedTranslationZ = 5;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#rippleColor}
+          attribute's value can be found in the {@link #FloatingActionButton} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:rippleColor
+        */
+        public static final int FloatingActionButton_rippleColor = 3;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#useCompatPadding}
+          attribute's value can be found in the {@link #FloatingActionButton} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:useCompatPadding
+        */
+        public static final int FloatingActionButton_useCompatPadding = 7;
+        /** Attributes that can be used with a ForegroundLinearLayout.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #ForegroundLinearLayout_android_foreground android:foreground}</code></td><td></td></tr>
+           <tr><td><code>{@link #ForegroundLinearLayout_android_foregroundGravity android:foregroundGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #ForegroundLinearLayout_foregroundInsidePadding Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:foregroundInsidePadding}</code></td><td></td></tr>
+           </table>
+           @see #ForegroundLinearLayout_android_foreground
+           @see #ForegroundLinearLayout_android_foregroundGravity
+           @see #ForegroundLinearLayout_foregroundInsidePadding
+         */
+        public static final int[] ForegroundLinearLayout = {
+            0x01010109, 0x01010200, 0x7f010102
+        };
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#foreground}
+          attribute's value can be found in the {@link #ForegroundLinearLayout} array.
+          @attr name android:foreground
+        */
+        public static final int ForegroundLinearLayout_android_foreground = 0;
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#foregroundGravity}
+          attribute's value can be found in the {@link #ForegroundLinearLayout} array.
+          @attr name android:foregroundGravity
+        */
+        public static final int ForegroundLinearLayout_android_foregroundGravity = 1;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#foregroundInsidePadding}
+          attribute's value can be found in the {@link #ForegroundLinearLayout} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:foregroundInsidePadding
+        */
+        public static final int ForegroundLinearLayout_foregroundInsidePadding = 2;
         /** Attributes that can be used with a LinearLayoutCompat.
            <p>Includes the following attributes:</p>
            <table>
@@ -5886,6 +7419,143 @@ containing a value of this type.
           @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:preserveIconSpacing
         */
         public static final int MenuView_preserveIconSpacing = 7;
+        /** Attributes that can be used with a NavigationView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #NavigationView_android_background android:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_android_fitsSystemWindows android:fitsSystemWindows}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_elevation Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_headerLayout Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:headerLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemBackground Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:itemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemIconTint Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:itemIconTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemTextAppearance Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:itemTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemTextColor Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:itemTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_menu Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:menu}</code></td><td></td></tr>
+           </table>
+           @see #NavigationView_android_background
+           @see #NavigationView_android_fitsSystemWindows
+           @see #NavigationView_android_maxWidth
+           @see #NavigationView_elevation
+           @see #NavigationView_headerLayout
+           @see #NavigationView_itemBackground
+           @see #NavigationView_itemIconTint
+           @see #NavigationView_itemTextAppearance
+           @see #NavigationView_itemTextColor
+           @see #NavigationView_menu
+         */
+        public static final int[] NavigationView = {
+            0x010100d4, 0x010100dd, 0x0101011f, 0x7f010029,
+            0x7f010103, 0x7f010104, 0x7f010105, 0x7f010106,
+            0x7f010107, 0x7f010108
+        };
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#background}
+          attribute's value can be found in the {@link #NavigationView} array.
+          @attr name android:background
+        */
+        public static final int NavigationView_android_background = 0;
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#fitsSystemWindows}
+          attribute's value can be found in the {@link #NavigationView} array.
+          @attr name android:fitsSystemWindows
+        */
+        public static final int NavigationView_android_fitsSystemWindows = 1;
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#maxWidth}
+          attribute's value can be found in the {@link #NavigationView} array.
+          @attr name android:maxWidth
+        */
+        public static final int NavigationView_android_maxWidth = 2;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#elevation}
+          attribute's value can be found in the {@link #NavigationView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:elevation
+        */
+        public static final int NavigationView_elevation = 3;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#headerLayout}
+          attribute's value can be found in the {@link #NavigationView} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:headerLayout
+        */
+        public static final int NavigationView_headerLayout = 9;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#itemBackground}
+          attribute's value can be found in the {@link #NavigationView} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:itemBackground
+        */
+        public static final int NavigationView_itemBackground = 7;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#itemIconTint}
+          attribute's value can be found in the {@link #NavigationView} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:itemIconTint
+        */
+        public static final int NavigationView_itemIconTint = 5;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#itemTextAppearance}
+          attribute's value can be found in the {@link #NavigationView} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:itemTextAppearance
+        */
+        public static final int NavigationView_itemTextAppearance = 8;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#itemTextColor}
+          attribute's value can be found in the {@link #NavigationView} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:itemTextColor
+        */
+        public static final int NavigationView_itemTextColor = 6;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#menu}
+          attribute's value can be found in the {@link #NavigationView} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:menu
+        */
+        public static final int NavigationView_menu = 4;
         /** Attributes that can be used with a PagerSlidingTabStrip.
            <p>Includes the following attributes:</p>
            <table>
@@ -5929,11 +7599,11 @@ containing a value of this type.
            @see #PagerSlidingTabStrip_pstsUnderlineHeight
          */
         public static final int[] PagerSlidingTabStrip = {
-            0x7f0100e0, 0x7f0100e1, 0x7f0100e2, 0x7f0100e3,
-            0x7f0100e4, 0x7f0100e5, 0x7f0100e6, 0x7f0100e7,
-            0x7f0100e8, 0x7f0100e9, 0x7f0100ea, 0x7f0100eb,
-            0x7f0100ec, 0x7f0100ed, 0x7f0100ee, 0x7f0100ef,
-            0x7f0100f0
+            0x7f010125, 0x7f010126, 0x7f010127, 0x7f010128,
+            0x7f010129, 0x7f01012a, 0x7f01012b, 0x7f01012c,
+            0x7f01012d, 0x7f01012e, 0x7f01012f, 0x7f010130,
+            0x7f010131, 0x7f010132, 0x7f010133, 0x7f010134,
+            0x7f010135
         };
         /**
           <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#pstsDividerColor}
@@ -6339,6 +8009,60 @@ containing a value of this type.
           @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:stackFromEnd
         */
         public static final int RecyclerView_stackFromEnd = 4;
+        /** Attributes that can be used with a ScrimInsetsFrameLayout.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #ScrimInsetsFrameLayout_insetForeground Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:insetForeground}</code></td><td></td></tr>
+           </table>
+           @see #ScrimInsetsFrameLayout_insetForeground
+         */
+        public static final int[] ScrimInsetsFrameLayout = {
+            0x7f010109
+        };
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#insetForeground}
+          attribute's value can be found in the {@link #ScrimInsetsFrameLayout} array.
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:insetForeground
+        */
+        public static final int ScrimInsetsFrameLayout_insetForeground = 0;
+        /** Attributes that can be used with a ScrollingViewBehavior_Params.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #ScrollingViewBehavior_Params_behavior_overlapTop Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:behavior_overlapTop}</code></td><td></td></tr>
+           </table>
+           @see #ScrollingViewBehavior_Params_behavior_overlapTop
+         */
+        public static final int[] ScrollingViewBehavior_Params = {
+            0x7f01010a
+        };
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#behavior_overlapTop}
+          attribute's value can be found in the {@link #ScrollingViewBehavior_Params} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:behavior_overlapTop
+        */
+        public static final int ScrollingViewBehavior_Params_behavior_overlapTop = 0;
         /** Attributes that can be used with a SearchView.
            <p>Includes the following attributes:</p>
            <table>
@@ -6554,6 +8278,61 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:voiceIcon
         */
         public static final int SearchView_voiceIcon = 12;
+        /** Attributes that can be used with a SnackbarLayout.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #SnackbarLayout_android_maxWidth android:maxWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #SnackbarLayout_elevation Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #SnackbarLayout_maxActionInlineWidth Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:maxActionInlineWidth}</code></td><td></td></tr>
+           </table>
+           @see #SnackbarLayout_android_maxWidth
+           @see #SnackbarLayout_elevation
+           @see #SnackbarLayout_maxActionInlineWidth
+         */
+        public static final int[] SnackbarLayout = {
+            0x0101011f, 0x7f010029, 0x7f01010b
+        };
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#maxWidth}
+          attribute's value can be found in the {@link #SnackbarLayout} array.
+          @attr name android:maxWidth
+        */
+        public static final int SnackbarLayout_android_maxWidth = 0;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#elevation}
+          attribute's value can be found in the {@link #SnackbarLayout} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:elevation
+        */
+        public static final int SnackbarLayout_elevation = 1;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#maxActionInlineWidth}
+          attribute's value can be found in the {@link #SnackbarLayout} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:maxActionInlineWidth
+        */
+        public static final int SnackbarLayout_maxActionInlineWidth = 2;
         /** Attributes that can be used with a Spinner.
            <p>Includes the following attributes:</p>
            <table>
@@ -6757,6 +8536,330 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:track
         */
         public static final int SwitchCompat_track = 3;
+        /** Attributes that can be used with a TabItem.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #TabItem_android_icon android:icon}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabItem_android_layout android:layout}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabItem_android_text android:text}</code></td><td></td></tr>
+           </table>
+           @see #TabItem_android_icon
+           @see #TabItem_android_layout
+           @see #TabItem_android_text
+         */
+        public static final int[] TabItem = {
+            0x01010002, 0x010100f2, 0x0101014f
+        };
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#icon}
+          attribute's value can be found in the {@link #TabItem} array.
+          @attr name android:icon
+        */
+        public static final int TabItem_android_icon = 0;
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#layout}
+          attribute's value can be found in the {@link #TabItem} array.
+          @attr name android:layout
+        */
+        public static final int TabItem_android_layout = 1;
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#text}
+          attribute's value can be found in the {@link #TabItem} array.
+          @attr name android:text
+        */
+        public static final int TabItem_android_text = 2;
+        /** Attributes that can be used with a TabLayout.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #TabLayout_tabBackground Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:tabBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabContentStart Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:tabContentStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabGravity Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:tabGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabIndicatorColor Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:tabIndicatorColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabIndicatorHeight Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:tabIndicatorHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabMaxWidth Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:tabMaxWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabMinWidth Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:tabMinWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabMode Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:tabMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPadding Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:tabPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingBottom Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:tabPaddingBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingEnd Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:tabPaddingEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingStart Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:tabPaddingStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingTop Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:tabPaddingTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabSelectedTextColor Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:tabSelectedTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabTextAppearance Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:tabTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabTextColor Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:tabTextColor}</code></td><td></td></tr>
+           </table>
+           @see #TabLayout_tabBackground
+           @see #TabLayout_tabContentStart
+           @see #TabLayout_tabGravity
+           @see #TabLayout_tabIndicatorColor
+           @see #TabLayout_tabIndicatorHeight
+           @see #TabLayout_tabMaxWidth
+           @see #TabLayout_tabMinWidth
+           @see #TabLayout_tabMode
+           @see #TabLayout_tabPadding
+           @see #TabLayout_tabPaddingBottom
+           @see #TabLayout_tabPaddingEnd
+           @see #TabLayout_tabPaddingStart
+           @see #TabLayout_tabPaddingTop
+           @see #TabLayout_tabSelectedTextColor
+           @see #TabLayout_tabTextAppearance
+           @see #TabLayout_tabTextColor
+         */
+        public static final int[] TabLayout = {
+            0x7f01010c, 0x7f01010d, 0x7f01010e, 0x7f01010f,
+            0x7f010110, 0x7f010111, 0x7f010112, 0x7f010113,
+            0x7f010114, 0x7f010115, 0x7f010116, 0x7f010117,
+            0x7f010118, 0x7f010119, 0x7f01011a, 0x7f01011b
+        };
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#tabBackground}
+          attribute's value can be found in the {@link #TabLayout} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:tabBackground
+        */
+        public static final int TabLayout_tabBackground = 3;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#tabContentStart}
+          attribute's value can be found in the {@link #TabLayout} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:tabContentStart
+        */
+        public static final int TabLayout_tabContentStart = 2;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#tabGravity}
+          attribute's value can be found in the {@link #TabLayout} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>fill</code></td><td>0</td><td></td></tr>
+<tr><td><code>center</code></td><td>1</td><td></td></tr>
+</table>
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:tabGravity
+        */
+        public static final int TabLayout_tabGravity = 5;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#tabIndicatorColor}
+          attribute's value can be found in the {@link #TabLayout} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:tabIndicatorColor
+        */
+        public static final int TabLayout_tabIndicatorColor = 0;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#tabIndicatorHeight}
+          attribute's value can be found in the {@link #TabLayout} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:tabIndicatorHeight
+        */
+        public static final int TabLayout_tabIndicatorHeight = 1;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#tabMaxWidth}
+          attribute's value can be found in the {@link #TabLayout} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:tabMaxWidth
+        */
+        public static final int TabLayout_tabMaxWidth = 7;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#tabMinWidth}
+          attribute's value can be found in the {@link #TabLayout} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:tabMinWidth
+        */
+        public static final int TabLayout_tabMinWidth = 6;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#tabMode}
+          attribute's value can be found in the {@link #TabLayout} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>scrollable</code></td><td>0</td><td></td></tr>
+<tr><td><code>fixed</code></td><td>1</td><td></td></tr>
+</table>
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:tabMode
+        */
+        public static final int TabLayout_tabMode = 4;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#tabPadding}
+          attribute's value can be found in the {@link #TabLayout} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:tabPadding
+        */
+        public static final int TabLayout_tabPadding = 15;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#tabPaddingBottom}
+          attribute's value can be found in the {@link #TabLayout} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:tabPaddingBottom
+        */
+        public static final int TabLayout_tabPaddingBottom = 14;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#tabPaddingEnd}
+          attribute's value can be found in the {@link #TabLayout} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:tabPaddingEnd
+        */
+        public static final int TabLayout_tabPaddingEnd = 13;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#tabPaddingStart}
+          attribute's value can be found in the {@link #TabLayout} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:tabPaddingStart
+        */
+        public static final int TabLayout_tabPaddingStart = 11;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#tabPaddingTop}
+          attribute's value can be found in the {@link #TabLayout} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:tabPaddingTop
+        */
+        public static final int TabLayout_tabPaddingTop = 12;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#tabSelectedTextColor}
+          attribute's value can be found in the {@link #TabLayout} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:tabSelectedTextColor
+        */
+        public static final int TabLayout_tabSelectedTextColor = 10;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#tabTextAppearance}
+          attribute's value can be found in the {@link #TabLayout} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:tabTextAppearance
+        */
+        public static final int TabLayout_tabTextAppearance = 8;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#tabTextColor}
+          attribute's value can be found in the {@link #TabLayout} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:tabTextColor
+        */
+        public static final int TabLayout_tabTextColor = 9;
         /** Attributes that can be used with a TextAppearance.
            <p>Includes the following attributes:</p>
            <table>
@@ -6847,6 +8950,163 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:textAllCaps
         */
         public static final int TextAppearance_textAllCaps = 8;
+        /** Attributes that can be used with a TextInputLayout.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #TextInputLayout_android_hint android:hint}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_android_textColorHint android:textColorHint}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterEnabled Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:counterEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterMaxLength Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:counterMaxLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterOverflowTextAppearance Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:counterOverflowTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterTextAppearance Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:counterTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_errorEnabled Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:errorEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_errorTextAppearance Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:errorTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_hintAnimationEnabled Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:hintAnimationEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_hintEnabled Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:hintEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_hintTextAppearance Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:hintTextAppearance}</code></td><td></td></tr>
+           </table>
+           @see #TextInputLayout_android_hint
+           @see #TextInputLayout_android_textColorHint
+           @see #TextInputLayout_counterEnabled
+           @see #TextInputLayout_counterMaxLength
+           @see #TextInputLayout_counterOverflowTextAppearance
+           @see #TextInputLayout_counterTextAppearance
+           @see #TextInputLayout_errorEnabled
+           @see #TextInputLayout_errorTextAppearance
+           @see #TextInputLayout_hintAnimationEnabled
+           @see #TextInputLayout_hintEnabled
+           @see #TextInputLayout_hintTextAppearance
+         */
+        public static final int[] TextInputLayout = {
+            0x0101009a, 0x01010150, 0x7f01011c, 0x7f01011d,
+            0x7f01011e, 0x7f01011f, 0x7f010120, 0x7f010121,
+            0x7f010122, 0x7f010123, 0x7f010124
+        };
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#hint}
+          attribute's value can be found in the {@link #TextInputLayout} array.
+          @attr name android:hint
+        */
+        public static final int TextInputLayout_android_hint = 1;
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#textColorHint}
+          attribute's value can be found in the {@link #TextInputLayout} array.
+          @attr name android:textColorHint
+        */
+        public static final int TextInputLayout_android_textColorHint = 0;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#counterEnabled}
+          attribute's value can be found in the {@link #TextInputLayout} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:counterEnabled
+        */
+        public static final int TextInputLayout_counterEnabled = 6;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#counterMaxLength}
+          attribute's value can be found in the {@link #TextInputLayout} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:counterMaxLength
+        */
+        public static final int TextInputLayout_counterMaxLength = 7;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#counterOverflowTextAppearance}
+          attribute's value can be found in the {@link #TextInputLayout} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:counterOverflowTextAppearance
+        */
+        public static final int TextInputLayout_counterOverflowTextAppearance = 9;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#counterTextAppearance}
+          attribute's value can be found in the {@link #TextInputLayout} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:counterTextAppearance
+        */
+        public static final int TextInputLayout_counterTextAppearance = 8;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#errorEnabled}
+          attribute's value can be found in the {@link #TextInputLayout} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:errorEnabled
+        */
+        public static final int TextInputLayout_errorEnabled = 4;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#errorTextAppearance}
+          attribute's value can be found in the {@link #TextInputLayout} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:errorTextAppearance
+        */
+        public static final int TextInputLayout_errorTextAppearance = 5;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#hintAnimationEnabled}
+          attribute's value can be found in the {@link #TextInputLayout} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:hintAnimationEnabled
+        */
+        public static final int TextInputLayout_hintAnimationEnabled = 10;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#hintEnabled}
+          attribute's value can be found in the {@link #TextInputLayout} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:hintEnabled
+        */
+        public static final int TextInputLayout_hintEnabled = 3;
+        /**
+          <p>This symbol is the offset where the {@link Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01.R.attr#hintTextAppearance}
+          attribute's value can be found in the {@link #TextInputLayout} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01:hintTextAppearance
+        */
+        public static final int TextInputLayout_hintTextAppearance = 2;
         /** Attributes that can be used with a Toolbar.
            <p>Includes the following attributes:</p>
            <table>

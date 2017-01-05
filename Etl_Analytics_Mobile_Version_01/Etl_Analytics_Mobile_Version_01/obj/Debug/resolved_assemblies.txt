@@ -13,6 +13,7 @@ C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics
 C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\android\assets\Refractored.PagerSlidingTabStrip.dll
 C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\android\assets\RestSharp.dll
 C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\android\assets\Xamarin.Android.Support.Animated.Vector.Drawable.dll
+C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\android\assets\Xamarin.Android.Support.Design.dll
 C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\android\assets\Xamarin.Android.Support.v4.dll
 C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\android\assets\Xamarin.Android.Support.v7.AppCompat.dll
 C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\android\assets\Xamarin.Android.Support.v7.CardView.dll
