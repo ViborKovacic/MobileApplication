@@ -1,29 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <LinearLayout
+        android:id="@+id/LinearLayoutContainer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-        <RelativeLayout
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:background="#FF00897B">
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:background="#101010" />
-            <EditText
-                android:id="@+id/etSearch"
-                android:layout_height="wrap_content"
-                android:layout_width="150dp"
-                android:hint="Search table"
-                android:textColor="#FFF"
-                android:textSize="10dp"
-                android:textColorHint="#FFF"
-                android:layout_marginLeft="10dp" />
-        </RelativeLayout>
         <LinearLayout
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
@@ -98,4 +81,15 @@
             android:divider="#101010"
             android:dividerHeight="1dp" />
     </LinearLayout>
-</LinearLayout>
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:hint="Search table"
+        android:textColor="#FFF"
+        android:textSize="10dp"
+        android:textColorHint="#FFF"
+        android:layout_marginLeft="10dp"
+        android:gravity="left"
+        android:layout_marginTop="2dp" />
+</FrameLayout>

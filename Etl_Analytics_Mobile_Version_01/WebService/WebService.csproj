@@ -203,7 +203,6 @@
     <Compile Include="Controllers\ParametersVariableController.cs" />
     <Compile Include="Controllers\StatsColumnsController.cs" />
     <Compile Include="Controllers\StatsTablesController.cs" />
-    <Compile Include="Controllers\TableNamesController.cs" />
     <Compile Include="Controllers\UserTableController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="DAL\GetDataFromDatabase.cs" />
@@ -218,7 +217,6 @@
     <Compile Include="Models\ParametersVariable.cs" />
     <Compile Include="Models\StatsColumns.cs" />
     <Compile Include="Models\StatsTables.cs" />
-    <Compile Include="Models\TableNames.cs" />
     <Compile Include="Models\UserTable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

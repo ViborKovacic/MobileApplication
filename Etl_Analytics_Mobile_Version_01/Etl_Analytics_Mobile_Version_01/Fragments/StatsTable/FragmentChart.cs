@@ -49,7 +49,7 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
             base.OnCreate(savedInstanceState);
 
             // Create your fragment here
-            
+
             listOfEntry = new List<float>();
             listTableNames = new List<string>();
             webService = new WebService();
@@ -64,7 +64,7 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
             chartError = view.FindViewById<BarChart>(Resource.Id.chartError);
             mTextAllTable = view.FindViewById<TextView>(Resource.Id.txtAllTable);
             mTextSuccess = view.FindViewById<TextView>(Resource.Id.textSuccess);
-            mTextError = view.FindViewById<TextView>(Resource.Id.textError);            
+            mTextError = view.FindViewById<TextView>(Resource.Id.textError);
 
             mActionBarView = inflater.Inflate(Resource.Layout.Action_bar, container, false);
             //mImageViewChart = mActionBarView.FindViewById<ImageView>(Resource.Id.imageChart);
@@ -104,7 +104,7 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
 
         private void ChartAllTables_Click(object sender, EventArgs e)
         {
-            var trans = FragmentManager.BeginTransaction(); 
+            var trans = FragmentManager.BeginTransaction();
             ChartAllTablesDialog chartAllTablesDialog = new ChartAllTablesDialog();
             chartAllTablesDialog.Show(trans, "Dialog Fragment");
         }
@@ -162,7 +162,7 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
 
             LimitLine limitLine = new LimitLine(70f);
             limitLine.LineColor = Color.DarkRed;
-            limitLine.Enabled = true;        
+            limitLine.Enabled = true;
 
             XAxis xAxis = chartAllTables.XAxis;
             xAxis.SetDrawLabels(false);

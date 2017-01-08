@@ -23,7 +23,7 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments.StatsColumnsFragments
         private WebService webService;
         private StatsColumnsAdapter mTableAdapter;
         private EditText mSearch;
-        private ImageButton mImageButton;
+        private LinearLayout mConatainer;
         private Context mContext;
         public override void OnCreate(Bundle savedInstanceState)
         {
@@ -39,12 +39,8 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments.StatsColumnsFragments
             view = inflater.Inflate(Resource.Layout.StatsColumnsAllTable, container, false);
             mListView = view.FindViewById<ListView>(Resource.Id.listViewStatsColumns);
             mSearch = view.FindViewById<EditText>(Resource.Id.etSearch);
-            //mImageButton = view.FindViewById<ImageButton>(Resource.Id.SearchImage);
+            mConatainer = view.FindViewById<LinearLayout>(Resource.Id.LinearLayoutContainer);
             mContext = container.Context;
-
-            //mSearch.Alpha = 0;
-
-            //mImageButton.Click += MImageButton_Click;
 
             mListStatsColumns = webService.GetAllDataStatsColumns();
 
@@ -56,22 +52,46 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments.StatsColumnsFragments
             return view;
         }
 
-        //private void MImageButton_Click(object sender, EventArgs e)
-        //{
-        //    throw new NotImplementedException();
-        //}
-
         private void MSearch_TextChanged(object sender, Android.Text.TextChangedEventArgs e)
         {
             List<StatsColumns> searchedStatsColumns = (from row in mListStatsColumns
-                                                       where row.TABLE_NAME.Contains(mSearch.Text, StringComparison.OrdinalIgnoreCase) 
-                                                       || row.COLUMN_NAME.Contains(mSearch.Text, StringComparison.OrdinalIgnoreCase) 
-                                                       || row.DATE_ID.ToString().Contains(mSearch.Text, StringComparison.OrdinalIgnoreCase) 
+                                                       where row.TABLE_NAME.Contains(mSearch.Text, StringComparison.OrdinalIgnoreCase)
+                                                       || row.COLUMN_NAME.Contains(mSearch.Text, StringComparison.OrdinalIgnoreCase)
+                                                       || row.DATE_ID.ToString().Contains(mSearch.Text, StringComparison.OrdinalIgnoreCase)
                                                        || row.FILL_PERCENTAGE.ToString().Contains(mSearch.Text, StringComparison.OrdinalIgnoreCase)
                                                        select row).ToList<StatsColumns>();
 
             mTableAdapter = new StatsColumnsAdapter(mContext, Resource.Layout.StatsColumnsRow, searchedStatsColumns);
             mListView.Adapter = mTableAdapter;
+        }
+
+        public override void OnCreateOptionsMenu(IMenu menu, MenuInflater inflater)
+        {
+            inflater.Inflate(Resource.Menu.action_menu, menu);
+            base.OnCreateOptionsMenu(menu, inflater);
+        }
+
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            switch (item.ItemId)
+            {
+                case Resource.Id.search:
+                    MyAnimation anim = new MyAnimation(mListView, mListView.Height - mSearch.Height);
+                    anim.Duration = 500;
+                    mListView.StartAnimation(anim);
+
+                    anim.AnimationStart += Anim_AnimationStartDown;
+                    mConatainer.Animate().TranslationYBy(-mSearch.Height).SetDuration(500).Start();
+
+                    return true;
+                default:
+                    return base.OnOptionsItemSelected(item);
+            }
+        }
+
+        private void Anim_AnimationStartDown(object sender, Android.Views.Animations.Animation.AnimationStartEventArgs e)
+        {
+            throw new NotImplementedException();
         }
     }
 }

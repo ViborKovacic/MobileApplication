@@ -85,24 +85,12 @@ namespace WebService.DAL
             return jsonArray;
         }
 
-        public object ProcedureGetDataFromColumnName(string owner, string table_name)
+        public object ProcedureGetDataFromColumnName(string table_name)
         {
             var paramOut = new OracleDynamicParameters();
             paramOut.Add("vTableName", dbType: OracleDbType.Varchar2, value: table_name, direction: ParameterDirection.Input);
-            paramOut.Add("vOwner", dbType: OracleDbType.Varchar2, value: owner, direction: ParameterDirection.Input);
             paramOut.Add("c_cursor", dbType: OracleDbType.RefCursor, direction: ParameterDirection.Output);
             List<ColumnName> stateTable = conn.Query<ColumnName>("INSITE_DEMO.SEND_ANALYTICS_DATA.CATCH_COLUMN_NAME", paramOut, commandType: CommandType.StoredProcedure).ToList();
-            var json = JsonConvert.SerializeObject(stateTable);
-            var jsonArray = JArray.Parse(json);
-            return jsonArray;
-        }
-
-        public object ProcedureGetDataFromTableName(string owner)
-        {
-            var paramOut = new OracleDynamicParameters();
-            paramOut.Add("vOwner", dbType: OracleDbType.Varchar2, value: owner, direction: ParameterDirection.Input);
-            paramOut.Add("c_cursor", dbType: OracleDbType.RefCursor, direction: ParameterDirection.Output);
-            List<TableNames> stateTable = conn.Query<TableNames>("INSITE_DEMO.SEND_ANALYTICS_DATA.CATCH_TABLE_NAMES", paramOut, commandType: CommandType.StoredProcedure).ToList();
             var json = JsonConvert.SerializeObject(stateTable);
             var jsonArray = JArray.Parse(json);
             return jsonArray;

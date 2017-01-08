@@ -39,13 +39,13 @@ namespace Etl_Analytics_Mobile_Version_01.Class
 
         public override int Count
         {
-            get{ return mPageNumber; }
+            get { return mPageNumber; }
         }
 
         public override FragmentSupport GetItem(int position)
         {
             if (mActivityName == "StastTable")
-            {            
+            {
                 switch (position)
                 {
                     case 0:
@@ -58,7 +58,7 @@ namespace Etl_Analytics_Mobile_Version_01.Class
                         return new FragmentChart();
                 }
             }
-            else if(mActivityName == "StatsColumns")
+            else
             {
                 switch (position)
                 {
@@ -71,10 +71,6 @@ namespace Etl_Analytics_Mobile_Version_01.Class
                     default:
                         return new FragmentStatsColumnsChart();
                 }
-            }
-            else
-            {
-                return null;
             }
         }
 
@@ -94,17 +90,35 @@ namespace Etl_Analytics_Mobile_Version_01.Class
             textView.Text = mTabNames[position];
             textView.SetTextColor(Color.ParseColor("#FFFFFF"));
 
-            switch (position)
+            if (mActivityName == "StastTable")
             {
-                case 0:
-                    image.SetImageResource(Resource.Drawable.barchart_icon);
-                    break;
-                case 1:
-                    image.SetImageResource(Resource.Drawable.list_icon);
-                    break;
-                case 2:
-                    image.SetImageResource(Resource.Drawable.table_icon);
-                    break;
+                switch (position)
+                {
+                    case 0:
+                        image.SetImageResource(Resource.Drawable.barchart_icon);
+                        break;
+                    case 1:
+                        image.SetImageResource(Resource.Drawable.list_icon);
+                        break;
+                    case 2:
+                        image.SetImageResource(Resource.Drawable.table_icon);
+                        break;
+                }
+            }
+            else
+            {
+                switch (position)
+                {
+                    case 0:
+                        image.SetImageResource(Resource.Drawable.pie_chart_icon);
+                        break;
+                    case 1:
+                        image.SetImageResource(Resource.Drawable.list_icon);
+                        break;
+                    case 2:
+                        image.SetImageResource(Resource.Drawable.table_icon);
+                        break;
+                }
             }
 
             return view;

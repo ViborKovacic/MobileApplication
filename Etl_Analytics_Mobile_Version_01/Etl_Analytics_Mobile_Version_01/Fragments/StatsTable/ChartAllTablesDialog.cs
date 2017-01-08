@@ -52,7 +52,7 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
             {
                 if (!listTableNames.Contains(row.table_name))
                 {
-                    listTableNames.Add(row.table_id + row.table_name);
+                    listTableNames.Add(row.table_name);
                 }
             }
 
@@ -133,9 +133,9 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
 
         public override void OnActivityCreated(Bundle savedInstanceState)
         {
-            Dialog.Window.RequestFeature(WindowFeatures.NoTitle); 
+            Dialog.Window.RequestFeature(WindowFeatures.NoTitle);
             base.OnActivityCreated(savedInstanceState);
-            Dialog.Window.Attributes.WindowAnimations = Resource.Style.dialog_animation; 
+            Dialog.Window.Attributes.WindowAnimations = Resource.Style.dialog_animation;
         }
     }
 }

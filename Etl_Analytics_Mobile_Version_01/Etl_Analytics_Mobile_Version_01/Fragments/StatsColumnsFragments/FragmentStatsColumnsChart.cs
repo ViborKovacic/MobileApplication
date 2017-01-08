@@ -36,7 +36,7 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments.StatsColumnsFragments
             mListStatsColumns = new List<StatsColumns>();
             webService = new WebService();
             mListStatsColumns = webService.GetAllDataStatsColumns();
-            
+
         }
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
@@ -60,13 +60,13 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments.StatsColumnsFragments
         private void MyPieChart()
         {
             sumOfLowOccupancy = (from table in mListStatsColumns
-                                     where table.LOW_OCCUPANCY.Contains("YES", StringComparison.OrdinalIgnoreCase)
-                                     select table).Count();
+                                 where table.LOW_OCCUPANCY.Contains("YES", StringComparison.OrdinalIgnoreCase)
+                                 select table).Count();
 
 
             sumOfHighOccupancy = (from table in mListStatsColumns
-                                      where table.LOW_OCCUPANCY.Contains("NO", StringComparison.OrdinalIgnoreCase)
-                                      select table).Count();
+                                  where table.LOW_OCCUPANCY.Contains("NO", StringComparison.OrdinalIgnoreCase)
+                                  select table).Count();
 
             resoultHighOccupancy = (sumOfHighOccupancy / sumOfLowOccupancy) * 100;
 
@@ -105,7 +105,7 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments.StatsColumnsFragments
 
             mPieChart.RotationAngle = 0;
             mPieChart.RotationEnabled = true;
-            
+
             mPieChart.HighlightPerTapEnabled = true;
 
             mPieChart.AnimateY(2000, Easing.EasingOption.EaseInOutQuad);

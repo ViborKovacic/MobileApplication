@@ -9,8 +9,7 @@
         android:layout_width="match_parent"
         android:orientation="horizontal"
         android:background="#E2E2E2"
-        android:weightSum="100"
-        android:gravity="center_horizontal">
+        android:weightSum="100">
         <TextView
             android:text="Table name"
             android:layout_height="wrap_content"
@@ -18,8 +17,7 @@
             android:layout_weight="16.6"
             android:gravity="center"
             android:textColor="#000"
-            android:textSize="12dp"
-            android:textStyle="bold" />
+            android:textSize="16sp" />
         <TextView
             android:text="Date"
             android:layout_height="wrap_content"
@@ -27,17 +25,15 @@
             android:layout_weight="16.6"
             android:gravity="center"
             android:textColor="#000"
-            android:textSize="12dp"
-            android:textStyle="bold" />
+            android:textSize="16sp" />
         <TextView
             android:text="Null columns"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:layout_weight="16.6"
-            android:gravity="center_horizontal"
+            android:gravity="center"
             android:textColor="#000"
-            android:textSize="12dp"
-            android:textStyle="bold" />
+            android:textSize="16sp" />
         <TextView
             android:text="Amount of data"
             android:layout_height="wrap_content"
@@ -45,8 +41,7 @@
             android:layout_weight="16.6"
             android:gravity="center"
             android:textColor="#000"
-            android:textSize="12dp"
-            android:textStyle="bold" />
+            android:textSize="16sp" />
         <TextView
             android:text="Difference"
             android:layout_height="wrap_content"
@@ -54,8 +49,7 @@
             android:layout_weight="16.6"
             android:gravity="center"
             android:textColor="#000"
-            android:textSize="12dp"
-            android:textStyle="bold" />
+            android:textSize="16sp" />
         <TextView
             android:text="Big deviation"
             android:layout_height="wrap_content"
@@ -63,8 +57,7 @@
             android:layout_weight="16.6"
             android:gravity="center"
             android:textColor="#000"
-            android:textSize="12dp"
-            android:textStyle="bold" />
+            android:textSize="16sp" />
     </LinearLayout>
     <View
         android:layout_height="2dp"
