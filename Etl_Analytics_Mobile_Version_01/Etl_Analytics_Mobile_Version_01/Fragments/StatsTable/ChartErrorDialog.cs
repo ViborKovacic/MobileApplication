@@ -10,6 +10,7 @@ using System;
 using Android.Graphics;
 using MikePhil.Charting.Components;
 using MikePhil.Charting.Highlight;
+using MikePhil.Charting.Util;
 
 namespace Etl_Analytics_Mobile_Version_01.Fragments.StatsTable
 {
@@ -70,14 +71,19 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments.StatsTable
                 dicOfDataSets.Add(table, barEntry);
             }
 
+            int[] chartColors = ColorTemplate.ColorfulColors.ToArray();
+            int counterColor = 0;
+
             BarData data = new BarData();
 
             foreach (KeyValuePair<string, List<BarEntry>> dicDataSet in dicOfDataSets)
             {
                 dataSet = new BarDataSet(dicDataSet.Value, dicDataSet.Key);
-                dataSet.SetColor(Color.DarkRed, 200);
+                dataSet.SetColors(chartColors[counterColor]);
                 data.AddDataSet(dataSet);
+                counterColor++;
             }
+
             XAxis xAxis = chartError.XAxis;
             xAxis.SetCenterAxisLabels(false);
             xAxis.SetDrawLabels(false);

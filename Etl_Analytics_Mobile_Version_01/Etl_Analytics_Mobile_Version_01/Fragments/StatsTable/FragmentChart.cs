@@ -17,18 +17,19 @@ using Java.Util;
 using MikePhil.Charting.Components;
 using MikePhil.Charting.Util;
 using Android.Graphics.Drawables;
+using Android.Support.V4.View;
+using Android.Views.InputMethods;
 
 namespace Etl_Analytics_Mobile_Version_01.Fragments
 {
     public class FragmentChart : Android.Support.V4.App.Fragment
     {
         private View view;
-        private View mActionBarView;
 
-        private Dictionary<string, List<BarEntry>> dicOfDataSets;
-        private List<float> listOfEntry;
-        private List<string> listTableNames;
-        private List<StatsTables> listStatsTables;
+        private Dictionary<string, List<BarEntry>> mDicOfDataSets;
+        private List<float> mListOfEntry;
+        private List<string> mListTableNames;
+        private List<StatsTables> mListStatsTables;
 
         private WebService webService;
 
@@ -40,20 +41,27 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
         private TextView mTextAllTable;
         private TextView mTextSuccess;
         private TextView mTextError;
-
-        private ImageView mImageViewChart;
-        private ImageView mImageViewAction;
-        private ImageView mImageViewTable;
         public override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
             // Create your fragment here
 
-            listOfEntry = new List<float>();
-            listTableNames = new List<string>();
+            mListOfEntry = new List<float>();
+            mListTableNames = new List<string>();
             webService = new WebService();
-            listStatsTables = webService.GetAllDataStatsTable();
+            mListStatsTables = new List<StatsTables>();
+            string test = Arguments.GetString("StatsTable");
+
+            if (test == "Yes")
+            {
+                SearchList list = new SearchList();
+                mListStatsTables = list.GetDataFromSearchListStatsTable();
+            }
+            else
+            {
+                mListStatsTables = webService.GetAllDataStatsTable();
+            }            
         }
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
@@ -65,13 +73,6 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
             mTextAllTable = view.FindViewById<TextView>(Resource.Id.txtAllTable);
             mTextSuccess = view.FindViewById<TextView>(Resource.Id.textSuccess);
             mTextError = view.FindViewById<TextView>(Resource.Id.textError);
-
-            mActionBarView = inflater.Inflate(Resource.Layout.Action_bar, container, false);
-            //mImageViewChart = mActionBarView.FindViewById<ImageView>(Resource.Id.imageChart);
-            //mImageViewAction = mActionBarView.FindViewById<ImageView>(Resource.Id.imageAction);
-            //mImageViewTable = mActionBarView.FindViewById<ImageView>(Resource.Id.imageTable);
-
-            //mImageViewChart.SetImageResource(Resource.Drawable.barchart_icon);
 
             mTextAllTable.Text = "All tables chart";
             mTextSuccess.Text = "Success tables chart";
@@ -88,6 +89,17 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
             return view;
         }
 
+        public override void OnActivityCreated(Bundle savedInstanceState)
+        {
+            base.OnActivityCreated(savedInstanceState);
+            HasOptionsMenu = true;
+        }
+
+        public override void OnCreateOptionsMenu(IMenu menu, MenuInflater inflater)
+        {
+            inflater.Inflate(Resource.Menu.fragmentChartToolBar, menu);
+            base.OnCreateOptionsMenu(menu, inflater);
+        }
         private void ChartError_Click(object sender, EventArgs e)
         {
             var trans = FragmentManager.BeginTransaction();
@@ -111,23 +123,23 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
 
         private void ChartAllTables()
         {
-            dicOfDataSets = new Dictionary<string, List<BarEntry>>();
+            mDicOfDataSets = new Dictionary<string, List<BarEntry>>();
 
-            foreach (StatsTables row in listStatsTables)
+            foreach (StatsTables row in mListStatsTables)
             {
-                if (!listTableNames.Contains(row.table_name))
+                if (!mListTableNames.Contains(row.table_name))
                 {
-                    listTableNames.Add(row.table_name);
+                    mListTableNames.Add(row.table_name);
                 }
             }
 
             int counter = 0;
 
 
-            foreach (string table in listTableNames)
+            foreach (string table in mListTableNames)
             {
                 List<BarEntry> barEntry = new List<BarEntry>();
-                foreach (StatsTables item in listStatsTables)
+                foreach (StatsTables item in mListStatsTables)
                 {
                     if (table == item.table_name)
                     {
@@ -135,12 +147,14 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
                         counter++;
                     }
                 }
-                dicOfDataSets.Add(table, barEntry);
+                mDicOfDataSets.Add(table, barEntry);
             }
 
             BarData data = new BarData();
 
-            foreach (KeyValuePair<string, List<BarEntry>> dicDataSet in dicOfDataSets)
+            int[] chartColors = { Color.DarkRed, Color.DarkGreen };
+
+            foreach (KeyValuePair<string, List<BarEntry>> dicDataSet in mDicOfDataSets)
             {
                 dataSet = new BarDataSet(dicDataSet.Value, dicDataSet.Key);
 
@@ -148,13 +162,13 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
                 {
                     if (item.GetY() > 70)
                     {
-                        dataSet.SetColor(Color.DarkRed, 200);
+                        dataSet.SetColors(chartColors[0]);
 
                     }
 
                     else
                     {
-                        dataSet.AddColor(Color.DarkGreen);
+                        dataSet.SetColors(chartColors[1]);
                     }
                 }
                 data.AddDataSet(dataSet);
@@ -190,23 +204,23 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
 
         private void ChartSuccess()
         {
-            dicOfDataSets = new Dictionary<string, List<BarEntry>>();
+            mDicOfDataSets = new Dictionary<string, List<BarEntry>>();
 
-            List<StatsTables> searchedTable = (from table in listStatsTables
+            List<StatsTables> searchedTable = (from table in mListStatsTables
                                                where table.big_deviation.Contains("NO", StringComparison.OrdinalIgnoreCase)
                                                select table).ToList<StatsTables>();
 
             foreach (StatsTables row in searchedTable)
             {
-                if (!listTableNames.Contains(row.table_name))
+                if (!mListTableNames.Contains(row.table_name))
                 {
-                    listTableNames.Add(row.table_name);
+                    mListTableNames.Add(row.table_name);
                 }
             }
 
             int counter = 0;
 
-            foreach (string table in listTableNames)
+            foreach (string table in mListTableNames)
             {
                 List<BarEntry> barEntry = new List<BarEntry>();
                 foreach (StatsTables item in searchedTable)
@@ -217,17 +231,18 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
                         counter++;
                     }
                 }
-                dicOfDataSets.Add(table, barEntry);
+                mDicOfDataSets.Add(table, barEntry);
             }
 
             BarData data = new BarData();
 
-            foreach (KeyValuePair<string, List<BarEntry>> dicDataSet in dicOfDataSets)
+            foreach (KeyValuePair<string, List<BarEntry>> dicDataSet in mDicOfDataSets)
             {
                 dataSet = new BarDataSet(dicDataSet.Value, dicDataSet.Key);
                 dataSet.SetColor(Color.DarkGreen, 200);
                 data.AddDataSet(dataSet);
             }
+
             XAxis xAxis = chartSuccess.XAxis;
             xAxis.SetCenterAxisLabels(false);
             xAxis.SetDrawLabels(false);
@@ -252,23 +267,23 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
 
         private void ChartError()
         {
-            dicOfDataSets = new Dictionary<string, List<BarEntry>>();
+            mDicOfDataSets = new Dictionary<string, List<BarEntry>>();
 
-            List<StatsTables> searchedTable = (from table in listStatsTables
+            List<StatsTables> searchedTable = (from table in mListStatsTables
                                                where table.big_deviation.Contains("YES", StringComparison.OrdinalIgnoreCase)
                                                select table).ToList<StatsTables>();
 
             foreach (StatsTables row in searchedTable)
             {
-                if (!listTableNames.Contains(row.table_name))
+                if (!mListTableNames.Contains(row.table_name))
                 {
-                    listTableNames.Add(row.table_name);
+                    mListTableNames.Add(row.table_name);
                 }
             }
 
             int counter = 0;
 
-            foreach (string table in listTableNames)
+            foreach (string table in mListTableNames)
             {
                 List<BarEntry> barEntry = new List<BarEntry>();
                 foreach (StatsTables item in searchedTable)
@@ -279,17 +294,18 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
                         counter++;
                     }
                 }
-                dicOfDataSets.Add(table, barEntry);
+                mDicOfDataSets.Add(table, barEntry);
             }
 
             BarData data = new BarData();
 
-            foreach (KeyValuePair<string, List<BarEntry>> dicDataSet in dicOfDataSets)
+            foreach (KeyValuePair<string, List<BarEntry>> dicDataSet in mDicOfDataSets)
             {
                 dataSet = new BarDataSet(dicDataSet.Value, dicDataSet.Key);
                 dataSet.SetColor(Color.DarkRed, 200);
                 data.AddDataSet(dataSet);
             }
+
             XAxis xAxis = chartError.XAxis;
             xAxis.SetCenterAxisLabels(false);
             xAxis.SetDrawLabels(false);

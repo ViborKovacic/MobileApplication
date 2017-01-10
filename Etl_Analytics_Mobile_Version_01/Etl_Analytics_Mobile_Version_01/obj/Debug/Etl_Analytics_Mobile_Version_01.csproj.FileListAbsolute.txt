@@ -995,7 +995,6 @@ C:\Users\raing\Desktop\App\V_01\MobileApplication\Etl_Analytics_Mobile_Version_0
 C:\Users\raing\Desktop\App\V_01\MobileApplication\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\drawable\ic_action_read.png
 C:\Users\raing\Desktop\App\V_01\MobileApplication\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\anim\slideupcardview.xml
 C:\Users\raing\Desktop\App\V_01\MobileApplication\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\values\mythemestyles.xml
-C:\Users\raing\Desktop\App\V_01\MobileApplication\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\menu\action_menu.xml
 C:\Users\raing\Desktop\App\V_01\MobileApplication\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\drawable\ic_action_help.png
 C:\Users\raing\Desktop\App\V_01\MobileApplication\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\drawable\ic_action_refresh.png
 C:\Users\raing\Desktop\App\V_01\MobileApplication\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\drawable\mojaslikica
@@ -1005,10 +1004,11 @@ C:\Users\raing\Desktop\App\V_01\MobileApplication\Etl_Analytics_Mobile_Version_0
 C:\Users\raing\Desktop\App\V_01\MobileApplication\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\drawable\piechart_icon.jpg
 C:\Users\raing\Desktop\App\V_01\MobileApplication\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\drawable\table_icon.png
 C:\Users\raing\Desktop\App\V_01\MobileApplication\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\layout\actionbartab.xml
+C:\Users\raing\Desktop\App\V_01\MobileApplication\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\layout\toolbar.xml
 C:\Users\raing\Desktop\App\V_01\MobileApplication\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\R.cs.flag
 C:\Users\raing\Desktop\App\V_01\MobileApplication\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\uploadflags.txt
+C:\Users\raing\Desktop\App\V_01\MobileApplication\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\menu\fragmentcharttoolbar.xml
 C:\Users\raing\Desktop\App\V_01\MobileApplication\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\Etl_Analytics_Mobile_Version_01.dll.mdb
-C:\Users\raing\Desktop\App\V_01\MobileApplication\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\Etl_Analytics_Mobile_Version_01.csprojResolveAssemblyReference.cache
 C:\Users\raing\Desktop\App\V_01\MobileApplication\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\Java.Interop.dll.mdb
 C:\Users\raing\Desktop\App\V_01\MobileApplication\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\Microsoft.CSharp.dll.mdb
 C:\Users\raing\Desktop\App\V_01\MobileApplication\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\Mono.Android.dll.mdb
@@ -1040,6 +1040,8 @@ C:\Users\raing\Desktop\App\V_01\MobileApplication\Etl_Analytics_Mobile_Version_0
 C:\Users\raing\Desktop\App\V_01\MobileApplication\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\android\assets\System.ServiceModel.Internals.dll.mdb
 C:\Users\raing\Desktop\App\V_01\MobileApplication\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\android\assets\System.Xml.dll.mdb
 C:\Users\raing\Desktop\App\V_01\MobileApplication\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
-C:\Users\raing\Desktop\App\V_01\MobileApplication\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\layout\toolbar.xml
+C:\Users\raing\Desktop\App\V_01\MobileApplication\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\Etl_Analytics_Mobile_Version_01.csprojResolveAssemblyReference.cache
+C:\Users\raing\Desktop\App\V_01\MobileApplication\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\menu\fragmentalltable.xml
+C:\Users\raing\Desktop\App\V_01\MobileApplication\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\menu\fragmentaction.xml
 C:\Users\raing\Desktop\App\V_01\MobileApplication\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\Etl_Analytics_Mobile_Version_01.dll.mdb
 C:\Users\raing\Desktop\App\V_01\MobileApplication\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\Etl_Analytics_Mobile_Version_01.dll.mdb

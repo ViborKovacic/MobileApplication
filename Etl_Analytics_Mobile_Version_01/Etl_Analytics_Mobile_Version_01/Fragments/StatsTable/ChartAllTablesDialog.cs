@@ -17,6 +17,7 @@ using MikePhil.Charting.Data;
 using Android.Graphics;
 using Android.Support.V4.App;
 using MikePhil.Charting.Components;
+using MikePhil.Charting.Util;
 
 namespace Etl_Analytics_Mobile_Version_01.Fragments
 {
@@ -75,25 +76,15 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
 
             BarData data = new BarData();
 
+            int[] chartColors = ColorTemplate.ColorfulColors.ToArray();
+            int colorCounter = 0;
+
             foreach (KeyValuePair<string, List<BarEntry>> dicDataSet in dicOfDataSets)
             {
                 dataSet = new BarDataSet(dicDataSet.Value, dicDataSet.Key);
-
-                foreach (BarEntry item in dicDataSet.Value)
-                {
-                    if (item.GetY() > 70)
-                    {
-                        dataSet.SetColor(Color.DarkRed, 200);
-
-                    }
-
-                    else
-                    {
-                        dataSet.AddColor(Color.DarkGreen);
-                    }
-                }
-
+                dataSet.SetColors(chartColors[colorCounter]);
                 data.AddDataSet(dataSet);
+                colorCounter++;
             }
 
             LimitLine limitLine = new LimitLine(70f);

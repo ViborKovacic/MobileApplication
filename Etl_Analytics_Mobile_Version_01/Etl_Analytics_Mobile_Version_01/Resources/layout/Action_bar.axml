@@ -1,27 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/linearLayoutActionBar"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="10">
-  <include
-      layout="@layout/Toolbar" />
-  <View
+    android:layout_width="match_parent">
+  <LinearLayout
+      android:id="@+id/linearLayoutActionBar"
+      android:orientation="vertical"
       android:layout_width="match_parent"
-      android:layout_height="0.5dp"
-      android:background="#101010" />
-  <android.support.design.widget.TabLayout
-      android:id="@+id/slidingTabsActionBar"
-      android:layout_width="match_parent"
-      android:layout_height="60dp"
-      android:background="@drawable/selector"
-      app:tabGravity="fill"
-      app:tabMode="fixed" />
-  <android.support.v4.view.ViewPager
-      android:id="@+id/pagerActionBar"
-      android:layout_width="match_parent"
-      android:layout_height="0dp"
-      android:layout_weight="10" />
-</LinearLayout>
+      android:layout_height="match_parent"
+      android:weightSum="10">
+    <include
+        layout="@layout/Toolbar" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#101010" />
+    <android.support.design.widget.TabLayout
+        android:id="@+id/slidingTabsActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/selector"
+        app:tabGravity="fill"
+        app:tabMode="fixed" />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pagerActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10" />
+  </LinearLayout>
+  <EditText
+    android:id="@+id/etSearch"
+    android:layout_height="wrap_content"
+    android:layout_width="150dp"
+    android:hint="Search table"
+    android:textColor="#000"
+    android:textSize="10dp"
+    android:textColorHint="#000"
+    android:layout_marginLeft="10dp"
+    android:gravity="left"
+    android:layout_marginTop="2dp" />
+</FrameLayout>

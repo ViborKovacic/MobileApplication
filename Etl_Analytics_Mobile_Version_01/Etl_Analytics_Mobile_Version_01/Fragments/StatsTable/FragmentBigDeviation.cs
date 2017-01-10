@@ -39,5 +39,17 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
             mListView.Adapter = mStatsTableAdapter;
             return view;
         }
+
+        public override void OnActivityCreated(Bundle savedInstanceState)
+        {
+            base.OnActivityCreated(savedInstanceState);
+            HasOptionsMenu = true;
+        }
+
+        public override void OnCreateOptionsMenu(IMenu menu, MenuInflater inflater)
+        {
+            inflater.Inflate(Resource.Menu.fragmentAction, menu);
+            base.OnCreateOptionsMenu(menu, inflater);
+        }
     }
 }

@@ -67,7 +67,7 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments.StatsColumnsFragments
 
         public override void OnCreateOptionsMenu(IMenu menu, MenuInflater inflater)
         {
-            inflater.Inflate(Resource.Menu.action_menu, menu);
+            inflater.Inflate(Resource.Menu.fragmentAllTable, menu);
             base.OnCreateOptionsMenu(menu, inflater);
         }
 

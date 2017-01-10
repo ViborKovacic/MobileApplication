@@ -75,11 +75,15 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments.StatsTable
 
             BarData data = new BarData();
 
+            int[] chartColors = ColorTemplate.ColorfulColors.ToArray();
+            int counterColor = 0;
+
             foreach (KeyValuePair<string, List<BarEntry>> dicDataSet in dicOfDataSets)
             {
                 dataSet = new BarDataSet(dicDataSet.Value, dicDataSet.Key);
-                dataSet.SetColor(Color.DarkGreen, 200);
+                dataSet.SetColors(chartColors[counterColor]);
                 data.AddDataSet(dataSet);
+                counterColor++;
             }
 
             XAxis xAxis = chartSuccess.XAxis;
