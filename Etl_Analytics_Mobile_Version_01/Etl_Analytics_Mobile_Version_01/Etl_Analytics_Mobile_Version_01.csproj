@@ -67,6 +67,9 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Web.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
     <Reference Include="Xamarin.Android.Support.Animated.Vector.Drawable, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -101,11 +104,13 @@
   <ItemGroup>
     <Compile Include="AllActivity\DrawerLayoutActionBar.cs" />
     <Compile Include="AllActivity\LoadingScreen.cs" />
+    <Compile Include="AllActivity\ConfigTablesAct.cs" />
     <Compile Include="AllActivity\MainPageAct.cs" />
+    <Compile Include="AllActivity\StatsColumnsAct.cs" />
     <Compile Include="AllActivity\StatsTableAct.cs" />
+    <Compile Include="AllActivity\TestStatsTableAct.cs" />
     <Compile Include="AllActivity\UserTableAct.cs" />
     <Compile Include="Class\ActionBarFragmentAdapter.cs" />
-    <Compile Include="Class\SearchList.cs" />
     <Compile Include="Class\ExpandableListViewAdapter.cs" />
     <Compile Include="Class\ExtMethods.cs" />
     <Compile Include="Class\Fragment2RecycleAdapter.cs" />
@@ -118,6 +123,10 @@
     <Compile Include="Class\MyView2.cs" />
     <Compile Include="Class\OnSignUpEventArgs.cs" />
     <Compile Include="Class\RecyclerAdapter.cs" />
+    <Compile Include="Class\SearchList.cs" />
+    <Compile Include="Class\SlidingTabScrollView.cs" />
+    <Compile Include="Class\SlidingTabsFragment.cs" />
+    <Compile Include="Class\SlidingTabStrip.cs" />
     <Compile Include="Class\StatsColumnsAdapter.cs" />
     <Compile Include="Class\StatsTableAdapter.cs" />
     <Compile Include="Class\Table Constructor\ColumnName.cs" />
@@ -127,13 +136,14 @@
     <Compile Include="Class\Table Constructor\TableName.cs" />
     <Compile Include="Class\Table Constructor\UserTable.cs" />
     <Compile Include="Class\WebService.cs" />
-    <Compile Include="Fragments\Fragment1.cs" />
-    <Compile Include="Fragments\Fragment2.cs" />
     <Compile Include="Fragments\StatsColumnsFragments\FragmentStatsColumnsAllTable.cs" />
     <Compile Include="Fragments\StatsColumnsFragments\FragmentStatsColumnsChart.cs" />
+    <Compile Include="Fragments\StatsColumnsFragments\PieChartDialog.cs" />
+    <Compile Include="Fragments\StatsTable\ChartAllTablesDialog.cs" />
+    <Compile Include="Fragments\Fragment1.cs" />
+    <Compile Include="Fragments\Fragment2.cs" />
     <Compile Include="Fragments\StatsTable\ChartErrorDialog.cs" />
     <Compile Include="Fragments\StatsTable\ChartSuccessDialog.cs" />
-    <Compile Include="Fragments\StatsTable\ChartAllTablesDialog.cs" />
     <Compile Include="Fragments\StatsTable\FragmentAllTable.cs" />
     <Compile Include="Fragments\StatsTable\FragmentBigDeviation.cs" />
     <Compile Include="Fragments\StatsTable\FragmentChart.cs" />
@@ -183,9 +193,6 @@
     <AndroidResource Include="Resources\layout\Action_bar.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\StatsTable.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
     <AndroidResource Include="Resources\layout\LogTableChart.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
@@ -193,9 +200,6 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\StatsTableRow.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
-    <AndroidResource Include="Resources\layout\Graph.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\UserTableMain.axml">
@@ -228,6 +232,18 @@
     <AndroidResource Include="Resources\layout\Fragment2RowCardView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\StatsTableGraph.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ChartAllTablesDialog.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ChartSuccessDialog.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ChartErrorDialog.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
     <AndroidResource Include="Resources\layout\StatsColumnsGraph.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
@@ -235,18 +251,6 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\StatsColumnsRow.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
-    <AndroidResource Include="Resources\layout\ChartErrorDialog.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
-    <AndroidResource Include="Resources\layout\ChartSuccessDialog.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
-    <AndroidResource Include="Resources\layout\ChartAllTablesDialog.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
-    <AndroidResource Include="Resources\layout\StatsTableGraph.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -386,7 +390,7 @@
     <AndroidResource Include="Resources\values\MyThemeStyles.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\menu\fragmentAllTable.xml">
+    <AndroidResource Include="Resources\menu\action_menu.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -400,19 +404,13 @@
     <AndroidResource Include="Resources\drawable\mojaslikica" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\barchart_icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\list_icon.png" />
+    <AndroidResource Include="Resources\drawable\piechart_icon.jpg" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\pie_chart_icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\piechart_icon.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\table_icon.png" />
+    <AndroidResource Include="Resources\drawable\barchart_icon.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\ActionBarTab.xml">
@@ -420,10 +418,19 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
+    <AndroidResource Include="Resources\drawable\list_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\table_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
     <AndroidResource Include="Resources\layout\Toolbar.xml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\menu\fragmentChartToolBar.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\menu\fragmentAllTable.xml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\menu\fragmentAction.xml" />

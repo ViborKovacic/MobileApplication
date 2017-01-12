@@ -71,12 +71,12 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
                 //Opening LogTable list
                 if ("Log table" == gridViewString[ed.Position])
                 {
-                    Intent intent = new Intent(this, typeof(StatsColumns));
+                    Intent intent = new Intent(this, typeof(TestStatsTableAct));
                     this.StartActivity(intent);
                 }
                 else if ("Configuration table" == gridViewString[ed.Position])
                 {
-                    Intent intent = new Intent(this, typeof(StatsColumns));
+                    Intent intent = new Intent(this, typeof(ConfigTablesAct));
                     this.StartActivity(intent);
                 }
                 else if ("Stats tables" == gridViewString[ed.Position])

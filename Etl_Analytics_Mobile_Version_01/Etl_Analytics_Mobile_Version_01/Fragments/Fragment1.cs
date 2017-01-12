@@ -21,7 +21,8 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
         private List<string> group = new List<string>();
         private Dictionary<string, List<string>> dicMyMap; 
         private WebService webService;
-        private List<LogTable> logTable;
+        private List<ColumnName> mListColumnName;
+        private List<TableName> mListTableName;
         private ViewGroup mContainer;
         private View view;
         public override void OnCreate(Bundle savedInstanceState)
@@ -49,20 +50,22 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
         private void SetData(out ExpandableListViewAdapter mAdapter)
         {
             webService = new WebService();
-            logTable = new List<LogTable>();
-            logTable = webService.GetAllDataLogTable();
+            mListTableName = new List<TableName>();
+            mListTableName = webService.GetAllDataTableName("INSITE_DEMO");
             dicMyMap = new Dictionary<string, List<string>>();
+
             int counter = 0;
 
-            foreach (LogTable row in logTable)
+            foreach (TableName row in mListTableName)
             {
+                group.Add((counter + 1).ToString() + " " + row.TABLE_NAME.ToString());
+                mListColumnName = new List<ColumnName>();
+                mListColumnName = webService.GetAllColumnNames("INSITE_DEMO", row.TABLE_NAME.ToString());
                 List<string> groupA = new List<string>();
-                group.Add((counter + 1).ToString() + " " + row.PROCEDURE_NAME.ToString() + " " + row.DATE_TIME.ToString() + " " + row.ACTION.ToString()); ;
-                groupA.Add(" Id procedure: " + row.PROCEDURE_ID.ToString());
-                //groupA.Add(" Ime procedure: " + row.PROCEDURE_NAME.ToString());
-                if (row.ERROR_DESCRIPTION != null)
-                {
-                    groupA.Add(" Error: " + row.ERROR_DESCRIPTION);
+
+                foreach (ColumnName rowName in mListColumnName)
+                {                    
+                    groupA.Add("                       " + rowName.COLUMN_NAME.ToString());
                 }
 
                 dicMyMap.Add(group[counter], groupA);

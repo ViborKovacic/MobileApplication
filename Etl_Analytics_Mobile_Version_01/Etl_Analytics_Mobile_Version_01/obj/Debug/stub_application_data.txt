@@ -1,2 +1,2 @@
 android.app.Application
-Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_010
+Etl_Analytics_Mobile_Version_01.Etl_Analytics_Mobile_Version_01

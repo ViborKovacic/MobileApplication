@@ -17,10 +17,10 @@ namespace WebService.Controllers
         }
 
         // GET: api/ColumnName/5
-        public object Get(string table_name)
+        public object Get(string owner, string table_name)
         {
             GetDataFromDatabase getData = new GetDataFromDatabase();
-            return getData.ProcedureGetDataFromColumnName(table_name);
+            return getData.ProcedureGetDataFromColumnName(owner, table_name);
         }
 
         // POST: api/ColumnName

@@ -13,7 +13,7 @@ using Android.Views.Animations;
 
 namespace Etl_Analytics_Mobile_Version_01.Class
 {
-    public class MyAnimation : Animation
+    class MyAnimation : Animation
     {
         private View mView;
         private int mOriginalHeight;

@@ -14,6 +14,6 @@ namespace Etl_Analytics_Mobile_Version_01.Class.Table_Constructor
 {
     public class TableName
     {
-        public string TABLE_NAME{ get; set; }
+        public string TABLE_NAME { get; set; }
     }
 }

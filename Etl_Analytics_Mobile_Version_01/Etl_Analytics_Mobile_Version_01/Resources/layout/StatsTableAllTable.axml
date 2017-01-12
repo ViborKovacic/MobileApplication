@@ -1,73 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center">
+    android:layout_width="match_parent">
     <LinearLayout
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:background="#E2E2E2"
-        android:weightSum="100">
-        <TextView
-            android:text="Table name"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:layout_weight="16.6"
-            android:gravity="center"
-            android:textColor="#000"
-            android:textSize="16sp" />
-        <TextView
-            android:text="Date"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:layout_weight="16.6"
-            android:gravity="center"
-            android:textColor="#000"
-            android:textSize="16sp" />
-        <TextView
-            android:text="Null columns"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:layout_weight="16.6"
-            android:gravity="center"
-            android:textColor="#000"
-            android:textSize="16sp" />
-        <TextView
-            android:text="Amount of data"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:layout_weight="16.6"
-            android:gravity="center"
-            android:textColor="#000"
-            android:textSize="16sp" />
-        <TextView
-            android:text="Difference"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:layout_weight="16.6"
-            android:gravity="center"
-            android:textColor="#000"
-            android:textSize="16sp" />
-        <TextView
-            android:text="Big deviation"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:layout_weight="16.6"
-            android:gravity="center"
-            android:textColor="#000"
-            android:textSize="16sp" />
-    </LinearLayout>
-    <View
-        android:layout_height="2dp"
-        android:layout_width="match_parent"
-        android:background="#000" />
-    <ListView
+        android:id="@+id/containerListView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/listViewStatsTable"
-        android:background="#F2F2F2"
-        android:divider="#101010"
-        android:dividerHeight="1dp" />
-</LinearLayout>
+        android:orientation="vertical"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="#E2E2E2"
+            android:weightSum="60"
+            android:gravity="center_horizontal">
+            <TextView
+                android:text="Table name"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+            <TextView
+                android:text="Date"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+            <TextView
+                android:text="Null columns"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:gravity="center_horizontal"
+                android:textColor="#000"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+            <TextView
+                android:text="Amount of data"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+            <TextView
+                android:text="Difference"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+            <TextView
+                android:text="Big deviation"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <View
+            android:layout_height="2dp"
+            android:layout_width="match_parent"
+            android:background="#000" />
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listViewStatsTable"
+            android:background="#F2F2F2"
+            android:divider="#101010"
+            android:dividerHeight="1dp" />
+    </LinearLayout>
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Search table"
+        android:textColor="#000"
+        android:textSize="10dp"
+        android:textColorHint="#000"
+        android:layout_marginLeft="10dp"
+        android:gravity="left"
+        android:layout_marginTop="2dp" />
+</FrameLayout>

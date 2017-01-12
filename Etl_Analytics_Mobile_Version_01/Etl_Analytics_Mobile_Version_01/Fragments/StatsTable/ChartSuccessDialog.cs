@@ -58,7 +58,7 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments.StatsTable
             }
 
             int counter = 0;
-
+            
             foreach (string table in listTableNames)
             {
                 barEntry = new List<BarEntry>();

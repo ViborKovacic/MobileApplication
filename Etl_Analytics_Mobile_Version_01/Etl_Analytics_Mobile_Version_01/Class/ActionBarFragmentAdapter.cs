@@ -39,13 +39,6 @@ namespace Etl_Analytics_Mobile_Version_01.Class
             mActivityName = activityName;
         }
 
-        public ActionBarFragmentAdapter(Context context, FragmentManagerSupport fm, string activityName, List<StatsTables> list, bool search) : base(fm)
-        {
-            mContext = context;
-            mActivityName = activityName;
-            mListStatsTable = list;
-            mIsSearched = search;
-        }
         public override int Count
         {
             get { return mPageNumber; }
@@ -55,24 +48,10 @@ namespace Etl_Analytics_Mobile_Version_01.Class
         {
             if (mActivityName == "StastTable")
             {
-                Bundle bundle = new Bundle();
-                if (mIsSearched == true)
-                {                    
-                    bundle.PutString("StatsTable", "Yes");
-                    SearchList list = new SearchList();
-                    list.PutDataToSearchedListStatsTable(mListStatsTable);
-                }
-                else
-                {
-                    bundle.PutString("StatsTable", "No");
-                }
-
                 switch (position)
                 {
-                    case 0:                        
-                        FragmentChart fragmentChart = new FragmentChart();
-                        fragmentChart.Arguments = bundle;
-                        return fragmentChart;
+                    case 0:
+                        return new FragmentChart();
                     case 1:
                         return new FragmentBigDeviation();
                     case 2:

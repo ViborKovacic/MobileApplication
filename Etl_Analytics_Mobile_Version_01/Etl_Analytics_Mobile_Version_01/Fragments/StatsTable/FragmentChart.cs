@@ -11,14 +11,8 @@ using Etl_Analytics_Mobile_Version_01.Class;
 using MikePhil.Charting.Charts;
 using Android.Graphics;
 using Etl_Analytics_Mobile_Version_01.Fragments.StatsTable;
-using Android.Content;
 using Android.Widget;
-using Java.Util;
 using MikePhil.Charting.Components;
-using MikePhil.Charting.Util;
-using Android.Graphics.Drawables;
-using Android.Support.V4.View;
-using Android.Views.InputMethods;
 
 namespace Etl_Analytics_Mobile_Version_01.Fragments
 {
@@ -51,17 +45,7 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
             mListTableNames = new List<string>();
             webService = new WebService();
             mListStatsTables = new List<StatsTables>();
-            string test = Arguments.GetString("StatsTable");
-
-            if (test == "Yes")
-            {
-                SearchList list = new SearchList();
-                mListStatsTables = list.GetDataFromSearchListStatsTable();
-            }
-            else
-            {
-                mListStatsTables = webService.GetAllDataStatsTable();
-            }            
+            mListStatsTables = webService.GetAllDataStatsTable();
         }
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)

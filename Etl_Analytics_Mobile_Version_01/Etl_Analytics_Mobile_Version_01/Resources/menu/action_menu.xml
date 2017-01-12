@@ -14,5 +14,5 @@
   
   <item android:id="@+id/action_fragment2"
         android:title="Fragment2"
-        myapp:showAsAction="never"/> 
+        myapp:showAsAction="never"/>
 </menu>

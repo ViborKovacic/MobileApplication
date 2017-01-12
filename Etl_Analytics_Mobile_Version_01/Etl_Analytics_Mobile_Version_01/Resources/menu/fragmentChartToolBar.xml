@@ -3,11 +3,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
       xmlns:myapp="http://schemas.android.com/apk/res-auto">
 
-  <item android:id="@+id/fragmentChartSearchImage"
-        myapp:showAsAction="always"
-        android:title="search"
-        android:icon="@drawable/ic_action_search"/>
-
   <item android:id="@+id/action_fragment1"
         android:title="Fragment1"
         myapp:showAsAction="never"/>

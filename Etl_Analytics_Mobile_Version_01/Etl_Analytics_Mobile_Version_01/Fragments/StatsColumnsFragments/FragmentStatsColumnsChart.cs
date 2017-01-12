@@ -12,13 +12,15 @@ using MikePhil.Charting.Formatter;
 using MikePhil.Charting.Animation;
 using Etl_Analytics_Mobile_Version_01.Class.Table_Constructor;
 using Android.Widget;
+using static Android.Views.View;
+using MikePhil.Charting.Listener;
+using MikePhil.Charting.Highlight;
 
 namespace Etl_Analytics_Mobile_Version_01.Fragments.StatsColumnsFragments
 {
-    public class FragmentStatsColumnsChart : Android.Support.V4.App.Fragment
+    public class FragmentStatsColumnsChart : Android.Support.V4.App.Fragment, IOnChartValueSelectedListenerSupport
     {
         private View view;
-        private View mActionBarView;
         private PieChart mPieChart;
         private WebService webService;
         private List<StatsColumns> mListStatsColumns;
@@ -36,7 +38,7 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments.StatsColumnsFragments
             mListStatsColumns = new List<StatsColumns>();
             webService = new WebService();
             mListStatsColumns = webService.GetAllDataStatsColumns();
-
+            
         }
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
@@ -46,13 +48,9 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments.StatsColumnsFragments
             view = inflater.Inflate(Resource.Layout.StatsColumnsGraph, container, false);
             mPieChart = view.FindViewById<PieChart>(Resource.Id.pieChart);
 
-            mActionBarView = inflater.Inflate(Resource.Layout.Action_bar, container, false);
-            //mImageViewChart = mActionBarView.FindViewById<ImageView>(Resource.Id.imageChart);
-
-            mImageViewChart.SetImageResource(Resource.Drawable.pie_chart_icon);
-            //mImageViewChart.SetImageDrawable(pie_chart_icon);
-
             MyPieChart();
+
+            mPieChart.SetOnChartValueSelectedListener(this);
 
             return view;
         }
@@ -60,13 +58,13 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments.StatsColumnsFragments
         private void MyPieChart()
         {
             sumOfLowOccupancy = (from table in mListStatsColumns
-                                 where table.LOW_OCCUPANCY.Contains("YES", StringComparison.OrdinalIgnoreCase)
-                                 select table).Count();
+                                     where table.LOW_OCCUPANCY.Contains("YES", StringComparison.OrdinalIgnoreCase)
+                                     select table).Count();
 
 
             sumOfHighOccupancy = (from table in mListStatsColumns
-                                  where table.LOW_OCCUPANCY.Contains("NO", StringComparison.OrdinalIgnoreCase)
-                                  select table).Count();
+                                      where table.LOW_OCCUPANCY.Contains("NO", StringComparison.OrdinalIgnoreCase)
+                                      select table).Count();
 
             resoultHighOccupancy = (sumOfHighOccupancy / sumOfLowOccupancy) * 100;
 
@@ -105,7 +103,7 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments.StatsColumnsFragments
 
             mPieChart.RotationAngle = 0;
             mPieChart.RotationEnabled = true;
-
+            
             mPieChart.HighlightPerTapEnabled = true;
 
             mPieChart.AnimateY(2000, Easing.EasingOption.EaseInOutQuad);
@@ -116,6 +114,16 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments.StatsColumnsFragments
             legend.YEntrySpace = 5;
 
             mPieChart.Invalidate();
+        }
+
+        public void OnNothingSelected()
+        {
+            //throw new NotImplementedException();
+        }
+
+        public void OnValueSelected(Entry e, Highlight h)
+        {
+            var test = h.DataIndex.ToString();
         }
     }
 }

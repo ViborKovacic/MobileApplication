@@ -6,58 +6,58 @@
     android:weightSum="100"
     android:paddingLeft="5dp"
     android:paddingTop="2dp">
-  <TextView
-      android:id="@+id/txtStatsColumnsDate"
-      android:text="Date"
-      android:layout_height="match_parent"
-      android:layout_width="match_parent"
-      android:layout_weight="16.6"
-      android:gravity="center"
-      android:textColor="#333333"
-      android:textSize="10dp" />
-  <TextView
-      android:id="@+id/txtStatsColumnsTableName"
-      android:text="Table name"
-      android:layout_height="match_parent"
-      android:layout_width="match_parent"
-      android:layout_weight="16.6"
-      android:gravity="center"
-      android:textColor="#333333"
-      android:textSize="10dp" />
-  <TextView
-      android:id="@+id/txtStatsColumnsColumnName"
-      android:text="Column name"
-      android:layout_height="match_parent"
-      android:layout_width="match_parent"
-      android:layout_weight="16.6"
-      android:gravity="center"
-      android:textColor="#333333"
-      android:textSize="10dp" />
-  <TextView
-      android:id="@+id/txtStatsColumnsNullRows"
-      android:text="Null rows"
-      android:layout_height="match_parent"
-      android:layout_width="match_parent"
-      android:layout_weight="16.6"
-      android:gravity="center"
-      android:textColor="#333333"
-      android:textSize="10dp" />
-  <TextView
-      android:id="@+id/txtStatsColumnsNotNullRows"
-      android:text="Not null rows"
-      android:layout_height="match_parent"
-      android:layout_width="match_parent"
-      android:layout_weight="16.6"
-      android:gravity="center"
-      android:textColor="#333333"
-      android:textSize="10dp" />
-  <TextView
-      android:id="@+id/txtStatsColumnsFillPrecentage"
-      android:text="Fill precentage"
-      android:layout_height="match_parent"
-      android:layout_width="match_parent"
-      android:layout_weight="16.6"
-      android:gravity="center"
-      android:textColor="#333333"
-      android:textSize="10dp" />
+    <TextView
+        android:id="@+id/txtStatsColumnsDate"
+        android:text="Date"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_weight="16.6"
+        android:gravity="center"
+        android:textColor="#333333"
+        android:textSize="10dp" />
+    <TextView
+        android:id="@+id/txtStatsColumnsTableName"
+        android:text="Table name"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_weight="16.6"
+        android:gravity="center"
+        android:textColor="#333333"
+        android:textSize="10dp" />
+    <TextView
+        android:id="@+id/txtStatsColumnsColumnName"
+        android:text="Column name"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_weight="16.6"
+        android:gravity="center"
+        android:textColor="#333333"
+        android:textSize="10dp" />
+    <TextView
+        android:id="@+id/txtStatsColumnsNullRows"
+        android:text="Null rows"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_weight="16.6"
+        android:gravity="center"
+        android:textColor="#333333"
+        android:textSize="10dp" />
+    <TextView
+        android:id="@+id/txtStatsColumnsNotNullRows"
+        android:text="Not null rows"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_weight="16.6"
+        android:gravity="center"
+        android:textColor="#333333"
+        android:textSize="10dp" />
+    <TextView
+        android:id="@+id/txtStatsColumnsFillPrecentage"
+        android:text="Fill precentage"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_weight="16.6"
+        android:gravity="center"
+        android:textColor="#333333"
+        android:textSize="10dp" />
 </LinearLayout>
