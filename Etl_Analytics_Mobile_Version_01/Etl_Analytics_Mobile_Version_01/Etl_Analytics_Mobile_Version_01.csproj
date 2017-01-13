@@ -106,7 +106,6 @@
     <Compile Include="AllActivity\LoadingScreen.cs" />
     <Compile Include="AllActivity\ConfigTablesAct.cs" />
     <Compile Include="AllActivity\MainPageAct.cs" />
-    <Compile Include="AllActivity\StatsColumnsAct.cs" />
     <Compile Include="AllActivity\StatsTableAct.cs" />
     <Compile Include="AllActivity\TestStatsTableAct.cs" />
     <Compile Include="AllActivity\UserTableAct.cs" />
@@ -138,7 +137,7 @@
     <Compile Include="Class\WebService.cs" />
     <Compile Include="Fragments\StatsColumnsFragments\FragmentStatsColumnsAllTable.cs" />
     <Compile Include="Fragments\StatsColumnsFragments\FragmentStatsColumnsChart.cs" />
-    <Compile Include="Fragments\StatsColumnsFragments\PieChartDialog.cs" />
+    <Compile Include="Fragments\DescritpionDialog.cs" />
     <Compile Include="Fragments\StatsTable\ChartAllTablesDialog.cs" />
     <Compile Include="Fragments\Fragment1.cs" />
     <Compile Include="Fragments\Fragment2.cs" />
@@ -235,7 +234,7 @@
     <AndroidResource Include="Resources\layout\StatsTableGraph.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\ChartAllTablesDialog.axml">
+    <AndroidResource Include="Resources\layout\DescriptionDialog.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\ChartSuccessDialog.axml">
@@ -251,6 +250,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\StatsColumnsRow.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ChartAllTablesDialog.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

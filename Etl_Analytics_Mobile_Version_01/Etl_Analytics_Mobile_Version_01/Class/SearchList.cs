@@ -16,20 +16,20 @@ namespace Etl_Analytics_Mobile_Version_01.Class
 {
     public class SearchList
     {
-        private static List<StatsTables> mListSearchStatsTables;
+        private static List<StatsColumns> mListSearch;
         public SearchList()
         {
 
         }
-        public SearchList(List<StatsTables> list)
+        public SearchList(List<StatsColumns> list)
         {
-            mListSearchStatsTables = new List<StatsTables>();
-            mListSearchStatsTables = list;
+            mListSearch = new List<StatsColumns>();
+            mListSearch = list;
         }
 
-        public List<StatsTables> GetDataFromSearchListStatsTable()
+        public List<StatsColumns> GetDataFromSearchList()
         {
-            return mListSearchStatsTables;
+            return mListSearch;
         }
     }
 }

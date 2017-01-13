@@ -84,6 +84,9 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
             inflater.Inflate(Resource.Menu.fragmentChartToolBar, menu);
             base.OnCreateOptionsMenu(menu, inflater);
         }
+
+
+
         private void ChartError_Click(object sender, EventArgs e)
         {
             var trans = FragmentManager.BeginTransaction();

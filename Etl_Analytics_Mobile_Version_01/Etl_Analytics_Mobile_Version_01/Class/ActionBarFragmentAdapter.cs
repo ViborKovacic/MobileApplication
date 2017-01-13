@@ -30,8 +30,6 @@ namespace Etl_Analytics_Mobile_Version_01.Class
         private ImageView image;
         private TextView textView;
         private string mActivityName;
-        private List<StatsTables> mListStatsTable;
-        private bool mIsSearched;
 
         public ActionBarFragmentAdapter(Context context, FragmentManagerSupport fm, string activityName) : base(fm)
         {
@@ -79,7 +77,14 @@ namespace Etl_Analytics_Mobile_Version_01.Class
         public override ICharSequence GetPageTitleFormatted(int position)
         {
             // Generate title based on item position
-            return CharSequence.ArrayFromStringArray(mTabNames)[position];
+            if (mActivityName == "StatsTable")
+            {
+                return CharSequence.ArrayFromStringArray(mTabNames)[position];
+            }
+            else
+            {
+                return CharSequence.ArrayFromStringArray(mColumNames)[position];
+            }            
         }
 
         public View GetTabView(int position)
@@ -89,11 +94,11 @@ namespace Etl_Analytics_Mobile_Version_01.Class
             image = view.FindViewById<ImageView>(Resource.Id.imageActionBarTab);
             textView = view.FindViewById<TextView>(Resource.Id.textViewActionBarTab);
 
-            textView.Text = mTabNames[position];
             textView.SetTextColor(Color.ParseColor("#FFFFFF"));
 
             if (mActivityName == "StastTable")
             {
+                textView.Text = mTabNames[position];
                 switch (position)
                 {
                     case 0:
@@ -109,6 +114,7 @@ namespace Etl_Analytics_Mobile_Version_01.Class
             }
             else
             {
+                textView.Text = mColumNames[position];
                 switch (position)
                 {
                     case 0:

@@ -15,7 +15,6 @@
     </activity>
     <activity android:icon="@drawable/icon" android:label="Log table" android:theme="@style/MyTheme2" android:name="md5c061d5b67b2bf180a74fe23549602373.ConfigTablesAct" />
     <activity android:icon="@drawable/icon" android:label="MainPageAct" android:theme="@style/MyTheme2" android:name="md5c061d5b67b2bf180a74fe23549602373.MainPageAct" />
-    <activity android:icon="@drawable/xs" android:label="StatsColumnsAct" android:theme="@style/MyTheme3" android:name="md5c061d5b67b2bf180a74fe23549602373.StatsColumnsAct" />
     <activity android:icon="@drawable/xs" android:label="SlidingTabAct" android:theme="@style/MyTheme2" android:name="md5c061d5b67b2bf180a74fe23549602373.StatsTableAct" />
     <activity android:icon="@drawable/icon" android:label="Table statistics" android:name="md5c061d5b67b2bf180a74fe23549602373.TestStatsTableAct" />
     <activity android:icon="@drawable/icon" android:label="UserTableAct" android:theme="@style/CustomActionBarTheme3" android:name="md5c061d5b67b2bf180a74fe23549602373.UserTableAct" />

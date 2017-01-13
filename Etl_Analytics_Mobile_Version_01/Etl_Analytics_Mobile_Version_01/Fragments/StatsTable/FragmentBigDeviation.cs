@@ -45,6 +45,7 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
             mContext = container.Context;
 
             mSearch.Alpha = 0;
+            mSearch.Focusable = false;
             mSearch.AddTextChangedListener(this);
 
             mListStatsTable = mWebService.GetAllDataStatsTable();

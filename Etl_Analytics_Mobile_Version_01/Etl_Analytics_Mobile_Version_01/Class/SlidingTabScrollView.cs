@@ -22,9 +22,6 @@ namespace Etl_Analytics_Mobile_Version_01.Class
 
         private int mTitleOffset;
 
-        private int mTabViewLayoutID;
-        private int mTabViewTextViewID;
-
         public static ViewPager mViewPager;
         public static ViewPager.IOnPageChangeListener mViewPagerPageChangeListener;
 

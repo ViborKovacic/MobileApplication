@@ -24,6 +24,7 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments.StatsColumnsFragments
         private PieChart mPieChart;
         private WebService webService;
         private List<StatsColumns> mListStatsColumns;
+        private List<PieEntry> mListOfEntry;
         private PieDataSet dataSet;
         private float sumOfLowOccupancy;
         private float sumOfHighOccupancy;
@@ -70,12 +71,12 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments.StatsColumnsFragments
 
             resoultLowOccupncy = (sumOfLowOccupancy / sumOfHighOccupancy) * 100;
 
-            List<PieEntry> listOfEntry = new List<PieEntry>();
+            mListOfEntry = new List<PieEntry>();
 
-            listOfEntry.Add(new PieEntry(resoultHighOccupancy, "High occupancy"));
-            listOfEntry.Add(new PieEntry(resoultLowOccupncy, "Low occupancy"));
+            mListOfEntry.Add(new PieEntry(resoultHighOccupancy, "High occupancy"));
+            mListOfEntry.Add(new PieEntry(resoultLowOccupncy, "Low occupancy"));
 
-            dataSet = new PieDataSet(listOfEntry, "");
+            dataSet = new PieDataSet(mListOfEntry, "");
 
             dataSet.SliceSpace = 3;
             dataSet.SelectionShift = 2;
@@ -123,7 +124,37 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments.StatsColumnsFragments
 
         public void OnValueSelected(Entry e, Highlight h)
         {
-            var test = h.DataIndex.ToString();
+            if (e == null)
+            {
+                return;
+            }
+
+            PieEntry entry = mListOfEntry[int.Parse(h.GetX().ToString())];
+            string entryLabel = entry.Label;
+
+            if (entryLabel == "High occupancy")
+            {
+                List<StatsColumns> searchedList = (from table in mListStatsColumns
+                                                  where table.LOW_OCCUPANCY.Contains("NO", StringComparison.OrdinalIgnoreCase)
+                                                  select table).ToList<StatsColumns>();
+
+                //SearchList list = new SearchList(searchedList);
+                //var trans = FragmentManager.BeginTransaction();
+                //PieChartDialog pieChartDialog = new PieChartDialog();
+                //pieChartDialog.Show(trans, "Dialog Fragment");
+            }
+            else
+            {
+                List<StatsColumns> searchedList = (from table in mListStatsColumns
+                                                   where table.LOW_OCCUPANCY.Contains("YES", StringComparison.OrdinalIgnoreCase)
+                                                   select table).ToList<StatsColumns>();
+
+                //SearchList list = new SearchList(searchedList);
+                //var trans = FragmentManager.BeginTransaction();
+                //PieChartDialog pieChartDialog = new PieChartDialog();
+                //pieChartDialog.Show(trans, "Dialog Fragment");
+            }
+            
         }
     }
 }

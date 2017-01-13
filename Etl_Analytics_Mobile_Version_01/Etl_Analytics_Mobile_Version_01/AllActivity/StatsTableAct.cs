@@ -40,7 +40,6 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
 
             SetSupportActionBar(mToolbar);
 
-            SupportActionBar.SetHomeButtonEnabled(true);
             SupportActionBar.SetDisplayShowTitleEnabled(true);
             SupportActionBar.SetDisplayHomeAsUpEnabled(true);
 

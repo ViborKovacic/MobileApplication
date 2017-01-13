@@ -12,7 +12,7 @@
         android:title="Fragment1"
         myapp:showAsAction="never"/>
 
-  <item android:id="@+id/action_fragment2"
-        android:title="Fragment2"
+  <item android:id="@+id/descriptionAction"
+        android:title="Description"
         myapp:showAsAction="never"/>
 </menu>

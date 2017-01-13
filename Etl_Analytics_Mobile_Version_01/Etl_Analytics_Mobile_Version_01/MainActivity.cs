@@ -32,7 +32,6 @@ namespace Etl_Analytics_Mobile_Version_01
         private Button btnLogIn;
         private ProgressBar progressBar;
         private ProgressDialog progressBarDialog;
-        private int progressBarStatus;
         private EditText txtUserName;
         private EditText txtPassword;
         LinearLayout mLinearLayout; 

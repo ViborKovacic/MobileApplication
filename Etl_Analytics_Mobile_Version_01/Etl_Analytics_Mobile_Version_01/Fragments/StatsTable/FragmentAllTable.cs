@@ -11,6 +11,8 @@ using System;
 using Android.Text;
 using Java.Lang;
 using Android.Views.InputMethods;
+using Etl_Analytics_Mobile_Version_01.Fragments.StatsColumnsFragments;
+using Etl_Analytics_Mobile_Version_01.AllActivity;
 
 namespace Etl_Analytics_Mobile_Version_01.Fragments
 {
@@ -46,8 +48,8 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
             mContext = container.Context;
 
             mSearch.Alpha = 0;
-            mSearch.AddTextChangedListener(this);
-            
+            mSearch.Focusable = false;
+            mSearch.AddTextChangedListener(this);            
 
             mListStatsTable = mWebService.GetAllDataStatsTable();
 
@@ -103,8 +105,28 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
                     {
                         MyAnimation();
                     }
+                    return true;
+
+                case Resource.Id.descriptionAllTable:
+
+                    Bundle bundle = new Bundle();
+                    bundle.PutString("Test", "Test");
+
+                    var trans = FragmentManager.BeginTransaction();
+                    DescritpionDialog descriptionDialog = new DescritpionDialog();
+
+                    descriptionDialog.Arguments = bundle;
+                    descriptionDialog.Show(trans, "Dialog Fragment");
 
                     return true;
+
+                case Resource.Id.homeAsUp:
+
+                    Intent intent = new Intent(mContext, typeof(StatsTableAct));
+                    mContext.StartActivity(intent);
+
+                    return true;
+
                 default:
                     return base.OnOptionsItemSelected(item);
             }
