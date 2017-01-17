@@ -55,14 +55,14 @@ namespace Etl_Analytics_Mobile_Version_01.Class
 
             row.SetBackgroundColor(GetColorFromInteger(mAlternatingColors[position % mAlternatingColors.Length]));
 
-            TextView date = row.FindViewById<TextView>(Resource.Id.txtStatsColumnsDate);
-            date.Text = mStatsColumns[position].DATE_ID.ToString();
-
             TextView tableName = row.FindViewById<TextView>(Resource.Id.txtStatsColumnsTableName);
             tableName.Text = mStatsColumns[position].TABLE_NAME;
 
             TextView columnName = row.FindViewById<TextView>(Resource.Id.txtStatsColumnsColumnName);
             columnName.Text = mStatsColumns[position].COLUMN_NAME;
+
+            TextView date = row.FindViewById<TextView>(Resource.Id.txtStatsColumnsDate);
+            date.Text = mStatsColumns[position].DATE_ID.ToString();
 
             TextView nullRows = row.FindViewById<TextView>(Resource.Id.txtStatsColumnsNullRows);
             nullRows.Text = mStatsColumns[position].NULL_ROWS.ToString();

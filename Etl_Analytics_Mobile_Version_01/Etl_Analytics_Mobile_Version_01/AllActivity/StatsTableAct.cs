@@ -5,14 +5,7 @@ using Android.Support.Design.Widget;
 using Android.Support.V4.View;
 using Android.Support.V7.App;
 using Android.Views;
-using Android.Views.InputMethods;
-using Android.Widget;
 using Etl_Analytics_Mobile_Version_01.Class;
-using Etl_Analytics_Mobile_Version_01.Class.Table_Constructor;
-using Etl_Analytics_Mobile_Version_01.Fragments;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using SupportToolbar = Android.Support.V7.Widget.Toolbar;
 
 
@@ -70,6 +63,11 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
                 TabLayout.Tab tab = mTabLayout.GetTabAt(position);
                 tab.SetCustomView(mAdapter.GetTabView(position));
             }
+        }
+
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            return base.OnOptionsItemSelected(item);
         }
     }
 }

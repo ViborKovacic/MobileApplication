@@ -84,7 +84,7 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments.StatsColumnsFragments
                                               where table.COLUMN_NAME.Contains(mSearch.Text, StringComparison.OrdinalIgnoreCase)
                                               select table).ToList<StatsColumns>();
 
-            mTableAdapter = new StatsColumnsAdapter(mContext, Resource.Layout.StatsTableRow, searchedList);
+            mTableAdapter = new StatsColumnsAdapter(mContext, Resource.Layout.StatsColumnsRow, searchedList);
             mListView.Adapter = mTableAdapter;
             mKeyboard = true;
         }
@@ -102,6 +102,19 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments.StatsColumnsFragments
                     {
                         MyAnimation();
                     }
+
+                    return true;
+
+                case Resource.Id.descriptionAllTable:
+
+                    Bundle bundle = new Bundle();
+                    bundle.PutString("StatsColumns", "StatsColumnsAllTable");
+
+                    var trans = FragmentManager.BeginTransaction();
+                    DescritpionDialog descriptionDialog = new DescritpionDialog();
+
+                    descriptionDialog.Arguments = bundle;
+                    descriptionDialog.Show(trans, "Dialog Fragment");
 
                     return true;
                 default:
@@ -146,7 +159,7 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments.StatsColumnsFragments
                 InputMethodManager inputManager = (InputMethodManager)mContext.GetSystemService(Context.InputMethodService);
                 inputManager.ToggleSoftInput(0, 0);
             }
-
+            
             mKeyboard = !mKeyboard;
         }
 

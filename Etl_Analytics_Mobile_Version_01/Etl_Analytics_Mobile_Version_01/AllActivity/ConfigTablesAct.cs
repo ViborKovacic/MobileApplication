@@ -14,7 +14,7 @@ using Android.Content;
 
 namespace Etl_Analytics_Mobile_Version_01.AllActivity
 {
-    [Activity(Label = "Log table", Icon = "@drawable/icon", Theme = "@style/MyTheme2")]
+    [Activity(Label = "Configuration", Icon = "@drawable/icon", Theme = "@style/MyTheme2")]
     public class ConfigTablesAct : ActionBarActivity
 
     {
@@ -25,7 +25,7 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
         private List<string> listDrawer;
         private ArrayAdapter adapterDrawer;
         private SupportFragment mCurrentFragment;
-        private Fragment1 mFragment1;
+        private FragmentConfigTablesAndColumns mFragmentConfigTables;
         private Fragment2 mFragment2;
         private Stack<SupportFragment> mStackFragment;
         private Intent intent;
@@ -34,26 +34,26 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
         {
             base.OnCreate(savedInstanceState);
 
-            SetContentView(Resource.Layout.LogTable);
+            SetContentView(Resource.Layout.ConfigTables);
             suppToolbar = FindViewById<SupportToolbar>(Resource.Id.toolbar);
             drawerLayout = FindViewById<DrawerLayout>(Resource.Id.Drawer);
             viewDrawer = FindViewById<ListView>(Resource.Id.ListView);
 
             if (SupportFragmentManager.FindFragmentByTag("Fragment1") != null)
             {
-                mFragment1 = SupportFragmentManager.FindFragmentByTag("Fragment1") as Fragment1;
+                mFragmentConfigTables = SupportFragmentManager.FindFragmentByTag("Fragment1") as FragmentConfigTablesAndColumns;
             }
             else
             {
-                mFragment1 = new Fragment1();
+                mFragmentConfigTables = new FragmentConfigTablesAndColumns();
                 mFragment2 = new Fragment2();
 
                 var trans = SupportFragmentManager.BeginTransaction();
-                trans.Add(Resource.Id.fragmentContainer, mFragment1, "Fragment1");
+                trans.Add(Resource.Id.fragmentContainer, mFragmentConfigTables, "Fragment1");
                 trans.Commit();
 
-                mCurrentFragment = mFragment1;
-            }                 
+                mCurrentFragment = mFragmentConfigTables;
+            }
 
             listDrawer = new List<string>();
             listDrawer.Add("Configuration columns");
@@ -68,11 +68,12 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
             viewDrawer.ItemClick += ViewDrawer_ItemClick;
 
             SetSupportActionBar(suppToolbar);
-            
+
             drawerToogle = new MyActionBarDrawerToggle(this /*host*/, drawerLayout, Resource.String.open_drawer, Resource.String.close_drawer);
 
             SupportActionBar.SetHomeButtonEnabled(true);
             SupportActionBar.SetDisplayShowTitleEnabled(true);
+            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
             drawerToogle.SyncState();
         }
 
@@ -109,7 +110,7 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
 
         public override bool OnCreateOptionsMenu(IMenu menu)
         {
-            MenuInflater.Inflate(Resource.Menu.actionbar_main, menu);
+            MenuInflater.Inflate(Resource.Menu.action_menu, menu);
             return base.OnCreateOptionsMenu(menu);
         }
 
@@ -117,8 +118,13 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
         {
             switch (item.ItemId)
             {
+                case 16908332 /*Hamburger*/:
+
+                    return base.OnOptionsItemSelected(item);
+                case Resource.Id.searchImage:
+                    return base.OnOptionsItemSelected(item);
                 case Resource.Id.action_fragment1:
-                    ReplaceFragment(mFragment1);
+                    ReplaceFragment(mFragmentConfigTables);
                     return true;
                 case Resource.Id.action_fragment2:
                     ReplaceFragment(mFragment2);
@@ -148,7 +154,7 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
 
         public override void OnBackPressed()
         {
-            base.OnBackPressed();      
+            base.OnBackPressed();
         }
     }
 }

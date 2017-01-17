@@ -110,13 +110,18 @@
     <Compile Include="AllActivity\TestStatsTableAct.cs" />
     <Compile Include="AllActivity\UserTableAct.cs" />
     <Compile Include="Class\ActionBarFragmentAdapter.cs" />
-    <Compile Include="Class\ExpandableListViewAdapter.cs" />
+    <Compile Include="Class\ConfigColumnAdapter.cs" />
+    <Compile Include="Class\ConfigColumnHolder.cs" />
+    <Compile Include="Class\ConfigTableAdapter.cs" />
+    <Compile Include="Class\ConfigTableHolder.cs" />
+    <Compile Include="Class\ConfigTablesView.cs" />
     <Compile Include="Class\ExtMethods.cs" />
     <Compile Include="Class\Fragment2RecycleAdapter.cs" />
     <Compile Include="Class\Fragment2View.cs" />
     <Compile Include="Class\MyActionBarDrawerToggle.cs" />
     <Compile Include="Class\DialogSignIn.cs" />
     <Compile Include="Class\MyAnimation.cs" />
+    <Compile Include="Class\MyList.cs" />
     <Compile Include="Class\MyListRecycleView.cs" />
     <Compile Include="Class\MyView.cs" />
     <Compile Include="Class\MyView2.cs" />
@@ -129,17 +134,19 @@
     <Compile Include="Class\StatsColumnsAdapter.cs" />
     <Compile Include="Class\StatsTableAdapter.cs" />
     <Compile Include="Class\Table Constructor\ColumnName.cs" />
+    <Compile Include="Class\Table Constructor\ListTableColumnNames.cs" />
     <Compile Include="Class\Table Constructor\LogTable.cs" />
     <Compile Include="Class\Table Constructor\StatsColumns.cs" />
     <Compile Include="Class\Table Constructor\StatsTables.cs" />
     <Compile Include="Class\Table Constructor\TableName.cs" />
     <Compile Include="Class\Table Constructor\UserTable.cs" />
     <Compile Include="Class\WebService.cs" />
+    <Compile Include="Fragments\StatsColumnsFragments\FragmentLowOccupancy.cs" />
     <Compile Include="Fragments\StatsColumnsFragments\FragmentStatsColumnsAllTable.cs" />
     <Compile Include="Fragments\StatsColumnsFragments\FragmentStatsColumnsChart.cs" />
     <Compile Include="Fragments\DescritpionDialog.cs" />
     <Compile Include="Fragments\StatsTable\ChartAllTablesDialog.cs" />
-    <Compile Include="Fragments\Fragment1.cs" />
+    <Compile Include="Fragments\FragmentConfigTablesAndColumns.cs" />
     <Compile Include="Fragments\Fragment2.cs" />
     <Compile Include="Fragments\StatsTable\ChartErrorDialog.cs" />
     <Compile Include="Fragments\StatsTable\ChartSuccessDialog.cs" />
@@ -171,13 +178,13 @@
     <AndroidResource Include="Resources\layout\ConfigurationColumns.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\LogTableRow.axml">
+    <AndroidResource Include="Resources\layout\ConfigColumnRow.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\LogTable.axml">
+    <AndroidResource Include="Resources\layout\ConfigTables.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\LogTableGroupItem.axml">
+    <AndroidResource Include="Resources\layout\ConfigTableRow.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\fragment_sample.axml">
@@ -219,7 +226,7 @@
     <AndroidResource Include="Resources\layout\DrawerLayout.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\Fragment1.axml">
+    <AndroidResource Include="Resources\layout\FragmentConfigTablesAndColumns.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\Fragment2.axml">
@@ -253,6 +260,15 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\ChartAllTablesDialog.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ConfigurationTabelsCardRowView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ConfigurationColumnsCardRowView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ConfigurationTableMain.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -289,6 +305,10 @@
     <AndroidResource Include="Resources\anim\SlideUpAnimation.xml" />
   </ItemGroup>
   <ItemGroup>
+    <XamarinComponentReference Include="xamandroidsupportdesign">
+      <Visible>False</Visible>
+      <Version>24.2.1.0</Version>
+    </XamarinComponentReference>
     <XamarinComponentReference Include="xamandroidsupportv7appcompat">
       <Visible>False</Visible>
       <Version>24.2.1.0</Version>
@@ -436,6 +456,9 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\menu\fragmentAction.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\menu\testMenu.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Android.Support.Vector.Drawable.23.4.0.1\build\Xamarin.Android.Support.Vector.Drawable.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Vector.Drawable.23.4.0.1\build\Xamarin.Android.Support.Vector.Drawable.targets')" />

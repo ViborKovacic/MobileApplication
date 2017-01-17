@@ -110,7 +110,7 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
                 case Resource.Id.descriptionAllTable:
 
                     Bundle bundle = new Bundle();
-                    bundle.PutString("Test", "Test");
+                    bundle.PutString("StatsTable", "StatsTableAllTable");
 
                     var trans = FragmentManager.BeginTransaction();
                     DescritpionDialog descriptionDialog = new DescritpionDialog();

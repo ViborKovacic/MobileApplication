@@ -13,7 +13,7 @@
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
-    <activity android:icon="@drawable/icon" android:label="Log table" android:theme="@style/MyTheme2" android:name="md5c061d5b67b2bf180a74fe23549602373.ConfigTablesAct" />
+    <activity android:icon="@drawable/icon" android:label="Configuration" android:theme="@style/MyTheme2" android:name="md5c061d5b67b2bf180a74fe23549602373.ConfigTablesAct" />
     <activity android:icon="@drawable/icon" android:label="MainPageAct" android:theme="@style/MyTheme2" android:name="md5c061d5b67b2bf180a74fe23549602373.MainPageAct" />
     <activity android:icon="@drawable/xs" android:label="SlidingTabAct" android:theme="@style/MyTheme2" android:name="md5c061d5b67b2bf180a74fe23549602373.StatsTableAct" />
     <activity android:icon="@drawable/icon" android:label="Table statistics" android:name="md5c061d5b67b2bf180a74fe23549602373.TestStatsTableAct" />

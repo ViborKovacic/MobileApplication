@@ -6,6 +6,7 @@ using Android.Views.InputMethods;
 using Android.Widget;
 using Etl_Analytics_Mobile_Version_01.Class;
 using Etl_Analytics_Mobile_Version_01.Class.Table_Constructor;
+using Etl_Analytics_Mobile_Version_01.Fragments.StatsColumnsFragments;
 using Java.Lang;
 using System;
 using System.Collections.Generic;
@@ -105,6 +106,19 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
                     {
                         MyAnimation();
                     }
+
+                    return true;
+
+                case Resource.Id.descriptionAction:
+
+                    Bundle bundle = new Bundle();
+                    bundle.PutString("StatsTable", "StatsTableBigDeviation");
+
+                    var trans = FragmentManager.BeginTransaction();
+                    DescritpionDialog descriptionDialog = new DescritpionDialog();
+
+                    descriptionDialog.Arguments = bundle;
+                    descriptionDialog.Show(trans, "Dialog Fragment");
 
                     return true;
 

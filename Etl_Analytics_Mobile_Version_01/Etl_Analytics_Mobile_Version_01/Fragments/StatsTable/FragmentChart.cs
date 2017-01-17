@@ -13,6 +13,7 @@ using Android.Graphics;
 using Etl_Analytics_Mobile_Version_01.Fragments.StatsTable;
 using Android.Widget;
 using MikePhil.Charting.Components;
+using Etl_Analytics_Mobile_Version_01.Fragments.StatsColumnsFragments;
 
 namespace Etl_Analytics_Mobile_Version_01.Fragments
 {
@@ -85,7 +86,31 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
             base.OnCreateOptionsMenu(menu, inflater);
         }
 
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            switch (item.ItemId)
+            {
+                case Resource.Id.descriptionChart:
 
+                    Bundle bundle = new Bundle();
+                    bundle.PutString("StatsTable", "StatsTableChart");
+
+                    var trans = FragmentManager.BeginTransaction();
+                    DescritpionDialog descriptionDialog = new DescritpionDialog();
+
+                    descriptionDialog.Arguments = bundle;
+                    descriptionDialog.Show(trans, "Dialog Fragment");
+
+                    return true;
+
+                //case Resource.Id.:
+                //    return true;
+
+                default:
+                    return base.OnOptionsItemSelected(item);
+            }
+            
+        }
 
         private void ChartError_Click(object sender, EventArgs e)
         {
@@ -226,7 +251,7 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
             foreach (KeyValuePair<string, List<BarEntry>> dicDataSet in mDicOfDataSets)
             {
                 dataSet = new BarDataSet(dicDataSet.Value, dicDataSet.Key);
-                dataSet.SetColor(Color.DarkGreen, 200);
+                dataSet.SetColors(Color.DarkGreen);
                 data.AddDataSet(dataSet);
             }
 
@@ -289,7 +314,7 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
             foreach (KeyValuePair<string, List<BarEntry>> dicDataSet in mDicOfDataSets)
             {
                 dataSet = new BarDataSet(dicDataSet.Value, dicDataSet.Key);
-                dataSet.SetColor(Color.DarkRed, 200);
+                dataSet.SetColors(Color.DarkRed);
                 data.AddDataSet(dataSet);
             }
 
@@ -314,5 +339,5 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
 
             chartError.Invalidate();
         }
-    }
+    }    
 }

@@ -17,14 +17,23 @@ namespace Etl_Analytics_Mobile_Version_01.Class
 {
     public class MyActionBarDrawerToggle : SupportActionBarDrawerToggle
     {
-        private ActionBarActivity mHostActivity;
+        private AppCompatActivity mHostActivity;
+        private ActionBarActivity mHostActivityActionBar;
         private int mOpenedResource;
         private int mClosedResource;
+
+        public MyActionBarDrawerToggle(AppCompatActivity host, DrawerLayout drawerLayout, int openedResource, int closedResource)
+            : base(host, drawerLayout, openedResource, closedResource)
+        {
+            mHostActivity = host;
+            mOpenedResource = openedResource;
+            mClosedResource = closedResource;
+        }
 
         public MyActionBarDrawerToggle(ActionBarActivity host, DrawerLayout drawerLayout, int openedResource, int closedResource)
             : base(host, drawerLayout, openedResource, closedResource)
         {
-            mHostActivity = host;
+            mHostActivityActionBar = host;
             mOpenedResource = openedResource;
             mClosedResource = closedResource;
         }

@@ -156,5 +156,41 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments.StatsColumnsFragments
             }
             
         }
+
+        public override void OnActivityCreated(Bundle savedInstanceState)
+        {
+            base.OnActivityCreated(savedInstanceState);
+            HasOptionsMenu = true;
+        }
+
+        public override void OnCreateOptionsMenu(IMenu menu, MenuInflater inflater)
+        {
+            inflater.Inflate(Resource.Menu.fragmentChartToolBar, menu);
+            base.OnCreateOptionsMenu(menu, inflater);
+        }
+
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            switch (item.ItemId)
+            {
+                case Resource.Id.descriptionChart:
+
+                    Bundle bundle = new Bundle();
+                    bundle.PutString("StatsColumns", "StatsColumnsChart");
+
+                    var trans = FragmentManager.BeginTransaction();
+                    DescritpionDialog descriptionDialog = new DescritpionDialog();
+
+                    descriptionDialog.Arguments = bundle;
+                    descriptionDialog.Show(trans, "Dialog Fragment");
+
+                    return true;
+
+                default:
+                    return base.OnOptionsItemSelected(item);
+            }
+
+        }
+
     }
 }

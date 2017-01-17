@@ -65,7 +65,7 @@ namespace Etl_Analytics_Mobile_Version_01.Class
                     case 0:
                         return new FragmentStatsColumnsChart();
                     case 1:
-                        return new FragmentBigDeviation();
+                        return new FragmentLowOccupancy();
                     case 2:
                         return new FragmentStatsColumnsAllTable();
                     default:
