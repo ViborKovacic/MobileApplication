@@ -97,5 +97,15 @@ namespace Etl_Analytics_Mobile_Version_01.Class
 
             return listStatsColumns;
         }
+
+        public List<ParametersVariable> GetAllDataParametersValue()
+        {
+            List<ParametersVariable> listParametersVariable = new List<ParametersVariable>();
+            client = new RestClient("http://insite2crm6.in2.hr");
+            request = new RestRequest("etlservice/api/ParametersVariable", Method.GET);
+            listParametersVariable = client.Execute<List<ParametersVariable>>(request).Data;
+
+            return listParametersVariable;
+        }
     }
 }

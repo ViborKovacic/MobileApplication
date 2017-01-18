@@ -10,6 +10,7 @@ using Etl_Analytics_Mobile_Version_01.Class;
 using Android.Text;
 using Android.Views.InputMethods;
 using Java.Lang;
+using Etl_Analytics_Mobile_Version_01.AllActivity;
 
 namespace Etl_Analytics_Mobile_Version_01.Fragments.StatsColumnsFragments
 {
@@ -115,6 +116,13 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments.StatsColumnsFragments
 
                     descriptionDialog.Arguments = bundle;
                     descriptionDialog.Show(trans, "Dialog Fragment");
+
+                    return true;
+
+                case 16908332:
+
+                    Intent intent = new Intent(mContext, typeof(MainPageAct));
+                    this.StartActivity(intent);
 
                     return true;
                 default:

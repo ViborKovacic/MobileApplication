@@ -120,10 +120,10 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
 
                     return true;
 
-                case Resource.Id.homeAsUp:
+                case 16908332:
 
-                    Intent intent = new Intent(mContext, typeof(StatsTableAct));
-                    mContext.StartActivity(intent);
+                    Intent intent = new Intent(mContext, typeof(MainPageAct));
+                    this.StartActivity(intent);
 
                     return true;
 

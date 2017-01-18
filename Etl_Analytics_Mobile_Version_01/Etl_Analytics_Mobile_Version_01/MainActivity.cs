@@ -46,6 +46,9 @@ namespace Etl_Analytics_Mobile_Version_01
             txtUserName = FindViewById<EditText>(Resource.Id.txtUserName);
             txtPassword = FindViewById<EditText>(Resource.Id.txtPassword);
 
+            txtUserName.ClearFocus();
+            txtPassword.ClearFocus();
+
             btnSignIn = FindViewById<Button>(Resource.Id.btnSignIn);
             btnLogIn = FindViewById<Button>(Resource.Id.btnLogIn);
 

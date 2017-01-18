@@ -6,6 +6,7 @@ using Android.Views;
 using Etl_Analytics_Mobile_Version_01.Class;
 using Etl_Analytics_Mobile_Version_01.Class.Table_Constructor;
 using Android.Support.V7.Widget;
+using SupportFragment = Android.Support.V4.App.Fragment;
 
 namespace Etl_Analytics_Mobile_Version_01.Fragments
 {

@@ -64,10 +64,5 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
                 tab.SetCustomView(mAdapter.GetTabView(position));
             }
         }
-
-        public override bool OnOptionsItemSelected(IMenuItem item)
-        {
-            return base.OnOptionsItemSelected(item);
-        }
     }
 }

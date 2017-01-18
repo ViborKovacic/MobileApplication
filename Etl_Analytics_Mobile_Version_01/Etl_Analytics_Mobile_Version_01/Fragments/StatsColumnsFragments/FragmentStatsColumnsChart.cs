@@ -15,6 +15,8 @@ using Android.Widget;
 using static Android.Views.View;
 using MikePhil.Charting.Listener;
 using MikePhil.Charting.Highlight;
+using Android.Content;
+using Etl_Analytics_Mobile_Version_01.AllActivity;
 
 namespace Etl_Analytics_Mobile_Version_01.Fragments.StatsColumnsFragments
 {
@@ -31,6 +33,7 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments.StatsColumnsFragments
         private float resoultHighOccupancy;
         private float resoultLowOccupncy;
         private ImageView mImageViewChart;
+        private Context mContext;
         public override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -48,6 +51,8 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments.StatsColumnsFragments
 
             view = inflater.Inflate(Resource.Layout.StatsColumnsGraph, container, false);
             mPieChart = view.FindViewById<PieChart>(Resource.Id.pieChart);
+
+            mContext = container.Context;
 
             MyPieChart();
 
@@ -183,6 +188,13 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments.StatsColumnsFragments
 
                     descriptionDialog.Arguments = bundle;
                     descriptionDialog.Show(trans, "Dialog Fragment");
+
+                    return true;
+
+                case 16908332:
+
+                    Intent intent = new Intent(mContext, typeof(MainPageAct));
+                    this.StartActivity(intent);
 
                     return true;
 

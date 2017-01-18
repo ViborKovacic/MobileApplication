@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:weightSum="40"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:id="@+id/fragmentParametersTitle"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="NASLOV"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:id="@+id/linearLayoutHorizontalTop"
+        android:layout_marginTop="10dp">
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+            <TextView
+                android:id="@+id/fragmentParametersDataByDate"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="NASLOV"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Delete data by day:"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:textSize="16dp" />
+            <EditText
+                android:id="@+id/deleteDataByDay"
+                android:layout_height="30dp"
+                android:layout_width="80dp"
+                android:background="@drawable/inputtextview"
+                android:layout_alignParentRight="true"
+                android:text="TEST"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:focusableInTouchMode="true"
+                android:singleLine="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_weight="10"
+        android:layout_height="0dp"
+        android:id="@+id/linearLayoutHorizontalMiddle">
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+            <TextView
+                android:id="@+id/fragmentParametersLimitTable"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="NASLOV"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Precentage limit value table:"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:textSize="16dp" />
+            <EditText
+                android:id="@+id/precentageLimitValueTable"
+                android:layout_height="30dp"
+                android:layout_width="80dp"
+                android:background="@drawable/inputtextview"
+                android:gravity="center"
+                android:text="TEST"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:focusableInTouchMode="true"
+                android:singleLine="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_weight="10"
+        android:layout_height="0dp"
+        android:id="@+id/linearLayoutHorizontalBottom">
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+            <TextView
+                android:id="@+id/fragmentParametersLimitColumn"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="NASLOV"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Precentage limit value column:"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:textSize="16dp" />
+            <EditText
+                android:id="@+id/precentageLimitValueColumn"
+                android:layout_height="30dp"
+                android:layout_width="80dp"
+                android:background="@drawable/inputtextview"
+                android:gravity="center"
+                android:text="TEST"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:focusableInTouchMode="true"
+                android:singleLine="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_weight="10"
+        android:layout_height="0dp"
+        android:id="@+id/linearLayoutHorizontalButton">
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+            <Button
+                android:id="@+id/frgParaSave"
+                android:layout_height="50dp"
+                android:layout_width="150dp"
+                android:text="SAVE"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

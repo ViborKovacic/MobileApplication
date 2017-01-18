@@ -107,5 +107,9 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
 
             };
         }
+        public override void OnBackPressed()
+        {
+            FinishAffinity();
+        }
     }
 }

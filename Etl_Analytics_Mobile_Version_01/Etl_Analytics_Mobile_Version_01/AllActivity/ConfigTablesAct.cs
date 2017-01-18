@@ -14,7 +14,7 @@ using Android.Content;
 
 namespace Etl_Analytics_Mobile_Version_01.AllActivity
 {
-    [Activity(Label = "Configuration", Icon = "@drawable/icon", Theme = "@style/MyTheme2")]
+    [Activity(Label = "Configuration", Icon = "@drawable/icon", Theme = "@style/MyThemeDrawerLayout")]
     public class ConfigTablesAct : ActionBarActivity
 
     {
@@ -26,7 +26,7 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
         private ArrayAdapter adapterDrawer;
         private SupportFragment mCurrentFragment;
         private FragmentConfigTablesAndColumns mFragmentConfigTables;
-        private Fragment2 mFragment2;
+        private FragmentParameters mFragmentParameters;
         private Stack<SupportFragment> mStackFragment;
         private Intent intent;
 
@@ -41,18 +41,18 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
 
             if (SupportFragmentManager.FindFragmentByTag("Fragment1") != null)
             {
-                mFragmentConfigTables = SupportFragmentManager.FindFragmentByTag("Fragment1") as FragmentConfigTablesAndColumns;
+                mFragmentParameters = SupportFragmentManager.FindFragmentByTag("Fragment1") as FragmentParameters;
             }
             else
             {
                 mFragmentConfigTables = new FragmentConfigTablesAndColumns();
-                mFragment2 = new Fragment2();
+                mFragmentParameters = new FragmentParameters();
 
                 var trans = SupportFragmentManager.BeginTransaction();
-                trans.Add(Resource.Id.fragmentContainer, mFragmentConfigTables, "Fragment1");
+                trans.Add(Resource.Id.fragmentContainer, mFragmentParameters, "Fragment1");
                 trans.Commit();
 
-                mCurrentFragment = mFragmentConfigTables;
+                mCurrentFragment = mFragmentParameters;
             }
 
             listDrawer = new List<string>();
@@ -71,6 +71,7 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
 
             drawerToogle = new MyActionBarDrawerToggle(this /*host*/, drawerLayout, Resource.String.open_drawer, Resource.String.close_drawer);
 
+            drawerLayout.SetDrawerListener(drawerToogle);
             SupportActionBar.SetHomeButtonEnabled(true);
             SupportActionBar.SetDisplayShowTitleEnabled(true);
             SupportActionBar.SetDisplayHomeAsUpEnabled(true);
@@ -110,7 +111,7 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
 
         public override bool OnCreateOptionsMenu(IMenu menu)
         {
-            MenuInflater.Inflate(Resource.Menu.action_menu, menu);
+            MenuInflater.Inflate(Resource.Menu.fragmentConfigTablesAndColumns, menu);
             return base.OnCreateOptionsMenu(menu);
         }
 
@@ -119,16 +120,21 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
             switch (item.ItemId)
             {
                 case 16908332 /*Hamburger*/:
+                    drawerToogle.OnOptionsItemSelected(item);
+                    return base.OnOptionsItemSelected(item);
 
-                    return base.OnOptionsItemSelected(item);
-                case Resource.Id.searchImage:
-                    return base.OnOptionsItemSelected(item);
-                case Resource.Id.action_fragment1:
+                case Resource.Id.Next:
                     ReplaceFragment(mFragmentConfigTables);
                     return true;
-                case Resource.Id.action_fragment2:
-                    ReplaceFragment(mFragment2);
+
+                case Resource.Id.action_Tables:
+                    ReplaceFragment(mFragmentConfigTables);
                     return true;
+
+                case Resource.Id.action_Parameters:
+                    ReplaceFragment(mFragmentParameters);
+                    return true;
+
                 default:
                     return base.OnOptionsItemSelected(item);
             }

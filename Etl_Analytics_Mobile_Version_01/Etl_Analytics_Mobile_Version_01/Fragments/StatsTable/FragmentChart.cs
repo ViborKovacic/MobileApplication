@@ -14,6 +14,8 @@ using Etl_Analytics_Mobile_Version_01.Fragments.StatsTable;
 using Android.Widget;
 using MikePhil.Charting.Components;
 using Etl_Analytics_Mobile_Version_01.Fragments.StatsColumnsFragments;
+using Android.Content;
+using Etl_Analytics_Mobile_Version_01.AllActivity;
 
 namespace Etl_Analytics_Mobile_Version_01.Fragments
 {
@@ -27,6 +29,7 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
         private List<StatsTables> mListStatsTables;
 
         private WebService webService;
+        private Context mContext;
 
         private BarDataSet dataSet;
         private BarChart chartAllTables;
@@ -58,6 +61,8 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
             mTextAllTable = view.FindViewById<TextView>(Resource.Id.txtAllTable);
             mTextSuccess = view.FindViewById<TextView>(Resource.Id.textSuccess);
             mTextError = view.FindViewById<TextView>(Resource.Id.textError);
+
+            mContext = container.Context;
 
             mTextAllTable.Text = "All tables chart";
             mTextSuccess.Text = "Success tables chart";
@@ -103,8 +108,10 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
 
                     return true;
 
-                //case Resource.Id.:
-                //    return true;
+                case 16908332:
+                    Intent intent = new Intent(mContext, typeof(MainPageAct));
+                    this.StartActivity(intent);
+                    return true;
 
                 default:
                     return base.OnOptionsItemSelected(item);
