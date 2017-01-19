@@ -29,6 +29,8 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
         private FragmentParameters mFragmentParameters;
         private Stack<SupportFragment> mStackFragment;
         private Intent intent;
+        private TextView mUserName;
+        private TextView mUserNameAndSurname;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -38,6 +40,8 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
             suppToolbar = FindViewById<SupportToolbar>(Resource.Id.toolbar);
             drawerLayout = FindViewById<DrawerLayout>(Resource.Id.Drawer);
             viewDrawer = FindViewById<ListView>(Resource.Id.ListView);
+            mUserName = FindViewById<TextView>(Resource.Id.drawerUsername);
+            mUserNameAndSurname = FindViewById<TextView>(Resource.Id.drawerUserNameSurname);
 
             if (SupportFragmentManager.FindFragmentByTag("Fragment1") != null)
             {
@@ -54,6 +58,14 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
 
                 mCurrentFragment = mFragmentParameters;
             }
+
+            ISharedPreferences preferences = Application.Context.GetSharedPreferences("RememberMe", FileCreationMode.Private);
+            string UserName = preferences.GetString("UserName", "");
+            string Name = preferences.GetString("Name", "");
+            string Surname = preferences.GetString("Surname", "");
+
+            mUserName.Text = UserName;
+            mUserNameAndSurname.Text = Name + " " + Surname;
 
             listDrawer = new List<string>();
             listDrawer.Add("Configuration columns");

@@ -107,6 +107,35 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
 
             };
         }
+
+        public override bool OnCreateOptionsMenu(IMenu menu)
+        {
+            MenuInflater.Inflate(Resource.Menu.mainPage_menu, menu);
+            return base.OnCreateOptionsMenu(menu);
+        }
+
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            switch (item.ItemId)
+            {
+                case Resource.Id.LogOut:
+
+                    ISharedPreferences preferences = Application.Context.GetSharedPreferences("RememberMe", FileCreationMode.Private);
+                    ISharedPreferencesEditor editor = preferences.Edit();
+                    editor.Clear();
+                    editor.Apply();
+
+                    Intent intent = new Intent(this, typeof(MainActivity));
+                    this.StartActivity(intent);
+                    this.Finish();
+
+                    return true;
+
+                default:
+                    return base.OnOptionsItemSelected(item);
+            }
+            
+        }
         public override void OnBackPressed()
         {
             FinishAffinity();

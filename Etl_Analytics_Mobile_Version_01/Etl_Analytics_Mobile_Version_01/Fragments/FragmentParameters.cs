@@ -28,6 +28,7 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
         private EditText mTextColumn;
 
         private Button mButtonSave;
+        private Context mContext;
 
         //private Dictionary<string, string> mDicParamVar;
         private List<ParametersVariable> mListParamVariable;
@@ -57,6 +58,8 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
             mTextDate.ClearFocus();
             mTextTable.ClearFocus();
             mTextColumn.ClearFocus();
+
+            mContext = container.Context;
 
             mButtonSave = mView.FindViewById<Button>(Resource.Id.frgParaSave);
 
@@ -92,10 +95,7 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
 
         private void MButtonSave_Click(object sender, EventArgs e)
         {
-            //foreach (KeyValuePair<string, string> header in mDicParamVar)
-            //{
-            //    mWebService.UpdateParametersVariable(header.Key, header.Value);
-            //}
+            Toast.MakeText(mContext,"Sending data", ToastLength.Long).Show();
         }
     }
 }

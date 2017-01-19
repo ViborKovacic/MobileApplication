@@ -34,7 +34,8 @@ namespace Etl_Analytics_Mobile_Version_01
         private ProgressDialog progressBarDialog;
         private EditText txtUserName;
         private EditText txtPassword;
-        LinearLayout mLinearLayout; 
+        private LinearLayout mLinearLayout;
+        private CheckBox mCheckBox;
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -45,6 +46,8 @@ namespace Etl_Analytics_Mobile_Version_01
 
             txtUserName = FindViewById<EditText>(Resource.Id.txtUserName);
             txtPassword = FindViewById<EditText>(Resource.Id.txtPassword);
+
+            mCheckBox = FindViewById<CheckBox>(Resource.Id.ckbRememberMe);
 
             txtUserName.ClearFocus();
             txtPassword.ClearFocus();
@@ -90,8 +93,27 @@ namespace Etl_Analytics_Mobile_Version_01
                 {
                     if (txtUserName.Text == row.USER_NAME && txtPassword.Text == row.PASSWORD)
                     {
+                        if (mCheckBox.Checked)
+                        {
+                            ISharedPreferences preference = Application.Context.GetSharedPreferences("RememberMe", FileCreationMode.Private);
+                            ISharedPreferencesEditor editor = preference.Edit();
+                            editor.PutString("UserName", txtUserName.Text.Trim());
+                            editor.PutString("Password", txtPassword.Text.Trim());
+                            editor.PutString("Name", row.FIRST_NAME.Trim());
+                            editor.PutString("Surname", row.LAST_NAME.Trim());
+                            editor.PutInt("Privilege", row.USER_TYPE);
+                            editor.Apply();
+                        }
+                        else
+                        {
+                            ISharedPreferences preference = Application.Context.GetSharedPreferences("RememberMe", FileCreationMode.Private);
+                            ISharedPreferencesEditor editor = preference.Edit();
+                            editor.PutString("Name", row.FIRST_NAME.Trim());
+                            editor.PutString("Surname", row.LAST_NAME.Trim());
+                            editor.PutInt("Privilege", row.USER_TYPE);
+                            editor.Apply();
+                        }
 
-                        flag = true;
                         Intent intent = new Intent(this, typeof(MainPageAct));
                         this.StartActivity(intent);
                         this.Finish(); //that user can't return back on this layout

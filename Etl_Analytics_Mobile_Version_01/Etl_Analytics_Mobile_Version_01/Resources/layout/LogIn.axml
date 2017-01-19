@@ -79,13 +79,11 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="35">
-        <ProgressBar
+        <CheckBox
+            android:text="Remember Me"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/progressBar1"
-            android:indeterminate="true"
-            android:layout_centerInParent="true"
-            android:background="@drawable/progressbarstyle"
-            android:visibility="invisible" />
+            android:id="@+id/ckbRememberMe"
+            android:layout_centerInParent="true"/>
     </RelativeLayout>
 </LinearLayout>

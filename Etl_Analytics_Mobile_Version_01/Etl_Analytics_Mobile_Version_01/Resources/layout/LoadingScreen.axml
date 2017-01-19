@@ -3,15 +3,6 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bground">
-    <ImageView
-        android:src="@drawable/logo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView1" />
-    <ProgressBar
-        
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/progressBarLoading" />
+    android:background="@drawable/bground"
+    android:theme="@style/Theme.Splash">
 </LinearLayout>

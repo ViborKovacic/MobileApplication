@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:local="http://schemas.android.com/apk/res-auto"
+              xmlns:local="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+  
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -12,24 +13,96 @@
         android:background="?attr/colorPrimary"
         local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         local:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+  
     <android.support.v4.widget.DrawerLayout
         android:id="@+id/Drawer"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
     <!-- The main content view -->
+      
         <FrameLayout
             android:id="@+id/fragmentContainer"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
+      
     <!-- The navigation drawer -->
+        <LinearLayout
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:orientation="vertical">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="150dp"
+            android:layout_width="match_parent"
+            android:weightSum="20"
+            android:background="#FFF">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10">
+                <RelativeLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent">
+                    <ImageView
+                        android:layout_height="50dp"
+                        android:layout_width="50dp"
+                        android:src="@drawable/myuser"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text=""
+                    android:textSize="16dp" />
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="USER"
+                    android:textSize="16dp"
+                    android:textColor="@color/abc_input_method_navigation_guard" />
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text=""
+                    android:textSize="16dp" />
+                <TextView
+                    android:id="@+id/drawerUserNameSurname"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="Ivo"
+                    android:textSize="12dp"
+                    android:textColor="@color/abc_input_method_navigation_guard" />
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text=""
+                    android:textSize="16dp" />
+                <TextView
+                    android:id="@+id/drawerUsername"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="Ivic"
+                    android:textSize="12dp"
+                    android:textColor="@color/abc_input_method_navigation_guard" />
+            </LinearLayout>
+        </LinearLayout>
         <ListView
             android:id="@+id/ListView"
             android:layout_width="240dp"
             android:layout_height="match_parent"
-            android:layout_gravity="start"
             android:choiceMode="singleChoice"
             android:divider="#D2D2D2"
             android:dividerHeight="2dp"
             android:background="#F2F2F2" />
+    </LinearLayout>
     </android.support.v4.widget.DrawerLayout>
 </LinearLayout>
