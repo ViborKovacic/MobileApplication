@@ -26,7 +26,7 @@ namespace Etl_Analytics_Mobile_Version_01.Class
             mContext = context;
             mRowLayout = rowLayout;
             mStatsColumns = statsColumns;
-            mAlternatingColors = new int[] { 0xF2F2F2, 0x264B26 };
+            mAlternatingColors = new int[] { 0xF2F2F2, 0x003D58 };
         }
 
         public override int Count

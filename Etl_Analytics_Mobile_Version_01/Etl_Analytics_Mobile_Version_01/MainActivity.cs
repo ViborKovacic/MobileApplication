@@ -125,7 +125,7 @@ namespace Etl_Analytics_Mobile_Version_01
                     RunOnUiThread(() => { progressBarDialog.Dismiss(); });
                     string title = "Warning!!!";
                     string message = "The username or password is incrrect";
-                    RunOnUiThread(() => { AlertDialogShow(title, message); });
+                    //RunOnUiThread(() => { AlertDialogShow(title, message); });
                 }
                 else
                 {
@@ -172,7 +172,8 @@ namespace Etl_Analytics_Mobile_Version_01
             Android.Support.V7.App.AlertDialog.Builder alert = new Android.Support.V7.App.AlertDialog.Builder(this);
             alert.SetTitle(title);
             alert.SetMessage(message);
-            alert.SetNeutralButton("OK", delegate {
+            alert.SetNeutralButton("OK", delegate
+            {
                 alert.Dispose();
             });
             alert.Show();

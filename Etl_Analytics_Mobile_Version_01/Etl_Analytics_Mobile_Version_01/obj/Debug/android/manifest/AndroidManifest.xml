@@ -7,7 +7,7 @@
   <application android:label="Etl_Analytics_Mobile_Version_01" android:name="android.app.Application" android:allowBackup="true" android:icon="@drawable/icon" android:debuggable="true">
     <activity android:icon="@drawable/icon" android:label="Etl_Analytics_Mobile_Version" android:theme="@style/MyTheme" android:name="md5661818f8c891972acc16e4acaf00595d.MainActivity" />
     <activity android:label="DrawerLayoutActionBar" android:theme="@style/MyThemeDrawerLayout" android:name="md5c061d5b67b2bf180a74fe23549602373.DrawerLayoutActionBar" />
-    <activity android:icon="@drawable/icon" android:label="Iniste2" android:noHistory="true" android:theme="@style/Theme.Splash" android:name="md5c061d5b67b2bf180a74fe23549602373.LoadingScreen">
+    <activity android:icon="@drawable/icon" android:label="Insite2" android:noHistory="true" android:theme="@style/Theme.Splash" android:name="md5c061d5b67b2bf180a74fe23549602373.LoadingScreen">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

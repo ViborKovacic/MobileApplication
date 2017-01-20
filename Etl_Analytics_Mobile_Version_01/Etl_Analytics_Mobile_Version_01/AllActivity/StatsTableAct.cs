@@ -5,7 +5,9 @@ using Android.Support.Design.Widget;
 using Android.Support.V4.View;
 using Android.Support.V7.App;
 using Android.Views;
+using Android.Widget;
 using Etl_Analytics_Mobile_Version_01.Class;
+using System.Threading;
 using SupportToolbar = Android.Support.V7.Widget.Toolbar;
 
 
@@ -19,6 +21,7 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
         private SupportToolbar mToolbar;
         private ActionBarFragmentAdapter mAdapter;
         private string mHelpVariable;
+        private ProgressDialog progressBarDialog;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {

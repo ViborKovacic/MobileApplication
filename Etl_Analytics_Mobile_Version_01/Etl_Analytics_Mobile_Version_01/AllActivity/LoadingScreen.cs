@@ -15,7 +15,7 @@ using System.Threading;
 
 namespace Etl_Analytics_Mobile_Version_01.AllActivity
 {
-    [Activity(Label = "Iniste2", MainLauncher = true, NoHistory = true, Icon = "@drawable/icon", Theme = "@style/Theme.Splash")]
+    [Activity(Label = "Insite2", MainLauncher = true, NoHistory = true, Icon = "@drawable/icon", Theme = "@style/Theme.Splash")]
     public class LoadingScreen : Activity
     {
         private WebService mWebService;

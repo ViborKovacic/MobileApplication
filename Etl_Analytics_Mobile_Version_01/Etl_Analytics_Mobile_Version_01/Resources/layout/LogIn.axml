@@ -43,7 +43,7 @@
             android:id="@+id/txtPassword"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:hint="Password" />
+            android:hint="Password"/>
     </android.support.design.widget.TextInputLayout>
     <Button
         android:text="Log In"

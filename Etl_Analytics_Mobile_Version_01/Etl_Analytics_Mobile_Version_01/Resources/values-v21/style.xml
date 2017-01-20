@@ -16,17 +16,17 @@
   </style>
 
   <style name="MyTheme2" parent="Theme.AppCompat.Light.NoActionBar">
-    <item name="colorPrimary">#00897B</item>
+    <item name="colorPrimary">#003D58</item>
     <item name="drawerArrowStyle">@style/MyDrawerArrowStyle2</item>
   </style>
 
   <style name="MyDrawerArrowStyle2" parent="Widget.AppCompat.DrawerArrowToggle">
-    <item name="color">#F5F5F5</item>
+    <item name="color">#003D58</item>
     <item name="spinBars">true</item>
   </style>
 
   <style name="MyTheme3" parent="Theme.AppCompat.Light.NoActionBar">
-    <item name="colorPrimary">#00897B</item>
+    <item name="colorPrimary">#003D58</item>
     <item name="drawerArrowStyle">@style/MyDrawerArrowStyle</item>
     <item name="android:windowContentTransitions">true</item>
     <item name="android:windowAllowEnterTransitionOverlap">true</item>
