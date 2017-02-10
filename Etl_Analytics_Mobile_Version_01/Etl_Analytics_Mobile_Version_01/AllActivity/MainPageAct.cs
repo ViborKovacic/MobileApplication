@@ -36,6 +36,8 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
         private LinearLayout mLienarNesto;
         private LinearLayout mLienarStatsTable;
         private LinearLayout mLienarStatsColumn;
+        private LinearLayout mLienarParameterVar;
+        private LinearLayout mLinearUsers;
         private ProgressDialog progressBarDialog;
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -52,6 +54,7 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
                 mLienarNesto = FindViewById<LinearLayout>(Resource.Id.linearNesto);
                 mLienarStatsTable = FindViewById<LinearLayout>(Resource.Id.linearStatsTable);
                 mLienarStatsColumn = FindViewById<LinearLayout>(Resource.Id.linearStatsColumn);
+                
 
                 mLienarLogTable.Click += delegate
                 {
@@ -74,7 +77,7 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
                         Intent intent = new Intent(this, typeof(StatsTableAct));
                         intent.PutExtra("StatsTable", "StatsTable");
                         this.StartActivity(intent);
-                        RunOnUiThread(() => { Toast.MakeText(this, "Column statistics opened", ToastLength.Long).Show(); });
+                        RunOnUiThread(() => { Toast.MakeText(this, "Table statistics opened", ToastLength.Long).Show(); });
 
                         RunOnUiThread(() => { progressBarDialog.Hide(); });
                     })).Start();
@@ -100,6 +103,90 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
             else
             {
                 SetContentView(Resource.Layout.MainPageAdmin);
+                mLienarLogTable = FindViewById<LinearLayout>(Resource.Id.linearLogTable);
+                mLienarNesto = FindViewById<LinearLayout>(Resource.Id.linearNesto);
+                mLienarStatsTable = FindViewById<LinearLayout>(Resource.Id.linearStatsTable);
+                mLienarStatsColumn = FindViewById<LinearLayout>(Resource.Id.linearStatsColumn);
+                mLienarParameterVar = FindViewById<LinearLayout>(Resource.Id.linearParameterVar);
+                mLinearUsers = FindViewById<LinearLayout>(Resource.Id.linearUsers);
+
+                mLienarLogTable.Click += delegate
+                {
+                    Intent intent = new Intent(this, typeof(TestStatsTableAct));
+                    this.StartActivity(intent);
+                    RunOnUiThread(() => { Toast.MakeText(this, "Log table opened", ToastLength.Long).Show(); });
+                };
+
+                mLienarNesto.Click += delegate
+                {
+
+                };
+
+                mLienarStatsTable.Click += delegate
+                {
+                    ProgressBarDialog();
+
+                    new Thread(new ThreadStart(delegate
+                    {
+                        Intent intent = new Intent(this, typeof(StatsTableAct));
+                        intent.PutExtra("StatsTable", "StatsTable");
+                        this.StartActivity(intent);
+                        RunOnUiThread(() => { Toast.MakeText(this, "Table statistics opened", ToastLength.Long).Show(); });
+
+                        RunOnUiThread(() => { progressBarDialog.Hide(); });
+                    })).Start();
+                };
+
+                mLienarStatsColumn.Click += delegate
+                {
+                    Intent intent = new Intent(this, typeof(StatsTableAct));
+                    ProgressBarDialog();
+                    new Thread(new ThreadStart(delegate
+                    {
+
+                        intent.PutExtra("StatsColumns", "StatsColumns");
+                        RunOnUiThread(() => { progressBarDialog.Hide(); });
+                        this.StartActivity(intent);
+
+                        RunOnUiThread(() => { Toast.MakeText(this, "Column statistics opened", ToastLength.Long).Show(); });
+
+
+                    })).Start();
+                };
+
+                mLienarParameterVar.Click += delegate
+                {
+                    Intent intent = new Intent(this, typeof(ConfigTablesAct));
+                    ProgressBarDialog();
+                    new Thread(new ThreadStart(delegate
+                    {
+
+                        intent.PutExtra("ParameterVar", "ParameterVar");
+                        RunOnUiThread(() => { progressBarDialog.Hide(); });
+                        this.StartActivity(intent);
+
+                        RunOnUiThread(() => { Toast.MakeText(this, "Parameter variable opened", ToastLength.Long).Show(); });
+
+
+                    })).Start();
+                };
+
+                mLinearUsers.Click += delegate
+                {
+                    Intent intent = new Intent(this, typeof(UserTableAct));
+                    ProgressBarDialog();
+                    new Thread(new ThreadStart(delegate
+                    {
+
+                        intent.PutExtra("Users", "Users");
+                        RunOnUiThread(() => { progressBarDialog.Hide(); });
+                        this.StartActivity(intent);
+
+                        RunOnUiThread(() => { Toast.MakeText(this, "Users opened", ToastLength.Long).Show(); });
+
+
+                    })).Start();
+                };
             }
 
 

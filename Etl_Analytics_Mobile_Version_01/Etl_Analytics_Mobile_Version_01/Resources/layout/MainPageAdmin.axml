@@ -4,186 +4,203 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="30"
+    android:weightSum="50"
     android:background="@drawable/bground">
-  <android.support.v7.widget.Toolbar
-      android:id="@+id/toolbar"
-      android:fitsSystemWindows="true"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:minHeight="?attr/actionBarSize"
-      android:background="?attr/colorPrimary"
-      android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-      local:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
-  <LinearLayout
-      android:orientation="horizontal"
-      android:layout_width="match_parent"
-      android:layout_height="0dp"
-      android:layout_weight="10"
-      android:weightSum="20">
-    <RelativeLayout
-        android:orientation="vertical"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="10">
-      <LinearLayout
-          android:orientation="vertical"
-          android:layout_height="150dp"
-          android:layout_width="150dp"
-          android:layout_centerHorizontal="true"
-          android:layout_centerVertical="true"
-          android:background="@drawable/mainLinearLayoutStyle">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        local:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:weightSum="20">
         <ImageView
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_width="match_parent"
-            android:src="@drawable/list"
-            android:layout_marginTop="35dp" />
-        <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:text="Log of tables"
-            android:gravity="center"
-            android:textSize="20dp" />
-      </LinearLayout>
-    </RelativeLayout>
-    <RelativeLayout
-        android:orientation="vertical"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="10">
-      <LinearLayout
-          android:orientation="vertical"
-          android:layout_height="150dp"
-          android:layout_width="150dp"
-          android:layout_centerHorizontal="true"
-          android:layout_centerVertical="true"
-          android:background="@drawable/mainLinearLayoutStyle">
-        <ImageView
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:src="@drawable/note"
-            android:layout_marginTop="35dp" />
-        <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:text="Nesto dodati"
-            android:gravity="center"
-            android:textSize="20dp" />
-      </LinearLayout>
-    </RelativeLayout>
-  </LinearLayout>
-  <LinearLayout
-      android:orientation="horizontal"
-      android:layout_width="match_parent"
-      android:layout_height="0dp"
-      android:layout_weight="10"
-      android:weightSum="20">
-    <RelativeLayout
-        android:orientation="vertical"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="10">
-      <LinearLayout
-          android:orientation="vertical"
-          android:layout_height="150dp"
-          android:layout_width="150dp"
-          android:layout_centerHorizontal="true"
-          android:layout_centerVertical="true"
-          android:background="@drawable/mainLinearLayoutStyle">
-        <ImageView
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:src="@drawable/list"
-            android:layout_marginTop="35dp" />
-        <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:text="Table statistics"
-            android:gravity="center"
-            android:textSize="20dp" />
-      </LinearLayout>
-    </RelativeLayout>
-    <RelativeLayout
-        android:orientation="vertical"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="10">
-      <LinearLayout
-          android:orientation="vertical"
-          android:layout_height="150dp"
-          android:layout_width="150dp"
-          android:layout_centerHorizontal="true"
-          android:layout_centerVertical="true"
-          android:background="@drawable/mainLinearLayoutStyle">
-        <ImageView
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:src="@drawable/list"
-            android:layout_marginTop="35dp" />
-        <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:text="Column statistics"
-            android:gravity="center"
-            android:textSize="20dp" />
-      </LinearLayout>
-    </RelativeLayout>
-  </LinearLayout>
-  <LinearLayout
-      android:orientation="horizontal"
-      android:layout_width="match_parent"
-      android:layout_height="0dp"
-      android:layout_weight="10"
-      android:weightSum="20">
-    <RelativeLayout
-        android:orientation="vertical"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="10">
-      <LinearLayout
-          android:orientation="vertical"
-          android:layout_height="150dp"
-          android:layout_width="150dp"
-          android:layout_centerHorizontal="true"
-          android:layout_centerVertical="true"
-          android:background="@drawable/mainLinearLayoutStyle">
-        <ImageView
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:src="@drawable/note"
-            android:layout_marginTop="35dp" />
-        <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:text="Parameter variable"
-            android:gravity="center"
-            android:textSize="20dp" />
-      </LinearLayout>
-    </RelativeLayout>
-    <RelativeLayout
-        android:orientation="vertical"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="10">
-      <LinearLayout
-          android:orientation="vertical"
-          android:layout_height="150dp"
-          android:layout_width="150dp"
-          android:layout_centerHorizontal="true"
-          android:layout_centerVertical="true"
-          android:background="@drawable/mainLinearLayoutStyle">
-        <ImageView
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:src="@drawable/list"
-            android:layout_marginTop="35dp" />
-        <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:text="Users"
-            android:gravity="center"
-            android:textSize="20dp" />
-      </LinearLayout>
-    </RelativeLayout>
-  </LinearLayout>
+            android:src="@drawable/logo" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:weightSum="20">
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10">
+            <LinearLayout
+                android:id="@+id/linearLogTable"
+                android:orientation="vertical"
+                android:layout_height="150dp"
+                android:layout_width="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/mainLinearLayoutStyle"
+                android:gravity="center">
+                <ImageView
+                    android:layout_height="50dp"
+                    android:layout_width="50dp"
+                    android:src="@drawable/list" />
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="Log of tables"
+                    android:gravity="center"
+                    android:textSize="15dp" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10">
+          <LinearLayout
+                android:id="@+id/linearNesto"
+                android:orientation="vertical"
+                android:layout_height="150dp"
+                android:layout_width="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/mainLinearLayoutStyle"
+                android:gravity="center">
+                <ImageView
+                    android:layout_height="50dp"
+                    android:layout_width="50dp"
+                    android:src="@drawable/note" />
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="Nesto dodati"
+                    android:gravity="center"
+                    android:textSize="15dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:weightSum="20">
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10">
+            <LinearLayout
+                android:id="@+id/linearStatsTable"
+                android:orientation="vertical"
+                android:layout_height="150dp"
+                android:layout_width="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/mainLinearLayoutStyle"
+                android:gravity="center">
+                <ImageView
+                    android:layout_height="50dp"
+                    android:layout_width="50dp"
+                    android:src="@drawable/list" />
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="Table statistics"
+                    android:gravity="center"
+                    android:textSize="15dp" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10">
+            <LinearLayout
+                android:id="@+id/linearStatsColumn"
+                android:orientation="vertical"
+                android:layout_height="150dp"
+                android:layout_width="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/mainLinearLayoutStyle"
+                android:gravity="center">
+                <ImageView
+                    android:layout_height="50dp"
+                    android:layout_width="50dp"
+                    android:src="@drawable/list" />
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="Column statistics"
+                    android:gravity="center"
+                    android:textSize="15dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:weightSum="20">
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10">
+            <LinearLayout
+                android:id="@+id/linearParameterVar"
+                android:orientation="vertical"
+                android:layout_height="150dp"
+                android:layout_width="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/mainLinearLayoutStyle"
+                android:gravity="center">
+                <ImageView
+                    android:layout_height="50dp"
+                    android:layout_width="50dp"
+                    android:src="@drawable/note" />
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="Parameter variable"
+                    android:gravity="center"
+                    android:textSize="15dp" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10">
+            <LinearLayout
+                android:id="@+id/linearUsers"
+                android:orientation="vertical"
+                android:layout_height="150dp"
+                android:layout_width="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/mainLinearLayoutStyle"
+                android:gravity="center">
+                <ImageView
+                    android:layout_height="50dp"
+                    android:layout_width="50dp"
+                    android:src="@drawable/list" />
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="Users"
+                    android:gravity="center"
+                    android:textSize="15dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
 </LinearLayout>

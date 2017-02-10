@@ -12,6 +12,7 @@ using Java.Lang;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Design = Android.Support.Design.Widget.TextInputLayout;
 
 namespace Etl_Analytics_Mobile_Version_01.Fragments
 {
@@ -23,11 +24,11 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
         private WebService mWebService;
 
         private EditText mSearch;
+        private Design mDesign;
         private LinearLayout mContainerListView;
         private Context mContext;
         private bool mAnimatedDown;
         private bool mIsAnimating;
-        private bool mKeyboard;
         public override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -43,10 +44,13 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
             mListView = view.FindViewById<ListView>(Resource.Id.listViewStatsTable);
             mSearch = view.FindViewById<EditText>(Resource.Id.etSearch);
             mContainerListView = view.FindViewById<LinearLayout>(Resource.Id.containerListView);
+            mDesign = view.FindViewById<Design>(Resource.Id.HelpEr);
 
             mContext = container.Context;
 
-            mSearch.Alpha = 0;
+            mDesign.Alpha = 0;
+            mDesign.Focusable = false;
+
             mSearch.Focusable = false;
             mSearch.AddTextChangedListener(this);
 
@@ -91,7 +95,6 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
 
             mStatsTableAdapter = new StatsTableAdapter(mContext, Resource.Layout.StatsTableRow, searchedList);
             mListView.Adapter = mStatsTableAdapter;
-            mKeyboard = true;
         }
 
         public override bool OnOptionsItemSelected(IMenuItem item)
@@ -140,24 +143,24 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
             if (!mAnimatedDown)
             {
                 //up
-                MyAnimation anim = new MyAnimation(mContainerListView, mContainerListView.Height - mSearch.Height);
+                MyAnimation anim = new MyAnimation(mContainerListView, mContainerListView.Height - mDesign.Height);
                 anim.Duration = 500;
                 mContainerListView.StartAnimation(anim);
 
                 anim.AnimationStart += Anim_AnimationStartDown;
                 anim.AnimationEnd += Anim_AnimationEndDown;
-                mContainerListView.Animate().TranslationYBy(mSearch.Height).SetDuration(500).Start();
+                mContainerListView.Animate().TranslationYBy(mDesign.Height).SetDuration(500).Start();
             }
             else
             {
                 //down
-                MyAnimation anim = new MyAnimation(mContainerListView, mContainerListView.Height + mSearch.Height);
+                MyAnimation anim = new MyAnimation(mContainerListView, mContainerListView.Height + mDesign.Height);
                 anim.Duration = 500;
                 mContainerListView.StartAnimation(anim);
 
                 anim.AnimationStart += Anim_AnimationStartUp;
                 anim.AnimationEnd += Anim_AnimationEndUp;
-                mContainerListView.Animate().TranslationYBy(-mSearch.Height).SetDuration(500).Start();
+                mContainerListView.Animate().TranslationYBy(-mDesign.Height).SetDuration(500).Start();
             }
             mAnimatedDown = !mAnimatedDown;
         }
@@ -165,15 +168,15 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
         private void Anim_AnimationEndUp(object sender, Android.Views.Animations.Animation.AnimationEndEventArgs e)
         {
             mIsAnimating = false;
-            mSearch.ClearFocus();
+            
 
-            if (mKeyboard == true)
+            if (mSearch.HasFocus == true)
             {
                 InputMethodManager inputManager = (InputMethodManager)mContext.GetSystemService(Context.InputMethodService);
                 inputManager.ToggleSoftInput(0, 0);
-            }
 
-            mKeyboard = !mKeyboard;
+                mSearch.ClearFocus();
+            }
         }
 
         private void Anim_AnimationEndDown(object sender, Android.Views.Animations.Animation.AnimationEndEventArgs e)
@@ -184,7 +187,7 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
         private void Anim_AnimationStartDown(object sender, Android.Views.Animations.Animation.AnimationStartEventArgs e)
         {
             mIsAnimating = true;
-            mSearch.Animate().AlphaBy(1.0f).SetDuration(500).Start();
+            mDesign.Animate().AlphaBy(1.0f).SetDuration(500).Start();
             mSearch.Focusable = true;
             mSearch.FocusableInTouchMode = true;
         }
@@ -192,7 +195,7 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
         private void Anim_AnimationStartUp(object sender, Android.Views.Animations.Animation.AnimationStartEventArgs e)
         {
             mIsAnimating = true;
-            mSearch.Animate().AlphaBy(-1.0f).SetDuration(300).Start();
+            mDesign.Animate().AlphaBy(-1.0f).SetDuration(300).Start();
         }
     }
 }

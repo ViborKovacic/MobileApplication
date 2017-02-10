@@ -31,65 +31,52 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
             mListUserName = new List<UserTable>();
             mWebService = new WebService();
 
-            progressBarDialog = new ProgressDialog(this);
-            progressBarDialog.SetCancelable(false);
-            progressBarDialog.SetMessage("Opening application...");
-            progressBarDialog.SetProgressStyle(ProgressDialogStyle.Spinner);
-            progressBarDialog.Show();
+            mListUserName = mWebService.GetAllDataUserTable();
 
-            new Thread(new ThreadStart(delegate {
-
-                mListUserName = mWebService.GetAllDataUserTable();
-
-                ISharedPreferences preferences = Application.Context.GetSharedPreferences("RememberMe", FileCreationMode.Private);
-                string UserName = preferences.GetString("UserName", String.Empty);
-                string Password = preferences.GetString("Password", String.Empty);
-                int Privilege = preferences.GetInt("Privilege", -1);
+            ISharedPreferences preferences = Application.Context.GetSharedPreferences("RememberMe", FileCreationMode.Private);
+            string UserName = preferences.GetString("UserName", String.Empty);
+            string Password = preferences.GetString("Password", String.Empty);
+            int Privilege = preferences.GetInt("Privilege", -1);
 
 
 
-                if (UserName == String.Empty || Password == String.Empty || Privilege == -1)
+            if (UserName == String.Empty || Password == String.Empty || Privilege == -1)
+            {
+                Intent intent = new Intent(this, typeof(MainActivity));
+                this.StartActivity(intent);
+            }
+            else
+            {
+                bool flag = false;
+
+                foreach (UserTable row in mListUserName)
                 {
+                    if (UserName == row.USER_NAME && Password == row.PASSWORD)
+                    {
+                        flag = true;
+
+                        Intent intent = new Intent(this, typeof(MainPageAct));
+                        this.StartActivity(intent);
+                        this.Finish(); //that user can't return back on this layout
+                    }
+                }
+
+                if (flag == false)
+                {
+                    ISharedPreferencesEditor editor = preferences.Edit();
+                    editor.Clear();
+                    editor.Apply();
+
                     Intent intent = new Intent(this, typeof(MainActivity));
                     this.StartActivity(intent);
+                    this.Finish();
                 }
                 else
                 {
-                    bool flag = false;
-
-                    foreach (UserTable row in mListUserName)
-                    {
-                        if (UserName == row.USER_NAME && Password == row.PASSWORD)
-                        {
-                            flag = true;
-
-                            Intent intent = new Intent(this, typeof(MainPageAct));
-                            this.StartActivity(intent);
-                            this.Finish(); //that user can't return back on this layout
-                        }
-                    }
-
-                    if (flag == false)
-                    {
-                        ISharedPreferencesEditor editor = preferences.Edit();
-                        editor.Clear();
-                        editor.Apply();
-
-                        Intent intent = new Intent(this, typeof(MainActivity));
-                        this.StartActivity(intent);
-                        this.Finish();
-                    }
-                    else
-                    {
-                        RunOnUiThread(() => { Toast.MakeText(this, "App is opened", ToastLength.Long).Show(); });
-
-                        RunOnUiThread(() => { progressBarDialog.Hide(); });
-                        RunOnUiThread(() => { progressBarDialog.SetMessage("Opened"); });
-                    }
-                
+                    RunOnUiThread(() => { Toast.MakeText(this, "Hellow " + UserName, ToastLength.Long).Show(); });
                 }
-
-            })).Start();
+                
+            }
         }        
     }
 }
