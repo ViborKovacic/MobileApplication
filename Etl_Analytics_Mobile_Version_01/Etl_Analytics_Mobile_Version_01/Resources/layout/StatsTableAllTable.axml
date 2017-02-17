@@ -79,7 +79,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/listViewStatsTable"
-            android:background="#F2F2F2"
+            android:background="@drawable/bground"
             android:divider="#101010"
             android:dividerHeight="1dp" />
     </LinearLayout>
@@ -87,7 +87,7 @@
         android:id="@+id/HelpEr"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-      <EditText
+        <EditText
             android:id="@+id/etSearch"
             android:layout_height="match_parent"
             android:layout_width="match_parent"

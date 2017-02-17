@@ -3,6 +3,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bground"
-    android:theme="@style/Theme.Splash">
-</LinearLayout>
+    android:background="@drawable/backgroundbluecustom"
+    android:theme="@style/Theme.Splash"
+    android:minWidth="25px"
+    android:minHeight="25px" />

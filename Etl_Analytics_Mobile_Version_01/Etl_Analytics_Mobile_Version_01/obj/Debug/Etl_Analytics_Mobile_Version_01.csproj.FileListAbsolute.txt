@@ -690,11 +690,16 @@ C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics
 C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\drawable\art.jpg
 C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\drawable\myuser.png
 C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\menu\mainpage_menu.xml
-C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\R.cs.flag
-C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\uploadflags.txt
 C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\drawable\pressed.xml
 C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\drawable\mainlinearlayoutstyle.xml
 C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\drawable\normal.xml
+C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\drawable\backgroundblue.png
+C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\drawable\logo_1.png
+C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\drawable\logo_2.png
+C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\drawable\logo_3.png
+C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\drawable\backgroundbluecustom.png
+C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\R.cs.flag
+C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\uploadflags.txt
 C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\Etl_Analytics_Mobile_Version_01.dll.mdb
 C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\Java.Interop.dll.mdb
 C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\Microsoft.CSharp.dll.mdb
@@ -745,6 +750,8 @@ C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics
 C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\android\assets\System.Web.Services.dll.mdb
 C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\android\assets\System.Xml.dll.mdb
 C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
+C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\drawable\logo_2_easy_resize.jpg
+C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\drawable\backgroundblue_easy.jpg
 C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\Etl_Analytics_Mobile_Version_01.csprojResolveAssemblyReference.cache
 C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\Etl_Analytics_Mobile_Version_01.dll.mdb
 C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\Etl_Analytics_Mobile_Version_01.dll.mdb

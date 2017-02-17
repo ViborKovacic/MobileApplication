@@ -125,7 +125,7 @@ namespace Etl_Analytics_Mobile_Version_01
                     RunOnUiThread(() => { progressBarDialog.Dismiss(); });
                     string title = "Warning!!!";
                     string message = "The username or password is incrrect";
-                    RunOnUiThread(() => { AlertDialogShow(title, message); });
+                    //RunOnUiThread(() => { AlertDialogShow(title, message); });
                 }
                 else
                 {

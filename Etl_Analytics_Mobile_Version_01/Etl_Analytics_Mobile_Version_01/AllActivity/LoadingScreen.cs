@@ -20,13 +20,13 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
     {
         private WebService mWebService;
         private List<UserTable> mListUserName;
-        private ProgressDialog progressBarDialog;
+        //private ProgressDialog progressBarDialog;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
-            SetContentView(Resource.Layout.LoadingScreen);
+            //SetContentView(Resource.Layout.LoadingScreen);
 
             mListUserName = new List<UserTable>();
             mWebService = new WebService();

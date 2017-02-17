@@ -218,6 +218,8 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
             chartAllTables.Description.Enabled = true;
             chartAllTables.Description.Text = "All tables chart";
 
+            //chartAllTables.SetBackgroundColor(Color.WhiteSmoke);
+
             chartAllTables.Invalidate();
         }
 
@@ -281,6 +283,8 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
             chartSuccess.Description.Enabled = true;
             chartSuccess.Description.Text = "Tables without big deviation";
 
+            //chartSuccess.SetBackgroundColor(Color.WhiteSmoke);
+
             chartSuccess.Invalidate();
         }
 
@@ -343,6 +347,8 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments
 
             chartError.Description.Enabled = true;
             chartError.Description.Text = "Tables with big deviation";
+
+            //chartError.SetBackgroundColor(Color.WhiteSmoke);
 
             chartError.Invalidate();
         }
