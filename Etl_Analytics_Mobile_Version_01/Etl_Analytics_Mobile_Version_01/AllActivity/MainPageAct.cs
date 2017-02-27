@@ -1,29 +1,11 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 using Android.App;
 using Android.Widget;
 using Android.OS;
-using Etl_Analytics_Mobile_Version_01.Class;
-using Etl_Analytics_Mobile_Version_01.Class.Table_Constructor;
 using System.Threading;
 using Android.Views;
-using Android.Views.InputMethods;
-using Newtonsoft.Json;
-using System.Threading.Tasks;
-using System.Net;
-using System.IO;
-using Org.Json;
-using System.Net.Http;
-using RestSharp;
-using Newtonsoft.Json.Linq;
 using Android.Support.V7.App;
-using Etl_Analytics_Mobile_Version_01.Resources;
 using Android.Content;
-using Android.Graphics;
-using Android.Support.V7.Widget;
 using SupportToolbar = Android.Support.V7.Widget.Toolbar;
 
 namespace Etl_Analytics_Mobile_Version_01.AllActivity
@@ -38,6 +20,7 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
         private LinearLayout mLienarStatsColumn;
         private LinearLayout mLienarParameterVar;
         private LinearLayout mLinearUsers;
+        private Intent intent;
         private ProgressDialog progressBarDialog;
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -49,56 +32,34 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
 
             if (grant == 0)
             {
-                SetContentView(Resource.Layout.MainPage);
+                SetContentView(Resource.Layout.MainPageAdmin);
                 mLienarLogTable = FindViewById<LinearLayout>(Resource.Id.linearLogTable);
                 mLienarNesto = FindViewById<LinearLayout>(Resource.Id.linearNesto);
                 mLienarStatsTable = FindViewById<LinearLayout>(Resource.Id.linearStatsTable);
                 mLienarStatsColumn = FindViewById<LinearLayout>(Resource.Id.linearStatsColumn);
-                
 
                 mLienarLogTable.Click += delegate
                 {
                     Intent intent = new Intent(this, typeof(TestStatsTableAct));
                     this.StartActivity(intent);
-                    RunOnUiThread(() => { Toast.MakeText(this, "Log table opened", ToastLength.Long).Show(); });
                 };
 
-                mLienarNesto.Click += delegate 
+                mLienarNesto.Click += delegate
                 {
 
                 };
 
-                mLienarStatsTable.Click += delegate 
+                mLienarStatsTable.Click += delegate
                 {
-                    ProgressBarDialog();
-
-                    new Thread(new ThreadStart(delegate
-                    {
-                        Intent intent = new Intent(this, typeof(StatsTableAct));
-                        intent.PutExtra("StatsTable", "StatsTable");
-                        this.StartActivity(intent);
-                        RunOnUiThread(() => { Toast.MakeText(this, "Table statistics opened", ToastLength.Long).Show(); });
-
-                        RunOnUiThread(() => { progressBarDialog.Hide(); });
-                    })).Start();
+                    intent = new Intent(this, typeof(StatsTableAct));
+                    StartActivity("StatsTable");
                 };
 
-                mLienarStatsColumn.Click += delegate 
+                mLienarStatsColumn.Click += delegate
                 {
-                    Intent intent = new Intent(this, typeof(StatsTableAct));
-                    ProgressBarDialog();
-                    new Thread(new ThreadStart(delegate
-                    {
-                        
-                        intent.PutExtra("StatsColumns", "StatsColumns");
-                        RunOnUiThread(() => { progressBarDialog.Hide(); });
-                        this.StartActivity(intent);
-
-                        RunOnUiThread(() => { Toast.MakeText(this, "Column statistics opened", ToastLength.Long).Show(); });
-
-                        
-                    })).Start();
-                };               
+                    intent = new Intent(this, typeof(StatsTableAct));
+                    StartActivity("StatsColumns");
+                };
             }
             else
             {
@@ -114,7 +75,6 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
                 {
                     Intent intent = new Intent(this, typeof(TestStatsTableAct));
                     this.StartActivity(intent);
-                    RunOnUiThread(() => { Toast.MakeText(this, "Log table opened", ToastLength.Long).Show(); });
                 };
 
                 mLienarNesto.Click += delegate
@@ -124,90 +84,50 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
 
                 mLienarStatsTable.Click += delegate
                 {
-                    ProgressBarDialog();
-
-                    new Thread(new ThreadStart(delegate
-                    {
-                        Intent intent = new Intent(this, typeof(StatsTableAct));
-                        intent.PutExtra("StatsTable", "StatsTable");
-                        this.StartActivity(intent);
-                        RunOnUiThread(() => { Toast.MakeText(this, "Table statistics opened", ToastLength.Long).Show(); });
-
-                        RunOnUiThread(() => { progressBarDialog.Hide(); });
-                    })).Start();
+                    intent = new Intent(this, typeof(StatsTableAct));
+                    StartActivity("StatsTable");
                 };
 
                 mLienarStatsColumn.Click += delegate
                 {
-                    Intent intent = new Intent(this, typeof(StatsTableAct));
-                    ProgressBarDialog();
-                    new Thread(new ThreadStart(delegate
-                    {
+                    progressBarDialog = new ProgressDialog(this);
+                    progressBarDialog.SetCancelable(false);
+                    progressBarDialog.SetMessage("Gethering data from server...");
+                    progressBarDialog.SetProgressStyle(ProgressDialogStyle.Spinner);
+                    progressBarDialog.Show();
 
-                        intent.PutExtra("StatsColumns", "StatsColumns");
-                        RunOnUiThread(() => { progressBarDialog.Hide(); });
-                        this.StartActivity(intent);
+                    new System.Threading.Thread(new ThreadStart(delegate
+                    {                    
+                        intent = new Intent(this, typeof(StatsTableAct));
+                        StartActivity("StatsColumns");
 
-                        RunOnUiThread(() => { Toast.MakeText(this, "Column statistics opened", ToastLength.Long).Show(); });
-
-
+                        RunOnUiThread(() => { progressBarDialog.Dismiss(); });
                     })).Start();
                 };
 
                 mLienarParameterVar.Click += delegate
                 {
-                    Intent intent = new Intent(this, typeof(ConfigTablesAct));
-                    ProgressBarDialog();
-                    new Thread(new ThreadStart(delegate
-                    {
-
-                        intent.PutExtra("ParameterVar", "ParameterVar");
-                        RunOnUiThread(() => { progressBarDialog.Hide(); });
-                        this.StartActivity(intent);
-
-                        RunOnUiThread(() => { Toast.MakeText(this, "Parameter variable opened", ToastLength.Long).Show(); });
-
-
-                    })).Start();
+                    intent = new Intent(this, typeof(ConfigTablesAct));
+                    StartActivity("ParameterVar");
                 };
 
                 mLinearUsers.Click += delegate
                 {
-                    Intent intent = new Intent(this, typeof(UserTableAct));
-                    ProgressBarDialog();
-                    new Thread(new ThreadStart(delegate
-                    {
-
-                        intent.PutExtra("Users", "Users");
-                        RunOnUiThread(() => { progressBarDialog.Hide(); });
-                        this.StartActivity(intent);
-
-                        RunOnUiThread(() => { Toast.MakeText(this, "Users opened", ToastLength.Long).Show(); });
-
-
-                    })).Start();
+                    intent = new Intent(this, typeof(UserTableAct));
+                    StartActivity("User");
                 };
             }
-
 
             mSupportToolbar = FindViewById<SupportToolbar>(Resource.Id.toolbar);
 
             SetSupportActionBar(mSupportToolbar);
-            SupportActionBar.SetHomeButtonEnabled(true);
-            SupportActionBar.SetDisplayShowTitleEnabled(true);
-            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
             SupportActionBar.Title = "Etl Iniste2";
 
             RequestedOrientation = Android.Content.PM.ScreenOrientation.Portrait;
         }
 
-        public override bool OnCreateOptionsMenu(IMenu menu)
-        {
-            MenuInflater.Inflate(Resource.Menu.mainPage_menu, menu);
-            return base.OnCreateOptionsMenu(menu);
-        }
 
-        public void ProgressBarDialog()
+        private void ProgressBarDialog()
         {
             progressBarDialog = new ProgressDialog(this);
             progressBarDialog.SetCancelable(false);
@@ -216,11 +136,23 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
             progressBarDialog.Show();
         }
 
+        public void StartActivity(string extra)
+        {
+            intent.PutExtra(extra, extra);
+            this.StartActivity(intent);
+        }
+
+        public override bool OnCreateOptionsMenu(IMenu menu)
+        {
+            MenuInflater.Inflate(Resource.Menu.mainPage_menu, menu);
+            return base.OnCreateOptionsMenu(menu);
+        }
+
         public override bool OnOptionsItemSelected(IMenuItem item)
         {
             switch (item.ItemId)
             {
-                case 16908332:
+                case Resource.Id.LogOut:
 
                     Android.Support.V7.App.AlertDialog.Builder alert = new Android.Support.V7.App.AlertDialog.Builder(this);
                     alert.SetTitle("Log Out");

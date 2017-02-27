@@ -3383,6 +3383,9 @@ namespace Etl_Analytics_Mobile_Version_01
 			// aapt resource value: 0x7f0600f3
 			public const int ActionBarToolbar = 2131099891;
 			
+			// aapt resource value: 0x7f060104
+			public const int Back = 2131099908;
+			
 			// aapt resource value: 0x7f06007d
 			public const int Drawer = 2131099773;
 			
@@ -3398,8 +3401,8 @@ namespace Etl_Analytics_Mobile_Version_01
 			// aapt resource value: 0x7f0600b1
 			public const int LogInID = 2131099825;
 			
-			// aapt resource value: 0x7f060104
-			public const int LogOut = 2131099908;
+			// aapt resource value: 0x7f060105
+			public const int LogOut = 2131099909;
 			
 			// aapt resource value: 0x7f060101
 			public const int Next = 2131099905;
@@ -3824,17 +3827,17 @@ namespace Etl_Analytics_Mobile_Version_01
 			// aapt resource value: 0x7f060016
 			public const int multiply = 2131099670;
 			
+			// aapt resource value: 0x7f060109
+			public const int nav_discussion = 2131099913;
+			
 			// aapt resource value: 0x7f060108
-			public const int nav_discussion = 2131099912;
-			
-			// aapt resource value: 0x7f060107
-			public const int nav_friends = 2131099911;
-			
-			// aapt resource value: 0x7f060105
-			public const int nav_home = 2131099909;
+			public const int nav_friends = 2131099912;
 			
 			// aapt resource value: 0x7f060106
-			public const int nav_messages = 2131099910;
+			public const int nav_home = 2131099910;
+			
+			// aapt resource value: 0x7f060107
+			public const int nav_messages = 2131099911;
 			
 			// aapt resource value: 0x7f06008d
 			public const int navigation_header_container = 2131099789;
@@ -4533,10 +4536,13 @@ namespace Etl_Analytics_Mobile_Version_01
 			public const int fragmentConfigTablesAndColumns = 2131492871;
 			
 			// aapt resource value: 0x7f0c0008
-			public const int mainPage_menu = 2131492872;
+			public const int fragmentParameters = 2131492872;
 			
 			// aapt resource value: 0x7f0c0009
-			public const int testMenu = 2131492873;
+			public const int mainPage_menu = 2131492873;
+			
+			// aapt resource value: 0x7f0c000a
+			public const int testMenu = 2131492874;
 			
 			static Menu()
 			{

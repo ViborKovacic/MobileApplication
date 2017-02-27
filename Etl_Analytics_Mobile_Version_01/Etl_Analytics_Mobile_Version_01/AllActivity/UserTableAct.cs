@@ -28,14 +28,12 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.UserTableMain);
-            // Create your application here
+
             mRecycleView = FindViewById<RecyclerView>(Resource.Id.userTableRecycleView);
             webService = new WebService();
             mListUserTable = new List<UserTable>();
             mListUserTable = webService.GetAllDataUserTable();
             
-
-            //Create our layout manager
             mLayoutManager = new LinearLayoutManager(this);
             mRecycleView.SetLayoutManager(mLayoutManager);
             mAdapter = new RecyclerAdapter(mListUserTable, mRecycleView, this);

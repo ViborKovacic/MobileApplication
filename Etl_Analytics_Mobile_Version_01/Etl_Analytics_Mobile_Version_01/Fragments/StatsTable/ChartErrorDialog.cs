@@ -71,7 +71,7 @@ namespace Etl_Analytics_Mobile_Version_01.Fragments.StatsTable
                 dicOfDataSets.Add(table, barEntry);
             }
 
-            int[] chartColors = ColorTemplate.ColorfulColors.ToArray();
+            int[] chartColors = { Color.ParseColor("#005571"), Color.ParseColor("#227691"), Color.ParseColor("#86B1C6"), Color.ParseColor("#BCD4E0"), Color.ParseColor("#FDB813"), Color.ParseColor("#FFC54E"), Color.ParseColor("#FFD27C"), Color.ParseColor("#FFE6B9") };
             int counterColor = 0;
 
             BarData data = new BarData();

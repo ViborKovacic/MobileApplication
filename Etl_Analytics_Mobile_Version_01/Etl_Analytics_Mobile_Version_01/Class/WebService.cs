@@ -45,6 +45,18 @@ namespace Etl_Analytics_Mobile_Version_01.Class
             return userTable;
         }
 
+        public void GetAllDataUserTable(Action<List<UserTable>> callback)
+        {
+            List<UserTable> userTable = new List<UserTable>();
+            client = new RestClient("http://insite2crm6.in2.hr");
+            request = new RestRequest("etlservice/api/UserTable", Method.GET);
+
+            client.ExecuteAsync<List<UserTable>>(request, response =>
+            {
+                callback(response.Data);
+            });
+        }
+
         public string AddNewUser(UserTable json)
         {
             client = new RestClient("http://insite2crm6.in2.hr");

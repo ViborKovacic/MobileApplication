@@ -30,20 +30,20 @@ namespace Etl_Analytics_Mobile_Version_01.Class
 
         public override int GetItemViewType(int position)
         {
-            if ((position % 2) == 0)
-            {
+            //if ((position % 2) == 0)
+            //{
                 return Resource.Layout.RowCardView;              
-            }
-            else
-            {
-                return Resource.Layout.RowCardView2;
-            }
+            //}
+            //else
+            //{
+            //    return Resource.Layout.RowCardView2;
+            //}
         }
 
         public override RecyclerView.ViewHolder OnCreateViewHolder(ViewGroup parent, int viewType)
         {
-            if (viewType == Resource.Layout.RowCardView)
-            {
+            //if (viewType == Resource.Layout.RowCardView)
+            //{
                 //RowCardView
                 View row = LayoutInflater.From(parent.Context).Inflate(Resource.Layout.RowCardView, parent, false);
 
@@ -65,21 +65,21 @@ namespace Etl_Analytics_Mobile_Version_01.Class
                 };
 
                 return view;
-            }
+            //}
 
-            else
-            {
-                //RowCardView2
-                View row = LayoutInflater.From(parent.Context).Inflate(Resource.Layout.RowCardView2, parent, false);
-                MyView2 view = new MyView2(row);
-                return view;
-            }
+            //else
+            //{
+            //    //RowCardView2
+            //    View row = LayoutInflater.From(parent.Context).Inflate(Resource.Layout.RowCardView2, parent, false);
+            //    MyView2 view = new MyView2(row);
+            //    return view;
+            //}
         }
 
         public override void OnBindViewHolder(RecyclerView.ViewHolder holder, int position)
         {
-            if (holder is MyView)
-            {
+            //if (holder is MyView)
+            //{
                 MyView myholder = holder as MyView;
                 int indexInvert = (mLIstUserTable.Count - 1) - position;
                 myholder.mUSER_NAME.Text = mLIstUserTable[indexInvert].USER_NAME;
@@ -94,16 +94,16 @@ namespace Etl_Analytics_Mobile_Version_01.Class
                     SetAnimation(myholder.mMainView);
                     mCurrentPosition = position;
                 }
-            }
-            else
-            {
-                MyView2 myholder2 = holder as MyView2;
-                if (position > mCurrentPosition)
-                {
-                    SetAnimation(myholder2.mMainView);
-                    mCurrentPosition = position;
-                }
-            }
+            //}
+            //else
+            //{
+            //    MyView2 myholder2 = holder as MyView2;
+            //    if (position > mCurrentPosition)
+            //    {
+            //        SetAnimation(myholder2.mMainView);
+            //        mCurrentPosition = position;
+            //    }
+            //}
         }
 
         private void SetAnimation(View view)

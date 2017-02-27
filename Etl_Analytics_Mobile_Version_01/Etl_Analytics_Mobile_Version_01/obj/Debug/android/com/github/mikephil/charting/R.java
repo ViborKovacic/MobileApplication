@@ -2592,12 +2592,13 @@ containing a value of this type.
     }
     public static final class id {
         public static final int ActionBarToolbar=0x7f0600f3;
+        public static final int Back=0x7f060104;
         public static final int Drawer=0x7f06007d;
         public static final int HelpEr=0x7f0600dc;
         public static final int ListView=0x7f060081;
         public static final int ListViewLeft=0x7f060094;
         public static final int LogInID=0x7f0600b1;
-        public static final int LogOut=0x7f060104;
+        public static final int LogOut=0x7f060105;
         public static final int Next=0x7f060101;
         public static final int action0=0x7f0600c0;
         public static final int action_Parameters=0x7f060103;
@@ -2739,10 +2740,10 @@ containing a value of this type.
         public static final int middle=0x7f06001d;
         public static final int mini=0x7f060037;
         public static final int multiply=0x7f060016;
-        public static final int nav_discussion=0x7f060108;
-        public static final int nav_friends=0x7f060107;
-        public static final int nav_home=0x7f060105;
-        public static final int nav_messages=0x7f060106;
+        public static final int nav_discussion=0x7f060109;
+        public static final int nav_friends=0x7f060108;
+        public static final int nav_home=0x7f060106;
+        public static final int nav_messages=0x7f060107;
         public static final int navigation_header_container=0x7f06008d;
         public static final int never=0x7f060021;
         public static final int none=0x7f060010;
@@ -2968,8 +2969,9 @@ containing a value of this type.
         public static final int fragmentalltable=0x7f0c0005;
         public static final int fragmentcharttoolbar=0x7f0c0006;
         public static final int fragmentconfigtablesandcolumns=0x7f0c0007;
-        public static final int mainpage_menu=0x7f0c0008;
-        public static final int testmenu=0x7f0c0009;
+        public static final int fragmentparameters=0x7f0c0008;
+        public static final int mainpage_menu=0x7f0c0009;
+        public static final int testmenu=0x7f0c000a;
     }
     public static final class string {
         public static final int ApplicationName=0x7f090018;

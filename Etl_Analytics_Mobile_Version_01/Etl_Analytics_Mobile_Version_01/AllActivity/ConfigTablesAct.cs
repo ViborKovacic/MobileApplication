@@ -45,7 +45,7 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
 
             if (SupportFragmentManager.FindFragmentByTag("Fragment1") != null)
             {
-                mFragmentParameters = SupportFragmentManager.FindFragmentByTag("Fragment1") as FragmentParameters;
+                mFragmentConfigTables = SupportFragmentManager.FindFragmentByTag("Fragment1") as FragmentConfigTablesAndColumns;
             }
             else
             {
@@ -53,10 +53,10 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
                 mFragmentParameters = new FragmentParameters();
 
                 var trans = SupportFragmentManager.BeginTransaction();
-                trans.Add(Resource.Id.fragmentContainer, mFragmentParameters, "Fragment1");
+                trans.Add(Resource.Id.fragmentContainer, mFragmentConfigTables, "Fragment1");
                 trans.Commit();
 
-                mCurrentFragment = mFragmentParameters;
+                mCurrentFragment = mFragmentConfigTables;
             }
 
             ISharedPreferences preferences = Application.Context.GetSharedPreferences("RememberMe", FileCreationMode.Private);
@@ -136,7 +136,7 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
                     return base.OnOptionsItemSelected(item);
 
                 case Resource.Id.Next:
-                    ReplaceFragment(mFragmentConfigTables);
+                    ReplaceFragment(mFragmentParameters);
                     return true;
 
                 case Resource.Id.action_Tables:

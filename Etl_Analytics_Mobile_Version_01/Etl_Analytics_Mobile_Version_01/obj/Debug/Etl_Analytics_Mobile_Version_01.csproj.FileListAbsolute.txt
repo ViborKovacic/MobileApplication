@@ -753,5 +753,6 @@ C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics
 C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\drawable\logo_2_easy_resize.jpg
 C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\drawable\backgroundblue_easy.jpg
 C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\Etl_Analytics_Mobile_Version_01.csprojResolveAssemblyReference.cache
+C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\res\menu\fragmentparameters.xml
 C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\obj\Debug\Etl_Analytics_Mobile_Version_01.dll.mdb
 C:\Users\INSITE\Desktop\15.12.2016\Etl_Analytics_Mobile_Version_01\Etl_Analytics_Mobile_Version_01\bin\Debug\Etl_Analytics_Mobile_Version_01.dll.mdb
