@@ -32,7 +32,7 @@ namespace Etl_Analytics_Mobile_Version_01.AllActivity
 
             if (grant == 0)
             {
-                SetContentView(Resource.Layout.MainPageAdmin);
+                SetContentView(Resource.Layout.MainPage);
                 mLienarLogTable = FindViewById<LinearLayout>(Resource.Id.linearLogTable);
                 mLienarNesto = FindViewById<LinearLayout>(Resource.Id.linearNesto);
                 mLienarStatsTable = FindViewById<LinearLayout>(Resource.Id.linearStatsTable);

@@ -8,20 +8,10 @@ using System.Threading;
 using Android.Views;
 using System.Collections.Generic;
 using Android.Views.InputMethods;
-using Newtonsoft.Json;
-using System.Threading.Tasks;
-using System.Net;
-using System.IO;
-using Org.Json;
-using System.Net.Http;
-using System.Text;
-using RestSharp;
-using Newtonsoft.Json.Linq;
 using Android.Support.V7.App;
-using Etl_Analytics_Mobile_Version_01.Resources;
 using Android.Content;
-using Android.Graphics;
 using Etl_Analytics_Mobile_Version_01.AllActivity;
+using static Android.Views.View;
 
 namespace Etl_Analytics_Mobile_Version_01
 {
@@ -36,6 +26,7 @@ namespace Etl_Analytics_Mobile_Version_01
         private EditText txtPassword;
         private LinearLayout mLinearLayout;
         private CheckBox mCheckBox;
+        private InputMethodManager inputManager;
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -61,12 +52,38 @@ namespace Etl_Analytics_Mobile_Version_01
 
             btnSignIn.Click += btnSignIn_Click;
             btnLogIn.Click += BtnLogIn_Click;
+
+            txtUserName.FocusChange += TxtUserName_FocusChange;
+            txtPassword.FocusChange += TxtPassword_FocusChange;
+        }
+
+        private void TxtPassword_FocusChange(object sender, FocusChangeEventArgs e)
+        {
+            if (!txtPassword.HasFocus)
+            {
+                if (!txtUserName.HasFocus)
+                {
+                    inputManager = (InputMethodManager)this.GetSystemService(Activity.InputMethodService);
+                    inputManager.HideSoftInputFromWindow(txtPassword.WindowToken, HideSoftInputFlags.None);
+                }
+            }
+        }
+
+        private void TxtUserName_FocusChange(object sender, FocusChangeEventArgs e)
+        {
+            if (!txtUserName.HasFocus)
+            {
+                if (!txtPassword.HasFocus)
+                {
+                    inputManager = (InputMethodManager)this.GetSystemService(Activity.InputMethodService);
+                    inputManager.HideSoftInputFromWindow(txtUserName.WindowToken, HideSoftInputFlags.None);
+                }
+            }
         }
 
         private void MLinearLayout_Click(object sender, EventArgs e)
         {
-            InputMethodManager inputManager = (InputMethodManager)this.GetSystemService(Activity.InputMethodService);
-            inputManager.HideSoftInputFromWindow(this.CurrentFocus.WindowToken, HideSoftInputFlags.None);
+
         }
 
         private void BtnLogIn_Click(object sender, EventArgs e)
@@ -83,7 +100,7 @@ namespace Etl_Analytics_Mobile_Version_01
             
             new Thread(new ThreadStart(delegate {
 
-                RemoveKeyboard(txtPassword);
+                //RemoveKeyboard(txtPassword);
                                 
                 userTalbe = webService.GetAllDataUserTable();
 
@@ -114,6 +131,8 @@ namespace Etl_Analytics_Mobile_Version_01
                             editor.Apply();
                         }
 
+                        flag = true;
+
                         Intent intent = new Intent(this, typeof(MainPageAct));
                         this.StartActivity(intent);
                         this.Finish(); //that user can't return back on this layout
@@ -125,7 +144,7 @@ namespace Etl_Analytics_Mobile_Version_01
                     RunOnUiThread(() => { progressBarDialog.Dismiss(); });
                     string title = "Warning!!!";
                     string message = "The username or password is incrrect";
-                    //RunOnUiThread(() => { AlertDialogShow(title, message); });
+                    RunOnUiThread(() => { AlertDialogShow(title, message); });
                 }
                 else
                 {
@@ -177,12 +196,6 @@ namespace Etl_Analytics_Mobile_Version_01
                 alert.Dispose();
             });
             alert.Show();
-        }
-
-        public void RemoveKeyboard(EditText text)
-        {
-            InputMethodManager manager = (InputMethodManager)GetSystemService(InputMethodService);
-            manager.HideSoftInputFromWindow(text.WindowToken, 0);
         }
     }
 }

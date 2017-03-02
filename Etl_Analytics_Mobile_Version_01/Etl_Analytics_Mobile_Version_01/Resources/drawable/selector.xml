@@ -3,7 +3,7 @@
     <!--Pressed-->
 
     <shape>
-      <solid android:color="#ffffff" />
+      <solid android:color="#FDB813" />
     </shape>
   </item>
 
@@ -11,13 +11,13 @@
     <!--Focused-->
 
     <shape>
-      <solid android:color="#ffffff" />
+      <solid android:color="#FDB813" />
     </shape>
   </item>
 
   <item android:state_selected="true">
     <shape>
-      <solid android:color="#ffffff"/>
+      <solid android:color="#FDB813"/>
     </shape>
     
   </item>

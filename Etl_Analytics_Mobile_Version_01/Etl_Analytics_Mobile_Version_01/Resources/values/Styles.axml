@@ -6,8 +6,8 @@
   </style>
 
   <style name="Theme.Splash" parent="android:Theme">
-    <item name="android:windowBackground">@drawable/BackgroundBlueCustom</item>
+    <item name="android:windowBackground">@drawable/BackgroundBlueLoadingScreen</item>
     <item name="android:scaleType">centerInside</item>
-    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowFullscreen">true</item>
   </style>
 </resources>

@@ -15,8 +15,18 @@
     <item name="windowNoTitle">true</item>
   </style>
 
+  <style name="MyTextColors" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="android:textColorHint">#FFFFFF</item>
+    <item name="colorAccent">#FFFFFF</item>
+    <item name="colorControlNormal">#FFFFFF</item>
+    <item name="colorControlActivated">#FFFFFF</item>
+  </style>
+
   <style name="MyTheme2" parent="Theme.AppCompat.Light.NoActionBar">
     <item name="colorPrimary">#00344C</item>
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+    <item name="android:windowFullscreen">true</item>
     <item name="drawerArrowStyle">@style/MyDrawerArrowStyle2</item>
   </style>
 

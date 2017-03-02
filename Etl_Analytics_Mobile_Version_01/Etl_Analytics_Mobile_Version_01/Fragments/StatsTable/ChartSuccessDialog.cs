@@ -9,9 +9,6 @@ using System.Linq;
 using System;
 using Android.Graphics;
 using MikePhil.Charting.Components;
-using MikePhil.Charting.Util;
-using MikePhil.Charting.Formatter;
-using MikePhil.Charting.Interfaces.Datasets;
 
 namespace Etl_Analytics_Mobile_Version_01.Fragments.StatsTable
 {

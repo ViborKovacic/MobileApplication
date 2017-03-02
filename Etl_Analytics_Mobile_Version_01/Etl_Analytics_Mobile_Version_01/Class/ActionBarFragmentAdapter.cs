@@ -1,11 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Android.App;
 using Android.Content;
-using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
@@ -16,7 +9,6 @@ using FragmentSupport = Android.Support.V4.App.Fragment;
 using Java.Lang;
 using Android.Graphics;
 using Etl_Analytics_Mobile_Version_01.Fragments.StatsColumnsFragments;
-using Etl_Analytics_Mobile_Version_01.Class.Table_Constructor;
 
 namespace Etl_Analytics_Mobile_Version_01.Class
 {
@@ -105,10 +97,10 @@ namespace Etl_Analytics_Mobile_Version_01.Class
                         image.SetImageResource(Resource.Drawable.barchart_icon);
                         break;
                     case 1:
-                        image.SetImageResource(Resource.Drawable.list_icon);
+                        image.SetImageResource(Resource.Drawable.list_iconYellow);
                         break;
                     case 2:
-                        image.SetImageResource(Resource.Drawable.table_icon);
+                        image.SetImageResource(Resource.Drawable.table_iconYellow);
                         break;
                 }
             }
@@ -121,10 +113,10 @@ namespace Etl_Analytics_Mobile_Version_01.Class
                         image.SetImageResource(Resource.Drawable.pie_chart_icon);
                         break;
                     case 1:
-                        image.SetImageResource(Resource.Drawable.list_icon);
+                        image.SetImageResource(Resource.Drawable.list_iconYellow);
                         break;
                     case 2:
-                        image.SetImageResource(Resource.Drawable.table_icon);
+                        image.SetImageResource(Resource.Drawable.table_iconYellow);
                         break;
                 }
             }

@@ -26,7 +26,7 @@
         <ImageView
             android:layout_height="150dp"
             android:layout_width="match_parent"
-            android:src="@drawable/logo_2" />
+            android:src="@drawable/logo_3" />
     </LinearLayout>
     <LinearLayout
         android:orientation="horizontal"
@@ -52,11 +52,12 @@
                 <ImageView
                     android:layout_height="50dp"
                     android:layout_width="50dp"
-                    android:src="@drawable/list" />
+                    android:src="@drawable/ImageLogYellow" />
                 <TextView
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
                     android:text="Log of tables"
+                    android:textColor="#ffffff"
                     android:gravity="center"
                     android:textSize="15dp" />
             </LinearLayout>
@@ -78,11 +79,12 @@
                 <ImageView
                     android:layout_height="50dp"
                     android:layout_width="50dp"
-                    android:src="@drawable/note" />
+                    android:src="@drawable/ImageTableYellow" />
                 <TextView
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
                     android:text="Nesto dodati"
+                    android:textColor="#ffffff"
                     android:gravity="center"
                     android:textSize="15dp" />
             </LinearLayout>
@@ -112,11 +114,12 @@
                 <ImageView
                     android:layout_height="50dp"
                     android:layout_width="50dp"
-                    android:src="@drawable/list" />
+                    android:src="@drawable/ImageTableYellow" />
                 <TextView
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
                     android:text="Table statistics"
+                    android:textColor="#ffffff"
                     android:gravity="center"
                     android:textSize="15dp" />
             </LinearLayout>
@@ -138,11 +141,12 @@
                 <ImageView
                     android:layout_height="50dp"
                     android:layout_width="50dp"
-                    android:src="@drawable/list" />
+                    android:src="@drawable/ImageColumnYellow" />
                 <TextView
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
                     android:text="Column statistics"
+                    android:textColor="#ffffff"
                     android:gravity="center"
                     android:textSize="15dp" />
             </LinearLayout>
@@ -171,11 +175,12 @@
                 <ImageView
                     android:layout_height="50dp"
                     android:layout_width="50dp"
-                    android:src="@drawable/note" />
+                    android:src="@drawable/ImageParametersYellow" />
                 <TextView
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
                     android:text="Parameters"
+                    android:textColor="#ffffff"
                     android:gravity="center"
                     android:textSize="15dp" />
             </LinearLayout>
@@ -197,11 +202,12 @@
                 <ImageView
                     android:layout_height="50dp"
                     android:layout_width="50dp"
-                    android:src="@drawable/list" />
+                    android:src="@drawable/ImageUsersYellow" />
                 <TextView
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
                     android:text="Users"
+                    android:textColor="#ffffff"
                     android:gravity="center"
                     android:textSize="15dp" />
             </LinearLayout>
