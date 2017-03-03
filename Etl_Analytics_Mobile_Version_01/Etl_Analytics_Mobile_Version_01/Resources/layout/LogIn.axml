@@ -40,7 +40,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:hint="Username"
-                android:textColor="@color/abc_background_cache_hint_selector_material_light"/>
+                android:textColor="@color/abc_background_cache_hint_selector_material_light" />
         </android.support.design.widget.TextInputLayout>
     </LinearLayout>
     <LinearLayout
@@ -64,7 +64,7 @@
                 android:layout_height="wrap_content"
                 android:hint="Password"
                 android:inputType="textPassword"
-                android:textColor="@color/abc_background_cache_hint_selector_material_light"/>
+                android:textColor="@color/abc_background_cache_hint_selector_material_light" />
         </android.support.design.widget.TextInputLayout>
     </LinearLayout>
     <Button
@@ -77,7 +77,8 @@
         android:layout_marginRight="20dp"
         android:textSize="15sp"
         android:layout_marginTop="50dp"
-        android:background="@drawable/buttonloginstyle" />
+        android:background="@drawable/buttonloginstyle"
+        android:textColor="@color/abc_background_cache_hint_selector_material_light"/>
     <TextView
         android:text="OR"
         android:textAppearance="?android:attr/textAppearanceMedium"
@@ -96,7 +97,8 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:textSize="15sp"
-        android:background="@drawable/buttonsigninstyle" />
+        android:background="@drawable/buttonsigninstyle"
+        android:textColor="@color/abc_background_cache_hint_selector_material_light"/>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -107,6 +109,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/ckbRememberMe"
             android:layout_centerInParent="true"
-            android:textColor="@color/background_floating_material_light" />
+            android:textColor="@color/background_floating_material_light"
+            android:buttonTint="#FDB813"
+            />
     </RelativeLayout>
 </LinearLayout>

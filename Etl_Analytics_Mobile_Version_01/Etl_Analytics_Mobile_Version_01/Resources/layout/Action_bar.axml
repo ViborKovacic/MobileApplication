@@ -19,7 +19,9 @@
             android:id="@+id/slidingTabsActionBar"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:background="#00344C"
+            android:background="@drawable/selector"
+            app:tabIndicatorColor="#FDB813"
+            app:tabMaxWidth="0dp"
             app:tabGravity="fill"
             app:tabMode="fixed" />
         <android.support.v4.view.ViewPager
